@@ -4,7 +4,106 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 01 - Dyt
+  type: vless
+  server: ru05.abvpn.ru
+  port: 443
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ru05.abvpn.ru
+  network: ws
+  ws-opts:
+    path: /websocket
+    headers:
+      Host: ru05.abvpn.ru
+- name: 🇷🇺 俄罗斯 (Russia) 02 - Dyt
+  type: vless
+  server: 162.159.39.218
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 03 - Dyt
+  type: vless
+  server: 162.159.24.131
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls+
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 04 - Dyt
+  type: vless
+  server: 162.159.24.131
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 05 - Dyt
+  type: vless
+  server: 104.18.34.14
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 06 - Dyt
+  type: vless
+  server: 104.18.46.234
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 07 - Dyt
+  type: ss
+  server: 138.124.68.88
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: Y2ZlN
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 08 - Dyt
+  type: vless
+  server: 162.159.0.169
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 09 - Dyt
   type: vless
   server: 45.9.15.206
   port: 443
@@ -18,7 +117,20 @@ proxies:
     path: /websocket
     headers:
       Host: 45.9.15.206
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 10 - Dyt
+  type: vless
+  server: 188.114.97.6
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 11 - Dyt
   type: vless
   server: 45.9.15.206
   port: 443
@@ -37,14 +149,32 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 01 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 02 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 03 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 04 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 05 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 06 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 07 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 08 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 09 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 10 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 11 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 01 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 02 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 03 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 04 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 05 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 06 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 07 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 08 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 09 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 10 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 11 - Dyt
 rules:
 - MATCH,PROXIES

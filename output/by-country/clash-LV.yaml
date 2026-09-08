@@ -4,33 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇻 LV 01 - xiaohe
-  type: vless
-  server: 89.36.161.222
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 89.36.161.222
-- name: 🇱🇻 LV 02 - xiaohe
-  type: vless
-  server: 89.36.161.222
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 89.36.161.222
-- name: 🇱🇻 LV 03 - xiaohe
+- name: 🇱🇻 LV 01 - Dyt
   type: vless
   server: 89.36.161.222
   port: 2096
@@ -43,7 +17,7 @@ proxies:
     path: /
     headers:
       Host: laoye.in-gect.fun
-- name: 🇱🇻 LV 04 - xiaohe
+- name: 🇱🇻 LV 02 - Dyt
   type: vless
   server: 89.36.161.222
   port: 2096
@@ -56,7 +30,33 @@ proxies:
     path: /
     headers:
       Host: laoye.in-gect.fun
-- name: 🇱🇻 LV 05 - xiaohe
+- name: 🇱🇻 LV 03 - Dyt
+  type: vless
+  server: 89.36.161.222
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 89.36.161.222
+- name: 🇱🇻 LV 04 - Dyt
+  type: vless
+  server: 89.36.161.222
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 89.36.161.222
+- name: 🇱🇻 LV 05 - Dyt
   type: vless
   server: 89.36.161.222
   port: 2096
@@ -74,20 +74,20 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇱🇻 LV 01 - xiaohe
-  - 🇱🇻 LV 02 - xiaohe
-  - 🇱🇻 LV 03 - xiaohe
-  - 🇱🇻 LV 04 - xiaohe
-  - 🇱🇻 LV 05 - xiaohe
+  - 🇱🇻 LV 01 - Dyt
+  - 🇱🇻 LV 02 - Dyt
+  - 🇱🇻 LV 03 - Dyt
+  - 🇱🇻 LV 04 - Dyt
+  - 🇱🇻 LV 05 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 LV 01 - xiaohe
-  - 🇱🇻 LV 02 - xiaohe
-  - 🇱🇻 LV 03 - xiaohe
-  - 🇱🇻 LV 04 - xiaohe
-  - 🇱🇻 LV 05 - xiaohe
+  - 🇱🇻 LV 01 - Dyt
+  - 🇱🇻 LV 02 - Dyt
+  - 🇱🇻 LV 03 - Dyt
+  - 🇱🇻 LV 04 - Dyt
+  - 🇱🇻 LV 05 - Dyt
 rules:
 - MATCH,PROXIES

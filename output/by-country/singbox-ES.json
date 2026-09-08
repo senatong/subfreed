@@ -6,16 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 02 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 01 - Dyt",
+        "🇪🇸 西班牙 (Spain) 02 - Dyt",
+        "🇪🇸 西班牙 (Spain) 03 - Dyt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 02 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 01 - Dyt",
+        "🇪🇸 西班牙 (Spain) 02 - Dyt",
+        "🇪🇸 西班牙 (Spain) 03 - Dyt"
       ],
       "url": "https://www.google.com/generate_204"
     },

@@ -4,27 +4,49 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇮 FI 01 - xiaohe
+- name: 🇫🇮 FI 01 - Dyt
   type: vless
-  server: 2.26.122.101
-  port: 8443
-  uuid: 758f49d3-5f5f-47e7-bfa4-4ce96faf800d
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: f54c98ce-ac44-4984-db61-ccca1fdbbf72
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: NI5Rkfn6zO_gF-UC1nuvJwu4SDakCXh3ygJOKU1EITU
-  servername: cdn.shopify.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 02 - xiaohe
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 02 - Dyt
   type: vless
-  server: 65.109.176.5
+  server: 151.101.56.6
   port: 443
-  uuid: 1d2e5805-69c0-4948-861c-57e4f778624e
+  uuid: f54c98ce-ac44-4984-db61-ccca1fdbbf72
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇫🇮 FI 03 - xiaohe
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /?CHANNEL---madshopx---madshopx---madshopx---madshopx---madshopx---madshopx---madshopx
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 03 - Dyt
+  type: vless
+  server: a2.arshia-nova.ir
+  port: 443
+  uuid: f54c98ce-ac44-4984-db61-ccca1fdbbf72
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 04 - Dyt
   type: vless
   server: 185.79.138.71
   port: 448
@@ -41,16 +63,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇫🇮 FI 01 - xiaohe
-  - 🇫🇮 FI 02 - xiaohe
-  - 🇫🇮 FI 03 - xiaohe
+  - 🇫🇮 FI 01 - Dyt
+  - 🇫🇮 FI 02 - Dyt
+  - 🇫🇮 FI 03 - Dyt
+  - 🇫🇮 FI 04 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇮 FI 01 - xiaohe
-  - 🇫🇮 FI 02 - xiaohe
-  - 🇫🇮 FI 03 - xiaohe
+  - 🇫🇮 FI 01 - Dyt
+  - 🇫🇮 FI 02 - Dyt
+  - 🇫🇮 FI 03 - Dyt
+  - 🇫🇮 FI 04 - Dyt
 rules:
 - MATCH,PROXIES
