@@ -31,58 +31,13 @@ proxies:
     headers:
       Host: 94.183.209.59
 - name: 🇵🇱 PL 03 - Dyt
-  type: vless
-  server: 178.95.170.98
-  port: 2087
-  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /4bc027a44532
-    headers:
-      Host: 178.95.170.98
-- name: 🇵🇱 PL 04 - Dyt
-  type: vless
-  server: 2.26.224.233
-  port: 8443
-  uuid: 758f49d3-5f5f-47e7-bfa4-4ce96faf800d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: NI5Rkfn6zO_gF-UC1nuvJwu4SDakCXh3ygJOKU1EITU
-  servername: cdn.shopify.com
-  client-fingerprint: firefox
-- name: 🇵🇱 PL 05 - Dyt
-  type: vless
-  server: 178.95.170.115
-  port: 2087
-  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /4bc027a44532
-    headers:
-      Host: Telegram-Leviko_v2ray
-- name: 🇵🇱 PL 06 - Dyt
-  type: ss
-  server: 5.75.149.156
-  port: 30
-  cipher: chacha20-ietf-poly1305
-  password: k-ql8IYNIvKjF3Txqp9_s3UKIFN1Xjfz
-  udp: true
-- name: 🇵🇱 PL 07 - Dyt
   type: ss
   server: 194.61.121.93
   port: 7538
   cipher: chacha20-ietf-poly1305
   password: U9YAoqBgg5VyGBc6vQv1sN
   udp: true
-- name: 🇵🇱 PL 08 - Dyt
+- name: 🇵🇱 PL 04 - Dyt
   type: vless
   server: 94.183.209.58
   port: 443
@@ -95,7 +50,7 @@ proxies:
     path: /
     headers:
       Host: pl2.lckdwn.ru
-- name: 🇵🇱 PL 09 - Dyt
+- name: 🇵🇱 PL 05 - Dyt
   type: vless
   server: 94.183.209.43
   port: 443
@@ -108,31 +63,31 @@ proxies:
     path: /
     headers:
       Host: 94.183.209.43
-- name: 🇵🇱 PL 10 - Dyt
+- name: 🇵🇱 PL 06 - Dyt
   type: vless
-  server: plll.banibus.ir
-  port: 8118
-  uuid: 8b54a46a-e66b-48cc-bf5a-88f0855a3598
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LjAkLizwkZf35ObrUMFZ22UHXTEJzpgcTvHk9AuzcUM
-  servername: play.googleapis.com
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 11 - Dyt
-  type: vless
-  server: 178.95.170.115
-  port: 2087
-  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  server: 94.183.209.59
+  port: 443
+  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /4bc027a44532
+    path: /
     headers:
-      Host: 178.95.170.115
+      Host: 94.183.209.59
+- name: 🇵🇱 PL 07 - Dyt
+  type: vless
+  server: 2.26.224.233
+  port: 8443
+  uuid: 758f49d3-5f5f-47e7-bfa4-4ce96faf800d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: NI5Rkfn6zO_gF-UC1nuvJwu4SDakCXh3ygJOKU1EITU
+  servername: cdn.shopify.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -145,10 +100,6 @@ proxy-groups:
   - 🇵🇱 PL 05 - Dyt
   - 🇵🇱 PL 06 - Dyt
   - 🇵🇱 PL 07 - Dyt
-  - 🇵🇱 PL 08 - Dyt
-  - 🇵🇱 PL 09 - Dyt
-  - 🇵🇱 PL 10 - Dyt
-  - 🇵🇱 PL 11 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -161,9 +112,5 @@ proxy-groups:
   - 🇵🇱 PL 05 - Dyt
   - 🇵🇱 PL 06 - Dyt
   - 🇵🇱 PL 07 - Dyt
-  - 🇵🇱 PL 08 - Dyt
-  - 🇵🇱 PL 09 - Dyt
-  - 🇵🇱 PL 10 - Dyt
-  - 🇵🇱 PL 11 - Dyt
 rules:
 - MATCH,PROXIES

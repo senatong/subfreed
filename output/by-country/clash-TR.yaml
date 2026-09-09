@@ -5,23 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - Dyt
-  type: vless
-  server: 195.162.69.203
-  port: 8443
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 195-162-69-203.sslip.io
-- name: 🇹🇷 土耳其 (Turkey) 02 - Dyt
-  type: vless
-  server: 206.1.96.228
-  port: 8082
-  uuid: bfb3f06c-e33f-41ac-b101-012c8325a689
+  type: vmess
+  server: pori.cjlife.ir
+  port: 110
+  uuid: 0accd97e-a16c-4d4f-b19a-883f7ea0f484
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 03 - Dyt
+- name: 🇹🇷 土耳其 (Turkey) 02 - Dyt
   type: vless
   server: 195.162.69.203
   port: 8443
@@ -30,7 +23,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 195-162-69-203.sslip.io
-- name: 🇹🇷 土耳其 (Turkey) 04 - Dyt
+- name: 🇹🇷 土耳其 (Turkey) 03 - Dyt
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -41,7 +34,30 @@ proxies:
   reality-opts:
     public-key: k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 04 - Dyt
+  type: vless
+  server: 195.162.69.203
+  port: 8443
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 195-162-69-203.sslip.io
+- name: 🇹🇷 土耳其 (Turkey) 05 - Dyt
+  type: vless
+  server: 162.159.91.222
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-723a643df685
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: n3zaxce7u0es.crzl48eiuses.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/723a643df685/loc-0
+    headers:
+      Host: n3zaxce7u0es.crzl48eiuses.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +67,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - Dyt
   - 🇹🇷 土耳其 (Turkey) 03 - Dyt
   - 🇹🇷 土耳其 (Turkey) 04 - Dyt
+  - 🇹🇷 土耳其 (Turkey) 05 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,5 +77,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - Dyt
   - 🇹🇷 土耳其 (Turkey) 03 - Dyt
   - 🇹🇷 土耳其 (Turkey) 04 - Dyt
+  - 🇹🇷 土耳其 (Turkey) 05 - Dyt
 rules:
 - MATCH,PROXIES
