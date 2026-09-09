@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇿🇦 ZA 01 - Dyt
   type: ss
-  server: 139.84.247.164
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: tfAcRikawhNoZAhu
-  udp: true
-- name: 🇿🇦 ZA 02 - Dyt
-  type: ss
   server: 20.164.211.25
   port: 443
   cipher: chacha20-ietf-poly1305
   password: BhYMkBpjAjE6ixSw
+  udp: true
+- name: 🇿🇦 ZA 02 - Dyt
+  type: ss
+  server: 139.84.247.164
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: tfAcRikawhNoZAhu
   udp: true
 - name: 🇿🇦 ZA 03 - Dyt
   type: ss
@@ -32,13 +32,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: aduB9HGxQHjA2SBMRjkHX6
   udp: true
-- name: 🇿🇦 ZA 05 - Dyt
-  type: ss
-  server: 20.164.211.25
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: BhYMkBpjAjE6ixSw
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,7 +41,6 @@ proxy-groups:
   - 🇿🇦 ZA 02 - Dyt
   - 🇿🇦 ZA 03 - Dyt
   - 🇿🇦 ZA 04 - Dyt
-  - 🇿🇦 ZA 05 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,6 +50,5 @@ proxy-groups:
   - 🇿🇦 ZA 02 - Dyt
   - 🇿🇦 ZA 03 - Dyt
   - 🇿🇦 ZA 04 - Dyt
-  - 🇿🇦 ZA 05 - Dyt
 rules:
 - MATCH,PROXIES

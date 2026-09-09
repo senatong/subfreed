@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇽 MX 01 - Dyt
+  type: vless
+  server: ul-mexico1.09vpn.com
+  port: 8443
+  uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ul-mexico1.09vpn.com
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ul-mexico1.09vpn.com
+- name: 🇲🇽 MX 02 - Dyt
   type: ss
   server: 64.177.90.30
   port: 8388
@@ -17,11 +31,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇲🇽 MX 01 - Dyt
+  - 🇲🇽 MX 02 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇲🇽 MX 01 - Dyt
+  - 🇲🇽 MX 02 - Dyt
 rules:
 - MATCH,PROXIES

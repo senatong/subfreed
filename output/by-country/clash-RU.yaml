@@ -17,15 +17,34 @@ proxies:
   ws-opts:
     path: /websocket
     headers:
-      Host: ru05.abvpn.ru
+      Host: 45.9.15.206
 - name: 🇷🇺 俄罗斯 (Russia) 02 - Dyt
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: /63vp7pdl1GXaTpa6kkWd2+3tq3/szSAWueVKo26xM8=
+  type: vless
+  server: ru05.abvpn.ru
+  port: 443
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ru05.abvpn.ru
+  network: ws
+  ws-opts:
+    path: /websocket
+    headers:
+      Host: ru05.abvpn.ru
 - name: 🇷🇺 俄罗斯 (Russia) 03 - Dyt
+  type: vless
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 04 - Dyt
   type: vless
   server: 45.9.15.206
   port: 443
@@ -38,7 +57,14 @@ proxies:
   ws-opts:
     path: /websocket
     headers:
-      Host: 45.9.15.206
+      Host: ru05.abvpn.ru
+- name: 🇷🇺 俄罗斯 (Russia) 05 - Dyt
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: /63vp7pdl1GXaTpa6kkWd2+3tq3/szSAWueVKo26xM8=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,6 +73,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 02 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 03 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 04 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 05 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -55,5 +83,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 02 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 03 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 04 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 05 - Dyt
 rules:
 - MATCH,PROXIES
