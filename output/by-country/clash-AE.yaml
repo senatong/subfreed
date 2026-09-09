@@ -19,18 +19,17 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - Dyt
   type: vless
-  server: 185.112.249.201
-  port: 8443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: web-socket.tgdaosheng.ggff.net
   network: ws
   ws-opts:
-    path: /proxyip=bpb.yousef.isegaro.comfp=chrome
+    path: /
     headers:
-      Host: web-socket.tgdaosheng.ggff.net
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - Dyt
   type: vless
   server: 185.112.249.201
@@ -46,6 +45,51 @@ proxies:
     headers:
       Host: web-socket.tgdaosheng.ggff.net
 - name: 🇦🇪 阿联酋 (UAE) 04 - Dyt
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: cc422436-e0e9-4f15-bfe8-db3d816e5527
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 05 - Dyt
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 0817a3bb-c8fb-4ddf-a05e-321565b39cd8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 06 - Dyt
+  type: ss
+  server: 188.208.110.58
+  port: 8444
+  cipher: chacha20-ietf-poly1305
+  password: tunnel-astrovpn_official
+  udp: true
+- name: 🇦🇪 阿联酋 (UAE) 07 - Dyt
+  type: vless
+  server: 185.112.249.201
+  port: 8443
+  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: web-socket.tgdaosheng.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=bpb.yousef.isegaro.comfp=chrome
+    headers:
+      Host: web-socket.tgdaosheng.ggff.net
+- name: 🇦🇪 阿联酋 (UAE) 08 - Dyt
   type: vless
   server: 84.235.244.108
   port: 22573
@@ -67,6 +111,10 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - Dyt
   - 🇦🇪 阿联酋 (UAE) 03 - Dyt
   - 🇦🇪 阿联酋 (UAE) 04 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 05 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 06 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 07 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 08 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,5 +124,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - Dyt
   - 🇦🇪 阿联酋 (UAE) 03 - Dyt
   - 🇦🇪 阿联酋 (UAE) 04 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 05 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 06 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 07 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 08 - Dyt
 rules:
 - MATCH,PROXIES

@@ -4,7 +4,40 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Dyt
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Dyt
+  type: vless
+  server: 7306ab60-tla000-tlvr2y-1imi4.hk3.hyhuawei.com
+  port: 443
+  uuid: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Dyt
+  type: vless
+  server: 59.125.69.19
+  port: 443
+  uuid: f1d247db-d7ce-4eb8-9c0d-7b10603cd0b4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: 59.125.69.19
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Dyt
+  type: ss
+  server: 36.224.152.189
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Dyt
   type: vless
   server: 118.167.200.67
   port: 24215
@@ -16,77 +49,82 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: qq
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Dyt
-  type: vless
-  server: 58.153.148.126
-  port: 443
-  uuid: e1c7fbbc-96b6-11ef-8563-f23c913c8d2b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  servername: updates.cdn-apple.com
-  client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Dyt
-  type: vless
-  server: 60.248.219.52
-  port: 443
-  uuid: f265b49a-70a3-407a-b17b-e45dfb9f255c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: 60.248.219.52
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Dyt
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - Dyt
   type: ss
   server: 36.224.151.80
   port: 50099
   cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
   udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - Dyt
+- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Dyt
   type: ss
-  server: 36.224.152.189
+  server: r3mrcg001286ek2.cybervena.com
   port: 50099
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - Dyt
-  type: vmess
-  server: dog-hk.kunlun01dns.com
-  port: 21018
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
+- name: 🇰🇷 韩国 (South Korea) 07 (家宽) - Dyt
+  type: vless
+  server: www.shopify.com
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - Dyt
+  type: ss
+  server: namrcg001640lrm.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: a9a0d092-6f0e-4701-81ee-454643d6d506
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 09 (家宽) - Dyt
+  type: vless
+  server: 188.114.97.6
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Dyt
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Dyt
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Dyt
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Dyt
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Dyt
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Dyt
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - Dyt
-  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - Dyt
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Dyt
+  - 🇰🇷 韩国 (South Korea) 07 (家宽) - Dyt
+  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - Dyt
+  - 🇰🇷 韩国 (South Korea) 09 (家宽) - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Dyt
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Dyt
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Dyt
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Dyt
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Dyt
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Dyt
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - Dyt
-  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - Dyt
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Dyt
+  - 🇰🇷 韩国 (South Korea) 07 (家宽) - Dyt
+  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - Dyt
+  - 🇰🇷 韩国 (South Korea) 09 (家宽) - Dyt
 rules:
 - MATCH,PROXIES
