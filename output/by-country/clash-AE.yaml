@@ -19,18 +19,25 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - Dyt
   type: vless
-  server: 185.112.249.201
-  port: 8443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: web-socket.tgdaosheng.ggff.net
   network: ws
   ws-opts:
-    path: /proxyip=bpb.yousef.isegaro.comfp=chrome
+    path: /
     headers:
-      Host: web-socket.tgdaosheng.ggff.net
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 03 - Dyt
+  type: vless
+  server: 212.192.3.226
+  port: 443
+  uuid: 8a8e5a90-1442-4e6e-9fcd-7200e3b9c7e1
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +45,7 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - Dyt
   - 🇦🇪 阿联酋 (UAE) 02 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 03 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -45,5 +53,6 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - Dyt
   - 🇦🇪 阿联酋 (UAE) 02 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 03 - Dyt
 rules:
 - MATCH,PROXIES

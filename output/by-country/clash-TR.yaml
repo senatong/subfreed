@@ -6,16 +6,13 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - Dyt
   type: vless
-  server: 45.74.158.180
-  port: 443
-  uuid: 42994234-1689-48bc-8d01-cfb16e7b017a
+  server: 195.162.69.203
+  port: 8443
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: MgyA2FY0p2q_VOwoL9T1Z3rzpKEcGjfN61QliGcyHA8
-  servername: refersion.com
-  client-fingerprint: chrome
+  servername: 195-162-69-203.sslip.io
 - name: 🇹🇷 土耳其 (Turkey) 02 - Dyt
   type: vless
   server: 195.162.69.203
@@ -27,18 +24,6 @@ proxies:
   servername: 195-162-69-203.sslip.io
 - name: 🇹🇷 土耳其 (Turkey) 03 - Dyt
   type: vless
-  server: 153.52.92.239
-  port: 11437
-  uuid: fc60d2f9-e3b5-449f-80d8-385c08e93c94
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: XW53yYaevp21yOZsWMV_mVg58iYCNp91sYndl95qnmI
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 - Dyt
-  type: vless
   server: 195.162.69.203
   port: 8443
   uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
@@ -46,6 +31,18 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 195-162-69-203.sslip.io
+- name: 🇹🇷 土耳其 (Turkey) 04 - Dyt
+  type: vless
+  server: 45.74.158.180
+  port: 443
+  uuid: 42994234-1689-48bc-8d01-cfb16e7b017a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MgyA2FY0p2q_VOwoL9T1Z3rzpKEcGjfN61QliGcyHA8
+  servername: refersion.com
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 05 - Dyt
   type: vless
   server: 195.162.69.203
@@ -55,13 +52,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 195-162-69-203.sslip.io
-- name: 🇹🇷 土耳其 (Turkey) 06 - Dyt
-  type: ss
-  server: 188.132.232.85
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,7 +62,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - Dyt
   - 🇹🇷 土耳其 (Turkey) 04 - Dyt
   - 🇹🇷 土耳其 (Turkey) 05 - Dyt
-  - 🇹🇷 土耳其 (Turkey) 06 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -83,6 +72,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - Dyt
   - 🇹🇷 土耳其 (Turkey) 04 - Dyt
   - 🇹🇷 土耳其 (Turkey) 05 - Dyt
-  - 🇹🇷 土耳其 (Turkey) 06 - Dyt
 rules:
 - MATCH,PROXIES
