@@ -19,20 +19,6 @@ proxies:
       Host: 103.75.119.126
 - name: 🇦🇺 澳大利亚 (Australia) 02 - Dyt
   type: vless
-  server: fq.jp188.dpdns.org
-  port: 443
-  uuid: 42c62a5a-cd31-4551-80ef-908732370287
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fq.jp188.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fq.jp188.dpdns.org
-- name: 🇦🇺 澳大利亚 (Australia) 03 - Dyt
-  type: vless
   server: 103.75.119.126
   port: 2087
   uuid: 731f177e-00aa-480c-b935-661456139a32
@@ -51,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - Dyt
   - 🇦🇺 澳大利亚 (Australia) 02 - Dyt
-  - 🇦🇺 澳大利亚 (Australia) 03 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - Dyt
   - 🇦🇺 澳大利亚 (Australia) 02 - Dyt
-  - 🇦🇺 澳大利亚 (Australia) 03 - Dyt
 rules:
 - MATCH,PROXIES

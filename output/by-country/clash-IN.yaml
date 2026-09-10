@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - Dyt
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 50ddfd92-dc79-4777-a256-41e34d56836e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 02 - Dyt
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -31,6 +19,20 @@ proxies:
     path: /
     headers:
       Host: ''
+- name: 🇮🇳 印度 (India) 02 - Dyt
+  type: vless
+  server: cfd.url0.top
+  port: 443
+  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: in.520782.xyz
+  network: ws
+  ws-opts:
+    path: /cdn/packages/runtime-core.tar.gz
+    headers:
+      Host: in.520782.xyz
 - name: 🇮🇳 印度 (India) 03 - Dyt
   type: vless
   server: 194.61.31.126
@@ -54,52 +56,7 @@ proxies:
   reality-opts:
     public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇮🇳 印度 (India) 05 - Dyt
-  type: vless
-  server: 4.240.110.47
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇮🇳 印度 (India) 06 - Dyt
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 50ddfd92-dc79-4777-a256-41e34d56836e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 07 - Dyt
-  type: ss
-  server: 172.105.39.124
-  port: 7002
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇮🇳 印度 (India) 08 - Dyt
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 50ddfd92-dc79-4777-a256-41e34d56836e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
-  servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -109,10 +66,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - Dyt
   - 🇮🇳 印度 (India) 03 - Dyt
   - 🇮🇳 印度 (India) 04 - Dyt
-  - 🇮🇳 印度 (India) 05 - Dyt
-  - 🇮🇳 印度 (India) 06 - Dyt
-  - 🇮🇳 印度 (India) 07 - Dyt
-  - 🇮🇳 印度 (India) 08 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -122,9 +75,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - Dyt
   - 🇮🇳 印度 (India) 03 - Dyt
   - 🇮🇳 印度 (India) 04 - Dyt
-  - 🇮🇳 印度 (India) 05 - Dyt
-  - 🇮🇳 印度 (India) 06 - Dyt
-  - 🇮🇳 印度 (India) 07 - Dyt
-  - 🇮🇳 印度 (India) 08 - Dyt
 rules:
 - MATCH,PROXIES
