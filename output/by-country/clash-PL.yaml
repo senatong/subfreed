@@ -19,19 +19,38 @@ proxies:
       Host: 94.183.209.59
 - name: 🇵🇱 PL 02 - Dyt
   type: vless
-  server: 104.25.22.24
+  server: 94.183.209.58
   port: 443
-  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: khoda.ak-khoda.workers.dev
   network: ws
   ws-opts:
-    path: /sync
+    path: /
     headers:
-      Host: khoda.ak-khoda.workers.dev
+      Host: pl2.lckdwn.ru
 - name: 🇵🇱 PL 03 - Dyt
+  type: ss
+  server: 64.176.73.160
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: VJtsgllDDJfNmaTe
+  udp: true
+- name: 🇵🇱 PL 04 - Dyt
+  type: vless
+  server: 94.183.209.58
+  port: 443
+  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pl2.lckdwn.ru
+- name: 🇵🇱 PL 05 - Dyt
   type: vless
   server: 94.183.209.59
   port: 443
@@ -44,52 +63,7 @@ proxies:
     path: /
     headers:
       Host: 94.183.209.59
-- name: 🇵🇱 PL 04 - Dyt
-  type: ss
-  server: 64.176.73.160
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: VJtsgllDDJfNmaTe
-  udp: true
-- name: 🇵🇱 PL 05 - Dyt
-  type: vless
-  server: 2.26.224.233
-  port: 8443
-  uuid: 758f49d3-5f5f-47e7-bfa4-4ce96faf800d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: NI5Rkfn6zO_gF-UC1nuvJwu4SDakCXh3ygJOKU1EITU
-  servername: cdn.shopify.com
-  client-fingerprint: firefox
 - name: 🇵🇱 PL 06 - Dyt
-  type: vless
-  server: 94.183.209.58
-  port: 443
-  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pl2.lckdwn.ru
-- name: 🇵🇱 PL 07 - Dyt
-  type: vless
-  server: 94.183.209.58
-  port: 443
-  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pl2.lckdwn.ru
-- name: 🇵🇱 PL 08 - Dyt
   type: vless
   server: 94.183.209.43
   port: 443
@@ -102,55 +76,14 @@ proxies:
     path: /
     headers:
       Host: 94.183.209.43
-- name: 🇵🇱 PL 09 - Dyt
-  type: vless
-  server: 94.183.209.59
-  port: 443
-  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.209.59
-- name: 🇵🇱 PL 10 - Dyt
-  type: vless
-  server: 104.25.146.77
-  port: 443
-  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: khoda.ak-khoda.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: khoda.ak-khoda.workers.dev
-- name: 🇵🇱 PL 11 - Dyt
+- name: 🇵🇱 PL 07 - Dyt
   type: ss
   server: 194.61.121.93
   port: 7538
   cipher: chacha20-ietf-poly1305
   password: U9YAoqBgg5VyGBc6vQv1sN
   udp: true
-- name: 🇵🇱 PL 12 - Dyt
-  type: vless
-  server: 104.17.247.68
-  port: 443
-  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: khoda.ak-khoda.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: khoda.ak-khoda.workers.dev
-- name: 🇵🇱 PL 13 - Dyt
+- name: 🇵🇱 PL 08 - Dyt
   type: vless
   server: 94.183.209.59
   port: 443
@@ -163,6 +96,18 @@ proxies:
     path: /
     headers:
       Host: 94.183.209.59
+- name: 🇵🇱 PL 09 - Dyt
+  type: vless
+  server: 2.26.224.233
+  port: 8443
+  uuid: 758f49d3-5f5f-47e7-bfa4-4ce96faf800d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: NI5Rkfn6zO_gF-UC1nuvJwu4SDakCXh3ygJOKU1EITU
+  servername: cdn.shopify.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -177,10 +122,6 @@ proxy-groups:
   - 🇵🇱 PL 07 - Dyt
   - 🇵🇱 PL 08 - Dyt
   - 🇵🇱 PL 09 - Dyt
-  - 🇵🇱 PL 10 - Dyt
-  - 🇵🇱 PL 11 - Dyt
-  - 🇵🇱 PL 12 - Dyt
-  - 🇵🇱 PL 13 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -195,9 +136,5 @@ proxy-groups:
   - 🇵🇱 PL 07 - Dyt
   - 🇵🇱 PL 08 - Dyt
   - 🇵🇱 PL 09 - Dyt
-  - 🇵🇱 PL 10 - Dyt
-  - 🇵🇱 PL 11 - Dyt
-  - 🇵🇱 PL 12 - Dyt
-  - 🇵🇱 PL 13 - Dyt
 rules:
 - MATCH,PROXIES
