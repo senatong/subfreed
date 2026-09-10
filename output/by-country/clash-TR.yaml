@@ -5,37 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - Dyt
-  type: vmess
-  server: pori.cjlife.ir
-  port: 110
-  uuid: 0accd97e-a16c-4d4f-b19a-883f7ea0f484
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 02 - Dyt
   type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: e691b034-dfc9-4f22-80aa-6d4f6404a4df
+  server: 195.162.69.203
+  port: 8443
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - Dyt
-  type: vmess
-  server: pori.cjlife.ir
-  port: 110
-  uuid: 0accd97e-a16c-4d4f-b19a-883f7ea0f484
-  alterId: 0
-  cipher: auto
+  servername: 195-162-69-203.sslip.io
+- name: 🇹🇷 土耳其 (Turkey) 02 - Dyt
+  type: vless
+  server: 195.162.69.203
+  port: 8443
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 195-162-69-203.sslip.io
+- name: 🇹🇷 土耳其 (Turkey) 03 - Dyt
+  type: vless
+  server: 195.162.69.203
+  port: 8443
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 195-162-69-203.sslip.io
 - name: 🇹🇷 土耳其 (Turkey) 04 - Dyt
   type: vless
   server: 195.162.69.203
@@ -47,6 +42,34 @@ proxies:
   servername: 195-162-69-203.sslip.io
 - name: 🇹🇷 土耳其 (Turkey) 05 - Dyt
   type: vless
+  server: 104.17.169.13
+  port: 2053
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: inDeX.HaRMONiCA01.WORkers.DeV
+  network: ws
+  ws-opts:
+    path: /axch1mttbxz2k55y01
+    headers:
+      Host: inDeX.HaRMONiCA01.WORkers.DeV
+- name: 🇹🇷 土耳其 (Turkey) 06 - Dyt
+  type: vless
+  server: 104.17.147.22
+  port: 443
+  uuid: 5ef04ae8-8d7c-0a66-13f4-6e3f00000003
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: relay.lunetcloud.ir
+  network: ws
+  ws-opts:
+    path: /lunetnetwork
+    headers:
+      Host: relay.lunetcloud.ir
+- name: 🇹🇷 土耳其 (Turkey) 07 - Dyt
+  type: vless
   server: 45.74.158.180
   port: 443
   uuid: 42994234-1689-48bc-8d01-cfb16e7b017a
@@ -57,16 +80,7 @@ proxies:
     public-key: MgyA2FY0p2q_VOwoL9T1Z3rzpKEcGjfN61QliGcyHA8
   servername: refersion.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 06 - Dyt
-  type: vless
-  server: 195.162.69.203
-  port: 8443
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 195-162-69-203.sslip.io
-- name: 🇹🇷 土耳其 (Turkey) 07 - Dyt
+- name: 🇹🇷 土耳其 (Turkey) 08 - Dyt
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -78,6 +92,13 @@ proxies:
     public-key: k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4
   servername: www.apple.com
   client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 09 - Dyt
+  type: ss
+  server: 188.132.232.85
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -90,6 +111,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 05 - Dyt
   - 🇹🇷 土耳其 (Turkey) 06 - Dyt
   - 🇹🇷 土耳其 (Turkey) 07 - Dyt
+  - 🇹🇷 土耳其 (Turkey) 08 - Dyt
+  - 🇹🇷 土耳其 (Turkey) 09 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -102,5 +125,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 05 - Dyt
   - 🇹🇷 土耳其 (Turkey) 06 - Dyt
   - 🇹🇷 土耳其 (Turkey) 07 - Dyt
+  - 🇹🇷 土耳其 (Turkey) 08 - Dyt
+  - 🇹🇷 土耳其 (Turkey) 09 - Dyt
 rules:
 - MATCH,PROXIES

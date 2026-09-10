@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - Dyt
+  type: vless
+  server: 104.21.14.116
+  port: 443
+  uuid: 566c0473-382e-aabb-c62a-f5bb00000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ez-4b5fd4.appelidmymat.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: ez-4b5fd4.appelidmymat.workers.dev
+- name: 🇸🇨 SC 02 - Dyt
   type: vmess
   server: 156.226.183.181
   port: 54321
@@ -14,17 +28,63 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇨 SC 03 - Dyt
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇨 SC 04 - Dyt
+  type: vless
+  server: 172.67.133.170
+  port: 2096
+  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: peekconfigg.vipserver1-39d.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: peekconfigg.vipserver1-39d.workers.dev
+- name: 🇸🇨 SC 05 - Dyt
+  type: vless
+  server: 45.130.125.96
+  port: 443
+  uuid: 28607fa7-db30-47d6-942a-f5744e4be9ad
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: dfsuporte.garena.com.ex33r.eu.cc
+  network: ws
+  ws-opts:
+    path: /id-pusat
+    headers:
+      Host: dfsuporte.garena.com.ex33r.eu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇨 SC 01 - Dyt
+  - 🇸🇨 SC 02 - Dyt
+  - 🇸🇨 SC 03 - Dyt
+  - 🇸🇨 SC 04 - Dyt
+  - 🇸🇨 SC 05 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 SC 01 - Dyt
+  - 🇸🇨 SC 02 - Dyt
+  - 🇸🇨 SC 03 - Dyt
+  - 🇸🇨 SC 04 - Dyt
+  - 🇸🇨 SC 05 - Dyt
 rules:
 - MATCH,PROXIES

@@ -16,7 +16,7 @@ proxies:
   ws-opts:
     path: /d1000b16fe76
     headers:
-      Host: telegram-leviko_v2ray
+      Host: Telegram-Leviko_v2ray
 - name: 🇪🇬 EG 02 - Dyt
   type: vless
   server: 38.54.59.209
