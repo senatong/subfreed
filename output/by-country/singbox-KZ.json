@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 KZ 01 - Dyt"
+        "🇰🇿 KZ 01 - Dyt",
+        "🇰🇿 KZ 02 - Dyt",
+        "🇰🇿 KZ 03 - Dyt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 KZ 01 - Dyt"
+        "🇰🇿 KZ 01 - Dyt",
+        "🇰🇿 KZ 02 - Dyt",
+        "🇰🇿 KZ 03 - Dyt"
       ],
       "url": "https://www.google.com/generate_204"
     },
