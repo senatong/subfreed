@@ -15,27 +15,16 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 02 - Dyt
-  type: ss
-  server: 176.97.64.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: TFElG2FVqyqG
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 🇸🇬 新加坡 (Singapore) 03 - Dyt
-  type: vless
-  server: 104.21.12.63
-  port: 8443
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: INDEX.Arcane509.Workers.DEV
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: index.arcane509.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 04 - Dyt
+- name: 🇸🇬 新加坡 (Singapore) 03 - Dyt
   type: vless
   server: 172.64.150.28
   port: 2082
@@ -48,6 +37,16 @@ proxies:
     path: /fp
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 04 - Dyt
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 05 - Dyt
   type: vmess
   server: 149.88.23.207
@@ -67,20 +66,20 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 07 - Dyt
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 08 - Dyt
   type: vless
   server: 134.122.154.210
   port: 443
   uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 08 - Dyt
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
@@ -95,93 +94,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 10 - Dyt
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 11 - Dyt
-  type: vless
-  server: 142.91.102.35
-  port: 443
-  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 8.sahanwickramasinghe.me
-- name: 🇸🇬 新加坡 (Singapore) 12 - Dyt
-  type: vless
-  server: 142.91.102.35
-  port: 443
-  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 8.sahanwickramasinghe.me
-- name: 🇸🇬 新加坡 (Singapore) 13 - Dyt
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 14 - Dyt
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 15 - Dyt
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 16 - Dyt
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 17 - Dyt
-  type: vless
-  server: 104.16.100.66
-  port: 8880
-  uuid: 3e7bb66e-d7c6-4711-aa05-e4ab0ec58c6d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: shrill-cell-cca7.158-6fa.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 18 - Dyt
   type: vless
   server: 104.16.107.139
   port: 8880
@@ -194,78 +106,7 @@ proxies:
     path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
       Host: odd-cloud-f2a1.73-12e.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 19 - Dyt
-  type: ss
-  server: 139.180.220.175
-  port: 8388
-  cipher: aes-256-gcm
-  password: qpSevKaUXYQKvSjp
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 20 - Dyt
-  type: vless
-  server: 142.91.102.35
-  port: 443
-  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: www.tiktok.com
-- name: 🇸🇬 新加坡 (Singapore) 21 - Dyt
-  type: vless
-  server: 162.159.156.214
-  port: 8880
-  uuid: 8991a496-1baa-486f-9948-ffe44e68c072
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: soft-band-8da6.426.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 22 - Dyt
-  type: vless
-  server: 8.sahanwickramasinghe.me
-  port: 443
-  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: zoom.us
-- name: 🇸🇬 新加坡 (Singapore) 23 - Dyt
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 73ae7d45-1046-4cc5-9741-199375b620f1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: round-resonance-a84c.13-531.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 24 - Dyt
-  type: ss
-  server: 176.97.64.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: TFElG2FVqyqG
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 25 - Dyt
-  type: vless
-  server: 104.16.106.213
-  port: 8880
-  uuid: 3e7bb66e-d7c6-4711-aa05-e4ab0ec58c6d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shrill-cell-cca7.158-6fa.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 26 - Dyt
+- name: 🇸🇬 新加坡 (Singapore) 11 - Dyt
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -275,23 +116,174 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 27 - Dyt
+- name: 🇸🇬 新加坡 (Singapore) 12 - Dyt
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 13 - Dyt
+  type: vless
+  server: 104.26.6.214
+  port: 8880
+  uuid: 05e7abc2-46e1-4a23-9cdc-173ce17eb0d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=proxyip.sg.cmliussss.net
+    headers:
+      Host: round-term-947c.41-332.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 14 - Dyt
   type: vless
   server: 134.122.154.210
   port: 443
   uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 15 - Dyt
+  type: vless
+  server: 134.122.154.210
+  port: 443
+  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 16 - Dyt
+  type: vless
+  server: 134.122.154.210
+  port: 443
+  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 17 - Dyt
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 18 - Dyt
+  type: vless
+  server: 142.91.102.35
+  port: 443
+  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.tiktok.com
+- name: 🇸🇬 新加坡 (Singapore) 19 - Dyt
+  type: vless
+  server: 104.18.12.229
+  port: 8880
+  uuid: 35b94b2c-1b46-4209-a04b-32ecf159b632
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: fragrant-tooth-2180.97-cbb.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 20 - Dyt
+  type: vless
+  server: 162.159.140.78
+  port: 8880
+  uuid: f35fb51f-8d34-49ec-80cb-7d04ffc1a69b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: damp-sky-9aaa.224-8b4.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 21 - Dyt
+  type: vless
+  server: 172.66.170.53
+  port: 8880
+  uuid: 68662961-6c5f-48c1-b807-6398f3287dbc
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: polished-meadow-2ac5.228-76d.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 22 - Dyt
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 23 - Dyt
+  type: vless
+  server: 172.66.170.53
+  port: 8880
+  uuid: 68662961-6c5f-48c1-b807-6398f3287dbc
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: polished-meadow-2ac5.228-76d.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 24 - Dyt
+  type: vless
+  server: 8.sahanwickramasinghe.me
+  port: 443
+  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 8.sahanwickramasinghe.me
+- name: 🇸🇬 新加坡 (Singapore) 25 - Dyt
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 26 - Dyt
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 27 - Dyt
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 28 - Dyt
-  type: vless
-  server: 134.122.154.210
-  port: 443
-  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 29 - Dyt
   type: vless
   server: 172.64.150.28
   port: 2082
@@ -304,98 +296,18 @@ proxies:
     path: /fp
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 30 - Dyt
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 31 - Dyt
+- name: 🇸🇬 新加坡 (Singapore) 29 - Dyt
   type: ss
   server: 167.150.100.115
   port: 27755
   cipher: 2022-blake3-aes-256-gcm
   password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
   udp: true
-- name: 🇸🇬 新加坡 (Singapore) 32 - Dyt
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 33 - Dyt
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 34 - Dyt
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 35 - Dyt
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 36 - Dyt
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 37 - Dyt
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 38 - Dyt
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 39 - Dyt
+- name: 🇸🇬 新加坡 (Singapore) 30 - Dyt
   type: vless
-  server: 172.66.170.53
+  server: 104.16.100.66
   port: 8880
-  uuid: 68662961-6c5f-48c1-b807-6398f3287dbc
+  uuid: 3e7bb66e-d7c6-4711-aa05-e4ab0ec58c6d
   udp: true
   tls: false
   skip-cert-verify: true
@@ -403,61 +315,7 @@ proxies:
   ws-opts:
     path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
-      Host: polished-meadow-2ac5.228-76d.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 40 - Dyt
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 41 - Dyt
-  type: vless
-  server: 134.122.154.210
-  port: 443
-  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 42 - Dyt
-  type: vless
-  server: 172.66.214.247
-  port: 8880
-  uuid: e7f6f783-6754-4228-a5d0-aeed84b9949a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: sweet-sun-c70f.317-ba5.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 43 - Dyt
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 44 - Dyt
-  type: vless
-  server: 172.66.170.53
-  port: 8880
-  uuid: 68662961-6c5f-48c1-b807-6398f3287dbc
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: polished-meadow-2ac5.228-76d.workers.dev
+      Host: shrill-cell-cca7.158-6fa.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -493,20 +351,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 28 - Dyt
   - 🇸🇬 新加坡 (Singapore) 29 - Dyt
   - 🇸🇬 新加坡 (Singapore) 30 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 31 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 32 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 33 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 34 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 35 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 36 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 37 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 38 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 39 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 40 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 41 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 42 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 43 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 44 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -542,19 +386,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 28 - Dyt
   - 🇸🇬 新加坡 (Singapore) 29 - Dyt
   - 🇸🇬 新加坡 (Singapore) 30 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 31 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 32 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 33 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 34 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 35 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 36 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 37 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 38 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 39 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 40 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 41 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 42 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 43 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 44 - Dyt
 rules:
 - MATCH,PROXIES
