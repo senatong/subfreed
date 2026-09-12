@@ -18,38 +18,24 @@ proxies:
     headers:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - Dyt
-  type: vless
-  server: 45.130.125.201
-  port: 80
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.netizo09.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 03 - Dyt
   type: ss
   server: 188.208.110.58
   port: 8444
   cipher: chacha20-ietf-poly1305
   password: tunnel-astrovpn_official
   udp: true
-- name: 🇦🇪 阿联酋 (UAE) 04 - Dyt
+- name: 🇦🇪 阿联酋 (UAE) 03 - Dyt
   type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 4212034d-c18b-4060-b218-4f8372e5473a
+  server: 31.58.181.88
+  port: 8443
+  uuid: d0da19f1-fb05-488e-99c2-262389b3537b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: summer-hill-7f65.275-521.workers.dev
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,7 +44,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - Dyt
   - 🇦🇪 阿联酋 (UAE) 02 - Dyt
   - 🇦🇪 阿联酋 (UAE) 03 - Dyt
-  - 🇦🇪 阿联酋 (UAE) 04 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -67,6 +52,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - Dyt
   - 🇦🇪 阿联酋 (UAE) 02 - Dyt
   - 🇦🇪 阿联酋 (UAE) 03 - Dyt
-  - 🇦🇪 阿联酋 (UAE) 04 - Dyt
 rules:
 - MATCH,PROXIES
