@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI 01 - Dyt",
-        "🇫🇮 FI 02 - Dyt",
-        "🇫🇮 FI 03 - Dyt"
+        "🇫🇮 FI 01 - Dyt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI 01 - Dyt",
-        "🇫🇮 FI 02 - Dyt",
-        "🇫🇮 FI 03 - Dyt"
+        "🇫🇮 FI 01 - Dyt"
       ],
       "url": "https://www.google.com/generate_204"
     },
