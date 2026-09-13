@@ -6,20 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - Dyt",
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Dyt",
         "🇰🇷 韩国 (South Korea) 02 (家宽) - Dyt",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Dyt",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Dyt"
+        "🇰🇷 韩国 (South Korea) 04 (家宽) - Dyt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - Dyt",
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Dyt",
         "🇰🇷 韩国 (South Korea) 02 (家宽) - Dyt",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Dyt",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Dyt"
+        "🇰🇷 韩国 (South Korea) 04 (家宽) - Dyt"
       ],
       "url": "https://www.google.com/generate_204"
     },
