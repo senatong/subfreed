@@ -6,21 +6,22 @@ log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - Dyt
   type: vless
-  server: 104.18.34.14
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 104.21.88.201
+  port: 443
+  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: app-q0zc4t.user-4gfyh5.workers.dev
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls+
+    path: /cmh
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: app-q0zc4t.user-4gfyh5.workers.dev
 - name: 🇸🇨 SC 02 - Dyt
   type: vless
   server: 108.162.198.178
-  port: 2095
+  port: 80
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -32,30 +33,128 @@ proxies:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇨 SC 03 - Dyt
   type: vless
-  server: 108.162.198.178
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 50.62.89.123
+  port: 443
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: notls.lukongtou.eu.org
   network: ws
   ws-opts:
-    path: /
+    path: /Telegram-WangCai2🇨🇳
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: notls.lukongtou.eu.org
 - name: 🇸🇨 SC 04 - Dyt
   type: vless
-  server: 188.114.97.6
-  port: 2082
+  server: 45.130.125.73
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-cea58e4acf49
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: web-app-aug8yr.app-f1qsy1.workers.dev
+  network: ws
+  ws-opts:
+    path: /api/ws
+    headers:
+      Host: web-app-aug8yr.app-f1qsy1.workers.dev
+- name: 🇸🇨 SC 05 - Dyt
+  type: vless
+  server: 109.176.239.123
+  port: 443
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: notls.lukongtou.eu.org
+  network: ws
+  ws-opts:
+    path: /Telegram-WangCai2🇨🇳
+    headers:
+      Host: notls.lukongtou.eu.org
+- name: 🇸🇨 SC 06 - Dyt
+  type: vless
+  server: 104.18.34.14
+  port: 8880
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
+    path: /?ed=2560security=tls+
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇨 SC 07 - Dyt
+  type: vless
+  server: 166.62.113.123
+  port: 443
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: notls.lukongtou.eu.org
+  network: ws
+  ws-opts:
+    path: /Telegram-WangCai2🇨🇳
+    headers:
+      Host: notls.lukongtou.eu.org
+- name: 🇸🇨 SC 08 - Dyt
+  type: vless
+  server: 104.21.78.225
+  port: 443
+  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: curly-night-6928.ggdhchjk.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: curly-night-6928.ggdhchjk.workers.dev
+- name: 🇸🇨 SC 09 - Dyt
+  type: vless
+  server: 172.66.44.211
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wk1.f1w.de5.net
+  network: ws
+  ws-opts:
     path: /
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+      Host: wk1.f1w.de5.net
+- name: 🇸🇨 SC 10 - Dyt
+  type: vless
+  server: 104.18.46.234
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇨 SC 11 - Dyt
+  type: vless
+  server: 139.64.235.123
+  port: 443
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: notls.lukongtou.eu.org
+  network: ws
+  ws-opts:
+    path: /Telegram-WangCai2🇨🇳
+    headers:
+      Host: notls.lukongtou.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,6 +164,13 @@ proxy-groups:
   - 🇸🇨 SC 02 - Dyt
   - 🇸🇨 SC 03 - Dyt
   - 🇸🇨 SC 04 - Dyt
+  - 🇸🇨 SC 05 - Dyt
+  - 🇸🇨 SC 06 - Dyt
+  - 🇸🇨 SC 07 - Dyt
+  - 🇸🇨 SC 08 - Dyt
+  - 🇸🇨 SC 09 - Dyt
+  - 🇸🇨 SC 10 - Dyt
+  - 🇸🇨 SC 11 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,5 +180,12 @@ proxy-groups:
   - 🇸🇨 SC 02 - Dyt
   - 🇸🇨 SC 03 - Dyt
   - 🇸🇨 SC 04 - Dyt
+  - 🇸🇨 SC 05 - Dyt
+  - 🇸🇨 SC 06 - Dyt
+  - 🇸🇨 SC 07 - Dyt
+  - 🇸🇨 SC 08 - Dyt
+  - 🇸🇨 SC 09 - Dyt
+  - 🇸🇨 SC 10 - Dyt
+  - 🇸🇨 SC 11 - Dyt
 rules:
 - MATCH,PROXIES

@@ -6,51 +6,87 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - Dyt
   type: ss
-  server: 195.133.23.200
-  port: 50111
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - Dyt
-  type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
   udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - Dyt
+  type: ss
+  server: 195.133.23.200
+  port: 50111
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
+  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - Dyt
   type: vless
-  server: 46.8.200.91
-  port: 443
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  server: pr-media.pepro.site
+  port: 14443
+  uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cf3.rumedia-cdn.com
+  servername: pr-media.pepro.site
   network: ws
   ws-opts:
-    path: /casc
+    path: /ws
     headers:
-      Host: cf3.rumedia-cdn.com
+      Host: pr-media.pepro.site
 - name: 🇷🇺 俄罗斯 (Russia) 04 - Dyt
   type: vless
-  server: 162.159.43.187
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 104.21.70.21
+  port: 443
+  uuid: 93fa8bdb-9cca-4a3e-8355-b7c12e4f595e
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: fornewiran.ade-1000.workers.dev
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /vl/yLWNcuUuw1jlJpkDhGy?ed=2560
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: fornewiran.ade-1000.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 05 - Dyt
   type: ss
   server: 195.133.5.102
   port: 50111
   cipher: aes-256-gcm
   password: 895b4b796a357570
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 06 - Dyt
+  type: vless
+  server: 78.159.247.246
+  port: 443
+  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sb2.hat.onl
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: 78.159.247.246
+- name: 🇷🇺 俄罗斯 (Russia) 07 - Dyt
+  type: vless
+  server: 104.21.67.236
+  port: 443
+  uuid: 96e341a7-3077-4613-b482-41bd9c90cc4d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: eZaCCesS-proJEcT-4C7950.Ez-dC9bBB.WorKErs.dEV
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiN2w4dDlRNVV5NkZ5NU1aeSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: ezaccess-project-4c7950.ez-dc9bbb.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 08 - Dyt
+  type: ss
+  server: 46.17.40.234
+  port: 50111
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -62,6 +98,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 04 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 05 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 06 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 07 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 08 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -72,5 +111,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 04 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 05 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 06 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 07 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 08 - Dyt
 rules:
 - MATCH,PROXIES

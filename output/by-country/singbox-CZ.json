@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇿 CZ 01 - Dyt",
+        "🇨🇿 CZ 02 - Dyt",
+        "🇨🇿 CZ 03 - Dyt",
+        "🇨🇿 CZ 04 - Dyt",
+        "🇨🇿 CZ 05 - Dyt"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇿 CZ 01 - Dyt",
+        "🇨🇿 CZ 02 - Dyt",
+        "🇨🇿 CZ 03 - Dyt",
+        "🇨🇿 CZ 04 - Dyt",
+        "🇨🇿 CZ 05 - Dyt"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
