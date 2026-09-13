@@ -6,32 +6,81 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - Dyt
   type: vless
-  server: 57.129.130.57
-  port: 52014
-  uuid: 201e0019-2e79-4147-8a09-e510d630abeb
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - Dyt
   type: vless
-  server: 140.238.33.0
-  port: 33940
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 03 - Dyt
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - Dyt
+  type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 05 - Dyt
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /Telegram-WangCai2🇨🇳
+    path: /
     headers:
-      Host: notls.lukongtou.eu.org
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - Dyt
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +88,10 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - Dyt
   - 🇦🇪 阿联酋 (UAE) 02 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 03 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 04 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 05 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 06 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +99,9 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - Dyt
   - 🇦🇪 阿联酋 (UAE) 02 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 03 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 04 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 05 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 06 - Dyt
 rules:
 - MATCH,PROXIES
