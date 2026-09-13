@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - Dyt
   type: ss
-  server: 195.133.23.200
+  server: 46.17.40.234
   port: 50111
   cipher: aes-256-gcm
-  password: 81a20429165df87e
+  password: bdb313adf74c2ede
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - Dyt
   type: vless
@@ -26,40 +26,18 @@ proxies:
     headers:
       Host: sb2.hat.onl
 - name: 🇷🇺 俄罗斯 (Russia) 03 - Dyt
-  type: ss
-  server: 46.17.40.234
-  port: 50111
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - Dyt
   type: vless
-  server: 46.8.200.91
-  port: 443
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  server: 108.162.198.178
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: cf3.rumedia-cdn.com
   network: ws
   ws-opts:
-    path: /casc
+    path: /?ed=2560security=tls+
     headers:
-      Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 05 - Dyt
-  type: vless
-  server: 78.159.247.246
-  port: 443
-  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sb2.hat.onl
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: sb2.hat.onl
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,8 +46,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 02 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 03 - Dyt
-  - 🇷🇺 俄罗斯 (Russia) 04 - Dyt
-  - 🇷🇺 俄罗斯 (Russia) 05 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,7 +54,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 02 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 03 - Dyt
-  - 🇷🇺 俄罗斯 (Russia) 04 - Dyt
-  - 🇷🇺 俄罗斯 (Russia) 05 - Dyt
 rules:
 - MATCH,PROXIES

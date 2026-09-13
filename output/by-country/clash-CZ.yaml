@@ -6,32 +6,20 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - Dyt
   type: vless
-  server: 104.18.47.113
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 103.119.18.30
+  port: 443
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: mianfei-73q.pages.dev
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /proxyip=154.3.33.43
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: mianfei-73q.pages.dev
 - name: 🇨🇿 CZ 02 - Dyt
   type: vless
-  server: 104.18.34.14
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls+
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇨🇿 CZ 03 - Dyt
-  type: vless
   server: 103.119.18.30
   port: 443
   uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
@@ -44,46 +32,6 @@ proxies:
     path: /proxyip=154.3.33.43
     headers:
       Host: mianfei-73q.pages.dev
-- name: 🇨🇿 CZ 04 - Dyt
-  type: vless
-  server: 103.119.18.30
-  port: 443
-  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mianfei-73q.pages.dev
-  network: ws
-  ws-opts:
-    path: /proxyip=154.3.33.43
-    headers:
-      Host: mianfei-73q.pages.dev
-- name: 🇨🇿 CZ 05 - Dyt
-  type: vless
-  server: 162.159.24.131
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇨🇿 CZ 06 - Dyt
-  type: vless
-  server: 162.159.39.218
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -91,10 +39,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - Dyt
   - 🇨🇿 CZ 02 - Dyt
-  - 🇨🇿 CZ 03 - Dyt
-  - 🇨🇿 CZ 04 - Dyt
-  - 🇨🇿 CZ 05 - Dyt
-  - 🇨🇿 CZ 06 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -102,9 +46,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - Dyt
   - 🇨🇿 CZ 02 - Dyt
-  - 🇨🇿 CZ 03 - Dyt
-  - 🇨🇿 CZ 04 - Dyt
-  - 🇨🇿 CZ 05 - Dyt
-  - 🇨🇿 CZ 06 - Dyt
 rules:
 - MATCH,PROXIES
