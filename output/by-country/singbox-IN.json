@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 AM 01 - Dyt"
+        "🇮🇳 印度 (India) 01 - Dyt",
+        "🇮🇳 印度 (India) 02 - Dyt",
+        "🇮🇳 印度 (India) 03 - Dyt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 AM 01 - Dyt"
+        "🇮🇳 印度 (India) 01 - Dyt",
+        "🇮🇳 印度 (India) 02 - Dyt",
+        "🇮🇳 印度 (India) 03 - Dyt"
       ],
       "url": "https://www.google.com/generate_204"
     },
