@@ -5,39 +5,40 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - Dyt
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - Dyt
   type: vless
-  server: 104.21.70.223
+  server: 78.159.247.246
   port: 443
-  uuid: 527451fe-ee1f-4e6f-94ca-808f055f7c9b
+  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
+  servername: sb2.hat.onl
   network: ws
   ws-opts:
-    path: /vl/ERYN0G44hia16zhR
+    path: /ws
     headers:
-      Host: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 03 - Dyt
+      Host: sb2.hat.onl
+- name: 🇷🇺 俄罗斯 (Russia) 02 - Dyt
   type: vless
-  server: 185.148.106.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 78.159.247.246
+  port: 443
+  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: sb2.hat.onl
   network: ws
   ws-opts:
-    path: /
+    path: /ws
     headers:
-      Host: vms.lifetime54.workers.dev
+      Host: sb2.hat.onl
+- name: 🇷🇺 俄罗斯 (Russia) 03 - Dyt
+  type: ss
+  server: 46.17.42.166
+  port: 50111
+  cipher: aes-256-gcm
+  password: 6b39ae3234dfd68b
+  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 04 - Dyt
   type: vless
   server: 78.159.247.246
@@ -66,22 +67,6 @@ proxies:
     path: /casc
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 06 - Dyt
-  type: vmess
-  server: 80.240.252.241
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: renderer-stream-2-62.mirra.now
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-2-62.mirra.now
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,7 +77,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 04 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 05 - Dyt
-  - 🇷🇺 俄罗斯 (Russia) 06 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -103,6 +87,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 04 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 05 - Dyt
-  - 🇷🇺 俄罗斯 (Russia) 06 - Dyt
 rules:
 - MATCH,PROXIES
