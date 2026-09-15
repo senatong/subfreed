@@ -6,19 +6,12 @@ log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - Dyt
   type: ss
-  server: 185.164.175.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 02 - Dyt
-  type: ss
   server: 57.131.48.45
   port: 8388
   cipher: aes-256-gcm
   password: itzvpn@321
   udp: true
-- name: 🇮🇹 意大利 (Italy) 03 - Dyt
+- name: 🇮🇹 意大利 (Italy) 02 - Dyt
   type: vless
   server: 158.180.231.216
   port: 443
@@ -32,7 +25,21 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
+- name: 🇮🇹 意大利 (Italy) 03 - Dyt
+  type: ss
+  server: 185.164.175.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇮🇹 意大利 (Italy) 04 - Dyt
+  type: ss
+  server: 57.131.48.45
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 05 - Dyt
   type: vless
   server: 204.216.216.23
   port: 10086
@@ -40,20 +47,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 05 - Dyt
-  type: ss
-  server: 57.131.48.45
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 06 - Dyt
-  type: ss
-  server: 66.245.207.70
-  port: 8388
-  cipher: aes-256-gcm
-  password: qMvJmCbMduKUoeHq
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,7 +57,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 03 - Dyt
   - 🇮🇹 意大利 (Italy) 04 - Dyt
   - 🇮🇹 意大利 (Italy) 05 - Dyt
-  - 🇮🇹 意大利 (Italy) 06 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,6 +67,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 03 - Dyt
   - 🇮🇹 意大利 (Italy) 04 - Dyt
   - 🇮🇹 意大利 (Italy) 05 - Dyt
-  - 🇮🇹 意大利 (Italy) 06 - Dyt
 rules:
 - MATCH,PROXIES
