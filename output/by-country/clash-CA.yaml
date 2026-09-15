@@ -6,37 +6,45 @@ log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - Dyt
   type: ss
+  server: 149.22.95.183
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 02 - Dyt
+  type: ss
   server: 51.222.200.165
   port: 5000
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 02 - Dyt
+- name: 🇨🇦 加拿大 (Canada) 03 - Dyt
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇨🇦 加拿大 (Canada) 04 - Dyt
+  type: ss
+  server: 51.79.85.185
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 05 - Dyt
   type: ss
   server: 51.79.49.116
   port: 8882
   cipher: aes-256-gcm
   password: kDWvXYZoTBcGkC4
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 03 - Dyt
-  type: vless
-  server: 184.107.106.68
-  port: 443
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 184.107.106.68
-- name: 🇨🇦 加拿大 (Canada) 04 - Dyt
-  type: vless
-  server: 184.107.106.68
-  port: 443
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lizca2.footballfantasyforum.com
-- name: 🇨🇦 加拿大 (Canada) 05 - Dyt
+- name: 🇨🇦 加拿大 (Canada) 06 - Dyt
   type: vless
   server: 66.70.179.198
   port: 2053
@@ -48,23 +56,63 @@ proxies:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 06 - Dyt
-  type: ss
-  server: 51.79.85.185
-  port: 8118
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  udp: true
 - name: 🇨🇦 加拿大 (Canada) 07 - Dyt
   type: vless
-  server: lizca2.footballfantasyforum.com
-  port: 443
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  server: 188.114.97.7
+  port: 2083
+  uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lizca2.footballfantasyforum.com
+  servername: shy-fog-af06.alvlirm333.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shy-fog-af06.alvlirm333.workers.dev
 - name: 🇨🇦 加拿大 (Canada) 08 - Dyt
+  type: vless
+  server: 172.67.152.162
+  port: 443
+  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: app-q0zc4t.user-4gfyh5.workers.dev
+  network: ws
+  ws-opts:
+    path: /cmh
+    headers:
+      Host: app-q0zc4t.user-4gfyh5.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 09 - Dyt
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 10 - Dyt
+  type: vless
+  server: 188.114.96.3
+  port: 2087
+  uuid: 756e8f39-04e8-436d-b5c6-905d37d9562c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: Ez-98919A.MOtoRicb.Workers.DeV
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiR1BxUFhYR0w1TlBLMTRsIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ
+    headers:
+      Host: ez-98919a.motoricb.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 11 - Dyt
   type: vless
   server: 184.107.106.68
   port: 443
@@ -73,7 +121,43 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: lizca2.footballfantasyforum.com
-- name: 🇨🇦 加拿大 (Canada) 09 - Dyt
+- name: 🇨🇦 加拿大 (Canada) 12 - Dyt
+  type: ss
+  server: 51.222.141.125
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 13 - Dyt
+  type: vless
+  server: 188.114.97.6
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 14 - Dyt
+  type: ss
+  server: 51.222.155.113
+  port: 5601
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 15 - Dyt
+  type: vless
+  server: 184.107.106.68
+  port: 443
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 184.107.106.68
+- name: 🇨🇦 加拿大 (Canada) 16 - Dyt
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -83,98 +167,499 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 10 - Dyt
+- name: 🇨🇦 加拿大 (Canada) 17 - Dyt
   type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  server: 172.67.148.26
+  port: 443
+  uuid: 95de071f-747c-dc07-36ac-5c0854a9e50e
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇨🇦 加拿大 (Canada) 11 - Dyt
+  servername: restless-boat-ebf2.moha102030.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: restless-boat-ebf2.moha102030.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 18 - Dyt
+  type: ss
+  server: 51.222.107.43
+  port: 2083
+  cipher: 2022-blake3-aes-256-gcm
+  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:HWFFJN19JkvbTKo/79AfnbRBK9uHUUaFNZJyLjEoJGs=
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 19 - Dyt
+  type: vless
+  server: 172.67.211.250
+  port: 443
+  uuid: 0aab6adc-104c-4339-8d25-09755ffe2cbd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: liang92.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: liang92.dpdns.org
+- name: 🇨🇦 加拿大 (Canada) 20 - Dyt
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 21 - Dyt
+  type: ss
+  server: 51.222.12.127
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 22 - Dyt
+  type: vless
+  server: 184.107.106.68
+  port: 443
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lizca2.footballfantasyforum.com
+- name: 🇨🇦 加拿大 (Canada) 23 - Dyt
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 24 - Dyt
+  type: vless
+  server: 104.21.78.9
+  port: 443
+  uuid: a8890c1b-3622-3106-c4be-d8671be32d2b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: summer-meadow-af5b.woowoorrrkk.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: summer-meadow-af5b.woowoorrrkk.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 25 - Dyt
+  type: vless
+  server: lizca2.footballfantasyforum.com
+  port: 443
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lizca2.footballfantasyforum.com
+- name: 🇨🇦 加拿大 (Canada) 26 - Dyt
+  type: vless
+  server: 104.21.46.14
+  port: 443
+  uuid: ea50b1a3-3a98-4c5e-a150-48ada40d68d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cf-vless-4cf55824.aimall.fr
+  network: ws
+  ws-opts:
+    path: /connect
+    headers:
+      Host: cf-vless-4cf55824.aimall.fr
+- name: 🇨🇦 加拿大 (Canada) 27 - Dyt
+  type: vless
+  server: 172.67.137.223
+  port: 443
+  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: curly-night-6928.ggdhchjk.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: curly-night-6928.ggdhchjk.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 28 - Dyt
+  type: vless
+  server: 172.67.139.6
+  port: 443
+  uuid: 7e81824b-35e0-4eb1-89e9-592f0c92aa6b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: yx.zhourf2006.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: yx.zhourf2006.dpdns.org
+- name: 🇨🇦 加拿大 (Canada) 29 - Dyt
+  type: vless
+  server: 188.114.98.0
+  port: 2083
+  uuid: 273e9057-8167-4d17-8de3-d44c82037cda
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: old-sky-2b90.seyowkclient.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: old-sky-2b90.seyowkclient.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 30 - Dyt
+  type: vless
+  server: 184.107.106.68
+  port: 443
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lizca2.footballfantasyforum.com
+- name: 🇨🇦 加拿大 (Canada) 31 - Dyt
+  type: vless
+  server: 188.114.96.7
+  port: 8443
+  uuid: 362a79a2-ce89-8d2d-355c-f1f5071a445f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fragrant-unit-d662.mmammatrix770088.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: fragrant-unit-d662.mmammatrix770088.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 32 - Dyt
+  type: vless
+  server: 184.107.106.68
+  port: 443
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lizca2.footballfantasyforum.com
+- name: 🇨🇦 加拿大 (Canada) 33 - Dyt
+  type: vless
+  server: 104.21.78.225
+  port: 443
+  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: curly-night-6928.ggdhchjk.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: curly-night-6928.ggdhchjk.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 34 - Dyt
+  type: vless
+  server: 172.67.130.144
+  port: 443
+  uuid: 7da33b25-cdd6-e481-afcf-c5d532361a70
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ez-1bc8ab.sekiro-c18.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: ez-1bc8ab.sekiro-c18.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 35 - Dyt
+  type: vless
+  server: 172.67.222.62
+  port: 443
+  uuid: ea50b1a3-3a98-4c5e-a150-48ada40d68d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cf-vless-4cf55824.aimall.fr
+  network: ws
+  ws-opts:
+    path: /connect
+    headers:
+      Host: cf-vless-4cf55824.aimall.fr
+- name: 🇨🇦 加拿大 (Canada) 36 - Dyt
+  type: ss
+  server: 51.222.155.32
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 37 - Dyt
+  type: ss
+  server: 51.222.136.236
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 38 - Dyt
+  type: vless
+  server: 104.21.5.173
+  port: 443
+  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: peekconfigg.vipserver1-39d.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: peekconfigg.vipserver1-39d.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 39 - Dyt
+  type: vless
+  server: 104.21.78.9
+  port: 443
+  uuid: a8890c1b-3622-3106-c4be-d8671be32d2b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: summer-meadow-af5b.woowoorrrkk.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: summer-meadow-af5b.woowoorrrkk.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 40 - Dyt
+  type: ss
+  server: 51.222.12.127
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 41 - Dyt
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 42 - Dyt
+  type: vless
+  server: 104.25.220.68
+  port: 443
+  uuid: 9952b71a-6c86-4522-888f-ff9ea9b93536
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 1.hshs8227shhshs.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 1.hshs8227shhshs.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 43 - Dyt
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 44 - Dyt
+  type: vless
+  server: 104.21.8.176
+  port: 443
+  uuid: 7da33b25-cdd6-e481-afcf-c5d532361a70
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ez-1bc8ab.sekiro-c18.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: ez-1bc8ab.sekiro-c18.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 45 - Dyt
+  type: vless
+  server: 184.107.106.68
+  port: 443
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 184.107.106.68
+- name: 🇨🇦 加拿大 (Canada) 46 - Dyt
+  type: vless
+  server: 104.21.88.201
+  port: 443
+  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: app-q0zc4t.user-4gfyh5.workers.dev
+  network: ws
+  ws-opts:
+    path: /cmh
+    headers:
+      Host: app-q0zc4t.user-4gfyh5.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 47 - Dyt
+  type: vless
+  server: 172.67.202.235
+  port: 443
+  uuid: 566c0473-382e-aabb-c62a-f5bb00000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ez-4b5fd4.appelidmymat.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: ez-4b5fd4.appelidmymat.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 48 - Dyt
+  type: vless
+  server: 104.21.14.116
+  port: 443
+  uuid: 566c0473-382e-aabb-c62a-f5bb00000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ez-4b5fd4.appelidmymat.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: ez-4b5fd4.appelidmymat.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 49 - Dyt
+  type: vless
+  server: 188.114.97.6
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 50 - Dyt
+  type: vless
+  server: 104.21.46.14
+  port: 443
+  uuid: ea50b1a3-3a98-4c5e-a150-48ada40d68d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cf-vless-4cf55824.aimall.fr
+  network: ws
+  ws-opts:
+    path: /connect
+    headers:
+      Host: cf-vless-4cf55824.aimall.fr
+- name: 🇨🇦 加拿大 (Canada) 51 - Dyt
+  type: vless
+  server: lizca2.footballfantasyforum.com
+  port: 443
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lizca2.footballfantasyforum.com
+- name: 🇨🇦 加拿大 (Canada) 52 - Dyt
+  type: vless
+  server: 188.114.97.6
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 53 - Dyt
+  type: vless
+  server: 188.114.97.6
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 54 - Dyt
+  type: vless
+  server: 188.114.97.6
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 55 - Dyt
+  type: vless
+  server: 172.67.219.50
+  port: 443
+  uuid: a5b1d1ec-327c-f1c5-5856-b34600000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ez-541f9d.ezaccess1d3db24.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: ez-541f9d.ezaccess1d3db24.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 56 - Dyt
+  type: vless
+  server: 172.64.80.1
+  port: 443
+  uuid: a8890c1b-3622-3106-c4be-d8671be32d2b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: summer-meadow-af5b.woowoorrrkk.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: summer-meadow-af5b.woowoorrrkk.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 57 - Dyt
   type: ss
   server: 51.79.64.198
   port: 8119
   cipher: aes-256-gcm
   password: cdBIDV42DCwnfIN
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 12 - Dyt
-  type: vless
-  server: 148.113.196.75
-  port: 8443
-  uuid: 08f96221-9b7b-4e6f-8ffe-aee8b9c9b504
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ov-canada1.09vpn.com
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 148.113.196.75
-- name: 🇨🇦 加拿大 (Canada) 13 - Dyt
-  type: vless
-  server: lizca2.footballfantasyforum.com
-  port: 443
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lizca2.footballfantasyforum.com
-- name: 🇨🇦 加拿大 (Canada) 14 - Dyt
-  type: ss
-  server: 149.22.95.183
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 15 - Dyt
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 16 - Dyt
-  type: ss
-  server: 51.222.141.125
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 17 - Dyt
-  type: ss
-  server: 51.222.12.127
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 18 - Dyt
+- name: 🇨🇦 加拿大 (Canada) 58 - Dyt
   type: vmess
-  server: 158.51.121.63
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: seribus.org
-  network: ws
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: seribus.org
-- name: 🇨🇦 加拿大 (Canada) 19 - Dyt
+- name: 🇨🇦 加拿大 (Canada) 59 - Dyt
   type: vless
   server: lizca2.footballfantasyforum.com
   port: 443
@@ -183,13 +668,75 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: lizca2.footballfantasyforum.com
-- name: 🇨🇦 加拿大 (Canada) 20 - Dyt
-  type: ss
-  server: 51.222.12.127
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
+- name: 🇨🇦 加拿大 (Canada) 60 - Dyt
+  type: vless
+  server: 104.21.67.43
+  port: 443
+  uuid: 0aab6adc-104c-4339-8d25-09755ffe2cbd
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: liang92.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: liang92.dpdns.org
+- name: 🇨🇦 加拿大 (Canada) 61 - Dyt
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 62 - Dyt
+  type: vless
+  server: 104.21.63.28
+  port: 443
+  uuid: 4c0b7280-76bb-495c-9c8b-f05712ebf805
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: youxuanku.kdns.fr
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: youxuanku.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 63 - Dyt
+  type: vless
+  server: 172.67.173.138
+  port: 443
+  uuid: 813cd228-ebf6-0e21-481a-ba4af8f85b82
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: odd-disk-98c5.assassincreed4048.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: odd-disk-98c5.assassincreed4048.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 64 - Dyt
+  type: vless
+  server: 172.67.220.34
+  port: 443
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: INDEX.Arcane509.Workers.DEV
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.arcane509.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -215,6 +762,50 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 18 - Dyt
   - 🇨🇦 加拿大 (Canada) 19 - Dyt
   - 🇨🇦 加拿大 (Canada) 20 - Dyt
+  - 🇨🇦 加拿大 (Canada) 21 - Dyt
+  - 🇨🇦 加拿大 (Canada) 22 - Dyt
+  - 🇨🇦 加拿大 (Canada) 23 - Dyt
+  - 🇨🇦 加拿大 (Canada) 24 - Dyt
+  - 🇨🇦 加拿大 (Canada) 25 - Dyt
+  - 🇨🇦 加拿大 (Canada) 26 - Dyt
+  - 🇨🇦 加拿大 (Canada) 27 - Dyt
+  - 🇨🇦 加拿大 (Canada) 28 - Dyt
+  - 🇨🇦 加拿大 (Canada) 29 - Dyt
+  - 🇨🇦 加拿大 (Canada) 30 - Dyt
+  - 🇨🇦 加拿大 (Canada) 31 - Dyt
+  - 🇨🇦 加拿大 (Canada) 32 - Dyt
+  - 🇨🇦 加拿大 (Canada) 33 - Dyt
+  - 🇨🇦 加拿大 (Canada) 34 - Dyt
+  - 🇨🇦 加拿大 (Canada) 35 - Dyt
+  - 🇨🇦 加拿大 (Canada) 36 - Dyt
+  - 🇨🇦 加拿大 (Canada) 37 - Dyt
+  - 🇨🇦 加拿大 (Canada) 38 - Dyt
+  - 🇨🇦 加拿大 (Canada) 39 - Dyt
+  - 🇨🇦 加拿大 (Canada) 40 - Dyt
+  - 🇨🇦 加拿大 (Canada) 41 - Dyt
+  - 🇨🇦 加拿大 (Canada) 42 - Dyt
+  - 🇨🇦 加拿大 (Canada) 43 - Dyt
+  - 🇨🇦 加拿大 (Canada) 44 - Dyt
+  - 🇨🇦 加拿大 (Canada) 45 - Dyt
+  - 🇨🇦 加拿大 (Canada) 46 - Dyt
+  - 🇨🇦 加拿大 (Canada) 47 - Dyt
+  - 🇨🇦 加拿大 (Canada) 48 - Dyt
+  - 🇨🇦 加拿大 (Canada) 49 - Dyt
+  - 🇨🇦 加拿大 (Canada) 50 - Dyt
+  - 🇨🇦 加拿大 (Canada) 51 - Dyt
+  - 🇨🇦 加拿大 (Canada) 52 - Dyt
+  - 🇨🇦 加拿大 (Canada) 53 - Dyt
+  - 🇨🇦 加拿大 (Canada) 54 - Dyt
+  - 🇨🇦 加拿大 (Canada) 55 - Dyt
+  - 🇨🇦 加拿大 (Canada) 56 - Dyt
+  - 🇨🇦 加拿大 (Canada) 57 - Dyt
+  - 🇨🇦 加拿大 (Canada) 58 - Dyt
+  - 🇨🇦 加拿大 (Canada) 59 - Dyt
+  - 🇨🇦 加拿大 (Canada) 60 - Dyt
+  - 🇨🇦 加拿大 (Canada) 61 - Dyt
+  - 🇨🇦 加拿大 (Canada) 62 - Dyt
+  - 🇨🇦 加拿大 (Canada) 63 - Dyt
+  - 🇨🇦 加拿大 (Canada) 64 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -240,5 +831,49 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 18 - Dyt
   - 🇨🇦 加拿大 (Canada) 19 - Dyt
   - 🇨🇦 加拿大 (Canada) 20 - Dyt
+  - 🇨🇦 加拿大 (Canada) 21 - Dyt
+  - 🇨🇦 加拿大 (Canada) 22 - Dyt
+  - 🇨🇦 加拿大 (Canada) 23 - Dyt
+  - 🇨🇦 加拿大 (Canada) 24 - Dyt
+  - 🇨🇦 加拿大 (Canada) 25 - Dyt
+  - 🇨🇦 加拿大 (Canada) 26 - Dyt
+  - 🇨🇦 加拿大 (Canada) 27 - Dyt
+  - 🇨🇦 加拿大 (Canada) 28 - Dyt
+  - 🇨🇦 加拿大 (Canada) 29 - Dyt
+  - 🇨🇦 加拿大 (Canada) 30 - Dyt
+  - 🇨🇦 加拿大 (Canada) 31 - Dyt
+  - 🇨🇦 加拿大 (Canada) 32 - Dyt
+  - 🇨🇦 加拿大 (Canada) 33 - Dyt
+  - 🇨🇦 加拿大 (Canada) 34 - Dyt
+  - 🇨🇦 加拿大 (Canada) 35 - Dyt
+  - 🇨🇦 加拿大 (Canada) 36 - Dyt
+  - 🇨🇦 加拿大 (Canada) 37 - Dyt
+  - 🇨🇦 加拿大 (Canada) 38 - Dyt
+  - 🇨🇦 加拿大 (Canada) 39 - Dyt
+  - 🇨🇦 加拿大 (Canada) 40 - Dyt
+  - 🇨🇦 加拿大 (Canada) 41 - Dyt
+  - 🇨🇦 加拿大 (Canada) 42 - Dyt
+  - 🇨🇦 加拿大 (Canada) 43 - Dyt
+  - 🇨🇦 加拿大 (Canada) 44 - Dyt
+  - 🇨🇦 加拿大 (Canada) 45 - Dyt
+  - 🇨🇦 加拿大 (Canada) 46 - Dyt
+  - 🇨🇦 加拿大 (Canada) 47 - Dyt
+  - 🇨🇦 加拿大 (Canada) 48 - Dyt
+  - 🇨🇦 加拿大 (Canada) 49 - Dyt
+  - 🇨🇦 加拿大 (Canada) 50 - Dyt
+  - 🇨🇦 加拿大 (Canada) 51 - Dyt
+  - 🇨🇦 加拿大 (Canada) 52 - Dyt
+  - 🇨🇦 加拿大 (Canada) 53 - Dyt
+  - 🇨🇦 加拿大 (Canada) 54 - Dyt
+  - 🇨🇦 加拿大 (Canada) 55 - Dyt
+  - 🇨🇦 加拿大 (Canada) 56 - Dyt
+  - 🇨🇦 加拿大 (Canada) 57 - Dyt
+  - 🇨🇦 加拿大 (Canada) 58 - Dyt
+  - 🇨🇦 加拿大 (Canada) 59 - Dyt
+  - 🇨🇦 加拿大 (Canada) 60 - Dyt
+  - 🇨🇦 加拿大 (Canada) 61 - Dyt
+  - 🇨🇦 加拿大 (Canada) 62 - Dyt
+  - 🇨🇦 加拿大 (Canada) 63 - Dyt
+  - 🇨🇦 加拿大 (Canada) 64 - Dyt
 rules:
 - MATCH,PROXIES
