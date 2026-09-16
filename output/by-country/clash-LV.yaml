@@ -4,24 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇪 IE 01 - Dyt
-  type: ss
-  server: 20.107.184.151
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: zziXHDOFXc4qRjoj
+- name: 🇱🇻 LV 01 - Dyt
+  type: vless
+  server: atomic-prase23893.my-vm.work
+  port: 8088
+  uuid: tmp_user
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api
+    headers:
+      Host: queuev4.vk.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇪 IE 01 - Dyt
+  - 🇱🇻 LV 01 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 IE 01 - Dyt
+  - 🇱🇻 LV 01 - Dyt
 rules:
 - MATCH,PROXIES
