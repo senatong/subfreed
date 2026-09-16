@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇴 RO 01 - Dyt
+- name: 🇮🇷 IR 01 - Dyt
   type: ss
-  server: 154.46.31.106
-  port: 443
+  server: e2.cover20.ir
+  port: 30874
   cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  password: O+qLsoqVWBdY2D3lxtd5ksBwkp3QclQ6d+IARlPtFow=
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇴 RO 01 - Dyt
+  - 🇮🇷 IR 01 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇴 RO 01 - Dyt
+  - 🇮🇷 IR 01 - Dyt
 rules:
 - MATCH,PROXIES
