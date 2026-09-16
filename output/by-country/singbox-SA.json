@@ -6,16 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 MY 01 - Dyt",
-        "🇲🇾 MY 02 - Dyt"
+        "🇸🇦 SA 01 - Dyt",
+        "🇸🇦 SA 02 - Dyt",
+        "🇸🇦 SA 03 - Dyt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 MY 01 - Dyt",
-        "🇲🇾 MY 02 - Dyt"
+        "🇸🇦 SA 01 - Dyt",
+        "🇸🇦 SA 02 - Dyt",
+        "🇸🇦 SA 03 - Dyt"
       ],
       "url": "https://www.google.com/generate_204"
     },
