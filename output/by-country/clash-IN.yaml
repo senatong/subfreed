@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇮🇳 印度 (India) 02 - Dyt
   type: vless
   server: 194.61.31.126
@@ -27,14 +27,7 @@ proxies:
   reality-opts:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇮🇳 印度 (India) 03 - Dyt
-  type: ss
-  server: 139.84.166.47
-  port: 8388
-  cipher: aes-256-gcm
-  password: GEdoeeqLZtkJRgSa
-  udp: true
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,7 +35,6 @@ proxy-groups:
   - AUTO
   - 🇮🇳 印度 (India) 01 - Dyt
   - 🇮🇳 印度 (India) 02 - Dyt
-  - 🇮🇳 印度 (India) 03 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,6 +42,5 @@ proxy-groups:
   proxies:
   - 🇮🇳 印度 (India) 01 - Dyt
   - 🇮🇳 印度 (India) 02 - Dyt
-  - 🇮🇳 印度 (India) 03 - Dyt
 rules:
 - MATCH,PROXIES
