@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇿 KZ 01 - Dyt
+- name: 🇨🇭 CH 01 - Dyt
   type: vless
-  server: 31.43.179.8
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  server: 94.26.35.139
+  port: 25720
+  uuid: be83425f-74c5-4b03-9c4b-20aa16322698
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
+  reality-opts:
+    public-key: OueudVX2rTpyeEb2bNW3Jx3WtgSX4zFERs6yt8Szv0E
+  servername: www.samsung.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇿 KZ 01 - Dyt
+  - 🇨🇭 CH 01 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇿 KZ 01 - Dyt
+  - 🇨🇭 CH 01 - Dyt
 rules:
 - MATCH,PROXIES
