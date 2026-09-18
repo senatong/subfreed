@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - Dyt
   type: vless
-  server: 152.67.101.72
-  port: 23010
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇹🇭 TH 02 - Dyt
-  type: vless
   server: 104.18.26.90
   port: 443
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
@@ -32,7 +18,7 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 03 - Dyt
+- name: 🇹🇭 TH 02 - Dyt
   type: vless
   server: 103.86.49.57
   port: 80
@@ -52,7 +38,6 @@ proxy-groups:
   - AUTO
   - 🇹🇭 TH 01 - Dyt
   - 🇹🇭 TH 02 - Dyt
-  - 🇹🇭 TH 03 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,6 +45,5 @@ proxy-groups:
   proxies:
   - 🇹🇭 TH 01 - Dyt
   - 🇹🇭 TH 02 - Dyt
-  - 🇹🇭 TH 03 - Dyt
 rules:
 - MATCH,PROXIES

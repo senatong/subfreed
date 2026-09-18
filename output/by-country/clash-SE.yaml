@@ -6,8 +6,8 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - Dyt
   type: vless
-  server: 84.32.217.120
-  port: 8443
+  server: 138.124.25.250
+  port: 443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
@@ -15,7 +15,7 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /channels/act
+    path: /
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:
