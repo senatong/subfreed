@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 VN 01 - Dyt",
-        "🇻🇳 VN 02 - Dyt"
+        "🇺🇸 美国 (United States) 01 (家宽) - Dyt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 VN 01 - Dyt",
-        "🇻🇳 VN 02 - Dyt"
+        "🇺🇸 美国 (United States) 01 (家宽) - Dyt"
       ],
       "url": "https://www.google.com/generate_204"
     },
