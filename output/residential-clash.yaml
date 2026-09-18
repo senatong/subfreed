@@ -4,28 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Dyt
-  type: vmess
-  server: 7dba81fc3a0b.oylfmxz.cn
-  port: 443
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - Dyt
+  type: vless
+  server: 172.64.53.87
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: ''
+    path: ?ed=2560
     headers:
-      Host: ''
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Dyt
   type: ss
   server: 36.224.185.173
   port: 50099
   cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
 - name: 🇰🇷 韩国 (South Korea) 03 (家宽) - Dyt
   type: vless
@@ -43,36 +41,36 @@ proxies:
       Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
 - name: 🇰🇷 韩国 (South Korea) 04 (家宽) - Dyt
   type: vless
-  server: 104.16.10.185
-  port: 443
+  server: 172.64.53.60
+  port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: ?ed=2560
     headers:
-      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇰🇷 韩国 (South Korea) 05 (家宽) - Dyt
   type: vless
-  server: www.glassdoor.com
+  server: log.bpminecraft.com
   port: 8880
-  uuid: 5fc8a5e4-d0c5-4ad2-8bfe-db589553c6c1
+  uuid: 6b89f475-913c-4381-a102-f5e06a129685
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /pyip
     headers:
-      Host: red-disk-58df.153-2ce.workers.dev
+      Host: proud-dawn-56f1.125-85b.workers.dev
 - name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Dyt
   type: vless
-  server: 59.125.69.19
+  server: 60.248.219.52
   port: 443
-  uuid: f1d247db-d7ce-4eb8-9c0d-7b10603cd0b4
+  uuid: f265b49a-70a3-407a-b17b-e45dfb9f255c
   udp: true
   tls: true
   skip-cert-verify: true
@@ -81,28 +79,44 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: 59.125.69.19
+      Host: 60.248.219.52
+- name: 🇰🇷 韩国 (South Korea) 07 (家宽) - Dyt
+  type: vless
+  server: 104.18.42.54
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: ?ed=2560
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Dyt
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - Dyt
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Dyt
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - Dyt
   - 🇰🇷 韩国 (South Korea) 04 (家宽) - Dyt
   - 🇰🇷 韩国 (South Korea) 05 (家宽) - Dyt
   - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Dyt
+  - 🇰🇷 韩国 (South Korea) 07 (家宽) - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Dyt
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - Dyt
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Dyt
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - Dyt
   - 🇰🇷 韩国 (South Korea) 04 (家宽) - Dyt
   - 🇰🇷 韩国 (South Korea) 05 (家宽) - Dyt
   - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Dyt
+  - 🇰🇷 韩国 (South Korea) 07 (家宽) - Dyt
 rules:
 - MATCH,PROXIES
