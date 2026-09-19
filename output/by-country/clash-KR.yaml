@@ -7,49 +7,46 @@ proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - Dyt
   type: ss
   server: 141.164.45.187
-  port: 6679
+  port: 5498
   cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
+  password: lGqs95QkFHo2NV
   udp: true
 - name: 🇰🇷 韩国 (South Korea) 02 - Dyt
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 141.164.45.187
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 03 - Dyt
   type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  server: 34.64.149.137
+  port: 443
+  uuid: 700a7a0e-3f27-406c-81d1-aa1abe411af8
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 04 - Dyt
   type: vless
-  server: 104.18.42.54
-  port: 2087
+  server: 104.16.10.185
+  port: 443
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: ?ed=2560
+    path: /?ed=2560
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
 - name: 🇰🇷 韩国 (South Korea) 05 - Dyt
   type: vless
-  server: 104.16.150.108
+  server: 172.64.52.230
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
@@ -58,12 +55,12 @@ proxies:
   servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: ?ed=2560
+    path: /?ed=2560
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇰🇷 韩国 (South Korea) 06 - Dyt
   type: vless
-  server: 104.18.38.47
+  server: 172.64.53.87
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
@@ -77,41 +74,30 @@ proxies:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇰🇷 韩国 (South Korea) 07 - Dyt
   type: vless
-  server: 104.17.26.45
-  port: 8880
-  uuid: 2e9012a2-7f8c-4233-b78b-5228a9a4951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /%2Fpyip%3DProxyIP.KR.CMLiussss.net
-    headers:
-      Host: icy-breeze-126c.211-eb3.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 08 - Dyt
-  type: vless
-  server: 188.114.97.6
+  server: 104.18.42.54
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: ?ed=2560
     headers:
-      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 09 - Dyt
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇰🇷 韩国 (South Korea) 08 - Dyt
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -125,7 +111,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 06 - Dyt
   - 🇰🇷 韩国 (South Korea) 07 - Dyt
   - 🇰🇷 韩国 (South Korea) 08 - Dyt
-  - 🇰🇷 韩国 (South Korea) 09 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -139,6 +124,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 06 - Dyt
   - 🇰🇷 韩国 (South Korea) 07 - Dyt
   - 🇰🇷 韩国 (South Korea) 08 - Dyt
-  - 🇰🇷 韩国 (South Korea) 09 - Dyt
 rules:
 - MATCH,PROXIES
