@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - Dyt
+  type: vless
+  server: 212.104.128.68
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 02 - Dyt
   type: ss
   server: 82.47.186.18
   port: 19290
@@ -17,11 +31,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇫🇮 FI 01 - Dyt
+  - 🇫🇮 FI 02 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 FI 01 - Dyt
+  - 🇫🇮 FI 02 - Dyt
 rules:
 - MATCH,PROXIES
