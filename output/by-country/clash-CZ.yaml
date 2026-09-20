@@ -6,182 +6,19 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - Dyt
   type: vless
-  server: 104.18.34.14
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 195.85.23.29
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 02 - Dyt
-  type: vless
-  server: 195.85.23.252
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 03 - Dyt
-  type: vless
-  server: 151.101.1.194
-  port: 80
-  uuid: e732cb07-4a31-49d3-9122-61dc1f68334e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: simorghfr.global.ssl.fastly.net
-- name: 🇨🇿 CZ 04 - Dyt
-  type: vless
-  server: 195.85.23.75
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 05 - Dyt
-  type: vless
-  server: 195.85.23.217
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 06 - Dyt
-  type: vless
-  server: 162.159.0.169
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tlssecurity=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇨🇿 CZ 07 - Dyt
-  type: vless
-  server: 195.85.23.29
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 08 - Dyt
-  type: vless
-  server: 195.85.23.45
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 09 - Dyt
-  type: vless
-  server: 172.64.158.146
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇨🇿 CZ 10 - Dyt
-  type: vless
-  server: 195.85.23.47
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 11 - Dyt
-  type: vless
-  server: 195.85.23.111
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 12 - Dyt
-  type: vless
-  server: 195.85.23.29
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 13 - Dyt
-  type: vless
-  server: 188.114.97.6
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇿 CZ 14 - Dyt
   type: vless
   server: 195.85.23.88
   port: 443
@@ -192,10 +29,10 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 15 - Dyt
+- name: 🇨🇿 CZ 03 - Dyt
   type: vless
   server: 195.85.23.252
   port: 443
@@ -206,10 +43,24 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 16 - Dyt
+- name: 🇨🇿 CZ 04 - Dyt
+  type: vless
+  server: 195.85.23.29
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 05 - Dyt
   type: vless
   server: cz1.zuoai.cf
   port: 443
@@ -223,9 +74,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 17 - Dyt
+- name: 🇨🇿 CZ 06 - Dyt
   type: vless
-  server: 195.85.23.29
+  server: 195.85.23.88
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -237,35 +88,23 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 18 - Dyt
+- name: 🇨🇿 CZ 07 - Dyt
   type: vless
-  server: 162.159.39.218
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 195.85.23.217
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /proxyip=us.xiabibi.cf
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇨🇿 CZ 19 - Dyt
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 08 - Dyt
   type: vless
-  server: 151.101.1.194
-  port: 80
-  uuid: c19dcd53-1fed-4147-bdb6-b3d318c8d9f3
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: simorghfr.global.ssl.fastly.net
-- name: 🇨🇿 CZ 20 - Dyt
-  type: vless
-  server: 195.85.23.47
+  server: 195.85.23.252
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -290,18 +129,6 @@ proxy-groups:
   - 🇨🇿 CZ 06 - Dyt
   - 🇨🇿 CZ 07 - Dyt
   - 🇨🇿 CZ 08 - Dyt
-  - 🇨🇿 CZ 09 - Dyt
-  - 🇨🇿 CZ 10 - Dyt
-  - 🇨🇿 CZ 11 - Dyt
-  - 🇨🇿 CZ 12 - Dyt
-  - 🇨🇿 CZ 13 - Dyt
-  - 🇨🇿 CZ 14 - Dyt
-  - 🇨🇿 CZ 15 - Dyt
-  - 🇨🇿 CZ 16 - Dyt
-  - 🇨🇿 CZ 17 - Dyt
-  - 🇨🇿 CZ 18 - Dyt
-  - 🇨🇿 CZ 19 - Dyt
-  - 🇨🇿 CZ 20 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -315,17 +142,5 @@ proxy-groups:
   - 🇨🇿 CZ 06 - Dyt
   - 🇨🇿 CZ 07 - Dyt
   - 🇨🇿 CZ 08 - Dyt
-  - 🇨🇿 CZ 09 - Dyt
-  - 🇨🇿 CZ 10 - Dyt
-  - 🇨🇿 CZ 11 - Dyt
-  - 🇨🇿 CZ 12 - Dyt
-  - 🇨🇿 CZ 13 - Dyt
-  - 🇨🇿 CZ 14 - Dyt
-  - 🇨🇿 CZ 15 - Dyt
-  - 🇨🇿 CZ 16 - Dyt
-  - 🇨🇿 CZ 17 - Dyt
-  - 🇨🇿 CZ 18 - Dyt
-  - 🇨🇿 CZ 19 - Dyt
-  - 🇨🇿 CZ 20 - Dyt
 rules:
 - MATCH,PROXIES

@@ -20,7 +20,7 @@ proxies:
       Host: 60.248.219.78
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Dyt
   type: vmess
-  server: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
+  server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
   port: 443
   uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
   alterId: 0
@@ -35,17 +35,21 @@ proxies:
     headers:
       Host: ''
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Dyt
-  type: vless
-  server: 118.167.246.43
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  type: vmess
+  server: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
+  servername: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
 proxy-groups:
 - name: PROXIES
   type: select

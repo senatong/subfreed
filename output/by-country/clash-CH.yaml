@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇪 SE 01 - Dyt
+- name: 🇨🇭 CH 01 - Dyt
   type: vless
-  server: 143.246.195.98
-  port: 8081
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  server: 89.127.196.14
+  port: 443
+  uuid: 70697368-0000-4000-8000-676100000000
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: zzysieoge63.uurot7rjj8.workers.dev
   network: ws
   ws-opts:
-    path: /vless-test
+    path: /pishgaman-technology
     headers:
-      Host: 143.246.195.98
+      Host: zzysieoge63.uurot7rjj8.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇪 SE 01 - Dyt
+  - 🇨🇭 CH 01 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇪 SE 01 - Dyt
+  - 🇨🇭 CH 01 - Dyt
 rules:
 - MATCH,PROXIES

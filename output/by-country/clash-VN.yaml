@@ -4,10 +4,10 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇨 SC 01 - Dyt
+- name: 🇻🇳 VN 01 - Dyt
   type: vless
-  server: 188.166.49.168
-  port: 2083
+  server: 160.30.54.63
+  port: 443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇸🇨 SC 01 - Dyt
+  - 🇻🇳 VN 01 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇨 SC 01 - Dyt
+  - 🇻🇳 VN 01 - Dyt
 rules:
 - MATCH,PROXIES

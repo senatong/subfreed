@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - Dyt
   type: vless
-  server: 31.43.179.170
+  server: 31.43.179.25
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇰🇿 KZ 02 - Dyt
   type: vless
-  server: 31.43.179.20
+  server: 31.43.179.109
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -34,49 +34,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇰🇿 KZ 03 - Dyt
   type: vless
-  server: 31.43.179.25
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇰🇿 KZ 04 - Dyt
-  type: vless
-  server: 31.43.179.25
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇰🇿 KZ 05 - Dyt
-  type: vless
-  server: 31.43.179.200
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇰🇿 KZ 06 - Dyt
-  type: vless
-  server: 31.43.179.106
+  server: 31.43.179.137
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -88,49 +46,7 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇰🇿 KZ 07 - Dyt
-  type: vless
-  server: 31.43.179.137
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇰🇿 KZ 08 - Dyt
-  type: vless
-  server: 31.43.179.109
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇰🇿 KZ 09 - Dyt
-  type: vless
-  server: 31.43.179.106
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇰🇿 KZ 10 - Dyt
+- name: 🇰🇿 KZ 04 - Dyt
   type: vless
   server: 31.43.179.87
   port: 443
@@ -144,9 +60,9 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇰🇿 KZ 11 - Dyt
+- name: 🇰🇿 KZ 05 - Dyt
   type: vless
-  server: 31.43.179.8
+  server: 31.43.179.106
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -155,10 +71,10 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇰🇿 KZ 12 - Dyt
+- name: 🇰🇿 KZ 06 - Dyt
   type: vless
   server: 31.43.179.200
   port: 443
@@ -172,9 +88,93 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇰🇿 KZ 13 - Dyt
+- name: 🇰🇿 KZ 07 - Dyt
+  type: vless
+  server: 31.43.179.200
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 08 - Dyt
+  type: vless
+  server: 31.43.179.25
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 09 - Dyt
+  type: vless
+  server: 31.43.179.20
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 10 - Dyt
+  type: vless
+  server: 31.43.179.8
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 11 - Dyt
   type: vless
   server: 31.43.179.36
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 12 - Dyt
+  type: vless
+  server: 31.43.179.106
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 13 - Dyt
+  type: vless
+  server: 31.43.179.170
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -189,6 +189,34 @@ proxies:
 - name: 🇰🇿 KZ 14 - Dyt
   type: vless
   server: 31.43.179.200
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 15 - Dyt
+  type: vless
+  server: 31.43.179.8
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 16 - Dyt
+  type: vless
+  server: 31.43.179.137
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -219,6 +247,8 @@ proxy-groups:
   - 🇰🇿 KZ 12 - Dyt
   - 🇰🇿 KZ 13 - Dyt
   - 🇰🇿 KZ 14 - Dyt
+  - 🇰🇿 KZ 15 - Dyt
+  - 🇰🇿 KZ 16 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -238,5 +268,7 @@ proxy-groups:
   - 🇰🇿 KZ 12 - Dyt
   - 🇰🇿 KZ 13 - Dyt
   - 🇰🇿 KZ 14 - Dyt
+  - 🇰🇿 KZ 15 - Dyt
+  - 🇰🇿 KZ 16 - Dyt
 rules:
 - MATCH,PROXIES
