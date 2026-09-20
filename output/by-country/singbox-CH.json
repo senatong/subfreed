@@ -6,20 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 NO 01 - Dyt",
-        "🇳🇴 NO 02 - Dyt",
-        "🇳🇴 NO 03 - Dyt",
-        "🇳🇴 NO 04 - Dyt"
+        "🇨🇭 CH 01 - Dyt",
+        "🇨🇭 CH 02 - Dyt",
+        "🇨🇭 CH 03 - Dyt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 NO 01 - Dyt",
-        "🇳🇴 NO 02 - Dyt",
-        "🇳🇴 NO 03 - Dyt",
-        "🇳🇴 NO 04 - Dyt"
+        "🇨🇭 CH 01 - Dyt",
+        "🇨🇭 CH 02 - Dyt",
+        "🇨🇭 CH 03 - Dyt"
       ],
       "url": "https://www.google.com/generate_204"
     },
