@@ -5,13 +5,82 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - Dyt
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇫🇷 法国 (France) 02 - Dyt
+  type: vless
+  server: 172.64.229.2
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇫🇷 法国 (France) 03 - Dyt
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 04 - Dyt
+  type: vless
+  server: 162.159.48.32
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls+
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇫🇷 法国 (France) 05 - Dyt
+  type: ss
+  server: 54.36.174.140
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: mrs2e9a
+  udp: true
+- name: 🇫🇷 法国 (France) 06 - Dyt
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 07 - Dyt
   type: ss
   server: 51.255.13.232
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: BqnqToih0PbU
   udp: true
-- name: 🇫🇷 法国 (France) 02 - Dyt
+- name: 🇫🇷 法国 (France) 08 - Dyt
   type: vless
   server: 172.67.206.254
   port: 443
@@ -25,7 +94,73 @@ proxies:
     path: /stream/PANEL_ZEUS/5a26a30b00dc
     headers:
       Host: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
-- name: 🇫🇷 法国 (France) 03 - Dyt
+- name: 🇫🇷 法国 (France) 09 - Dyt
+  type: vless
+  server: 162.159.24.131
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇫🇷 法国 (France) 10 - Dyt
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 11 - Dyt
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 12 - Dyt
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 13 - Dyt
+  type: vless
+  server: 104.18.31.37
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-5bc7860646e4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: qzz0a4eou1ms.mlm-792d0942.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/5bc7860646e4
+    headers:
+      Host: qzz0a4eou1ms.mlm-792d0942.workers.dev
+- name: 🇫🇷 法国 (France) 14 - Dyt
   type: vless
   server: 104.21.50.143
   port: 443
@@ -39,35 +174,7 @@ proxies:
     path: /stream/PANEL_ZEUS/5a26a30b00dc
     headers:
       Host: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
-- name: 🇫🇷 法国 (France) 04 - Dyt
-  type: vless
-  server: 172.67.193.182
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: trex-panel-nubj0s.samifakor.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/TrexBridge/ef859652a80e
-    headers:
-      Host: trex-panel-nubj0s.samifakor.workers.dev
-- name: 🇫🇷 法国 (France) 05 - Dyt
-  type: vless
-  server: 104.21.72.47
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: trex-panel-nubj0s.samifakor.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/TrexBridge/ef859652a80e
-    headers:
-      Host: trex-panel-nubj0s.samifakor.workers.dev
-- name: 🇫🇷 法国 (France) 06 - Dyt
+- name: 🇫🇷 法国 (France) 15 - Dyt
   type: vmess
   server: 162.19.204.71
   port: 1234
@@ -78,57 +185,32 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 07 - Dyt
+- name: 🇫🇷 法国 (France) 16 - Dyt
   type: vless
-  server: 34.155.10.226
-  port: 443
-  uuid: d619964d-26d6-452d-9860-6f058f03ba8e
+  server: 162.159.24.131
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 6tH_NDFcxWn60B3s-MgrkBTU2yUUBY42ZG1av50Ywhk
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 08 - Dyt
-  type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
   network: ws
   ws-opts:
-    path: /vws/
+    path: /?ed=2560security=tls
     headers:
-      Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 09 - Dyt
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇫🇷 法国 (France) 17 - Dyt
   type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  server: 188.114.97.6
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: bab-6.site
   network: ws
   ws-opts:
-    path: /vws/
+    path: /?ed=2560
     headers:
-      Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 10 - Dyt
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -144,6 +226,13 @@ proxy-groups:
   - 🇫🇷 法国 (France) 08 - Dyt
   - 🇫🇷 法国 (France) 09 - Dyt
   - 🇫🇷 法国 (France) 10 - Dyt
+  - 🇫🇷 法国 (France) 11 - Dyt
+  - 🇫🇷 法国 (France) 12 - Dyt
+  - 🇫🇷 法国 (France) 13 - Dyt
+  - 🇫🇷 法国 (France) 14 - Dyt
+  - 🇫🇷 法国 (France) 15 - Dyt
+  - 🇫🇷 法国 (France) 16 - Dyt
+  - 🇫🇷 法国 (France) 17 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -159,5 +248,12 @@ proxy-groups:
   - 🇫🇷 法国 (France) 08 - Dyt
   - 🇫🇷 法国 (France) 09 - Dyt
   - 🇫🇷 法国 (France) 10 - Dyt
+  - 🇫🇷 法国 (France) 11 - Dyt
+  - 🇫🇷 法国 (France) 12 - Dyt
+  - 🇫🇷 法国 (France) 13 - Dyt
+  - 🇫🇷 法国 (France) 14 - Dyt
+  - 🇫🇷 法国 (France) 15 - Dyt
+  - 🇫🇷 法国 (France) 16 - Dyt
+  - 🇫🇷 法国 (France) 17 - Dyt
 rules:
 - MATCH,PROXIES
