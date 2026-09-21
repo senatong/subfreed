@@ -4,10 +4,10 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - Dyt
+- name: 🇩🇪 德国 (Germany) 01 (家宽) - Dyt
   type: vless
-  server: 146.185.178.18
-  port: 443
+  server: 176.124.220.173
+  port: 8443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - Dyt
+  - 🇩🇪 德国 (Germany) 01 (家宽) - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - Dyt
+  - 🇩🇪 德国 (Germany) 01 (家宽) - Dyt
 rules:
 - MATCH,PROXIES
