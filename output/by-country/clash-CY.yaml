@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇾 CY 01 - Dyt
   type: vless
-  server: 195.26.229.156
+  server: 195.26.229.222
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇨🇾 CY 02 - Dyt
   type: vless
-  server: 195.26.229.157
+  server: 195.26.229.127
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -29,12 +29,12 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /proxyip=us.xiabibi.cffp=chrome
     headers:
       Host: xi.tbv.ccwu.cc
 - name: 🇨🇾 CY 03 - Dyt
   type: vless
-  server: 195.26.229.148
+  server: 195.26.229.235
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -48,48 +48,6 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇨🇾 CY 04 - Dyt
   type: vless
-  server: 195.26.229.86
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 05 - Dyt
-  type: vless
-  server: 195.26.229.120
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cffp=chrome
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 06 - Dyt
-  type: vless
-  server: 195.26.229.222
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cffp=chrome
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 07 - Dyt
-  type: vless
   server: 195.26.229.32
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
@@ -102,7 +60,7 @@ proxies:
     path: /proxyip=us.xiabibi.cffp=chrome
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 08 - Dyt
+- name: 🇨🇾 CY 05 - Dyt
   type: vless
   server: 213.111.177.107
   port: 443
@@ -113,12 +71,12 @@ proxies:
   servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇨🇾 CY 09 - Dyt
+- name: 🇨🇾 CY 06 - Dyt
   type: vless
-  server: 195.26.229.235
+  server: 195.26.229.148
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -127,24 +85,10 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 10 - Dyt
-  type: vless
-  server: 213.111.177.107
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇨🇾 CY 11 - Dyt
+- name: 🇨🇾 CY 07 - Dyt
   type: vless
   server: 195.26.229.131
   port: 443
@@ -158,9 +102,9 @@ proxies:
     path: /proxyip=us.xiabibi.cffp=chrome
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 12 - Dyt
+- name: 🇨🇾 CY 08 - Dyt
   type: vless
-  server: 195.26.229.32
+  server: 195.26.229.157
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -169,36 +113,10 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 13 - Dyt
-  type: vless
-  server: 195.26.229.86
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cffp=chrome
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 14 - Dyt
-  type: vless
-  server: 194.76.154.31
-  port: 40443
-  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
-  servername: deepl.com
-  client-fingerprint: firefox
-- name: 🇨🇾 CY 15 - Dyt
+- name: 🇨🇾 CY 09 - Dyt
   type: vless
   server: 195.26.229.156
   port: 443
@@ -212,23 +130,9 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 16 - Dyt
+- name: 🇨🇾 CY 10 - Dyt
   type: vless
-  server: 195.26.229.127
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 17 - Dyt
-  type: vless
-  server: 195.26.229.127
+  server: 195.26.229.148
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -240,7 +144,63 @@ proxies:
     path: /proxyip=us.xiabibi.cffp=chrome
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 18 - Dyt
+- name: 🇨🇾 CY 11 - Dyt
+  type: vless
+  server: 195.26.229.235
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇨🇾 CY 12 - Dyt
+  type: vless
+  server: 195.26.229.120
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cffp=chrome
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇨🇾 CY 13 - Dyt
+  type: vless
+  server: 195.26.229.32
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇨🇾 CY 14 - Dyt
+  type: vless
+  server: 195.26.229.156
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cffp=chrome
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇨🇾 CY 15 - Dyt
   type: vless
   server: 195.26.229.157
   port: 443
@@ -254,9 +214,9 @@ proxies:
     path: /proxyip=us.xiabibi.cffp=chrome
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 19 - Dyt
+- name: 🇨🇾 CY 16 - Dyt
   type: vless
-  server: 195.26.229.235
+  server: 195.26.229.86
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -268,7 +228,7 @@ proxies:
     path: /proxyip=us.xiabibi.cffp=chrome
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 20 - Dyt
+- name: 🇨🇾 CY 17 - Dyt
   type: vless
   server: 195.26.229.120
   port: 443
@@ -280,6 +240,48 @@ proxies:
   network: ws
   ws-opts:
     path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇨🇾 CY 18 - Dyt
+  type: vless
+  server: 213.111.177.107
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇨🇾 CY 19 - Dyt
+  type: vless
+  server: 195.26.229.127
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇨🇾 CY 20 - Dyt
+  type: vless
+  server: 195.26.229.86
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip
     headers:
       Host: xi.tbv.ccwu.cc
 proxy-groups:
