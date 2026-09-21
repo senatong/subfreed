@@ -17,194 +17,16 @@ proxies:
   ws-opts:
     path: /vws/
     headers:
-      Host: 149.202.58.99
+      Host: bab-6.site
 - name: 🇫🇷 法国 (France) 02 - Dyt
   type: ss
-  server: 54.36.174.140
+  server: 54.36.174.134
   port: 443
   cipher: chacha20-ietf-poly1305
   password: mrs2e9a
   udp: true
 - name: 🇫🇷 法国 (France) 03 - Dyt
   type: vless
-  server: 15.188.103.174
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 04 - Dyt
-  type: vless
-  server: 104.21.72.47
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: trex-panel-nubj0s.samifakor.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/TrexBridge/ef859652a80e
-    headers:
-      Host: trex-panel-nubj0s.samifakor.workers.dev
-- name: 🇫🇷 法国 (France) 05 - Dyt
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 06 - Dyt
-  type: ss
-  server: 54.36.174.140
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: mrs2e9a
-  udp: true
-- name: 🇫🇷 法国 (France) 07 - Dyt
-  type: vless
-  server: 172.67.152.98
-  port: 443
-  uuid: 5934b979-e128-4c90-a600-744b97bffc8c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 5dktcuajb2a1jxix7csnrmeucg.mahrademami.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/Fi3kP8cNjBoo8UPv?ed=2560
-    headers:
-      Host: 5dktcuajb2a1jxix7csnrmeucg.mahrademami.workers.dev
-- name: 🇫🇷 法国 (France) 08 - Dyt
-  type: vless
-  server: 172.67.152.98
-  port: 443
-  uuid: 5934b979-e128-4c90-a600-744b97bffc8c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 5dktcuajb2a1jxix7csnrmeucg.mahrademami.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/Fi3kP8cNjBoo8UPv?ed=2560
-    headers:
-      Host: 5dktcuajb2a1jxix7csnrmeucg.mahrademami.workers.dev
-- name: 🇫🇷 法国 (France) 09 - Dyt
-  type: vless
-  server: 13.36.1.52
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 10 - Dyt
-  type: vless
-  server: 15.188.103.174
-  port: 22223
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 11 - Dyt
-  type: vless
-  server: 15.224.194.93
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 12 - Dyt
-  type: vless
-  server: 104.21.32.142
-  port: 443
-  uuid: 5934b979-e128-4c90-a600-744b97bffc8c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 5dktcuajb2a1jxix7csnrmeucg.mahrademami.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/Fi3kP8cNjBoo8UPv?ed=2560
-    headers:
-      Host: 5dktcuajb2a1jxix7csnrmeucg.mahrademami.workers.dev
-- name: 🇫🇷 法国 (France) 13 - Dyt
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 14 - Dyt
-  type: vless
-  server: 15.224.194.93
-  port: 22224
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 15 - Dyt
-  type: vless
-  server: 104.21.50.143
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-5a26a30b00dc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/5a26a30b00dc
-    headers:
-      Host: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
-- name: 🇫🇷 法国 (France) 16 - Dyt
-  type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇫🇷 法国 (France) 17 - Dyt
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 18 - Dyt
-  type: vless
-  server: 172.67.175.23
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: trex-panel-nubj0s.samifakor.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/TrexBridge/ef859652a80e
-    headers:
-      Host: trex-panel-nubj0s.samifakor.workers.dev
-- name: 🇫🇷 法国 (France) 19 - Dyt
-  type: vless
   server: 149.202.58.99
   port: 443
   uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
@@ -217,69 +39,7 @@ proxies:
     path: /vws/
     headers:
       Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 20 - Dyt
-  type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇫🇷 法国 (France) 21 - Dyt
-  type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 22 - Dyt
-  type: vless
-  server: 13.36.1.52
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 23 - Dyt
-  type: vless
-  server: 172.67.193.182
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: trex-panel-nubj0s.samifakor.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/TrexBridge/ef859652a80e
-    headers:
-      Host: trex-panel-nubj0s.samifakor.workers.dev
-- name: 🇫🇷 法国 (France) 24 - Dyt
-  type: vless
-  server: 172.67.206.254
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-5a26a30b00dc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/5a26a30b00dc
-    headers:
-      Host: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
-- name: 🇫🇷 法国 (France) 25 - Dyt
+- name: 🇫🇷 法国 (France) 04 - Dyt
   type: vmess
   server: 188.114.96.19
   port: 80
@@ -294,7 +54,58 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇫🇷 法国 (France) 26 - Dyt
+- name: 🇫🇷 法国 (France) 05 - Dyt
+  type: ss
+  server: 54.36.174.140
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: mrs2e9a
+  udp: true
+- name: 🇫🇷 法国 (France) 06 - Dyt
+  type: vless
+  server: 172.67.206.254
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-5a26a30b00dc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/5a26a30b00dc
+    headers:
+      Host: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
+- name: 🇫🇷 法国 (France) 07 - Dyt
+  type: vless
+  server: 15.188.103.174
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 08 - Dyt
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+  udp: true
+- name: 🇫🇷 法国 (France) 09 - Dyt
+  type: ss
+  server: 54.36.174.140
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: mrs2e9a
+  udp: true
+- name: 🇫🇷 法国 (France) 10 - Dyt
+  type: vless
+  server: 15.188.103.174
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 11 - Dyt
   type: vmess
   server: 188.114.96.19
   port: 80
@@ -309,39 +120,20 @@ proxies:
     path: /d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560
     headers:
       Host: https.http.www.net.com.ramseyv2.ir.
-- name: 🇫🇷 法国 (France) 27 - Dyt
-  type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-  udp: true
-- name: 🇫🇷 法国 (France) 28 - Dyt
+- name: 🇫🇷 法国 (France) 12 - Dyt
   type: vless
-  server: 34.155.10.226
+  server: 104.21.50.143
   port: 443
-  uuid: d619964d-26d6-452d-9860-6f058f03ba8e
+  uuid: 50414e45-4c5f-5a45-5553-5a26a30b00dc
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 6tH_NDFcxWn60B3s-MgrkBTU2yUUBY42ZG1av50Ywhk
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 29 - Dyt
-  type: vless
-  server: 104.20.17.127
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: trex-panel-nubj0s.samifakor.workers.dev
+  servername: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
   network: ws
   ws-opts:
-    path: /stream/TrexBridge/ef859652a80e
+    path: /stream/PANEL_ZEUS/5a26a30b00dc
     headers:
-      Host: trex-panel-nubj0s.samifakor.workers.dev
+      Host: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -359,23 +151,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 10 - Dyt
   - 🇫🇷 法国 (France) 11 - Dyt
   - 🇫🇷 法国 (France) 12 - Dyt
-  - 🇫🇷 法国 (France) 13 - Dyt
-  - 🇫🇷 法国 (France) 14 - Dyt
-  - 🇫🇷 法国 (France) 15 - Dyt
-  - 🇫🇷 法国 (France) 16 - Dyt
-  - 🇫🇷 法国 (France) 17 - Dyt
-  - 🇫🇷 法国 (France) 18 - Dyt
-  - 🇫🇷 法国 (France) 19 - Dyt
-  - 🇫🇷 法国 (France) 20 - Dyt
-  - 🇫🇷 法国 (France) 21 - Dyt
-  - 🇫🇷 法国 (France) 22 - Dyt
-  - 🇫🇷 法国 (France) 23 - Dyt
-  - 🇫🇷 法国 (France) 24 - Dyt
-  - 🇫🇷 法国 (France) 25 - Dyt
-  - 🇫🇷 法国 (France) 26 - Dyt
-  - 🇫🇷 法国 (France) 27 - Dyt
-  - 🇫🇷 法国 (France) 28 - Dyt
-  - 🇫🇷 法国 (France) 29 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -393,22 +168,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 10 - Dyt
   - 🇫🇷 法国 (France) 11 - Dyt
   - 🇫🇷 法国 (France) 12 - Dyt
-  - 🇫🇷 法国 (France) 13 - Dyt
-  - 🇫🇷 法国 (France) 14 - Dyt
-  - 🇫🇷 法国 (France) 15 - Dyt
-  - 🇫🇷 法国 (France) 16 - Dyt
-  - 🇫🇷 法国 (France) 17 - Dyt
-  - 🇫🇷 法国 (France) 18 - Dyt
-  - 🇫🇷 法国 (France) 19 - Dyt
-  - 🇫🇷 法国 (France) 20 - Dyt
-  - 🇫🇷 法国 (France) 21 - Dyt
-  - 🇫🇷 法国 (France) 22 - Dyt
-  - 🇫🇷 法国 (France) 23 - Dyt
-  - 🇫🇷 法国 (France) 24 - Dyt
-  - 🇫🇷 法国 (France) 25 - Dyt
-  - 🇫🇷 法国 (France) 26 - Dyt
-  - 🇫🇷 法国 (France) 27 - Dyt
-  - 🇫🇷 法国 (France) 28 - Dyt
-  - 🇫🇷 法国 (France) 29 - Dyt
 rules:
 - MATCH,PROXIES
