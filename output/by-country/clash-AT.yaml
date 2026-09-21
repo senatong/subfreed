@@ -18,18 +18,18 @@ proxies:
   client-fingerprint: chrome
 - name: 🇦🇹 AT 02 - Dyt
   type: vless
-  server: 132.243.203.207
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 213.111.148.137
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: '%2Flives%3Fed%3D2560'
+    path: /fp=chrome
     headers:
-      Host: cdn8848.776676.xyz
+      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select

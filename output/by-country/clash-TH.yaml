@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
 - name: 🇹🇭 TH 02 - Dyt
   type: vless
   server: 34.15.162.1
@@ -30,18 +30,18 @@ proxies:
   client-fingerprint: chrome
 - name: 🇹🇭 TH 03 - Dyt
   type: vless
-  server: 160.30.54.63
+  server: 43.133.110.81
   port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
     headers:
-      Host: cdn8848.776676.xyz
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇹🇭 TH 04 - Dyt
   type: vless
   server: 34.15.162.1
@@ -53,7 +53,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: edge
 - name: 🇹🇭 TH 05 - Dyt
   type: vless
   server: 34.15.162.1
@@ -68,18 +68,16 @@ proxies:
   client-fingerprint: qq
 - name: 🇹🇭 TH 06 - Dyt
   type: vless
-  server: 43.133.110.81
+  server: 34.15.162.1
   port: 443
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇹🇭 TH 07 - Dyt
   type: vless
   server: 34.15.162.1
@@ -91,7 +89,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: edge
+  client-fingerprint: random
 - name: 🇹🇭 TH 08 - Dyt
   type: vless
   server: 34.15.162.1
@@ -103,34 +101,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇹🇭 TH 09 - Dyt
-  type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇹🇭 TH 10 - Dyt
-  type: vmess
-  server: 118.193.57.167
-  port: 49667
-  uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /d46bf492
-    headers:
-      Host: ''
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -144,8 +115,6 @@ proxy-groups:
   - 🇹🇭 TH 06 - Dyt
   - 🇹🇭 TH 07 - Dyt
   - 🇹🇭 TH 08 - Dyt
-  - 🇹🇭 TH 09 - Dyt
-  - 🇹🇭 TH 10 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -159,7 +128,5 @@ proxy-groups:
   - 🇹🇭 TH 06 - Dyt
   - 🇹🇭 TH 07 - Dyt
   - 🇹🇭 TH 08 - Dyt
-  - 🇹🇭 TH 09 - Dyt
-  - 🇹🇭 TH 10 - Dyt
 rules:
 - MATCH,PROXIES
