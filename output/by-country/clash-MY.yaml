@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - Dyt
   type: vless
-  server: 103.101.0.73
+  server: 140.235.39.19
   port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
@@ -15,7 +15,7 @@ proxies:
   servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: shuma.ccwu.cc
 proxy-groups:
