@@ -6,32 +6,76 @@ log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - Dyt
   type: vless
-  server: 157.228.142.148
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 35.199.90.53
+  port: 443
+  uuid: e9c2ed7f-79ab-40a8-8910-24468f5da712
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: '%2Fact%2Frank%2Flang%3Fed%3D2560'
-    headers:
-      Host: cdn8848.776676.xyz
+  reality-opts:
+    public-key: 0WXz3PJQnr-KprrwiO5BlKVRdqA4ZS6U5jGHc_aeJnw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇧🇷 BR 02 - Dyt
   type: vless
-  server: 157.151.4.93
+  server: 35.199.90.53
   port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  uuid: e9c2ed7f-79ab-40a8-8910-24468f5da712
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: shuma.ccwu.cc
+  reality-opts:
+    public-key: 0WXz3PJQnr-KprrwiO5BlKVRdqA4ZS6U5jGHc_aeJnw
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇧🇷 BR 03 - Dyt
+  type: vless
+  server: 35.199.90.53
+  port: 443
+  uuid: e9c2ed7f-79ab-40a8-8910-24468f5da712
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0WXz3PJQnr-KprrwiO5BlKVRdqA4ZS6U5jGHc_aeJnw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇧🇷 BR 04 - Dyt
+  type: vless
+  server: 35.199.90.53
+  port: 443
+  uuid: e9c2ed7f-79ab-40a8-8910-24468f5da712
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0WXz3PJQnr-KprrwiO5BlKVRdqA4ZS6U5jGHc_aeJnw
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 🇧🇷 BR 05 - Dyt
+  type: vless
+  server: 35.199.90.53
+  port: 443
+  uuid: e9c2ed7f-79ab-40a8-8910-24468f5da712
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0WXz3PJQnr-KprrwiO5BlKVRdqA4ZS6U5jGHc_aeJnw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇧🇷 BR 06 - Dyt
+  type: vless
+  server: 34.39.174.220
+  port: 443
+  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +83,10 @@ proxy-groups:
   - AUTO
   - 🇧🇷 BR 01 - Dyt
   - 🇧🇷 BR 02 - Dyt
+  - 🇧🇷 BR 03 - Dyt
+  - 🇧🇷 BR 04 - Dyt
+  - 🇧🇷 BR 05 - Dyt
+  - 🇧🇷 BR 06 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +94,9 @@ proxy-groups:
   proxies:
   - 🇧🇷 BR 01 - Dyt
   - 🇧🇷 BR 02 - Dyt
+  - 🇧🇷 BR 03 - Dyt
+  - 🇧🇷 BR 04 - Dyt
+  - 🇧🇷 BR 05 - Dyt
+  - 🇧🇷 BR 06 - Dyt
 rules:
 - MATCH,PROXIES
