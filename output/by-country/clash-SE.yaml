@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇾 MY 01 - Dyt
+- name: 🇸🇪 SE 01 - Dyt
   type: vless
-  server: 140.235.39.19
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  server: 143.246.194.60
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /vless-test
     headers:
-      Host: shuma.ccwu.cc
+      Host: 143.246.194.60
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇾 MY 01 - Dyt
+  - 🇸🇪 SE 01 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 MY 01 - Dyt
+  - 🇸🇪 SE 01 - Dyt
 rules:
 - MATCH,PROXIES
