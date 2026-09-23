@@ -5,42 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - Dyt
-  type: vmess
-  server: 103.215.218.158
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 02 - Dyt
   type: vless
-  server: 146.75.84.3
-  port: 443
-  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
+  server: 185.71.219.128
+  port: 2052
+  uuid: f4ade6db-3c64-4939-9f32-788b87a9392f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: BechBad.global.ssl.fastly.net
+  servername: 185.71.219.128
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - Dyt
-  - 🇹🇷 土耳其 (Turkey) 02 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - Dyt
-  - 🇹🇷 土耳其 (Turkey) 02 - Dyt
 rules:
 - MATCH,PROXIES
