@@ -5,98 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - Dyt
-  type: vless
-  server: a2.arshia-nova.ir
-  port: 443
-  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 02 - Dyt
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--BYA---@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 03 - Dyt
   type: ss
   server: p1tun3.greewebservices.ir
   port: 2070
   cipher: chacha20-ietf-poly1305
   password: cVvgP0Bz69hsErPBvqKbwQ
   udp: true
-- name: 🇫🇮 FI 04 - Dyt
-  type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 05 - Dyt
-  type: vless
-  server: karo.rick313.dpdns.org
-  port: 2087
-  uuid: 2e4e6812-be87-415b-a2e8-b0e17e9f2da7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: karo.rick313.dpdns.org
-- name: 🇫🇮 FI 06 - Dyt
-  type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?edTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: c12.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇮 FI 01 - Dyt
-  - 🇫🇮 FI 02 - Dyt
-  - 🇫🇮 FI 03 - Dyt
-  - 🇫🇮 FI 04 - Dyt
-  - 🇫🇮 FI 05 - Dyt
-  - 🇫🇮 FI 06 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 FI 01 - Dyt
-  - 🇫🇮 FI 02 - Dyt
-  - 🇫🇮 FI 03 - Dyt
-  - 🇫🇮 FI 04 - Dyt
-  - 🇫🇮 FI 05 - Dyt
-  - 🇫🇮 FI 06 - Dyt
 rules:
 - MATCH,PROXIES
