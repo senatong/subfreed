@@ -6,16 +6,17 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - Dyt
   type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: a5e01e69-d31d-4867-8433-bd77a82970f6
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - Dyt
   type: vless
   server: uae.unixzone.us
@@ -56,7 +57,7 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 05 - Dyt
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -69,6 +70,32 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 06 - Dyt
   type: vless
+  server: 45.130.125.201
+  port: 80
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 07 - Dyt
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 08 - Dyt
+  type: vless
   server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -80,21 +107,35 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - Dyt
+- name: 🇦🇪 阿联酋 (UAE) 09 - Dyt
   type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 71470f80-ee36-47e0-8089-0987657ea5d4
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 08 - Dyt
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 10 - Dyt
   type: vless
   server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 11 - Dyt
+  type: vless
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -118,6 +159,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - Dyt
   - 🇦🇪 阿联酋 (UAE) 07 - Dyt
   - 🇦🇪 阿联酋 (UAE) 08 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 09 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 10 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 11 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -131,5 +175,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - Dyt
   - 🇦🇪 阿联酋 (UAE) 07 - Dyt
   - 🇦🇪 阿联酋 (UAE) 08 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 09 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 10 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 11 - Dyt
 rules:
 - MATCH,PROXIES
