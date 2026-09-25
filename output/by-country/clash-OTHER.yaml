@@ -6,7 +6,35 @@ log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - Dyt
   type: vless
-  server: 104.18.46.234
+  server: 172.67.140.160
+  port: 443
+  uuid: 1aa96574-c28b-4ee9-855d-ebdbbf1f7e90
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 5-stAtic-ImG-m13.xDC.ccWu.cC
+  network: ws
+  ws-opts:
+    path: /ED3ZQPu7lqyeDGD58KabZ
+    headers:
+      Host: 5-StATIc-iMG-M13.xdC.CCwU.Cc
+- name: 🌐 其他地区 (Other) 02 - Dyt
+  type: vless
+  server: 104.21.13.173
+  port: 443
+  uuid: 7700ff6d-cefb-4768-a806-ec4f63fe3b38
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 1-M13.4B49f101-6328-41C6-953d-00Ceb79B58aC.kdNs.Fr
+  network: ws
+  ws-opts:
+    path: /ED3ZQPu7lqyeDGD58KabZ
+    headers:
+      Host: 1-m13.4b49F101-6328-41C6-953d-00cEB79B58aC.KDns.Fr
+- name: 🌐 其他地区 (Other) 03 - Dyt
+  type: vless
+  server: 172.64.32.108
   port: 2086
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -17,93 +45,77 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 02 - Dyt
-  type: vless
-  server: 104.21.81.50
-  port: 2096
-  uuid: c648c6d0-4d3e-4f51-8ee6-4fcdbdddd684
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: PEekCoNFig.hAMRahfreE2.wORKERs.dEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoibTBZdXp5cm93NSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzJhMDI6ODk4OjE0Njo2NDo6XSIsIlsyNjAyOmZjNTk6MTE6NjQ6Ol0iLCJbMjYwMjpmYzU5OmIwOjY0OjpdIl19
-    headers:
-      Host: peekconfig.hamrahfree2.workers.dev
-- name: 🌐 其他地区 (Other) 03 - Dyt
-  type: vless
-  server: 104.21.14.232
-  port: 443
-  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nuclear.us.kg
-  network: ws
-  ws-opts:
-    path: /free/1.226.227.169:50001
-    headers:
-      Host: nuclear.us.kg
 - name: 🌐 其他地区 (Other) 04 - Dyt
   type: vless
-  server: 172.67.206.231
+  server: 172.67.195.150
   port: 443
-  uuid: 58e78cf6-2b50-40fb-b6bf-ec7eae5b5000
+  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hi.n2foriran.workers.dev
+  servername: 1-m20.dbfb5a2a-81c7-481a-b0cc-0f51aa86cc51.kdns.fr
   network: ws
   ws-opts:
-    path: /ws
+    path: /8qMLgNapWf6SBxo8fhQlVPYO
     headers:
-      Host: hi.n2foriran.workers.dev
+      Host: 1-m20.dbfb5a2a-81c7-481a-b0cc-0f51aa86cc51.kdns.fr
 - name: 🌐 其他地区 (Other) 05 - Dyt
   type: vless
-  server: 172.67.137.74
-  port: 2053
-  uuid: 774d0ea8-0e45-4078-ab22-14e4f5fff10f
+  server: 162.159.0.169
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: broad-HIlL-c0ae.anz-rAHII23.wORkers.dev
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiaWtrbUhXQmMwN0xFOVUiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6MTE6NjQ6Ol0iXX0
+    path: /?ed=2560security=tls
     headers:
-      Host: broad-hill-c0ae.anz-rahii23.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🌐 其他地区 (Other) 06 - Dyt
   type: vless
-  server: 104.21.90.161
-  port: 443
-  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
+  server: 104.21.70.21
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 4-m19.pErU-Line.cCwU.cc
   network: ws
   ws-opts:
-    path: /CjBjB9sn5pCvaSwScc
+    path: /?ed=2560
     headers:
-      Host: 4-m19.pERU-LIne.CCwu.CC
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🌐 其他地区 (Other) 07 - Dyt
   type: vless
-  server: 172.67.156.249
-  port: 2096
-  uuid: c648c6d0-4d3e-4f51-8ee6-4fcdbdddd684
+  server: 172.67.156.222
+  port: 443
+  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: PEekCoNFig.hAMRahfreE2.wORKERs.dEv
+  servername: 3-m16.ChIAn-mAI-6.kDnS.Fr
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoibTBZdXp5cm93NSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzJhMDI6ODk4OjE0Njo2NDo6XSIsIlsyNjAyOmZjNTk6MTE6NjQ6Ol0iLCJbMjYwMjpmYzU5OmIwOjY0OjpdIl19
+    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
     headers:
-      Host: peekconfig.hamrahfree2.workers.dev
+      Host: 3-m16.ChIAn-Mai-6.kdNs.Fr
 - name: 🌐 其他地区 (Other) 08 - Dyt
   type: vless
-  server: 172.64.154.8
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 09 - Dyt
+  type: vless
+  server: 172.64.42.85
   port: 8080
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -114,131 +126,35 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 09 - Dyt
-  type: vless
-  server: 104.27.52.69
-  port: 443
-  uuid: 73796e63-0000-4000-8000-000000000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: icy-pine-5efc.aoigjojowfie123.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: icy-pine-5efc.aoigjojowfie123.workers.dev
 - name: 🌐 其他地区 (Other) 10 - Dyt
   type: vless
-  server: 172.64.154.8
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 104.21.5.245
+  port: 443
+  uuid: 1aa96574-c28b-4ee9-855d-ebdbbf1f7e90
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 4-m13-StATIC-CSS.XcV.Ccwu.cc
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /ED3ZQPu7lqyeDGD58KabZ
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: 4-M13-sTatic-csS.Xcv.cCWU.CC
 - name: 🌐 其他地区 (Other) 11 - Dyt
   type: vless
-  server: 172.64.53.55
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 104.21.27.240
+  port: 443
+  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 4-m20.20260721-9dc5-4f76-ad18-12cd86bca954.ccwu.cc
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls+
+    path: /8qMLgNapWf6SBxo8fhQlVPYO
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: 4-m20.20260721-9dc5-4f76-ad18-12cd86bca954.ccwu.cc
 - name: 🌐 其他地区 (Other) 12 - Dyt
-  type: vless
-  server: 104.18.152.233
-  port: 443
-  uuid: 08b006dc-17e4-411d-9528-4369d72ad646
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: support.zoom.us.ex33r.eu.cc
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: support.zoom.us.ex33r.eu.cc
-- name: 🌐 其他地区 (Other) 13 - Dyt
-  type: vless
-  server: 188.114.96.2
-  port: 2096
-  uuid: 8d82944e-17b9-473f-a456-dec9a6e21471
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: peekconfig.peekconf1.workers.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoidnlSRWhQQ3ZCNGZRNHVYMyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzJhMDI6ODk4OjE0Njo2NDo6XSJdfQ
-    headers:
-      Host: peekconfig.peekconf1.workers.dev
-- name: 🌐 其他地区 (Other) 14 - Dyt
-  type: vless
-  server: 172.64.144.198
-  port: 443
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: powered-by-surena.configfarsi695fd42d43c58.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: powered-by-surena.configfarsi695fd42d43c58.workers.dev
-- name: 🌐 其他地区 (Other) 15 - Dyt
-  type: vless
-  server: 104.21.63.208
-  port: 443
-  uuid: e73d4e2a-ac73-4948-960a-2c2dd57b7ea8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: yellow-disk-0edf.diyenec996.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: yellow-disk-0edf.diyenec996.workers.dev
-- name: 🌐 其他地区 (Other) 16 - Dyt
-  type: vless
-  server: 104.25.79.119
-  port: 443
-  uuid: 7a657573-6959-5caa-a5db-9f7c85aafaae
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: urzpn8e9ub5s.shoameni2.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/9f7c85aafaae
-    headers:
-      Host: urzpn8e9ub5s.shoameni2.workers.dev
-- name: 🌐 其他地区 (Other) 17 - Dyt
-  type: vless
-  server: 188.114.97.6
-  port: 2096
-  uuid: c648c6d0-4d3e-4f51-8ee6-4fcdbdddd684
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: PEekCoNFig.hAMRahfreE2.wORKERs.dEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoibTBZdXp5cm93NSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzJhMDI6ODk4OjE0Njo2NDo6XSIsIlsyNjAyOmZjNTk6MTE6NjQ6Ol0iLCJbMjYwMjpmYzU5OmIwOjY0OjpdIl19
-    headers:
-      Host: peekconfig.hamrahfree2.workers.dev
-- name: 🌐 其他地区 (Other) 18 - Dyt
   type: vless
   server: 172.67.206.48
   port: 443
@@ -252,523 +168,136 @@ proxies:
     path: /JRr6VGcSLFc034DC6sDbwyWJLbB
     headers:
       Host: 1-M16.AyUtTHAYA2030.KdNS.fR
-- name: 🌐 其他地区 (Other) 19 - Dyt
+- name: 🌐 其他地区 (Other) 13 - Dyt
   type: vless
-  server: 172.64.229.170
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 20 - Dyt
-  type: vless
-  server: 104.21.73.135
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-7bac159e3b40
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: web-app-ji3j1z.app-wuuhuw.workers.dev
-  network: ws
-  ws-opts:
-    path: /api/ws
-    headers:
-      Host: web-app-ji3j1z.app-wuuhuw.workers.dev
-- name: 🌐 其他地区 (Other) 21 - Dyt
-  type: vless
-  server: 104.18.28.234
-  port: 443
-  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: netlivpn5505.ffffdsaaa.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: netlivpn5505.ffffdsaaa.workers.dev
-- name: 🌐 其他地区 (Other) 22 - Dyt
-  type: vless
-  server: 172.67.68.157
-  port: 2096
-  uuid: c49a0981-6d37-4ec0-9a01-1b63ccc07e4f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pEeKcOnFig.haMRaHfREe1.wOrKerS.DEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiZHlCcVpqeEYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iLCJbMjYwMjpmYzU5OjExOjY0OjpdIiwiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: peekconfig.hamrahfree1.workers.dev
-- name: 🌐 其他地区 (Other) 23 - Dyt
-  type: vless
-  server: channel.t-me-sh4dow-vpn.workers.dev
-  port: 443
-  uuid: 9ec16323-954c-4b09-aec9-367e18844fa8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: channel.t-me-sh4dow-vpn.workers.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiWlNHcnk5RHUiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6MTE6NjQ6Ol0iXX0=
-    headers:
-      Host: channel.t-me-sh4dow-vpn.workers.dev
-- name: 🌐 其他地区 (Other) 24 - Dyt
-  type: vless
-  server: 104.21.19.53
-  port: 443
-  uuid: d682c8f4-e719-577e-cbe9-2e5b00000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 0406.infinityconfig7.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: 0406.infinityconfig7.workers.dev
-- name: 🌐 其他地区 (Other) 25 - Dyt
-  type: vless
-  server: 104.24.68.193
-  port: 443
-  uuid: ed0e05af-49ab-4ea8-a39c-634855811b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wild-grass-1917.tmpduardoolfsonerluke15.workers.dev
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: wild-grass-1917.tmpduardoolfsonerluke15.workers.dev
-- name: 🌐 其他地区 (Other) 26 - Dyt
-  type: vless
-  server: 172.67.212.195
-  port: 443
-  uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2-m17.KUWAIT-AIrLInE.kDNS.Fr
-  network: ws
-  ws-opts:
-    path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
-    headers:
-      Host: 2-m17.KuwAIT-aiRliNE.KDns.Fr
-- name: 🌐 其他地区 (Other) 27 - Dyt
-  type: vless
-  server: 104.21.22.200
-  port: 443
-  uuid: 58e78cf6-2b50-40fb-b6bf-ec7eae5b5000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hi.n2foriran.workers.dev
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: hi.n2foriran.workers.dev
-- name: 🌐 其他地区 (Other) 28 - Dyt
-  type: vless
-  server: 190.93.245.176
-  port: 443
-  uuid: 7493883f-6047-46a7-8d95-f59e137ffaec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: auto-749388.rohawmk.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: auto-749388.rohawmk.workers.dev
-- name: 🌐 其他地区 (Other) 29 - Dyt
-  type: vless
-  server: 172.64.229.170
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 30 - Dyt
-  type: vless
-  server: 104.21.46.219
-  port: 2096
-  uuid: c49a0981-6d37-4ec0-9a01-1b63ccc07e4f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pEeKcOnFig.haMRaHfREe1.wOrKerS.DEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiZHlCcVpqeEYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iLCJbMjYwMjpmYzU5OjExOjY0OjpdIiwiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ
-    headers:
-      Host: peekconfig.hamrahfree1.workers.dev
-- name: 🌐 其他地区 (Other) 31 - Dyt
-  type: vless
-  server: 172.67.174.157
-  port: 2083
-  uuid: 283665ab-54c2-4c59-ac55-5e8388558eba
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 27l432tlhnpcojr6u0d3.adfasdfadfasdf.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/oCCSZfAWhGqcVO3WOEnIPj9Z9ke?ed
-    headers:
-      Host: 27l432tlhnpcojr6u0d3.adfasdfadfasdf.workers.dev
-- name: 🌐 其他地区 (Other) 32 - Dyt
-  type: vless
-  server: 104.18.39.218
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 33 - Dyt
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: bd9ff08b-d042-3650-48e4-c4b400000000
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-    headers:
-      Host: netlivpn2950.bbxff.workers.dev
-- name: 🌐 其他地区 (Other) 34 - Dyt
-  type: vless
-  server: 172.67.161.136
-  port: 443
-  uuid: d713a25e-d96c-4755-94f4-9a0e0cd1ad68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bpb-PanEl-4e2C.SAkWra939.wORKErS.DEV
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiVndBTWp2RGsyc0g4TlgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjoiWzJhMDI6ODk4OjE0Njo2NDo6XSJ9?ed
-    headers:
-      Host: bpb-panel-4e2c.sakwra939.workers.dev
-- name: 🌐 其他地区 (Other) 35 - Dyt
-  type: vless
-  server: 104.21.5.103
-  port: 443
-  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3-M19.Lop.CCwU.Cc
-  network: ws
-  ws-opts:
-    path: /CjBjB9sn5pCvaSwScc
-    headers:
-      Host: 3-M19.loP.ccWU.cC
-- name: 🌐 其他地区 (Other) 36 - Dyt
-  type: vless
-  server: 172.67.170.204
-  port: 443
-  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3-M19.iKL.cCwu.cC
-  network: ws
-  ws-opts:
-    path: /CjBjB9sn5pCvaSwScc
-    headers:
-      Host: 3-m19.IKl.CcWu.CC
-- name: 🌐 其他地区 (Other) 37 - Dyt
-  type: vless
-  server: 172.64.158.146
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 38 - Dyt
-  type: vless
-  server: 172.66.149.243
-  port: 8443
-  uuid: ededaf7e-ad86-40bc-b837-b1403c56f311
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bazyepc.aminrazavi1384.workers.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoid2tkV0g2R3kxYlNTIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19
-    headers:
-      Host: bazyepc.aminrazavi1384.workers.dev
-- name: 🌐 其他地区 (Other) 39 - Dyt
-  type: vless
-  server: 172.67.214.165
+  server: 172.67.185.131
   port: 443
   uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 5-backend-infra-m20.g000g.ccwu.cc
+  servername: 4-m20.20260721-a5c2-48bd-bb63-efdae93240e3.ccwu.cc
   network: ws
   ws-opts:
     path: /8qMLgNapWf6SBxo8fhQlVPYO
     headers:
-      Host: 5-backend-infra-m20.g000g.ccwu.cc
-- name: 🌐 其他地区 (Other) 40 - Dyt
+      Host: 4-m20.20260721-a5c2-48bd-bb63-efdae93240e3.ccwu.cc
+- name: 🌐 其他地区 (Other) 14 - Dyt
   type: vless
-  server: 104.21.19.53
-  port: 2053
-  uuid: d682c8f4-e719-577e-cbe9-2e5b00000001
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 0406.infinityconfig7.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: 0406.infinityconfig7.workers.dev
-- name: 🌐 其他地区 (Other) 41 - Dyt
-  type: vless
-  server: 104.17.25.32
+  server: 172.67.200.222
   port: 443
-  uuid: f5842fc5-8251-463e-ad57-350a247c20bc
+  uuid: 7700ff6d-cefb-4768-a806-ec4f63fe3b38
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: auto-f5842f.rohawmk.workers.dev
+  servername: 2-m13.4b49F101-6328-41c6-953d-00CeB79b58ac.KDnS.Fr
   network: ws
   ws-opts:
-    path: /
+    path: /ED3ZQPu7lqyeDGD58KabZ
     headers:
-      Host: auto-f5842f.rohawmk.workers.dev
-- name: 🌐 其他地区 (Other) 42 - Dyt
+      Host: 2-M13.4B49f101-6328-41C6-953d-00Ceb79B58aC.KDnS.FR
+- name: 🌐 其他地区 (Other) 15 - Dyt
   type: vless
-  server: server3.pegibol940.workers.dev
+  server: 172.67.133.136
   port: 443
-  uuid: 5da16620-0386-4da3-a252-12a6380ed1a6
+  uuid: 1aa96574-c28b-4ee9-855d-ebdbbf1f7e90
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: server3.pegibol940.workers.dev
+  servername: 4-m13.1332aFdC-0737-4BB1-8cA8-EE4f0cd20BC6.KDnS.FR
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiUHRlMEpuSzRFY1EyeUUwIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIiwiWzI2MDI6ZmM1OTpiMDo2NDo6XSIsIlsyNjAyOmZjNTk6MTE6NjQ6Ol0iXX0=
+    path: /ED3ZQPu7lqyeDGD58KabZ
     headers:
-      Host: server3.pegibol940.workers.dev
-- name: 🌐 其他地区 (Other) 43 - Dyt
+      Host: 4-m13.1332AfDC-0737-4bB1-8cA8-EE4f0cd20Bc6.kDNS.Fr
+- name: 🌐 其他地区 (Other) 16 - Dyt
   type: vless
-  server: 104.21.45.198
+  server: 104.21.39.176
+  port: 443
+  uuid: 1aa96574-c28b-4ee9-855d-ebdbbf1f7e90
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 5-m13.AYutThAyA.kDnS.FR
+  network: ws
+  ws-opts:
+    path: /ED3ZQPu7lqyeDGD58KabZ
+    headers:
+      Host: 5-M13.AyuTThAyA.KdNS.FR
+- name: 🌐 其他地区 (Other) 17 - Dyt
+  type: vless
+  server: 104.18.15.103
+  port: 443
+  uuid: 3c6d1933-b22a-484b-ac8a-63e24f5fba75
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: server9.9966338.xyz
+  network: ws
+  ws-opts:
+    path: /imnotarealherox
+    headers:
+      Host: server9.9966338.xyz
+- name: 🌐 其他地区 (Other) 18 - Dyt
+  type: vless
+  server: 172.67.133.188
+  port: 443
+  uuid: 8a2ae83c-0327-4703-a847-535a972bc636
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 5-M23.e9BC44F2-Fe6D-4B28-b604-2C29B8be1c3e.Kdns.Fr
+  network: ws
+  ws-opts:
+    path: /kXHZ0iPM96r8UDUAsTH2scSHpeWN
+    headers:
+      Host: 5-M23.e9BC44F2-Fe6D-4B28-b604-2C29B8be1c3e.Kdns.Fr
+- name: 🌐 其他地区 (Other) 19 - Dyt
+  type: vless
+  server: 188.114.97.6
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🌐 其他地区 (Other) 20 - Dyt
+  type: vless
+  server: 104.21.37.55
   port: 443
   uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: Img-EDGE-m16-2.caNaDa-ONliNE.eu.Cc
+  servername: 6-m16.cHiaN-MAI-8.kDnS.Fr
   network: ws
   ws-opts:
     path: /JRr6VGcSLFc034DC6sDbwyWJLbB
     headers:
-      Host: IMG-eDgE-m16-2.CaNaDA-online.eu.cc
-- name: 🌐 其他地区 (Other) 44 - Dyt
+      Host: 6-M16.chian-mAI-8.KdNs.fR
+- name: 🌐 其他地区 (Other) 21 - Dyt
   type: vless
-  server: 172.67.185.65
-  port: 2053
-  uuid: d682c8f4-e719-577e-cbe9-2e5b00000001
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 0406.infinityconfig7.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: 0406.infinityconfig7.workers.dev
-- name: 🌐 其他地区 (Other) 45 - Dyt
-  type: vless
-  server: 172.66.40.161
+  server: 104.21.91.102
   port: 443
-  uuid: c47eb7ab-2c2d-44e0-80cc-bb104f89a137
+  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: www.terence-tunnel.org
+  servername: 4-M16.aYUtTHAya2031.kdnS.fR
   network: ws
   ws-opts:
-    path: /tunnel
+    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
     headers:
-      Host: www.terence-tunnel.org
-- name: 🌐 其他地区 (Other) 46 - Dyt
+      Host: 4-M16.aYUtTHAya2031.kdnS.fR
+- name: 🌐 其他地区 (Other) 22 - Dyt
   type: vless
-  server: 172.67.160.192
-  port: 443
-  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nuclear.us.kg
-  network: ws
-  ws-opts:
-    path: /free/1.226.227.169:50001
-    headers:
-      Host: nuclear.us.kg
-- name: 🌐 其他地区 (Other) 47 - Dyt
-  type: vless
-  server: 104.25.157.74
-  port: 2083
-  uuid: 3cb4c775-bf08-4158-a0e3-cbae9ac452d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: orange-darkness-749f.phantomnettest1-65d.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: orange-darkness-749f.phantomnettest1-65d.workers.dev
-- name: 🌐 其他地区 (Other) 48 - Dyt
-  type: vless
-  server: 172.64.146.66
-  port: 443
-  uuid: 16e80f38-e97e-4b14-ba89-77d87a3e637f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ex3r.qzz.io
-  network: ws
-  ws-opts:
-    path: /sg-orcl
-    headers:
-      Host: ex3r.qzz.io
-- name: 🌐 其他地区 (Other) 49 - Dyt
-  type: vless
-  server: 104.21.6.208
-  port: 443
-  uuid: 2730487f-0ed5-4f04-92d5-f95f9253d4f4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ngfast-v2ngfast-v2ngfast-v2ngfast.jovego2551.workers.dev
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ngfast-v2ngfast-v2ngfast-v2ngfast.jovego2551.workers.dev
-- name: 🌐 其他地区 (Other) 50 - Dyt
-  type: vless
-  server: 172.67.160.192
-  port: 443
-  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nuclear.us.kg
-  network: ws
-  ws-opts:
-    path: /free/103.101.153.32:443
-    headers:
-      Host: nuclear.us.kg
-- name: 🌐 其他地区 (Other) 51 - Dyt
-  type: vless
-  server: 172.64.158.146
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 52 - Dyt
-  type: vless
-  server: 104.18.12.187
-  port: 443
-  uuid: 1f40d742-dfaa-4694-a509-3d81918a5673
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: auto-1f40d7.rohawmk.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: auto-1f40d7.rohawmk.workers.dev
-- name: 🌐 其他地区 (Other) 53 - Dyt
-  type: vless
-  server: 172.67.150.230
-  port: 443
-  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 8-M19.MEXICo-pOrt.Ccwu.Cc
-  network: ws
-  ws-opts:
-    path: /CjBjB9sn5pCvaSwScc
-    headers:
-      Host: 8-M19.mexIco-PoRT.CcWU.Cc
-- name: 🌐 其他地区 (Other) 54 - Dyt
-  type: vless
-  server: 172.67.148.211
-  port: 443
-  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2-M19.SoUtH-afrICa-chaNneL.cCWU.cC
-  network: ws
-  ws-opts:
-    path: /CjBjB9sn5pCvaSwScc
-    headers:
-      Host: 2-M19.SoUtH-AfRica-ChAnNel.Ccwu.CC
-- name: 🌐 其他地区 (Other) 55 - Dyt
-  type: vless
-  server: 104.21.80.252
-  port: 443
-  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 1-M19.ALbania.CcWu.CC
-  network: ws
-  ws-opts:
-    path: /CjBjB9sn5pCvaSwScc
-    headers:
-      Host: 1-M19.alBAniA.Ccwu.CC
-- name: 🌐 其他地区 (Other) 56 - Dyt
-  type: vless
-  server: chat.openai.com
+  server: 108.162.198.178
   port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
@@ -776,587 +305,50 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: vms.lifetime29.workers.dev
-- name: 🌐 其他地区 (Other) 57 - Dyt
-  type: vless
-  server: 104.21.93.99
-  port: 2083
-  uuid: 766f6c65-0000-4000-8000-787000000002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: volexproxy.karjadidd.workers.dev
-  network: ws
-  ws-opts:
-    path: /volexprosy
-    headers:
-      Host: volexproxy.karjadidd.workers.dev
-- name: 🌐 其他地区 (Other) 58 - Dyt
-  type: vless
-  server: 172.64.146.19
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-b138b248da68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: r5zenrelur2s.pqzdileiu8es.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/b138b248da68
-    headers:
-      Host: r5zenrelur2s.pqzdileiu8es.workers.dev
-- name: 🌐 其他地区 (Other) 59 - Dyt
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🌐 其他地区 (Other) 23 - Dyt
   type: vless
   server: 188.114.97.6
-  port: 2086
-  uuid: 7a629a11-b75a-4889-957d-dc0987a73a19
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoieVMzbmVFWlBsd3prIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed
-    headers:
-      Host: jimifree.jimshofree1.workers.dev
-- name: 🌐 其他地区 (Other) 60 - Dyt
-  type: vless
-  server: 104.18.46.46
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 61 - Dyt
-  type: vless
-  server: 104.21.61.23
-  port: 2083
-  uuid: 2730487f-0ed5-4f04-92d5-f95f9253d4f4
+  port: 443
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: v2ngfast-v2ngfast-v2ngfast-v2ngfast.jovego2551.workers.dev
+  servername: a.cwvps.eu.org
   network: ws
   ws-opts:
     path: /ws
     headers:
-      Host: v2ngfast-v2ngfast-v2ngfast-v2ngfast.jovego2551.workers.dev
-- name: 🌐 其他地区 (Other) 62 - Dyt
+      Host: a.cwvps.eu.org
+- name: 🌐 其他地区 (Other) 24 - Dyt
   type: vless
-  server: 104.21.94.41
+  server: 104.17.171.182
   port: 443
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
+  uuid: 8036f785-5b3f-4052-9e8d-01ae12d6061c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 3-m20.r00r.ccwu.cc
+  servername: tElEGraM1.FreEPErsIaNLAND6.WoRKerS.DeV
   network: ws
   ws-opts:
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
+    path: /eyJqdW5rIjoiT0V3YWVlV0NnZGlvZ1ciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iLCJbMjYwMjpmYzU5OjExOjY0OjpdIl19?ed=2560
     headers:
-      Host: 3-m20.r00r.ccwu.cc
-- name: 🌐 其他地区 (Other) 63 - Dyt
+      Host: telegram1.freepersianland6.workers.dev
+- name: 🌐 其他地区 (Other) 25 - Dyt
   type: vless
-  server: 172.67.148.163
+  server: 104.21.16.74
   port: 443
-  uuid: 682d30e4-3dfc-49f2-a017-9049119e3497
+  uuid: 7700ff6d-cefb-4768-a806-ec4f63fe3b38
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: free.server7peekconfig.workers.dev
+  servername: 2-M13.378bb7Ff-11cF-4Dad-B89e-72538aC75e29.kdNs.Fr
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiRm5kaUkxZVFtRVJBIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19
+    path: /ED3ZQPu7lqyeDGD58KabZ
     headers:
-      Host: free.server7peekconfig.workers.dev
-- name: 🌐 其他地区 (Other) 64 - Dyt
-  type: vless
-  server: 172.67.173.191
-  port: 443
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3-m20.e00e.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
-    headers:
-      Host: 3-m20.e00e.ccwu.cc
-- name: 🌐 其他地区 (Other) 65 - Dyt
-  type: vless
-  server: 172.67.221.230
-  port: 443
-  uuid: ec5cf915-2203-403c-9710-dbd553857929
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: novantunnel.tech
-  network: ws
-  ws-opts:
-    path: /Novan-AE27
-    headers:
-      Host: novantunnel.tech
-- name: 🌐 其他地区 (Other) 66 - Dyt
-  type: vless
-  server: 172.64.52.6
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls+
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 67 - Dyt
-  type: vless
-  server: 104.18.47.113
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 68 - Dyt
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 1c9daf90-3950-44ac-b06f-4cf9aec63170
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: FrEe.SeRVEr14peekCoNfIG.WoRKErS.dEV
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiQmFCblN3SmhXYTB3RzVoIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OjExOjY0OjpdIiwiWzJhMDI6ODk4OjE0Njo2NDo6XSIsIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
-    headers:
-      Host: free.server14peekconfig.workers.dev
-- name: 🌐 其他地区 (Other) 69 - Dyt
-  type: vless
-  server: 188.114.96.3
-  port: 2053
-  uuid: 0779dc74-2464-461f-90ef-874e4cae7fae
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: WeaTHeREd-MATH-1f8B.aMIRAligHasEMPoR010.WOrkERs.dEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiUHQ4YzBma3IxczlPIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OjExOjY0OjpdIl19?ed
-    headers:
-      Host: weathered-math-1f8b.amiralighasempor010.workers.dev
-- name: 🌐 其他地区 (Other) 70 - Dyt
-  type: vless
-  server: 190.93.245.176
-  port: 443
-  uuid: 7493883f-6047-46a7-8d95-f59e137ffaec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: auto-749388.rohawmk.workers.dev
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
-    headers:
-      Host: auto-749388.rohawmk.workers.dev
-- name: 🌐 其他地区 (Other) 71 - Dyt
-  type: vless
-  server: 104.18.191.129
-  port: 443
-  uuid: 7a657573-6959-5caa-a5db-9f7c85aafaae
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: urzpn8e9ub5s.shoameni2.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/9f7c85aafaae
-    headers:
-      Host: urzpn8e9ub5s.shoameni2.workers.dev
-- name: 🌐 其他地区 (Other) 72 - Dyt
-  type: vless
-  server: 104.26.12.54
-  port: 443
-  uuid: d195909a-eff4-489d-a261-955b904894cb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fREE.sERVer6PeeKCOnFIG.wOrkErs.dEv.
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoieUhYMWhoZEVEIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed=2560
-    headers:
-      Host: free.server6peekconfig.workers.dev.
-- name: 🌐 其他地区 (Other) 73 - Dyt
-  type: vless
-  server: 172.67.135.69
-  port: 443
-  uuid: 2730487f-0ed5-4f04-92d5-f95f9253d4f4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ngfast-v2ngfast-v2ngfast-v2ngfast.jovego2551.workers.dev
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ngfast-v2ngfast-v2ngfast-v2ngfast.jovego2551.workers.dev
-- name: 🌐 其他地区 (Other) 74 - Dyt
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 1043634e-8d9d-4736-83fa-f14ddc9d464c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: dfsuporte.garena.com.ex33r.eu.cc
-  network: ws
-  ws-opts:
-    path: id-amz
-    headers:
-      Host: dfsuporte.garena.com.ex33r.eu.cc
-- name: 🌐 其他地区 (Other) 75 - Dyt
-  type: vless
-  server: 104.21.81.114
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-d536262105ae
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ez-30c541.aliminaie277.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/d536262105ae
-    headers:
-      Host: ez-30c541.aliminaie277.workers.dev
-- name: 🌐 其他地区 (Other) 76 - Dyt
-  type: vless
-  server: 8.35.211.236
-  port: 443
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: kkkk-bq7.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kkkk-bq7.pages.dev
-- name: 🌐 其他地区 (Other) 77 - Dyt
-  type: vless
-  server: 104.21.69.130
-  port: 443
-  uuid: 5a5fba4d-6ae8-4975-936d-bb643fb15957
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: biyapain.biyapainbache.workers.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiV0lISkpXU0trWFI4OGdUIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OjExOjY0OjpdIl19
-    headers:
-      Host: biyapain.biyapainbache.workers.dev
-- name: 🌐 其他地区 (Other) 78 - Dyt
-  type: vless
-  server: 172.67.161.136
-  port: 443
-  uuid: d713a25e-d96c-4755-94f4-9a0e0cd1ad68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bpb-PanEl-4e2C.SAkWra939.wORKErS.DEV
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiVndBTWp2RGsyc0g4TlgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjoiWzJhMDI6ODk4OjE0Njo2NDo6XSJ9?ed
-    headers:
-      Host: bpb-panel-4e2c.sakwra939.workers.dev
-- name: 🌐 其他地区 (Other) 79 - Dyt
-  type: vless
-  server: 104.26.13.54
-  port: 443
-  uuid: ed0e05af-49ab-4ea8-a39c-634855811b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wild-grass-1917.tmpduardoolfsonerluke15.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wild-grass-1917.tmpduardoolfsonerluke15.workers.dev
-- name: 🌐 其他地区 (Other) 80 - Dyt
-  type: vless
-  server: 172.64.32.103
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 81 - Dyt
-  type: vless
-  server: 188.114.97.6
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 82 - Dyt
-  type: vless
-  server: 104.21.67.122
-  port: 443
-  uuid: ec5cf915-2203-403c-9710-dbd553857929
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: novantunnel.tech
-  network: ws
-  ws-opts:
-    path: /Novan-AE27
-    headers:
-      Host: novantunnel.tech
-- name: 🌐 其他地区 (Other) 83 - Dyt
-  type: vless
-  server: 172.64.32.108
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 84 - Dyt
-  type: vless
-  server: 172.67.198.109
-  port: 2087
-  uuid: 50414e45-4c5f-5a45-5553-9b0ee99e36dd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ez-abcc2c.igunsjgjnfgn.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ez-abcc2c.igunsjgjnfgn.workers.dev
-- name: 🌐 其他地区 (Other) 85 - Dyt
-  type: vless
-  server: 172.67.150.93
-  port: 443
-  uuid: e73d4e2a-ac73-4948-960a-2c2dd57b7ea8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: yellow-disk-0edf.diyenec996.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: yellow-disk-0edf.diyenec996.workers.dev
-- name: 🌐 其他地区 (Other) 86 - Dyt
-  type: vless
-  server: 104.21.60.169
-  port: 2087
-  uuid: 50414e45-4c5f-5a45-5553-9b0ee99e36dd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ez-abcc2c.igunsjgjnfgn.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ez-abcc2c.igunsjgjnfgn.workers.dev
-- name: 🌐 其他地区 (Other) 87 - Dyt
-  type: vless
-  server: 172.67.213.218
-  port: 2096
-  uuid: e6b59d15-364c-4025-899a-84efa291d651
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: REd-suRf-2007.MatriSkA.wOrkeRs.DeV
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiYWNoMkxHaUVYIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19
-    headers:
-      Host: red-surf-2007.matriska.workers.dev
-- name: 🌐 其他地区 (Other) 88 - Dyt
-  type: vless
-  server: 188.114.97.6
-  port: 2087
-  uuid: 50414e45-4c5f-5a45-5553-6f51879c0594
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: levikoconfig.levikogjgfdd.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: levikoconfig.levikogjgfdd.ir
-- name: 🌐 其他地区 (Other) 89 - Dyt
-  type: vless
-  server: 172.67.208.166
-  port: 2083
-  uuid: 766f6c65-0000-4000-8000-787000000002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: volexproxy.karjadidd.workers.dev
-  network: ws
-  ws-opts:
-    path: /volexprosy
-    headers:
-      Host: volexproxy.karjadidd.workers.dev
-- name: 🌐 其他地区 (Other) 90 - Dyt
-  type: vless
-  server: 104.24.22.81
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-b138b248da68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: r5zenrelur2s.pqzdileiu8es.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/b138b248da68
-    headers:
-      Host: r5zenrelur2s.pqzdileiu8es.workers.dev
-- name: 🌐 其他地区 (Other) 91 - Dyt
-  type: vless
-  server: 104.21.7.43
-  port: 2053
-  uuid: f58a9d78-d4cc-c8bc-03d0-2810846a33d1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hossein.shhrsbzhsyn.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: hossein.shhrsbzhsyn.workers.dev
-- name: 🌐 其他地区 (Other) 92 - Dyt
-  type: vless
-  server: 104.16.155.170
-  port: 2083
-  uuid: 50414e45-4c5f-5a45-5553-bb2d0bc74f3c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ez-e46ef3.ezaccess16b9d1f.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/bb2d0bc74f3c
-    headers:
-      Host: ez-e46ef3.ezaccess16b9d1f.workers.dev
-- name: 🌐 其他地区 (Other) 93 - Dyt
-  type: vless
-  server: 104.18.34.14
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls+
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 94 - Dyt
-  type: vless
-  server: 172.67.179.82
-  port: 443
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 0-m20.be434a1f-0c04-40c9-a43a-87cc7d7da502.kdns.fr
-  network: ws
-  ws-opts:
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
-    headers:
-      Host: 0-m20.be434a1f-0c04-40c9-a43a-87cc7d7da502.kdns.fr
-- name: 🌐 其他地区 (Other) 95 - Dyt
-  type: vless
-  server: 172.64.149.65
-  port: 443
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
-- name: 🌐 其他地区 (Other) 96 - Dyt
-  type: vless
-  server: 172.67.148.180
-  port: 443
-  uuid: 02e6ad71-7f85-4c3a-aac7-6171762bce87
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: suMMer-fieLD-3c5b.fSdfSDDf.WoRKErs.dEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoia2N4eldGd0p6NVY1V3hrIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OjExOjY0OjpdIl19?ed
-    headers:
-      Host: summer-field-3c5b.fsdfsddf.workers.dev
-- name: 🌐 其他地区 (Other) 97 - Dyt
-  type: vless
-  server: 172.67.156.147
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 98 - Dyt
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ?ed=2560
-    headers:
-      Host: a0hbm.jvb1.28f.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 99 - Dyt
+      Host: 2-M13.378bb7FF-11cF-4dAD-b89E-72538Ac75E29.KDNS.Fr
+- name: 🌐 其他地区 (Other) 26 - Dyt
   type: vless
   server: 172.64.156.60
   port: 443
@@ -1370,37 +362,50 @@ proxies:
     path: /
     headers:
       Host: powered-by-surena.configfarsi6982dd6e0355e.workers.dev
-- name: 🌐 其他地区 (Other) 100 - Dyt
+- name: 🌐 其他地区 (Other) 27 - Dyt
   type: vless
-  server: 104.21.70.21
+  server: 104.18.26.90
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: a.cwvps.eu.org
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /ws#TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
     headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 101 - Dyt
-  type: vless
-  server: 104.18.41.190
-  port: 443
-  uuid: 16e80f38-e97e-4b14-ba89-77d87a3e637f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ex3r.qzz.io
-  network: ws
-  ws-opts:
-    path: /sg-orcl
-    headers:
-      Host: ex3r.qzz.io
-- name: 🌐 其他地区 (Other) 102 - Dyt
+      Host: a.cwvps.eu.org
+- name: 🌐 其他地区 (Other) 28 - Dyt
   type: vless
   server: 104.18.46.46
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🌐 其他地区 (Other) 29 - Dyt
+  type: vless
+  server: 104.27.52.69
+  port: 443
+  uuid: 73796e63-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: icy-pine-5efc.aoigjojowfie123.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: icy-pine-5efc.aoigjojowfie123.workers.dev
+- name: 🌐 其他地区 (Other) 30 - Dyt
+  type: vless
+  server: 172.64.32.108
   port: 2082
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -1411,63 +416,74 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 103 - Dyt
+- name: 🌐 其他地区 (Other) 31 - Dyt
   type: vless
-  server: 188.114.96.7
+  server: 172.64.53.55
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🌐 其他地区 (Other) 32 - Dyt
+  type: vless
+  server: 104.18.39.218
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🌐 其他地区 (Other) 33 - Dyt
+  type: vless
+  server: 172.67.169.213
   port: 443
-  uuid: ba49d874-fe02-465d-82d3-ed981dc7694f
+  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: o94yv7lIF0-AnXiSd9EFeHVVS7mxn6Bh.z-ULe-IKA-d-e-Ne-k-E.WORKERs.DEv
+  servername: 2-m20.20260721-9dc5-4f76-ad18-12cd86bca954.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /8qMLgNapWf6SBxo8fhQlVPYO
     headers:
-      Host: o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev
-- name: 🌐 其他地区 (Other) 104 - Dyt
+      Host: 2-m20.20260721-9dc5-4f76-ad18-12cd86bca954.ccwu.cc
+- name: 🌐 其他地区 (Other) 34 - Dyt
   type: vless
-  server: 188.114.97.6
-  port: 2096
-  uuid: 50414e45-4c5f-5a45-5553-6f51879c0594
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: levikoconfig.levikogjgfdd.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: levikoconfig.levikogjgfdd.ir
-- name: 🌐 其他地区 (Other) 105 - Dyt
-  type: vless
-  server: 188.114.96.6
+  server: 172.67.132.100
   port: 443
-  uuid: a592b4ac-e209-4a13-3cef-539600000005
+  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 0404.infinityconfig5.workers.dev
+  servername: m16-6.chiAng-MAI2034.kDNS.Fr
   network: ws
   ws-opts:
-    path: /sync
+    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
     headers:
-      Host: 0404.infinityconfig5.workers.dev
-- name: 🌐 其他地区 (Other) 106 - Dyt
+      Host: m16-6.chiAng-MAI2034.kDNS.Fr
+- name: 🌐 其他地区 (Other) 35 - Dyt
   type: vless
-  server: 172.64.147.154
-  port: 443
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  server: 104.18.34.14
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
     headers:
-      Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
-- name: 🌐 其他地区 (Other) 107 - Dyt
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🌐 其他地区 (Other) 36 - Dyt
   type: vless
   server: 172.67.217.240
   port: 443
@@ -1481,287 +497,80 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 108 - Dyt
+- name: 🌐 其他地区 (Other) 37 - Dyt
   type: vless
-  server: 172.67.68.157
+  server: 104.21.14.232
   port: 443
-  uuid: ed0e05af-49ab-4ea8-a39c-634855811b03
+  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wild-grass-1917.tmpduardoolfsonerluke15.workers.dev
+  servername: nuclear.us.kg
   network: ws
   ws-opts:
-    path: /
+    path: /free/1.226.227.169:50001
     headers:
-      Host: wild-grass-1917.tmpduardoolfsonerluke15.workers.dev
-- name: 🌐 其他地区 (Other) 109 - Dyt
+      Host: nuclear.us.kg
+- name: 🌐 其他地区 (Other) 38 - Dyt
   type: vless
-  server: 104.27.110.37
+  server: 172.67.132.194
   port: 443
-  uuid: 50414e45-4c5f-5a45-5553-7bac159e3b40
+  uuid: 1aa96574-c28b-4ee9-855d-ebdbbf1f7e90
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: web-app-ji3j1z.app-wuuhuw.workers.dev
-  network: ws
-  ws-opts:
-    path: /api/ws
-    headers:
-      Host: web-app-ji3j1z.app-wuuhuw.workers.dev
-- name: 🌐 其他地区 (Other) 110 - Dyt
-  type: vless
-  server: 104.24.212.83
-  port: 443
-  uuid: 52322144-50c7-9d9f-6ba9-fdb600000005
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: broad-wind-e1ca.salmanmahigir9508.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: broad-wind-e1ca.salmanmahigir9508.workers.dev
-- name: 🌐 其他地区 (Other) 111 - Dyt
-  type: vless
-  server: 188.114.99.47
-  port: 443
-  uuid: 1f40d742-dfaa-4694-a509-3d81918a5673
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: auto-1f40d7.rohawmk.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: auto-1f40d7.rohawmk.workers.dev
-- name: 🌐 其他地区 (Other) 112 - Dyt
-  type: vless
-  server: 172.64.80.1
-  port: 443
-  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: curly-night-6928.ggdhchjk.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: curly-night-6928.ggdhchjk.workers.dev
-- name: 🌐 其他地区 (Other) 113 - Dyt
-  type: vless
-  server: 104.21.200.243
-  port: 2053
-  uuid: 7074b9d7-2183-8919-fc11-ca5e00000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: netlivpn2584.vjvdgbc.workers.dev
-  network: ws
-  ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-    headers:
-      Host: netlivpn2584.vjvdgbc.workers.dev
-- name: 🌐 其他地区 (Other) 114 - Dyt
-  type: vless
-  server: 172.64.158.146
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls+
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 115 - Dyt
-  type: vless
-  server: 104.21.69.130
-  port: 443
-  uuid: 5a5fba4d-6ae8-4975-936d-bb643fb15957
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: biyapain.biyapainbache.workers.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiV0lISkpXU0trWFI4OGdUIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OjExOjY0OjpdIl19
-    headers:
-      Host: biyapain.biyapainbache.workers.dev
-- name: 🌐 其他地区 (Other) 116 - Dyt
-  type: vless
-  server: 104.21.81.114
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-d536262105ae
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ez-30c541.aliminaie277.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/d536262105ae
-    headers:
-      Host: ez-30c541.aliminaie277.workers.dev
-- name: 🌐 其他地区 (Other) 117 - Dyt
-  type: vless
-  server: 172.67.68.157
-  port: 2096
-  uuid: c49a0981-6d37-4ec0-9a01-1b63ccc07e4f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pEeKcOnFig.haMRaHfREe1.wOrKerS.DEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiZHlCcVpqeEYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iLCJbMjYwMjpmYzU5OjExOjY0OjpdIiwiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560
-    headers:
-      Host: peekconfig.hamrahfree1.workers.dev
-- name: 🌐 其他地区 (Other) 118 - Dyt
-  type: vless
-  server: 172.67.145.14
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-7bac159e3b40
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: web-app-ji3j1z.app-wuuhuw.workers.dev
-  network: ws
-  ws-opts:
-    path: /api/ws
-    headers:
-      Host: web-app-ji3j1z.app-wuuhuw.workers.dev
-- name: 🌐 其他地区 (Other) 119 - Dyt
-  type: vless
-  server: 172.64.229.170
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 120 - Dyt
-  type: vless
-  server: 172.67.219.21
-  port: 443
-  uuid: 49c0ae46-767c-47d1-9703-8740e0c4b15a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: flat-night-edd0.hosein9saleazhuongooyeh87.workers.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiZU1pQlVqNTBYVmpTeDlCIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19
-    headers:
-      Host: flat-night-edd0.hosein9saleazhuongooyeh87.workers.dev
-- name: 🌐 其他地区 (Other) 121 - Dyt
-  type: vless
-  server: 172.67.189.79
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-d536262105ae
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ez-30c541.aliminaie277.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/d536262105ae
-    headers:
-      Host: ez-30c541.aliminaie277.workers.dev
-- name: 🌐 其他地区 (Other) 122 - Dyt
-  type: vless
-  server: 172.64.149.192
-  port: 443
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: powered-by-surena.configfarsi695fd42d43c58.workers.dev
-  network: ws
-  ws-opts:
-    path: ?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: powered-by-surena.configfarsi695fd42d43c58.workers.dev
-- name: 🌐 其他地区 (Other) 123 - Dyt
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 124 - Dyt
-  type: vless
-  server: 172.64.149.192
-  port: 443
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: powered-by-surena.configfarsi695fd42d43c58.workers.dev
-  network: ws
-  ws-opts:
-    path: /?ed
-    headers:
-      Host: powered-by-surena.configfarsi695fd42d43c58.workers.dev
-- name: 🌐 其他地区 (Other) 125 - Dyt
-  type: vless
-  server: 104.21.93.99
-  port: 2083
-  uuid: 766f6c65-0000-4000-8000-787000000002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: volexproxy.karjadidd.workers.dev
-  network: ws
-  ws-opts:
-    path: /volexprosy
-    headers:
-      Host: volexproxy.karjadidd.workers.dev
-- name: 🌐 其他地区 (Other) 126 - Dyt
-  type: vless
-  server: 172.67.137.154
-  port: 443
-  uuid: 49d598ee-4dfc-4001-95ca-99a5b6002e3c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tiny-leaf-f59f.my-lla-s-a-njo-s-e.workers.dev
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: tiny-leaf-f59f.my-lla-s-a-njo-s-e.workers.dev
-- name: 🌐 其他地区 (Other) 127 - Dyt
-  type: vless
-  server: 104.21.48.184
-  port: 443
-  uuid: 7700ff6d-cefb-4768-a806-ec4f63fe3b38
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 9-m13.1b9390a5-6209-45Bd-bA0E-057eBB2641C3.KdnS.Fr
+  servername: 3-m13.AYuttHAya-8.kdNs.FR
   network: ws
   ws-opts:
     path: /ED3ZQPu7lqyeDGD58KabZ
     headers:
-      Host: 9-m13.1b9390a5-6209-45BD-bA0E-057eBB2641c3.KDNs.fr
-- name: 🌐 其他地区 (Other) 128 - Dyt
+      Host: 3-m13.AYuttHAya-8.kdNs.FR
+- name: 🌐 其他地区 (Other) 39 - Dyt
   type: vless
-  server: 172.64.229.170
-  port: 2082
+  server: 172.67.155.252
+  port: 443
+  uuid: 1aa96574-c28b-4ee9-855d-ebdbbf1f7e90
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2-m13.0ee25773-D3D3-479D-a8fF-3F51D1D20031.kDNs.fR
+  network: ws
+  ws-opts:
+    path: /ED3ZQPu7lqyeDGD58KabZ
+    headers:
+      Host: 2-m13.0ee25773-D3d3-479D-a8ff-3F51d1D20031.kDnS.Fr
+- name: 🌐 其他地区 (Other) 40 - Dyt
+  type: vless
+  server: 104.21.51.202
+  port: 443
+  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 1-m20.20260721-a5c2-48bd-bb63-efdae93240e3.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /8qMLgNapWf6SBxo8fhQlVPYO
+    headers:
+      Host: 1-m20.20260721-a5c2-48bd-bb63-efdae93240e3.ccwu.cc
+- name: 🌐 其他地区 (Other) 41 - Dyt
+  type: vless
+  server: 104.21.46.51
+  port: 443
+  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 4-m20.d3b454d2-cba8-4b62-8d16-189d13194e3a.kdns.fr
+  network: ws
+  ws-opts:
+    path: /8qMLgNapWf6SBxo8fhQlVPYO
+    headers:
+      Host: 4-m20.d3b454d2-cba8-4b62-8d16-189d13194e3a.kdns.fr
+- name: 🌐 其他地区 (Other) 42 - Dyt
+  type: vless
+  server: 104.18.46.234
+  port: 80
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -1771,104 +580,132 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 129 - Dyt
+- name: 🌐 其他地区 (Other) 43 - Dyt
   type: vless
-  server: 188.114.96.6
+  server: 172.67.217.240
   port: 443
-  uuid: a592b4ac-e209-4a13-3cef-539600000005
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 0404.infinityconfig5.workers.dev
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /sync
+    path: /tyxyws
     headers:
-      Host: 0404.infinityconfig5.workers.dev
-- name: 🌐 其他地区 (Other) 130 - Dyt
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 44 - Dyt
   type: vless
-  server: 188.114.97.0
+  server: 104.21.64.209
   port: 443
-  uuid: 3e43ffd1-3f7b-45b0-a955-c249010c7ebc
+  uuid: 1aa96574-c28b-4ee9-855d-ebdbbf1f7e90
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: opeN-39.aVL-A47261.wORkers.Dev
+  servername: 6-M13.0eE25773-d3d3-479D-A8Ff-3F51d1D20031.kdNs.fR
   network: ws
   ws-opts:
-    path: /vl/opTpxA0twTE9wdy6dR?ed=2560
+    path: /ED3ZQPu7lqyeDGD58KabZ
     headers:
-      Host: open-39.avl-a47261.workers.dev
-- name: 🌐 其他地区 (Other) 131 - Dyt
+      Host: 6-M13.0ee25773-D3D3-479D-a8ff-3F51d1d20031.kDnS.fr
+- name: 🌐 其他地区 (Other) 45 - Dyt
   type: vless
-  server: 104.18.13.149
+  server: 172.67.156.147
   port: 443
-  uuid: 615d9f74-4d51-bad3-f240-2a840000000b
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: main.packetloss-com.workers.dev
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /silaber
+    path: /tyxyws
     headers:
-      Host: main.packetloss-com.workers.dev
-- name: 🌐 其他地区 (Other) 132 - Dyt
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 46 - Dyt
   type: vless
-  server: 104.27.124.133
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-7bac159e3b40
+  server: 172.67.213.218
+  port: 2096
+  uuid: e6b59d15-364c-4025-899a-84efa291d651
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: web-app-ji3j1z.app-wuuhuw.workers.dev
+  servername: REd-suRf-2007.MatriSkA.wOrkeRs.DeV
   network: ws
   ws-opts:
-    path: /api/ws
+    path: /eyJqdW5rIjoiYWNoMkxHaUVYIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19
     headers:
-      Host: web-app-ji3j1z.app-wuuhuw.workers.dev
-- name: 🌐 其他地区 (Other) 133 - Dyt
+      Host: red-surf-2007.matriska.workers.dev
+- name: 🌐 其他地区 (Other) 47 - Dyt
   type: vless
-  server: 104.24.212.81
+  server: 172.67.149.248
   port: 443
-  uuid: 52322144-50c7-9d9f-6ba9-fdb600000003
+  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: broad-wind-e1ca.salmanmahigir9508.workers.dev
+  servername: IMg-edGE-M16-3.HUAngsHANg.pP.UA
   network: ws
   ws-opts:
-    path: /sync
+    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
     headers:
-      Host: broad-wind-e1ca.salmanmahigir9508.workers.dev
-- name: 🌐 其他地区 (Other) 134 - Dyt
+      Host: IMG-edGe-m16-3.hUAnGSHANg.PP.uA
+- name: 🌐 其他地区 (Other) 48 - Dyt
   type: vless
-  server: 172.67.208.181
+  server: 172.67.214.165
   port: 443
-  uuid: 5a5fba4d-6ae8-4975-936d-bb643fb15957
+  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: biyapain.biyapainbache.workers.dev
+  servername: 5-backend-infra-m20.g000g.ccwu.cc
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiV0lISkpXU0trWFI4OGdUIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OjExOjY0OjpdIl19
+    path: /8qMLgNapWf6SBxo8fhQlVPYO
     headers:
-      Host: biyapain.biyapainbache.workers.dev
-- name: 🌐 其他地区 (Other) 135 - Dyt
+      Host: 5-backend-infra-m20.g000g.ccwu.cc
+- name: 🌐 其他地区 (Other) 49 - Dyt
   type: vless
-  server: 104.24.212.83
+  server: 172.67.160.192
   port: 443
-  uuid: 52322144-50c7-9d9f-6ba9-fdb600000005
+  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: broad-wind-e1ca.salmanmahigir9508.workers.dev
+  servername: nuclear.us.kg
   network: ws
   ws-opts:
-    path: /sync
+    path: /free/103.101.153.32:443
     headers:
-      Host: broad-wind-e1ca.salmanmahigir9508.workers.dev
+      Host: nuclear.us.kg
+- name: 🌐 其他地区 (Other) 50 - Dyt
+  type: vless
+  server: 172.67.160.192
+  port: 443
+  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nuclear.us.kg
+  network: ws
+  ws-opts:
+    path: /free/1.226.227.169:50001
+    headers:
+      Host: nuclear.us.kg
+- name: 🌐 其他地区 (Other) 51 - Dyt
+  type: vless
+  server: 104.20.30.10
+  port: 443
+  uuid: 91d28760-ecf1-450b-9170-d310111a0e6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: us9.69lover.my
+  network: ws
+  ws-opts:
+    path: /api/v2/63e9687fa53e441c/stream
+    headers:
+      Host: us9.69lover.my
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1925,90 +762,6 @@ proxy-groups:
   - 🌐 其他地区 (Other) 49 - Dyt
   - 🌐 其他地区 (Other) 50 - Dyt
   - 🌐 其他地区 (Other) 51 - Dyt
-  - 🌐 其他地区 (Other) 52 - Dyt
-  - 🌐 其他地区 (Other) 53 - Dyt
-  - 🌐 其他地区 (Other) 54 - Dyt
-  - 🌐 其他地区 (Other) 55 - Dyt
-  - 🌐 其他地区 (Other) 56 - Dyt
-  - 🌐 其他地区 (Other) 57 - Dyt
-  - 🌐 其他地区 (Other) 58 - Dyt
-  - 🌐 其他地区 (Other) 59 - Dyt
-  - 🌐 其他地区 (Other) 60 - Dyt
-  - 🌐 其他地区 (Other) 61 - Dyt
-  - 🌐 其他地区 (Other) 62 - Dyt
-  - 🌐 其他地区 (Other) 63 - Dyt
-  - 🌐 其他地区 (Other) 64 - Dyt
-  - 🌐 其他地区 (Other) 65 - Dyt
-  - 🌐 其他地区 (Other) 66 - Dyt
-  - 🌐 其他地区 (Other) 67 - Dyt
-  - 🌐 其他地区 (Other) 68 - Dyt
-  - 🌐 其他地区 (Other) 69 - Dyt
-  - 🌐 其他地区 (Other) 70 - Dyt
-  - 🌐 其他地区 (Other) 71 - Dyt
-  - 🌐 其他地区 (Other) 72 - Dyt
-  - 🌐 其他地区 (Other) 73 - Dyt
-  - 🌐 其他地区 (Other) 74 - Dyt
-  - 🌐 其他地区 (Other) 75 - Dyt
-  - 🌐 其他地区 (Other) 76 - Dyt
-  - 🌐 其他地区 (Other) 77 - Dyt
-  - 🌐 其他地区 (Other) 78 - Dyt
-  - 🌐 其他地区 (Other) 79 - Dyt
-  - 🌐 其他地区 (Other) 80 - Dyt
-  - 🌐 其他地区 (Other) 81 - Dyt
-  - 🌐 其他地区 (Other) 82 - Dyt
-  - 🌐 其他地区 (Other) 83 - Dyt
-  - 🌐 其他地区 (Other) 84 - Dyt
-  - 🌐 其他地区 (Other) 85 - Dyt
-  - 🌐 其他地区 (Other) 86 - Dyt
-  - 🌐 其他地区 (Other) 87 - Dyt
-  - 🌐 其他地区 (Other) 88 - Dyt
-  - 🌐 其他地区 (Other) 89 - Dyt
-  - 🌐 其他地区 (Other) 90 - Dyt
-  - 🌐 其他地区 (Other) 91 - Dyt
-  - 🌐 其他地区 (Other) 92 - Dyt
-  - 🌐 其他地区 (Other) 93 - Dyt
-  - 🌐 其他地区 (Other) 94 - Dyt
-  - 🌐 其他地区 (Other) 95 - Dyt
-  - 🌐 其他地区 (Other) 96 - Dyt
-  - 🌐 其他地区 (Other) 97 - Dyt
-  - 🌐 其他地区 (Other) 98 - Dyt
-  - 🌐 其他地区 (Other) 99 - Dyt
-  - 🌐 其他地区 (Other) 100 - Dyt
-  - 🌐 其他地区 (Other) 101 - Dyt
-  - 🌐 其他地区 (Other) 102 - Dyt
-  - 🌐 其他地区 (Other) 103 - Dyt
-  - 🌐 其他地区 (Other) 104 - Dyt
-  - 🌐 其他地区 (Other) 105 - Dyt
-  - 🌐 其他地区 (Other) 106 - Dyt
-  - 🌐 其他地区 (Other) 107 - Dyt
-  - 🌐 其他地区 (Other) 108 - Dyt
-  - 🌐 其他地区 (Other) 109 - Dyt
-  - 🌐 其他地区 (Other) 110 - Dyt
-  - 🌐 其他地区 (Other) 111 - Dyt
-  - 🌐 其他地区 (Other) 112 - Dyt
-  - 🌐 其他地区 (Other) 113 - Dyt
-  - 🌐 其他地区 (Other) 114 - Dyt
-  - 🌐 其他地区 (Other) 115 - Dyt
-  - 🌐 其他地区 (Other) 116 - Dyt
-  - 🌐 其他地区 (Other) 117 - Dyt
-  - 🌐 其他地区 (Other) 118 - Dyt
-  - 🌐 其他地区 (Other) 119 - Dyt
-  - 🌐 其他地区 (Other) 120 - Dyt
-  - 🌐 其他地区 (Other) 121 - Dyt
-  - 🌐 其他地区 (Other) 122 - Dyt
-  - 🌐 其他地区 (Other) 123 - Dyt
-  - 🌐 其他地区 (Other) 124 - Dyt
-  - 🌐 其他地区 (Other) 125 - Dyt
-  - 🌐 其他地区 (Other) 126 - Dyt
-  - 🌐 其他地区 (Other) 127 - Dyt
-  - 🌐 其他地区 (Other) 128 - Dyt
-  - 🌐 其他地区 (Other) 129 - Dyt
-  - 🌐 其他地区 (Other) 130 - Dyt
-  - 🌐 其他地区 (Other) 131 - Dyt
-  - 🌐 其他地区 (Other) 132 - Dyt
-  - 🌐 其他地区 (Other) 133 - Dyt
-  - 🌐 其他地区 (Other) 134 - Dyt
-  - 🌐 其他地区 (Other) 135 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -2065,89 +818,5 @@ proxy-groups:
   - 🌐 其他地区 (Other) 49 - Dyt
   - 🌐 其他地区 (Other) 50 - Dyt
   - 🌐 其他地区 (Other) 51 - Dyt
-  - 🌐 其他地区 (Other) 52 - Dyt
-  - 🌐 其他地区 (Other) 53 - Dyt
-  - 🌐 其他地区 (Other) 54 - Dyt
-  - 🌐 其他地区 (Other) 55 - Dyt
-  - 🌐 其他地区 (Other) 56 - Dyt
-  - 🌐 其他地区 (Other) 57 - Dyt
-  - 🌐 其他地区 (Other) 58 - Dyt
-  - 🌐 其他地区 (Other) 59 - Dyt
-  - 🌐 其他地区 (Other) 60 - Dyt
-  - 🌐 其他地区 (Other) 61 - Dyt
-  - 🌐 其他地区 (Other) 62 - Dyt
-  - 🌐 其他地区 (Other) 63 - Dyt
-  - 🌐 其他地区 (Other) 64 - Dyt
-  - 🌐 其他地区 (Other) 65 - Dyt
-  - 🌐 其他地区 (Other) 66 - Dyt
-  - 🌐 其他地区 (Other) 67 - Dyt
-  - 🌐 其他地区 (Other) 68 - Dyt
-  - 🌐 其他地区 (Other) 69 - Dyt
-  - 🌐 其他地区 (Other) 70 - Dyt
-  - 🌐 其他地区 (Other) 71 - Dyt
-  - 🌐 其他地区 (Other) 72 - Dyt
-  - 🌐 其他地区 (Other) 73 - Dyt
-  - 🌐 其他地区 (Other) 74 - Dyt
-  - 🌐 其他地区 (Other) 75 - Dyt
-  - 🌐 其他地区 (Other) 76 - Dyt
-  - 🌐 其他地区 (Other) 77 - Dyt
-  - 🌐 其他地区 (Other) 78 - Dyt
-  - 🌐 其他地区 (Other) 79 - Dyt
-  - 🌐 其他地区 (Other) 80 - Dyt
-  - 🌐 其他地区 (Other) 81 - Dyt
-  - 🌐 其他地区 (Other) 82 - Dyt
-  - 🌐 其他地区 (Other) 83 - Dyt
-  - 🌐 其他地区 (Other) 84 - Dyt
-  - 🌐 其他地区 (Other) 85 - Dyt
-  - 🌐 其他地区 (Other) 86 - Dyt
-  - 🌐 其他地区 (Other) 87 - Dyt
-  - 🌐 其他地区 (Other) 88 - Dyt
-  - 🌐 其他地区 (Other) 89 - Dyt
-  - 🌐 其他地区 (Other) 90 - Dyt
-  - 🌐 其他地区 (Other) 91 - Dyt
-  - 🌐 其他地区 (Other) 92 - Dyt
-  - 🌐 其他地区 (Other) 93 - Dyt
-  - 🌐 其他地区 (Other) 94 - Dyt
-  - 🌐 其他地区 (Other) 95 - Dyt
-  - 🌐 其他地区 (Other) 96 - Dyt
-  - 🌐 其他地区 (Other) 97 - Dyt
-  - 🌐 其他地区 (Other) 98 - Dyt
-  - 🌐 其他地区 (Other) 99 - Dyt
-  - 🌐 其他地区 (Other) 100 - Dyt
-  - 🌐 其他地区 (Other) 101 - Dyt
-  - 🌐 其他地区 (Other) 102 - Dyt
-  - 🌐 其他地区 (Other) 103 - Dyt
-  - 🌐 其他地区 (Other) 104 - Dyt
-  - 🌐 其他地区 (Other) 105 - Dyt
-  - 🌐 其他地区 (Other) 106 - Dyt
-  - 🌐 其他地区 (Other) 107 - Dyt
-  - 🌐 其他地区 (Other) 108 - Dyt
-  - 🌐 其他地区 (Other) 109 - Dyt
-  - 🌐 其他地区 (Other) 110 - Dyt
-  - 🌐 其他地区 (Other) 111 - Dyt
-  - 🌐 其他地区 (Other) 112 - Dyt
-  - 🌐 其他地区 (Other) 113 - Dyt
-  - 🌐 其他地区 (Other) 114 - Dyt
-  - 🌐 其他地区 (Other) 115 - Dyt
-  - 🌐 其他地区 (Other) 116 - Dyt
-  - 🌐 其他地区 (Other) 117 - Dyt
-  - 🌐 其他地区 (Other) 118 - Dyt
-  - 🌐 其他地区 (Other) 119 - Dyt
-  - 🌐 其他地区 (Other) 120 - Dyt
-  - 🌐 其他地区 (Other) 121 - Dyt
-  - 🌐 其他地区 (Other) 122 - Dyt
-  - 🌐 其他地区 (Other) 123 - Dyt
-  - 🌐 其他地区 (Other) 124 - Dyt
-  - 🌐 其他地区 (Other) 125 - Dyt
-  - 🌐 其他地区 (Other) 126 - Dyt
-  - 🌐 其他地区 (Other) 127 - Dyt
-  - 🌐 其他地区 (Other) 128 - Dyt
-  - 🌐 其他地区 (Other) 129 - Dyt
-  - 🌐 其他地区 (Other) 130 - Dyt
-  - 🌐 其他地区 (Other) 131 - Dyt
-  - 🌐 其他地区 (Other) 132 - Dyt
-  - 🌐 其他地区 (Other) 133 - Dyt
-  - 🌐 其他地区 (Other) 134 - Dyt
-  - 🌐 其他地区 (Other) 135 - Dyt
 rules:
 - MATCH,PROXIES

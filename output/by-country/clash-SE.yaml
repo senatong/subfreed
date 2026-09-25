@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - Dyt
+  type: vless
+  server: 31.56.222.61
+  port: 47450
+  uuid: 79251d3c-aabc-475c-b598-67263479b382
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇪 SE 02 - Dyt
   type: ss
   server: 172.238.244.13
   port: 17000
@@ -17,11 +25,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇪 SE 01 - Dyt
+  - 🇸🇪 SE 02 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 SE 01 - Dyt
+  - 🇸🇪 SE 02 - Dyt
 rules:
 - MATCH,PROXIES
