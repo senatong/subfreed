@@ -5,20 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - Dyt
-  type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 🇫🇷 法国 (France) 02 - Dyt
-  type: vless
-  server: 15.188.130.104
-  port: 22223
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 02 - Dyt
+  type: ss
+  server: 141.227.134.63
+  port: 17000
+  cipher: aes-256-gcm
+  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
+  udp: true
 - name: 🇫🇷 法国 (France) 03 - Dyt
   type: vmess
   server: 162.19.204.71
@@ -31,51 +34,18 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇫🇷 法国 (France) 04 - Dyt
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 05 - Dyt
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 06 - Dyt
-  type: ss
-  server: 141.227.134.63
-  port: 17000
-  cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
-  udp: true
-- name: 🇫🇷 法国 (France) 07 - Dyt
-  type: vless
-  server: 15.188.130.104
-  port: 22224
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 08 - Dyt
-  type: vless
-  server: 15.188.130.104
-  port: 22223
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 09 - Dyt
   type: vmess
   server: 188.114.96.19
   port: 80
@@ -90,9 +60,9 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇫🇷 法国 (France) 10 - Dyt
+- name: 🇫🇷 法国 (France) 06 - Dyt
   type: vless
-  server: 149.202.58.99
+  server: 188.114.97.6
   port: 443
   uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
@@ -104,36 +74,18 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇫🇷 法国 (France) 11 - Dyt
-  type: vless
-  server: 52.47.71.76
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇫🇷 法国 (France) 07 - Dyt
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 12 - Dyt
-  type: vless
-  server: 108.162.198.178
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇫🇷 法国 (France) 13 - Dyt
-  type: vless
-  server: 15.188.130.104
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 14 - Dyt
+  servername: ''
+- name: 🇫🇷 法国 (France) 08 - Dyt
   type: vmess
   server: 162.19.204.71
   port: 1234
@@ -144,48 +96,14 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 15 - Dyt
-  type: vless
-  server: 52.47.71.76
-  port: 22223
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 16 - Dyt
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 17 - Dyt
+- name: 🇫🇷 法国 (France) 09 - Dyt
   type: ss
   server: 54.36.174.140
   port: 443
   cipher: chacha20-ietf-poly1305
   password: mrs2e9a
   udp: true
-- name: 🇫🇷 法国 (France) 18 - Dyt
-  type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 19 - Dyt
+- name: 🇫🇷 法国 (France) 10 - Dyt
   type: vless
   server: 81.95.4.189
   port: 443
@@ -199,31 +117,9 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇫🇷 法国 (France) 20 - Dyt
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 21 - Dyt
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 22 - Dyt
+- name: 🇫🇷 法国 (France) 11 - Dyt
   type: vless
-  server: 35.157.240.237
+  server: 149.202.58.99
   port: 443
   uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
@@ -235,15 +131,32 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇫🇷 法国 (France) 23 - Dyt
-  type: vless
-  server: 52.47.71.76
-  port: 22224
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇫🇷 法国 (France) 12 - Dyt
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 24 - Dyt
+  servername: ''
+- name: 🇫🇷 法国 (France) 13 - Dyt
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+  udp: true
+- name: 🇫🇷 法国 (France) 14 - Dyt
+  type: ss
+  server: 54.36.174.134
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: mrs2e9a
+  udp: true
+- name: 🇫🇷 法国 (France) 15 - Dyt
   type: vless
   server: 149.202.58.99
   port: 443
@@ -257,19 +170,31 @@ proxies:
     path: /vws/
     headers:
       Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 25 - Dyt
-  type: vless
-  server: 108.162.198.178
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+- name: 🇫🇷 法国 (France) 16 - Dyt
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 17 - Dyt
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
   network: ws
   ws-opts:
-    path: /
+    path: /vws/
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: 149.202.58.99
 proxy-groups:
 - name: PROXIES
   type: select
@@ -292,14 +217,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 15 - Dyt
   - 🇫🇷 法国 (France) 16 - Dyt
   - 🇫🇷 法国 (France) 17 - Dyt
-  - 🇫🇷 法国 (France) 18 - Dyt
-  - 🇫🇷 法国 (France) 19 - Dyt
-  - 🇫🇷 法国 (France) 20 - Dyt
-  - 🇫🇷 法国 (France) 21 - Dyt
-  - 🇫🇷 法国 (France) 22 - Dyt
-  - 🇫🇷 法国 (France) 23 - Dyt
-  - 🇫🇷 法国 (France) 24 - Dyt
-  - 🇫🇷 法国 (France) 25 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -322,13 +239,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 15 - Dyt
   - 🇫🇷 法国 (France) 16 - Dyt
   - 🇫🇷 法国 (France) 17 - Dyt
-  - 🇫🇷 法国 (France) 18 - Dyt
-  - 🇫🇷 法国 (France) 19 - Dyt
-  - 🇫🇷 法国 (France) 20 - Dyt
-  - 🇫🇷 法国 (France) 21 - Dyt
-  - 🇫🇷 法国 (France) 22 - Dyt
-  - 🇫🇷 法国 (France) 23 - Dyt
-  - 🇫🇷 法国 (France) 24 - Dyt
-  - 🇫🇷 法国 (France) 25 - Dyt
 rules:
 - MATCH,PROXIES
