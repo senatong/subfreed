@@ -6,16 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE 01 - Dyt",
-        "🇮🇪 IE 02 - Dyt"
+        "🇨🇾 CY 01 - Dyt",
+        "🇨🇾 CY 02 - Dyt",
+        "🇨🇾 CY 03 - Dyt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE 01 - Dyt",
-        "🇮🇪 IE 02 - Dyt"
+        "🇨🇾 CY 01 - Dyt",
+        "🇨🇾 CY 02 - Dyt",
+        "🇨🇾 CY 03 - Dyt"
       ],
       "url": "https://www.google.com/generate_204"
     },
