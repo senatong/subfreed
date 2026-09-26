@@ -5,21 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - Dyt
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 02 - Dyt
   type: vmess
-  server: 64.176.51.214
-  port: 23462
-  uuid: 95c5abc1-018d-4628-89a7-25ab9c62ab74
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /a15206
-    headers:
-      Host: ''
-- name: 🇯🇵 日本 (Japan) 02 - Dyt
+- name: 🇯🇵 日本 (Japan) 03 - Dyt
   type: vmess
   server: or.521166.xyz
   port: 2083
@@ -35,20 +37,6 @@ proxies:
     path: /or3
     headers:
       Host: ''
-- name: 🇯🇵 日本 (Japan) 03 - Dyt
-  type: vless
-  server: 45.63.124.130
-  port: 443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mia10.pages.dev
-  network: ws
-  ws-opts:
-    path: /TG:@MiaChatChannel
-    headers:
-      Host: mia10.pages.dev
 - name: 🇯🇵 日本 (Japan) 04 - Dyt
   type: vmess
   server: 45.32.57.118
@@ -70,45 +58,55 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 06 - Dyt
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 07 - Dyt
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 08 - Dyt
   type: vless
-  server: 107.191.53.84
+  server: 172.67.217.240
   port: 443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mia10.pages.dev
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /TG:@MiaChatChannel
+    path: /tyxyws
     headers:
-      Host: mia10.pages.dev
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 08 - Dyt
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 09 - Dyt
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 10 - Dyt
+  type: ss
+  server: 149.22.87.241
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 11 - Dyt
   type: vless
   server: 137.220.221.179
   port: 443
@@ -116,173 +114,38 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 11 - Dyt
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 12 - Dyt
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 13 - Dyt
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 14 - Dyt
-  type: vless
-  server: 2.26.91.98
-  port: 1443
-  uuid: d4c6b1ad-9ec4-4273-854a-f0bbf0448ab6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇯🇵 日本 (Japan) 15 - Dyt
-  type: vless
-  server: 162.159.254.3
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 16 - Dyt
-  type: vless
-  server: 84.22.150.39
-  port: 7443
-  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇯🇵 日本 (Japan) 17 - Dyt
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 18 - Dyt
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 19 - Dyt
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 20 - Dyt
-  type: vless
-  server: 162.159.254.3
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 21 - Dyt
-  type: vmess
-  server: or.521166.xyz
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: ''
-- name: 🇯🇵 日本 (Japan) 22 - Dyt
-  type: vmess
-  server: 64.176.51.214
-  port: 23462
-  uuid: 95c5abc1-018d-4628-89a7-25ab9c62ab74
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /a15206
-    headers:
-      Host: 64.176.51.214
-- name: 🇯🇵 日本 (Japan) 23 - Dyt
   type: ss
   server: 84.247.155.196
   port: 443
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
   udp: true
-- name: 🇯🇵 日本 (Japan) 24 - Dyt
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+- name: 🇯🇵 日本 (Japan) 14 - Dyt
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 25 - Dyt
-  type: vless
-  server: 137.220.221.179
+- name: 🇯🇵 日本 (Japan) 15 - Dyt
+  type: ss
+  server: 84.247.155.196
   port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
   udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -303,16 +166,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 13 - Dyt
   - 🇯🇵 日本 (Japan) 14 - Dyt
   - 🇯🇵 日本 (Japan) 15 - Dyt
-  - 🇯🇵 日本 (Japan) 16 - Dyt
-  - 🇯🇵 日本 (Japan) 17 - Dyt
-  - 🇯🇵 日本 (Japan) 18 - Dyt
-  - 🇯🇵 日本 (Japan) 19 - Dyt
-  - 🇯🇵 日本 (Japan) 20 - Dyt
-  - 🇯🇵 日本 (Japan) 21 - Dyt
-  - 🇯🇵 日本 (Japan) 22 - Dyt
-  - 🇯🇵 日本 (Japan) 23 - Dyt
-  - 🇯🇵 日本 (Japan) 24 - Dyt
-  - 🇯🇵 日本 (Japan) 25 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -333,15 +186,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 13 - Dyt
   - 🇯🇵 日本 (Japan) 14 - Dyt
   - 🇯🇵 日本 (Japan) 15 - Dyt
-  - 🇯🇵 日本 (Japan) 16 - Dyt
-  - 🇯🇵 日本 (Japan) 17 - Dyt
-  - 🇯🇵 日本 (Japan) 18 - Dyt
-  - 🇯🇵 日本 (Japan) 19 - Dyt
-  - 🇯🇵 日本 (Japan) 20 - Dyt
-  - 🇯🇵 日本 (Japan) 21 - Dyt
-  - 🇯🇵 日本 (Japan) 22 - Dyt
-  - 🇯🇵 日本 (Japan) 23 - Dyt
-  - 🇯🇵 日本 (Japan) 24 - Dyt
-  - 🇯🇵 日本 (Japan) 25 - Dyt
 rules:
 - MATCH,PROXIES
