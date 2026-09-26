@@ -5,6 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇿🇦 ZA 01 - Dyt
+  type: vless
+  server: 104.21.1.236
+  port: 443
+  uuid: 9cdcbaf0-d244-4f37-b227-90166e43f5b5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cf-socks.caoyuwu.eu.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 104.21.1.236
+- name: 🇿🇦 ZA 02 - Dyt
+  type: ss
+  server: 102.133.165.160
+  port: 16233
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  udp: true
+- name: 🇿🇦 ZA 03 - Dyt
   type: ss
   server: 139.84.247.164
   port: 8388
@@ -17,11 +38,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇿🇦 ZA 01 - Dyt
+  - 🇿🇦 ZA 02 - Dyt
+  - 🇿🇦 ZA 03 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇿🇦 ZA 01 - Dyt
+  - 🇿🇦 ZA 02 - Dyt
+  - 🇿🇦 ZA 03 - Dyt
 rules:
 - MATCH,PROXIES

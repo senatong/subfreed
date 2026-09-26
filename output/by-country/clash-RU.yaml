@@ -5,31 +5,47 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - Dyt
-  type: vless
-  server: 104.18.34.14
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  type: ss
+  server: 188.225.78.31
+  port: 2053
+  cipher: 2022-blake3-aes-256-gcm
+  password: g4h/AcJh1+jg9+yonlMK4Wq7fhbFY3NkcOzUVlZ9GjU=
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 02 - Dyt
   type: vless
-  server: 104.18.47.113
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 46.8.200.91
+  port: 443
+  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: cf3.rumedia-cdn.com
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls+
+    path: /cdn/v3/live
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: cf3.rumedia-cdn.com
+- name: 🇷🇺 俄罗斯 (Russia) 03 - Dyt
+  type: ss
+  server: 195.133.23.200
+  port: 30210
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - Dyt
+  type: vless
+  server: 172.67.167.77
+  port: 443
+  uuid: cc08d2d0-8a7a-4469-81d2-c43704451271
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
+  network: ws
+  ws-opts:
+    path: /vl/6871nrbnl9WsdAiOUInt
+    headers:
+      Host: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +53,8 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 02 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 03 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 04 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +62,7 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 02 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 03 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 04 - Dyt
 rules:
 - MATCH,PROXIES
