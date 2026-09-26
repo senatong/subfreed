@@ -23,8 +23,20 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 03 - Dyt
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 04 - Dyt
   type: vless
   server: 82.47.63.156
   port: 2053
@@ -40,6 +52,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - Dyt
   - 🇹🇷 土耳其 (Turkey) 02 - Dyt
   - 🇹🇷 土耳其 (Turkey) 03 - Dyt
+  - 🇹🇷 土耳其 (Turkey) 04 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,5 +61,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - Dyt
   - 🇹🇷 土耳其 (Turkey) 02 - Dyt
   - 🇹🇷 土耳其 (Turkey) 03 - Dyt
+  - 🇹🇷 土耳其 (Turkey) 04 - Dyt
 rules:
 - MATCH,PROXIES
