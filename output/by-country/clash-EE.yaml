@@ -6,82 +6,57 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - Dyt
   type: vless
-  server: 94.183.170.65
-  port: 8081
-  uuid: e60bc99b-6630-4799-af84-f90ebdc643b6
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws/generate
-    headers:
-      Host: hys2.arkonsoft.top
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 02 - Dyt
   type: vless
-  server: 94.183.170.65
-  port: 8081
-  uuid: e60bc99b-6630-4799-af84-f90ebdc643b6
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /ws/generate
+    path: /
     headers:
-      Host: hys2.arkonsoft.top
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 03 - Dyt
   type: vless
   server: 94.183.170.135
-  port: 443
+  port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 04 - Dyt
   type: vless
   server: 94.183.170.135
-  port: 443
+  port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 05 - Dyt
   type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  server: 94.183.170.65
+  port: 8081
+  uuid: e60bc99b-6630-4799-af84-f90ebdc643b6
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /ws/generate
     headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 06 - Dyt
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
+      Host: hys2.arkonsoft.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,7 +67,6 @@ proxy-groups:
   - 🇪🇪 EE 03 - Dyt
   - 🇪🇪 EE 04 - Dyt
   - 🇪🇪 EE 05 - Dyt
-  - 🇪🇪 EE 06 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -103,6 +77,5 @@ proxy-groups:
   - 🇪🇪 EE 03 - Dyt
   - 🇪🇪 EE 04 - Dyt
   - 🇪🇪 EE 05 - Dyt
-  - 🇪🇪 EE 06 - Dyt
 rules:
 - MATCH,PROXIES
