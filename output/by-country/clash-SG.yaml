@@ -6,245 +6,17 @@ log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - Dyt
   type: vless
-  server: 91.193.58.108
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇸🇬 新加坡 (Singapore) 02 - Dyt
-  type: vless
-  server: port2.axiomed.ir
-  port: 443
-  uuid: 73b03366-975a-4ca7-a41c-0f7e1b5d944a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: l75yY2sJQN5Fn0Gx.fORNeWIran-1013.worKERS.DeV
-  network: ws
-  ws-opts:
-    path: /vl/olqQqiJtpH7kVUcHl0PXN?ed=2560
-    headers:
-      Host: l75yy2sjqn5fn0gx.fornewiran-1013.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 03 - Dyt
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 04 - Dyt
-  type: vless
-  server: 172.64.155.209
-  port: 443
-  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: ancient-heart-60c5.dpccgizieb.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 05 - Dyt
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 06 - Dyt
-  type: vless
-  server: onhit.shalana.xyz
-  port: 443
-  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: onhit.shalana.xyz
-- name: 🇸🇬 新加坡 (Singapore) 07 - Dyt
-  type: vless
-  server: 43.174.195.1
-  port: 443
-  uuid: 24916ad0-847d-4522-9e17-f4347dee57fd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: kv.074167.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kv.074167.xyz
-- name: 🇸🇬 新加坡 (Singapore) 08 - Dyt
-  type: vless
-  server: 91.193.58.255
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 09 - Dyt
-  type: vless
-  server: 46.101.46.169
-  port: 486
-  uuid: 16bf3359-e7d8-4de6-86a0-6d65cf793b56
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 10 - Dyt
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 11 - Dyt
-  type: vless
-  server: onhit.shalana.xyz
-  port: 443
-  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: onhit.shalana.xyz
-- name: 🇸🇬 新加坡 (Singapore) 12 - Dyt
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 13 - Dyt
-  type: vless
-  server: 172.66.140.62
-  port: 8880
-  uuid: 160ca353-676d-4b7f-a041-0289e388b865
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: proud-cloud-7bdd.208-a52.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 14 - Dyt
-  type: vless
-  server: 170.114.52.22
-  port: 443
-  uuid: 38415950-f815-4ca8-94d0-6cbf22be7566
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmasterofficial.store
-  network: ws
-  ws-opts:
-    path: /cs
-    headers:
-      Host: asia.csmasterofficial.store
-- name: 🇸🇬 新加坡 (Singapore) 15 - Dyt
-  type: vless
-  server: 156.224.76.205
-  port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp10.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vp10.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 16 - Dyt
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 17 - Dyt
-  type: vless
-  server: 172.236.142.114
-  port: 443
-  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: onhit.shalana.xyz
-- name: 🇸🇬 新加坡 (Singapore) 18 - Dyt
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 19 - Dyt
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 20 - Dyt
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 21 - Dyt
   type: vless
   server: 23.141.12.134
   port: 8443
@@ -258,21 +30,69 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 22 - Dyt
+- name: 🇸🇬 新加坡 (Singapore) 03 - Dyt
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 04 - Dyt
   type: vless
-  server: 80.240.18.227
-  port: 10051
-  uuid: d161dcf1-fde2-44cc-b08d-d8944895e842
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 23 - Dyt
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 05 - Dyt
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 06 - Dyt
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 07 - Dyt
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 08 - Dyt
+  type: vless
+  server: 47.237.74.17
+  port: 16263
+  uuid: c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 09 - Dyt
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -282,54 +102,26 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 24 - Dyt
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 25 - Dyt
+- name: 🇸🇬 新加坡 (Singapore) 10 - Dyt
   type: vless
-  server: 129.150.51.127
-  port: 34249
-  uuid: 0590ab38-cb22-41d3-8312-6f396a5cec58
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: www.microsoft.com
-- name: 🇸🇬 新加坡 (Singapore) 26 - Dyt
-  type: vless
-  server: 143.198.213.40
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 11 - Dyt
+  type: ss
+  server: 13.229.204.74
+  port: 8443
+  cipher: chacha20-ietf-poly1305
+  password: 2db985f6-21bf-40c2-a4f1-4ce2cf90b1c2
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 27 - Dyt
-  type: vless
-  server: 104.17.3.81
-  port: 443
-  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nautica-cff.kloningstrife002.workers.dev
-  network: ws
-  ws-opts:
-    path: /138.2.74.219-28616
-    headers:
-      Host: nautica-cff.kloningstrife002.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 28 - Dyt
+- name: 🇸🇬 新加坡 (Singapore) 12 - Dyt
   type: vless
   server: 217.217.254.126
   port: 2053
@@ -341,7 +133,28 @@ proxies:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 29 - Dyt
+- name: 🇸🇬 新加坡 (Singapore) 13 - Dyt
+  type: vless
+  server: onhit.shalana.xyz
+  port: 443
+  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: onhit.shalana.xyz
+- name: 🇸🇬 新加坡 (Singapore) 14 - Dyt
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 15 - Dyt
   type: vless
   server: 217.217.254.126
   port: 2053
@@ -353,278 +166,7 @@ proxies:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 30 - Dyt
-  type: vless
-  server: 143.198.213.40
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /+
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 31 - Dyt
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 32 - Dyt
-  type: vless
-  server: onhit.shalana.xyz
-  port: 443
-  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: onhit.shalana.xyz
-- name: 🇸🇬 新加坡 (Singapore) 33 - Dyt
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 34 - Dyt
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 35 - Dyt
-  type: vless
-  server: 27.50.49.154
-  port: 2083
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: proxy-34l.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: proxy-34l.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 36 - Dyt
-  type: vless
-  server: 13.212.151.107
-  port: 8686
-  uuid: f0b9ae63-91a7-4673-924e-498e0e0828c0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 37 - Dyt
-  type: vless
-  server: 45.152.65.100
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 38 - Dyt
-  type: vless
-  server: 116.251.217.65
-  port: 443
-  uuid: 2388e166-3890-33ae-f77e-efac00000002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: netlivpn4813.ddhshhshs.workers.dev
-  network: ws
-  ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-    headers:
-      Host: netlivpn4813.ddhshhshs.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 39 - Dyt
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 40 - Dyt
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 41 - Dyt
-  type: vless
-  server: 162.159.156.214
-  port: 8880
-  uuid: 8991a496-1baa-486f-9948-ffe44e68c072
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: soft-band-8da6.426.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 42 - Dyt
-  type: vless
-  server: 134.122.154.210
-  port: 443
-  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 43 - Dyt
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 44 - Dyt
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 45 - Dyt
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 46 - Dyt
-  type: vless
-  server: 172.66.214.247
-  port: 8880
-  uuid: e7f6f783-6754-4228-a5d0-aeed84b9949a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: sweet-sun-c70f.317-ba5.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 47 - Dyt
-  type: vless
-  server: onhit.shalana.xyz
-  port: 443
-  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: onhit.shalana.xyz
-- name: 🇸🇬 新加坡 (Singapore) 48 - Dyt
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 49 - Dyt
-  type: vless
-  server: 172.236.142.114
-  port: 443
-  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: onhit.shalana.xyz
-- name: 🇸🇬 新加坡 (Singapore) 50 - Dyt
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 51 - Dyt
-  type: vless
-  server: 13.212.221.197
-  port: 8686
-  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 52 - Dyt
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 53 - Dyt
-  type: vmess
-  server: asaqyidza9wdq9kq.v.3dns.vip
-  port: 443
-  uuid: f0b7bbd66aad458aaec0e9acaab768b6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asaqyidza9wdq9kq.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: asaqyidza9wdq9kq.v.3dns.vip
-- name: 🇸🇬 新加坡 (Singapore) 54 - Dyt
+- name: 🇸🇬 新加坡 (Singapore) 16 - Dyt
   type: vless
   server: 91.193.58.57
   port: 2096
@@ -638,6 +180,229 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 17 - Dyt
+  type: ss
+  server: 168.107.84.41
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: s9CVCQlH8SB/LXByDobKTOMdTjJ7WScGfA57wZhHbek=
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 18 - Dyt
+  type: vless
+  server: 43.174.195.1
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇸🇬 新加坡 (Singapore) 19 - Dyt
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 20 - Dyt
+  type: vless
+  server: 13.212.151.107
+  port: 8686
+  uuid: f0b9ae63-91a7-4673-924e-498e0e0828c0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 21 - Dyt
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 22 - Dyt
+  type: vless
+  server: onhit.shalana.xyz
+  port: 443
+  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: onhit.shalana.xyz
+- name: 🇸🇬 新加坡 (Singapore) 23 - Dyt
+  type: ss
+  server: 138.2.84.129
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: OD1p/OGuWN9AneAVzkNz0dQtKbZIkOJ9Ji9QTYcGmDY=
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 24 - Dyt
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 25 - Dyt
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 26 - Dyt
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 27 - Dyt
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 28 - Dyt
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 29 - Dyt
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 30 - Dyt
+  type: ss
+  server: 161.118.219.5
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 9PfRlIGvpMs8nD7s65B/3IxccQG+p631X9tCLZy+CRI=
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 31 - Dyt
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 32 - Dyt
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 33 - Dyt
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 34 - Dyt
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 35 - Dyt
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 36 - Dyt
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 37 - Dyt
+  type: vless
+  server: 170.114.52.22
+  port: 443
+  uuid: 38415950-f815-4ca8-94d0-6cbf22be7566
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmasterofficial.store
+  network: ws
+  ws-opts:
+    path: /cs
+    headers:
+      Host: asia.csmasterofficial.store
 proxy-groups:
 - name: PROXIES
   type: select
@@ -680,23 +445,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 35 - Dyt
   - 🇸🇬 新加坡 (Singapore) 36 - Dyt
   - 🇸🇬 新加坡 (Singapore) 37 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 38 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 39 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 40 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 41 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 42 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 43 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 44 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 45 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 46 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 47 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 48 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 49 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 50 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 51 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 52 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 53 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 54 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -739,22 +487,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 35 - Dyt
   - 🇸🇬 新加坡 (Singapore) 36 - Dyt
   - 🇸🇬 新加坡 (Singapore) 37 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 38 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 39 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 40 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 41 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 42 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 43 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 44 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 45 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 46 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 47 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 48 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 49 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 50 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 51 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 52 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 53 - Dyt
-  - 🇸🇬 新加坡 (Singapore) 54 - Dyt
 rules:
 - MATCH,PROXIES

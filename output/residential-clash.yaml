@@ -4,20 +4,20 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - Dyt
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Dyt
   type: vless
-  server: 172.67.219.50
+  server: 60.248.219.54
   port: 443
-  uuid: a5b1d1ec-327c-f1c5-5856-b34600000000
+  uuid: 06e177f7-240d-4687-bd85-235505801a5e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ez-541f9d.ezaccess1d3db24.workers.dev
+  servername: ty986gfazs.cainiaohub.xyz
   network: ws
   ws-opts:
-    path: /sync
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: ez-541f9d.ezaccess1d3db24.workers.dev
+      Host: 60.248.219.54
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Dyt
   type: vless
   server: hinet1.2yly.com
@@ -30,44 +30,19 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Dyt
-  type: ss
-  server: 36.224.178.15
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Dyt
-  type: vless
-  server: 60.248.219.78
-  port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - Dyt
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Dyt
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Dyt
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Dyt
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - Dyt
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Dyt
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Dyt
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Dyt
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Dyt
 rules:
 - MATCH,PROXIES
