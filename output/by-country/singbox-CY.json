@@ -6,14 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇸 RS 01 - Dyt"
+        "🇨🇾 CY 01 - Dyt",
+        "🇨🇾 CY 02 - Dyt",
+        "🇨🇾 CY 03 - Dyt",
+        "🇨🇾 CY 04 - Dyt",
+        "🇨🇾 CY 05 - Dyt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇸 RS 01 - Dyt"
+        "🇨🇾 CY 01 - Dyt",
+        "🇨🇾 CY 02 - Dyt",
+        "🇨🇾 CY 03 - Dyt",
+        "🇨🇾 CY 04 - Dyt",
+        "🇨🇾 CY 05 - Dyt"
       ],
       "url": "https://www.google.com/generate_204"
     },

@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇸 RS 01 - Dyt
+- name: 🇺🇸 美国 (United States) 01 (家宽) - Dyt
   type: vless
-  server: 38.180.100.80
+  server: 172.67.219.50
   port: 443
-  uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
+  uuid: a5b1d1ec-327c-f1c5-5856-b34600000000
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: yf.962456.xyz
+  servername: ez-541f9d.ezaccess1d3db24.workers.dev
   network: ws
   ws-opts:
-    path: /proxyip=kr.william.us.ci
+    path: /sync
     headers:
-      Host: yf.962456.xyz
+      Host: ez-541f9d.ezaccess1d3db24.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇸 RS 01 - Dyt
+  - 🇺🇸 美国 (United States) 01 (家宽) - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇸 RS 01 - Dyt
+  - 🇺🇸 美国 (United States) 01 (家宽) - Dyt
 rules:
 - MATCH,PROXIES

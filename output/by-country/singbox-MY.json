@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 AT 01 - Dyt",
-        "🇦🇹 AT 02 - Dyt"
+        "🇲🇾 MY 01 - Dyt",
+        "🇲🇾 MY 02 - Dyt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 AT 01 - Dyt",
-        "🇦🇹 AT 02 - Dyt"
+        "🇲🇾 MY 01 - Dyt",
+        "🇲🇾 MY 02 - Dyt"
       ],
       "url": "https://www.google.com/generate_204"
     },

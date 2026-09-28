@@ -6,19 +6,79 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - Dyt
   type: vless
-  server: 84.38.183.237
+  server: 63.141.128.22
   port: 443
-  uuid: 9737cc16-7266-45ce-94d9-6e05a45e0b9c
+  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ws.nightproducts.ru
+  servername: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
   network: ws
   ws-opts:
-    path: /vless#/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: 84.38.183.237
+      Host: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
 - name: 🇷🇺 俄罗斯 (Russia) 02 - Dyt
+  type: ss
+  server: 176.32.35.2
+  port: 10090
+  cipher: aes-256-gcm
+  password: 895b4b796a357570
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - Dyt
+  type: vless
+  server: 162.159.43.187
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 04 - Dyt
+  type: vless
+  server: 188.114.97.6
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 05 - Dyt
+  type: vless
+  server: 162.159.0.169
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 06 - Dyt
+  type: vless
+  server: fpoixf69hqt3e6d4urtb.mamadneizeh.workers.dev
+  port: 443
+  uuid: 0b41f339-5809-46ef-8351-b03fdc441539
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: FpoiXF69hQT3E6d4URTB.MamADNEIZeH.WorKers.DEV
+  network: ws
+  ws-opts:
+    path: /vl/lYNtP7z8pJUmfp01tz5wEnuDujJtZ
+    headers:
+      Host: fpoixf69hqt3e6d4urtb.mamadneizeh.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 07 - Dyt
   type: vless
   server: fbsv6.guardora.pro
   port: 443
@@ -39,6 +99,11 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 02 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 03 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 04 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 05 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 06 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 07 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +111,10 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 02 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 03 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 04 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 05 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 06 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 07 - Dyt
 rules:
 - MATCH,PROXIES
