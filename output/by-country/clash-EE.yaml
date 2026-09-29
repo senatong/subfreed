@@ -16,12 +16,16 @@ proxies:
 - name: 🇪🇪 EE 02 - Dyt
   type: vless
   server: 94.183.170.135
-  port: 8443
+  port: 443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 94.183.170.135
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 03 - Dyt
   type: vless
   server: 94.183.170.135
@@ -34,6 +38,24 @@ proxies:
 - name: 🇪🇪 EE 04 - Dyt
   type: vless
   server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 05 - Dyt
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 06 - Dyt
+  type: vless
+  server: 94.183.170.135
   port: 443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
@@ -43,8 +65,8 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 05 - Dyt
+      Host: 94.183.170.135
+- name: 🇪🇪 EE 07 - Dyt
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -63,6 +85,8 @@ proxy-groups:
   - 🇪🇪 EE 03 - Dyt
   - 🇪🇪 EE 04 - Dyt
   - 🇪🇪 EE 05 - Dyt
+  - 🇪🇪 EE 06 - Dyt
+  - 🇪🇪 EE 07 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -73,5 +97,7 @@ proxy-groups:
   - 🇪🇪 EE 03 - Dyt
   - 🇪🇪 EE 04 - Dyt
   - 🇪🇪 EE 05 - Dyt
+  - 🇪🇪 EE 06 - Dyt
+  - 🇪🇪 EE 07 - Dyt
 rules:
 - MATCH,PROXIES
