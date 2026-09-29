@@ -6,17 +6,16 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - Dyt
   type: vless
-  server: 65.109.249.114
-  port: 80
-  uuid: 794990ea-dc34-4eff-8a43-020a92fec381
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 65.109.249.114
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 02 - Dyt
   type: vless
   server: 185.79.138.71
@@ -41,30 +40,6 @@ proxies:
     public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 04 - Dyt
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 05 - Dyt
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,8 +48,6 @@ proxy-groups:
   - 🇫🇮 FI 01 - Dyt
   - 🇫🇮 FI 02 - Dyt
   - 🇫🇮 FI 03 - Dyt
-  - 🇫🇮 FI 04 - Dyt
-  - 🇫🇮 FI 05 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -83,7 +56,5 @@ proxy-groups:
   - 🇫🇮 FI 01 - Dyt
   - 🇫🇮 FI 02 - Dyt
   - 🇫🇮 FI 03 - Dyt
-  - 🇫🇮 FI 04 - Dyt
-  - 🇫🇮 FI 05 - Dyt
 rules:
 - MATCH,PROXIES
