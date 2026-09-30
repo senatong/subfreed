@@ -4,25 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇱 PL 01 - Dyt
+- name: 🇧🇪 BE 01 - Dyt
   type: vless
-  server: pl-irancell7.xelfona.ir
-  port: 2095
-  uuid: 452f869f-7720-47c3-a175-b6673e31d3e8
+  server: 35.240.62.249
+  port: 443
+  uuid: 6d341f6e-7b9d-4ae3-999b-00333de7bdfb
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: v6QpErcVOVKIYLm53R3bAP8zIKCFr4HAJWW0VwBKtws
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇱 PL 01 - Dyt
+  - 🇧🇪 BE 01 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇱 PL 01 - Dyt
+  - 🇧🇪 BE 01 - Dyt
 rules:
 - MATCH,PROXIES
