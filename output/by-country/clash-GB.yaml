@@ -6,45 +6,83 @@ log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - Dyt
   type: ss
-  server: 129.151.83.142
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: NOv981b0xnoUuyIpicEqdyyKTTw+FPSk1/UXsp8PmyI=
+  server: 51.77.225.200
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: zRZNBszYyWo5
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 02 - Dyt
   type: ss
-  server: 149.102.149.207
-  port: 443
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
+  server: 82.38.31.13
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 03 - Dyt
-  type: ss
-  server: 134.65.58.210
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ZG5WzCzzYlKcfxZefNynxt0D2yveQ5jkD74pwXJNw/w=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 04 - Dyt
   type: vless
-  server: 51.89.194.151
-  port: 2053
-  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
+  server: 139.59.189.127
+  port: 443
+  uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 05 - Dyt
-  type: ss
-  server: 149.102.149.207
-  port: 80
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
+  servername: shy-fog-af06.alvlirm333.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shy-fog-af06.alvlirm333.workers.dev
+- name: 🇬🇧 英国 (United Kingdom) 04 - Dyt
+  type: vless
+  server: 91.193.58.141
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jamph131-1228.pages.dev
+  network: ws
+  ws-opts:
+    path: /Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+- name: 🇬🇧 英国 (United Kingdom) 05 - Dyt
+  type: vless
+  server: 91.193.59.191
+  port: 2087
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vlso5.1d.mom
+  network: ws
+  ws-opts:
+    path: /socks5=888:888
+    headers:
+      Host: vlso5.1d.mom
 - name: 🇬🇧 英国 (United Kingdom) 06 - Dyt
+  type: vless
+  server: 146.19.130.192
+  port: 57890
+  uuid: 554152b4-7819-4e3b-9971-74d6fd8b3975
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 07 - Dyt
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇬🇧 英国 (United Kingdom) 08 - Dyt
   type: vless
   server: 188.114.97.6
   port: 443
@@ -58,100 +96,97 @@ proxies:
     path: /
     headers:
       Host: shephe.dpdns.org
-- name: 🇬🇧 英国 (United Kingdom) 07 - Dyt
-  type: ss
-  server: 134.65.60.121
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: BtbUy0WbUk0zMteivmHloMnVJvH1AXCSV2MPpOzu1os=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 08 - Dyt
-  type: ss
-  server: 129.151.85.236
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: TI9oc8lBHt+MF8w17ovR+nzQIXv6izkiaiSUar824yM=
-  udp: true
 - name: 🇬🇧 英国 (United Kingdom) 09 - Dyt
-  type: ss
-  server: 149.102.149.207
-  port: 80
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 10 - Dyt
-  type: ss
-  server: 134.65.62.95
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: +n/Yn6rWy+11rk4MxKsXdkGqV5y7bSFi1ktUN4jt11w=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 11 - Dyt
   type: vless
-  server: 46.250.250.149
-  port: 2053
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  server: 104.21.24.2
+  port: 443
+  uuid: 0659eac3-137b-4002-ba2e-88da4d071235
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 12 - Dyt
-  type: ss
-  server: 82.38.31.201
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  servername: pruritus.patiromer.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pruritus.patiromer.workers.dev
+- name: 🇬🇧 英国 (United Kingdom) 10 - Dyt
+  type: vless
+  server: 172.67.151.109
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 13 - Dyt
-  type: ss
-  server: 82.38.31.186
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 14 - Dyt
+  tls: true
+  skip-cert-verify: true
+  servername: jdzit4e4urks.xwzohsebujps.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
+    headers:
+      Host: jdzit4e4urks.xwzohsebujps.workers.dev
+- name: 🇬🇧 英国 (United Kingdom) 11 - Dyt
   type: ss
   server: 141.98.101.181
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
+- name: 🇬🇧 英国 (United Kingdom) 12 - Dyt
+  type: vless
+  server: 91.193.58.93
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jamph131-1228.pages.dev
+  network: ws
+  ws-opts:
+    path: /Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+- name: 🇬🇧 英国 (United Kingdom) 13 - Dyt
+  type: ss
+  server: 82.145.63.24
+  port: 18669
+  cipher: aes-128-gcm
+  password: 8b073504328da6a5db0a4472ec02168b
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 14 - Dyt
+  type: ss
+  server: 94.156.250.148
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
 - name: 🇬🇧 英国 (United Kingdom) 15 - Dyt
   type: ss
   server: 149.102.149.207
-  port: 443
+  port: 80
   cipher: aes-256-gcm
   password: LXchLsIwtCeUAUgu
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 16 - Dyt
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  type: ss
+  server: 134.65.58.210
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: ZG5WzCzzYlKcfxZefNynxt0D2yveQ5jkD74pwXJNw/w=
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: 571x2.r4bn.bim.hh.vavava.kdns.fr
 - name: 🇬🇧 英国 (United Kingdom) 17 - Dyt
   type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 104.21.222.59
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+      Host: edgetunnel-4uw.pages.dev
 - name: 🇬🇧 英国 (United Kingdom) 18 - Dyt
   type: vless
   server: 46.250.250.149
@@ -166,47 +201,44 @@ proxies:
   client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 19 - Dyt
   type: ss
-  server: 129.151.77.246
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: H0uNLTJ4GNHkmrVHdpjgcA2UDFQZ/Ty/+a6FS1FBpFM=
+  server: 149.102.149.207
+  port: 443
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 20 - Dyt
-  type: vmess
-  server: 186.190.211.147
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 129.151.88.107
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 633s1MN0Qzgm7kHVMk2MQb9MiOTZ/lEXy31p7RY/LaQ=
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇬🇧 英国 (United Kingdom) 21 - Dyt
   type: vless
-  server: 46.250.240.80
+  server: 46.250.250.149
   port: 2053
-  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇬🇧 英国 (United Kingdom) 22 - Dyt
   type: vless
-  server: 188.114.97.6
+  server: 91.193.58.195
   port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
+  servername: jamph131-1228.pages.dev
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /Telegram-WangCai2🇨🇳
     headers:
-      Host: edgetunnel-4uw.pages.dev
+      Host: jamph131-1228.pages.dev
 - name: 🇬🇧 英国 (United Kingdom) 23 - Dyt
   type: ss
   server: 51.77.225.200
@@ -216,88 +248,95 @@ proxies:
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 24 - Dyt
   type: vless
-  server: 188.114.97.6
+  server: 172.64.80.1
   port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
+  servername: curly-night-6928.ggdhchjk.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /sync
     headers:
-      Host: edgetunnel-4uw.pages.dev
+      Host: curly-night-6928.ggdhchjk.workers.dev
 - name: 🇬🇧 英国 (United Kingdom) 25 - Dyt
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  type: ss
+  server: 134.65.62.95
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: +n/Yn6rWy+11rk4MxKsXdkGqV5y7bSFi1ktUN4jt11w=
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ?ed=2560
-    headers:
-      Host: a0hbm.jvb1.28f.hh.vavava.kdns.fr
 - name: 🇬🇧 英国 (United Kingdom) 26 - Dyt
   type: vless
-  server: 199.232.78.159
+  server: 172.67.134.170
   port: 443
-  uuid: d6962b1a-4701-4456-ba61-deb28c913a66
+  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ssl.fastly.com
+  servername: jdzit4e4urks.xwzohsebujps.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
     headers:
-      Host: pan2e.global.ssl.fastly.net
+      Host: jdzit4e4urks.xwzohsebujps.workers.dev
 - name: 🇬🇧 英国 (United Kingdom) 27 - Dyt
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 28 - Dyt
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /?
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 29 - Dyt
   type: ss
   server: 149.102.132.184
   port: 80
   cipher: aes-256-gcm
   password: g5h5jleTRSyO3Rk4
   udp: true
+- name: 🇬🇧 英国 (United Kingdom) 28 - Dyt
+  type: ss
+  server: 149.102.132.184
+  port: 443
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 29 - Dyt
+  type: vless
+  server: 172.67.151.109
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jdzit4e4urks.xwzohsebujps.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
+    headers:
+      Host: jdzit4e4urks.xwzohsebujps.workers.dev
 - name: 🇬🇧 英国 (United Kingdom) 30 - Dyt
   type: vless
-  server: smart.avenone.ir
-  port: 1085
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  server: 104.21.24.2
+  port: 443
+  uuid: 0659eac3-137b-4002-ba2e-88da4d071235
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: pruritus.patiromer.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pruritus.patiromer.workers.dev
+- name: 🇬🇧 英国 (United Kingdom) 31 - Dyt
+  type: vless
+  server: 172.67.151.109
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jdzit4e4urks.xwzohsebujps.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
+    headers:
+      Host: jdzit4e4urks.xwzohsebujps.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -333,6 +372,7 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 28 - Dyt
   - 🇬🇧 英国 (United Kingdom) 29 - Dyt
   - 🇬🇧 英国 (United Kingdom) 30 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 31 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -368,5 +408,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 28 - Dyt
   - 🇬🇧 英国 (United Kingdom) 29 - Dyt
   - 🇬🇧 英国 (United Kingdom) 30 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 31 - Dyt
 rules:
 - MATCH,PROXIES
