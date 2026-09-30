@@ -4,31 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 俄罗斯 (Russia) 01 - Dyt
-  type: vless
-  server: 78.159.246.110
+- name: 🇧🇷 BR 01 - Dyt
+  type: vmess
+  server: aksai.org
   port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fbsv6.guardora.pro
+  servername: aksai.org
   network: ws
   ws-opts:
-    path: /ws
+    path: /linkvws
     headers:
-      Host: fbsv6.guardora.pro
+      Host: aksai.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇺 俄罗斯 (Russia) 01 - Dyt
+  - 🇧🇷 BR 01 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 (Russia) 01 - Dyt
+  - 🇧🇷 BR 01 - Dyt
 rules:
 - MATCH,PROXIES
