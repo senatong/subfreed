@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - Dyt
   type: vless
+  server: 130.49.163.54
+  port: 8443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.cndyw.ggff.net
+  network: ws
+  ws-opts:
+    path: pyip=bpb.yousef.isegaro.comfp=random
+    headers:
+      Host: free.cndyw.ggff.net
+- name: 🇦🇪 阿联酋 (UAE) 02 - Dyt
+  type: vless
   server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -17,7 +31,20 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 02 - Dyt
+- name: 🇦🇪 阿联酋 (UAE) 03 - Dyt
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - Dyt
   type: vless
   server: 185.112.249.201
   port: 8443
@@ -31,7 +58,85 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
-- name: 🇦🇪 阿联酋 (UAE) 03 - Dyt
+- name: 🇦🇪 阿联酋 (UAE) 05 - Dyt
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - Dyt
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - Dyt
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 08 - Dyt
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 09 - Dyt
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 10 - Dyt
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 11 - Dyt
   type: vless
   server: 185.112.249.201
   port: 2053
@@ -45,19 +150,6 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
-- name: 🇦🇪 阿联酋 (UAE) 04 - Dyt
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,6 +159,13 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - Dyt
   - 🇦🇪 阿联酋 (UAE) 03 - Dyt
   - 🇦🇪 阿联酋 (UAE) 04 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 05 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 06 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 07 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 08 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 09 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 10 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 11 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,5 +175,12 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - Dyt
   - 🇦🇪 阿联酋 (UAE) 03 - Dyt
   - 🇦🇪 阿联酋 (UAE) 04 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 05 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 06 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 07 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 08 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 09 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 10 - Dyt
+  - 🇦🇪 阿联酋 (UAE) 11 - Dyt
 rules:
 - MATCH,PROXIES
