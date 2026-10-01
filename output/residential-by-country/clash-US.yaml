@@ -7,7 +7,7 @@ proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - Dyt
   type: vless
   server: 172.64.229.2
-  port: 80
+  port: 2086
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false

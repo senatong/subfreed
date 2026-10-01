@@ -18,6 +18,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: gJe7umStIck5Mieg
   udp: true
+- name: 🇮🇪 IE 03 - Dyt
+  type: ss
+  server: 20.166.59.119
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: gJe7umStIck5Mieg
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -25,6 +32,7 @@ proxy-groups:
   - AUTO
   - 🇮🇪 IE 01 - Dyt
   - 🇮🇪 IE 02 - Dyt
+  - 🇮🇪 IE 03 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -32,5 +40,6 @@ proxy-groups:
   proxies:
   - 🇮🇪 IE 01 - Dyt
   - 🇮🇪 IE 02 - Dyt
+  - 🇮🇪 IE 03 - Dyt
 rules:
 - MATCH,PROXIES
