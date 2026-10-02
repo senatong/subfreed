@@ -5,17 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - Dyt
-  type: vless
-  server: 34.175.107.233
-  port: 443
-  uuid: c55c9880-2f9c-4ad6-bfc2-5054516bf613
+  type: ss
+  server: 108.181.121.226
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: lM9EQ1rZH9inQjrZesuqgldsXYN_yfT5-tqhPfbyen4
-  servername: www.cloudflare.com
-  client-fingerprint: safari
 - name: 🇪🇸 西班牙 (Spain) 02 - Dyt
   type: vmess
   server: 66.163.118.73
@@ -27,6 +22,32 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇪🇸 西班牙 (Spain) 03 - Dyt
+  type: vmess
+  server: 66.163.118.73
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇪🇸 西班牙 (Spain) 04 - Dyt
+  type: vmess
+  server: mygptagent.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: ''
+- name: 🇪🇸 西班牙 (Spain) 05 - Dyt
   type: vmess
   server: mygptagent.org
   port: 443
@@ -42,26 +63,9 @@ proxies:
     path: /linkvws
     headers:
       Host: mygptagent.org
-- name: 🇪🇸 西班牙 (Spain) 04 - Dyt
-  type: vmess
-  server: 66.163.118.73
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 05 - Dyt
-  type: ss
-  server: 108.181.121.226
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-  udp: true
 - name: 🇪🇸 西班牙 (Spain) 06 - Dyt
   type: vmess
-  server: 66.163.118.73
+  server: mygptagent.org
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -76,13 +80,6 @@ proxies:
     headers:
       Host: mygptagent.org
 - name: 🇪🇸 西班牙 (Spain) 07 - Dyt
-  type: ss
-  server: 140.174.184.5
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 08 - Dyt
   type: vmess
   server: 66.163.118.73
   port: 22324
@@ -92,30 +89,27 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇪🇸 西班牙 (Spain) 08 - Dyt
+  type: ss
+  server: 108.181.121.226
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
+  udp: true
 - name: 🇪🇸 西班牙 (Spain) 09 - Dyt
-  type: vless
-  server: 34.175.107.233
-  port: 443
-  uuid: c55c9880-2f9c-4ad6-bfc2-5054516bf613
+  type: ss
+  server: 140.174.184.5
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: lM9EQ1rZH9inQjrZesuqgldsXYN_yfT5-tqhPfbyen4
-  servername: www.cloudflare.com
-  client-fingerprint: ios
 - name: 🇪🇸 西班牙 (Spain) 10 - Dyt
-  type: vless
-  server: 34.175.107.233
-  port: 443
-  uuid: c55c9880-2f9c-4ad6-bfc2-5054516bf613
+  type: ss
+  server: 140.174.184.5
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: lM9EQ1rZH9inQjrZesuqgldsXYN_yfT5-tqhPfbyen4
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

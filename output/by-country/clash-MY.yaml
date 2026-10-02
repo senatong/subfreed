@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - Dyt
   type: vless
-  server: platform113.golnamakcert.top
+  server: platform103.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -14,22 +14,19 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform113
+    path: /platform103
     headers:
-      Host: platform113.halalkhor.info
+      Host: platform103.halalkhor.info
 - name: 🇲🇾 MY 02 - Dyt
-  type: vless
-  server: platform115.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.halalkhor.info
 - name: 🇲🇾 MY 03 - Dyt
   type: vless
   server: platform101.golnamakcert.top
@@ -45,7 +42,7 @@ proxies:
       Host: platform101.halalkhor.info
 - name: 🇲🇾 MY 04 - Dyt
   type: vless
-  server: platform103.golnamakcert.top
+  server: platform102.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -53,12 +50,12 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform103
+    path: /platform102
     headers:
-      Host: platform103.halalkhor.info
+      Host: platform102.halalkhor.info
 - name: 🇲🇾 MY 05 - Dyt
   type: vless
-  server: platform109.golnamakcert.top
+  server: platform117.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -66,19 +63,22 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform109
+    path: /platform117
     headers:
-      Host: platform109.halalkhor.info
+      Host: platform117.halalkhor.info
 - name: 🇲🇾 MY 06 - Dyt
-  type: vmess
-  server: 47.250.135.244
-  port: 10000
-  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: platform107.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform107
+    headers:
+      Host: platform107.halalkhor.info
 - name: 🇲🇾 MY 07 - Dyt
   type: vless
   server: platform118.golnamakcert.top
@@ -94,6 +94,42 @@ proxies:
       Host: platform118.halalkhor.info
 - name: 🇲🇾 MY 08 - Dyt
   type: vless
+  server: platform115.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform115
+    headers:
+      Host: platform115.halalkhor.info
+- name: 🇲🇾 MY 09 - Dyt
+  type: vless
+  server: platform109.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: platform109.halalkhor.info
+- name: 🇲🇾 MY 10 - Dyt
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇾 MY 11 - Dyt
+  type: vless
   server: platform106.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
@@ -105,46 +141,30 @@ proxies:
     path: /platform106
     headers:
       Host: platform106.halalkhor.info
-- name: 🇲🇾 MY 09 - Dyt
-  type: vless
-  server: platform107.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform107
-    headers:
-      Host: platform107.halalkhor.info
-- name: 🇲🇾 MY 10 - Dyt
-  type: vless
-  server: platform102.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.halalkhor.info
-- name: 🇲🇾 MY 11 - Dyt
-  type: vless
-  server: platform117.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
 - name: 🇲🇾 MY 12 - Dyt
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇾 MY 13 - Dyt
+  type: vless
+  server: platform113.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform113
+    headers:
+      Host: platform113.halalkhor.info
+- name: 🇲🇾 MY 14 - Dyt
   type: ss
   server: 130.94.69.15
   port: 7001
@@ -168,6 +188,8 @@ proxy-groups:
   - 🇲🇾 MY 10 - Dyt
   - 🇲🇾 MY 11 - Dyt
   - 🇲🇾 MY 12 - Dyt
+  - 🇲🇾 MY 13 - Dyt
+  - 🇲🇾 MY 14 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -185,5 +207,7 @@ proxy-groups:
   - 🇲🇾 MY 10 - Dyt
   - 🇲🇾 MY 11 - Dyt
   - 🇲🇾 MY 12 - Dyt
+  - 🇲🇾 MY 13 - Dyt
+  - 🇲🇾 MY 14 - Dyt
 rules:
 - MATCH,PROXIES
