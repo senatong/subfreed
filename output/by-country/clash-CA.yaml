@@ -5,207 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - Dyt
-  type: ss
-  server: 51.222.200.165
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  type: vless
+  server: milo.rubinaz.xyz
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 02 - Dyt
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  type: ss
+  server: 51.222.136.236
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 - name: 🇨🇦 加拿大 (Canada) 03 - Dyt
-  type: vmess
-  server: 66.163.113.176
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 04 - Dyt
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 05 - Dyt
-  type: vmess
-  server: mygptagent.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
-- name: 🇨🇦 加拿大 (Canada) 06 - Dyt
-  type: vmess
-  server: 198.57.27.190
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 07 - Dyt
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 08 - Dyt
-  type: vless
-  server: 188.114.97.6
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 09 - Dyt
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 10 - Dyt
-  type: ss
-  server: 51.79.64.198
-  port: 8119
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 11 - Dyt
-  type: vmess
-  server: 158.51.121.123
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mygptagent.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: mygptagent.org
-- name: 🇨🇦 加拿大 (Canada) 12 - Dyt
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 13 - Dyt
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 14 - Dyt
-  type: vmess
-  server: 134.195.198.214
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 15 - Dyt
-  type: ss
-  server: 185.156.47.97
-  port: 9443
-  cipher: aes-256-gcm
-  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 16 - Dyt
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇨🇦 加拿大 (Canada) 17 - Dyt
-  type: vmess
-  server: mygptagent.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mygptagent.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: mygptagent.org
-- name: 🇨🇦 加拿大 (Canada) 18 - Dyt
-  type: vless
-  server: 188.114.97.6
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 19 - Dyt
   type: vless
   server: 199.232.78.159
   port: 443
@@ -219,7 +33,34 @@ proxies:
     path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
       Host: canadajji.global.ssl.fastly.net.
-- name: 🇨🇦 加拿大 (Canada) 20 - Dyt
+- name: 🇨🇦 加拿大 (Canada) 04 - Dyt
+  type: ss
+  server: 51.222.155.113
+  port: 5601
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 05 - Dyt
+  type: vmess
+  server: 198.57.27.190
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 06 - Dyt
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 07 - Dyt
   type: vmess
   server: 23.162.200.198
   port: 18000
@@ -229,30 +70,53 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 21 - Dyt
+- name: 🇨🇦 加拿大 (Canada) 08 - Dyt
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 09 - Dyt
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 10 - Dyt
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 11 - Dyt
   type: ss
-  server: 138.199.48.82
+  server: 185.156.47.97
   port: 9443
   cipher: aes-256-gcm
   password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 22 - Dyt
-  type: ss
-  server: 51.79.85.185
-  port: 8118
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 23 - Dyt
+- name: 🇨🇦 加拿大 (Canada) 12 - Dyt
   type: ss
   server: 51.79.49.116
   port: 8882
   cipher: aes-256-gcm
   password: kDWvXYZoTBcGkC4
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 24 - Dyt
+- name: 🇨🇦 加拿大 (Canada) 13 - Dyt
   type: vmess
-  server: 158.51.123.42
+  server: 66.163.113.176
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
@@ -260,7 +124,72 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 25 - Dyt
+- name: 🇨🇦 加拿大 (Canada) 14 - Dyt
+  type: vmess
+  server: 66.163.113.176
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 15 - Dyt
+  type: ss
+  server: 149.22.95.183
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 16 - Dyt
+  type: ss
+  server: 185.156.47.97
+  port: 9443
+  cipher: aes-256-gcm
+  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 17 - Dyt
+  type: ss
+  server: 51.79.85.185
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 18 - Dyt
+  type: ss
+  server: 51.222.12.127
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 19 - Dyt
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 20 - Dyt
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 21 - Dyt
+  type: ss
+  server: 51.79.64.198
+  port: 8119
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 22 - Dyt
   type: vmess
   server: 134.195.198.214
   port: 22324
@@ -270,6 +199,33 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 23 - Dyt
+  type: vmess
+  server: 66.163.113.176
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 24 - Dyt
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 25 - Dyt
+  type: ss
+  server: 51.222.200.165
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
 - name: 🇨🇦 加拿大 (Canada) 26 - Dyt
   type: vmess
   server: 134.195.196.211
@@ -281,20 +237,22 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 27 - Dyt
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 28 - Dyt
   type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 158.51.121.63
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
   udp: true
@@ -309,102 +267,15 @@ proxies:
   udp: true
 - name: 🇨🇦 加拿大 (Canada) 30 - Dyt
   type: vmess
-  server: 158.51.121.63
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 31 - Dyt
-  type: ss
-  server: yyz-ca-01.blncvpn4u.cc
-  port: 9443
-  cipher: aes-256-gcm
-  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 32 - Dyt
-  type: vmess
-  server: 198.57.27.190
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 33 - Dyt
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 34 - Dyt
-  type: ss
-  server: 51.222.12.127
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 35 - Dyt
-  type: vless
-  server: 188.114.97.6
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 36 - Dyt
-  type: vmess
-  server: 158.51.121.123
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
-- name: 🇨🇦 加拿大 (Canada) 37 - Dyt
-  type: ss
-  server: 51.222.136.236
-  port: 8882
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 38 - Dyt
-  type: ss
-  server: 51.222.155.32
-  port: 5003
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 39 - Dyt
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 40 - Dyt
   type: vmess
   server: 134.195.198.214
   port: 22324
@@ -414,22 +285,64 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 41 - Dyt
+- name: 🇨🇦 加拿大 (Canada) 32 - Dyt
+  type: vmess
+  server: 158.51.123.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 33 - Dyt
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 34 - Dyt
+  type: vmess
+  server: 198.57.27.190
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 35 - Dyt
+  type: vmess
+  server: 134.195.198.214
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 36 - Dyt
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 37 - Dyt
   type: ss
-  server: yyz-ca-01.blncvpn4u.cc
+  server: 138.199.48.82
   port: 9443
   cipher: aes-256-gcm
   password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 42 - Dyt
-  type: vless
-  server: milo.rubinaz.xyz
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 43 - Dyt
+- name: 🇨🇦 加拿大 (Canada) 38 - Dyt
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -439,20 +352,14 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 44 - Dyt
-  type: vless
-  server: 188.114.97.6
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+- name: 🇨🇦 加拿大 (Canada) 39 - Dyt
+  type: ss
+  server: yyz-ca-01.blncvpn4u.cc
+  port: 9443
+  cipher: aes-256-gcm
+  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 45 - Dyt
+- name: 🇨🇦 加拿大 (Canada) 40 - Dyt
   type: vmess
   server: 158.51.123.42
   port: 22324
@@ -462,7 +369,63 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 41 - Dyt
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 42 - Dyt
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇨🇦 加拿大 (Canada) 43 - Dyt
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 44 - Dyt
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 45 - Dyt
+  type: ss
+  server: 51.222.155.32
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+  udp: true
 - name: 🇨🇦 加拿大 (Canada) 46 - Dyt
+  type: ss
+  server: yyz-ca-01.blncvpn4u.cc
+  port: 9443
+  cipher: aes-256-gcm
+  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 47 - Dyt
   type: vmess
   server: 66.163.113.176
   port: 22324
@@ -472,26 +435,18 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 47 - Dyt
-  type: vmess
-  server: 158.51.123.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 48 - Dyt
-  type: vmess
-  server: 158.51.123.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: ca.monkora.org
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: ca.monkora.org
+  client-fingerprint: firefox
 - name: 🇨🇦 加拿大 (Canada) 49 - Dyt
   type: ss
   server: 51.222.141.125
@@ -500,18 +455,67 @@ proxies:
   password: zDNVedRFPQexG9v
   udp: true
 - name: 🇨🇦 加拿大 (Canada) 50 - Dyt
-  type: vless
-  server: 188.114.97.6
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  type: vmess
+  server: mygptagent.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mygptagent.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: mygptagent.org
+- name: 🇨🇦 加拿大 (Canada) 51 - Dyt
+  type: vmess
+  server: 158.51.121.63
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 52 - Dyt
+  type: vmess
+  server: 66.163.113.176
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 53 - Dyt
+  type: vless
+  server: ca.monkora.org
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: ca.monkora.org
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 54 - Dyt
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+      Host: canadajji.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -567,6 +571,10 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 48 - Dyt
   - 🇨🇦 加拿大 (Canada) 49 - Dyt
   - 🇨🇦 加拿大 (Canada) 50 - Dyt
+  - 🇨🇦 加拿大 (Canada) 51 - Dyt
+  - 🇨🇦 加拿大 (Canada) 52 - Dyt
+  - 🇨🇦 加拿大 (Canada) 53 - Dyt
+  - 🇨🇦 加拿大 (Canada) 54 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -622,5 +630,9 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 48 - Dyt
   - 🇨🇦 加拿大 (Canada) 49 - Dyt
   - 🇨🇦 加拿大 (Canada) 50 - Dyt
+  - 🇨🇦 加拿大 (Canada) 51 - Dyt
+  - 🇨🇦 加拿大 (Canada) 52 - Dyt
+  - 🇨🇦 加拿大 (Canada) 53 - Dyt
+  - 🇨🇦 加拿大 (Canada) 54 - Dyt
 rules:
 - MATCH,PROXIES

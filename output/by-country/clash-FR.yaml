@@ -21,17 +21,47 @@ proxies:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇫🇷 法国 (France) 02 - Dyt
   type: vless
-  server: 51.77.217.70
+  server: 172.67.185.98
   port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: firefox
+  servername: fr.api-music-fa.com
+  network: ws
+  ws-opts:
+    path: /api/voip/updates/static/fr2035
+    headers:
+      Host: fr.api-music-fa.com
 - name: 🇫🇷 法国 (France) 03 - Dyt
+  type: vless
+  server: 104.21.72.47
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: trex-panel-nubj0s.samifakor.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/ef859652a80e
+    headers:
+      Host: trex-panel-nubj0s.samifakor.workers.dev
+- name: 🇫🇷 法国 (France) 04 - Dyt
+  type: vless
+  server: 172.67.175.23
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: trex-panel-nubj0s.samifakor.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/ef859652a80e
+    headers:
+      Host: trex-panel-nubj0s.samifakor.workers.dev
+- name: 🇫🇷 法国 (France) 05 - Dyt
   type: vless
   server: 81.95.4.189
   port: 443
@@ -45,85 +75,43 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇫🇷 法国 (France) 04 - Dyt
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 05 - Dyt
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 - name: 🇫🇷 法国 (France) 06 - Dyt
-  type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-  udp: true
-- name: 🇫🇷 法国 (France) 07 - Dyt
-  type: vmess
-  server: 188.114.96.19
-  port: 80
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇫🇷 法国 (France) 08 - Dyt
-  type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-  udp: true
-- name: 🇫🇷 法国 (France) 09 - Dyt
   type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  server: 162.19.230.250
+  port: 443
+  uuid: 7017a1ca-7a31-463d-832e-5a7261a3dd62
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-  servername: www.cloudflare.com
+    public-key: i1OqphFMJNL_xwV5zES4icJTPBHtSgieOt3FYns9zB0
+  servername: www.amazon.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 10 - Dyt
+- name: 🇫🇷 法国 (France) 07 - Dyt
+  type: vless
+  server: 104.21.84.30
+  port: 2053
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fr.api-music-fa.com
+  network: ws
+  ws-opts:
+    path: /api/voip/updates/static/fr2035
+    headers:
+      Host: fr.api-music-fa.com
+- name: 🇫🇷 法国 (France) 08 - Dyt
   type: vmess
-  server: 188.114.96.19
-  port: 80
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  server: 45.80.215.8
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇫🇷 法国 (France) 11 - Dyt
+- name: 🇫🇷 法国 (France) 09 - Dyt
   type: vless
   server: 149.202.58.99
   port: 443
@@ -137,41 +125,21 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇫🇷 法国 (France) 12 - Dyt
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 13 - Dyt
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 14 - Dyt
+- name: 🇫🇷 法国 (France) 10 - Dyt
   type: vless
-  server: 162.19.230.250
+  server: 149.202.58.99
   port: 443
-  uuid: 7017a1ca-7a31-463d-832e-5a7261a3dd62
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: i1OqphFMJNL_xwV5zES4icJTPBHtSgieOt3FYns9zB0
-  servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 15 - Dyt
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 11 - Dyt
   type: vless
   server: 172.67.185.98
   port: 2053
@@ -185,19 +153,56 @@ proxies:
     path: /api/voip/updates/static/fr2035
     headers:
       Host: fr.api-music-fa.com
+- name: 🇫🇷 法国 (France) 12 - Dyt
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+  udp: true
+- name: 🇫🇷 法国 (France) 13 - Dyt
+  type: vless
+  server: 104.21.84.30
+  port: 2053
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fr.api-music-fa.com
+  network: ws
+  ws-opts:
+    path: /api/voip/updates/static/fr2035
+    headers:
+      Host: fr.api-music-fa.com
+- name: 🇫🇷 法国 (France) 14 - Dyt
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇫🇷 法国 (France) 15 - Dyt
+  type: vless
+  server: 34.155.54.237
+  port: 443
+  uuid: 069a2bbd-3fc9-470f-a251-c836a96ed04a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: SVT2WeXMIrumlh5VG1lbHN6YbqL7-u2iRkv1js8XEU4
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 16 - Dyt
   type: vmess
-  server: 45.80.215.8
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 17 - Dyt
-  type: vmess
-  server: 141.95.65.9
+  server: 162.19.204.71
   port: 1234
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -206,6 +211,21 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
+- name: 🇫🇷 法国 (France) 17 - Dyt
+  type: vmess
+  server: 188.114.96.19
+  port: 80
+  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇫🇷 法国 (France) 18 - Dyt
   type: vless
   server: 162.19.230.250
@@ -220,30 +240,59 @@ proxies:
   client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 19 - Dyt
   type: vless
-  server: 104.21.84.30
-  port: 2053
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  server: megariverport-nayab.org
+  port: 443
+  uuid: a337aa84-3152-40f0-87fc-bdcbbb3b3b5d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fr.api-music-fa.com
+  servername: sdxih.maxpixel-hangover.sbs
   network: ws
   ws-opts:
-    path: /api/voip/updates/static/fr2035
+    path: /bali
     headers:
-      Host: fr.api-music-fa.com
+      Host: sdxih.maxpixel-hangover.sbs
 - name: 🇫🇷 法国 (France) 20 - Dyt
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 172.67.193.182
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: trex-panel-nubj0s.samifakor.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/ef859652a80e
+    headers:
+      Host: trex-panel-nubj0s.samifakor.workers.dev
 - name: 🇫🇷 法国 (France) 21 - Dyt
+  type: vless
+  server: 54.37.136.194
+  port: 2053
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 22 - Dyt
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 23 - Dyt
   type: vmess
   server: 141.95.65.9
   port: 1234
@@ -254,32 +303,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 22 - Dyt
-  type: vless
-  server: 172.67.185.98
-  port: 2053
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fr.api-music-fa.com
-  network: ws
-  ws-opts:
-    path: /api/voip/updates/static/fr2035
-    headers:
-      Host: fr.api-music-fa.com
-- name: 🇫🇷 法国 (France) 23 - Dyt
-  type: vless
-  server: 162.19.230.250
-  port: 443
-  uuid: 7017a1ca-7a31-463d-832e-5a7261a3dd62
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: i1OqphFMJNL_xwV5zES4icJTPBHtSgieOt3FYns9zB0
-  servername: www.amazon.com
-  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 24 - Dyt
   type: vless
   server: 149.202.58.99
@@ -296,44 +319,19 @@ proxies:
       Host: 149.202.58.99
 - name: 🇫🇷 法国 (France) 25 - Dyt
   type: vless
-  server: 104.21.84.30
-  port: 2053
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fr.api-music-fa.com
-  network: ws
-  ws-opts:
-    path: /api/voip/updates/static/fr2035
-    headers:
-      Host: fr.api-music-fa.com
-- name: 🇫🇷 法国 (France) 26 - Dyt
-  type: vless
-  server: 149.202.58.99
+  server: 104.20.17.127
   port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bab-6.site
+  servername: trex-panel-nubj0s.samifakor.workers.dev
   network: ws
   ws-opts:
-    path: /vws/
+    path: /stream/TrexBridge/ef859652a80e
     headers:
-      Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 27 - Dyt
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 28 - Dyt
+      Host: trex-panel-nubj0s.samifakor.workers.dev
+- name: 🇫🇷 法国 (France) 26 - Dyt
   type: vless
   server: 54.37.136.194
   port: 2053
@@ -345,6 +343,32 @@ proxies:
     public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 27 - Dyt
+  type: vmess
+  server: 188.114.96.19
+  port: 80
+  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇫🇷 法国 (France) 28 - Dyt
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 proxy-groups:
 - name: PROXIES
   type: select
