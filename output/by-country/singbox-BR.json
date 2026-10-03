@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - Dyt"
+        "🇧🇷 BR 01 - Dyt",
+        "🇧🇷 BR 02 - Dyt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - Dyt"
+        "🇧🇷 BR 01 - Dyt",
+        "🇧🇷 BR 02 - Dyt"
       ],
       "url": "https://www.google.com/generate_204"
     },

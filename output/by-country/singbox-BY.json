@@ -6,18 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 LK 01 - Dyt",
-        "🇱🇰 LK 02 - Dyt",
-        "🇱🇰 LK 03 - Dyt"
+        "🇧🇾 BY 01 - Dyt",
+        "🇧🇾 BY 02 - Dyt",
+        "🇧🇾 BY 03 - Dyt",
+        "🇧🇾 BY 04 - Dyt",
+        "🇧🇾 BY 05 - Dyt",
+        "🇧🇾 BY 06 - Dyt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 LK 01 - Dyt",
-        "🇱🇰 LK 02 - Dyt",
-        "🇱🇰 LK 03 - Dyt"
+        "🇧🇾 BY 01 - Dyt",
+        "🇧🇾 BY 02 - Dyt",
+        "🇧🇾 BY 03 - Dyt",
+        "🇧🇾 BY 04 - Dyt",
+        "🇧🇾 BY 05 - Dyt",
+        "🇧🇾 BY 06 - Dyt"
       ],
       "url": "https://www.google.com/generate_204"
     },

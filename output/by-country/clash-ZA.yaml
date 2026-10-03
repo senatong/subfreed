@@ -26,25 +26,13 @@ proxies:
   password: SBw5b6E9noHolBdA
   udp: true
 - name: 🇿🇦 ZA 04 - Dyt
-  type: vless
-  server: 34.35.58.153
-  port: 443
-  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
-  servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇿🇦 ZA 05 - Dyt
   type: ss
   server: 139.84.247.164
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: tfAcRikawhNoZAhu
   udp: true
-- name: 🇿🇦 ZA 06 - Dyt
+- name: 🇿🇦 ZA 05 - Dyt
   type: vless
   server: 34.35.58.153
   port: 443
@@ -56,6 +44,18 @@ proxies:
     public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
   servername: www.cloudflare.com
   client-fingerprint: qq
+- name: 🇿🇦 ZA 06 - Dyt
+  type: vless
+  server: 34.35.58.153
+  port: 443
+  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
+  servername: www.cloudflare.com
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
