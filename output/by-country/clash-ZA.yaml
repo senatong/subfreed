@@ -5,12 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇿🇦 ZA 01 - Dyt
-  type: ss
-  server: 139.84.247.164
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: tfAcRikawhNoZAhu
+  type: vless
+  server: 34.35.58.153
+  port: 443
+  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
+  servername: www.cloudflare.com
+  client-fingerprint: safari
 - name: 🇿🇦 ZA 02 - Dyt
   type: ss
   server: 102.37.156.224
@@ -37,6 +42,13 @@ proxies:
     public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇿🇦 ZA 05 - Dyt
+  type: ss
+  server: 139.84.247.164
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: tfAcRikawhNoZAhu
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +58,7 @@ proxy-groups:
   - 🇿🇦 ZA 02 - Dyt
   - 🇿🇦 ZA 03 - Dyt
   - 🇿🇦 ZA 04 - Dyt
+  - 🇿🇦 ZA 05 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -55,5 +68,6 @@ proxy-groups:
   - 🇿🇦 ZA 02 - Dyt
   - 🇿🇦 ZA 03 - Dyt
   - 🇿🇦 ZA 04 - Dyt
+  - 🇿🇦 ZA 05 - Dyt
 rules:
 - MATCH,PROXIES

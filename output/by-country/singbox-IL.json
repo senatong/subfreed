@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 IL 01 - Dyt"
+        "🇮🇱 IL 01 - Dyt",
+        "🇮🇱 IL 02 - Dyt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 IL 01 - Dyt"
+        "🇮🇱 IL 01 - Dyt",
+        "🇮🇱 IL 02 - Dyt"
       ],
       "url": "https://www.google.com/generate_204"
     },

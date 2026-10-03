@@ -5,32 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - Dyt
-  type: vless
-  server: platform118.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
-- name: 🇲🇾 MY 02 - Dyt
-  type: vless
-  server: platform115.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.halalkhor.info
-- name: 🇲🇾 MY 03 - Dyt
   type: vmess
   server: 47.250.135.244
   port: 10000
@@ -46,15 +20,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇲🇾 MY 01 - Dyt
-  - 🇲🇾 MY 02 - Dyt
-  - 🇲🇾 MY 03 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇲🇾 MY 01 - Dyt
-  - 🇲🇾 MY 02 - Dyt
-  - 🇲🇾 MY 03 - Dyt
 rules:
 - MATCH,PROXIES
