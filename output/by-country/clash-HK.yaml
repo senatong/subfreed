@@ -14,34 +14,34 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: i2psm3knof5qjjix.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: ''
+      Host: i2psm3knof5qjjix.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - Dyt
   type: vmess
-  server: 194.99.79.26
+  server: 47.83.207.148
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aksai.org
+  servername: VAH4URdZL3jDX5r2.v.3dns.vip
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /ws-vmess
     headers:
-      Host: aksai.org
+      Host: VAH4URdZL3jDX5r2.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - Dyt
   type: ss
-  server: 181.215.18.196
+  server: telegramx.khp25.com
   port: 1080
   cipher: chacha20-ietf-poly1305
-  password: pno0e2keji2gsfea
+  password: m5nsedvdczx6x06e
   udp: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - Dyt
   type: vmess
@@ -53,26 +53,28 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: aksai.org
   network: ws
   ws-opts:
     path: /linkvws
     headers:
-      Host: ''
+      Host: aksai.org
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - Dyt
-  type: vless
-  server: 43.129.80.179
-  port: 8443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  type: vmess
+  server: 194.99.79.26
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: aksai.org
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /linkvws
     headers:
-      Host: ccc.010304.xyz
+      Host: aksai.org
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - Dyt
   type: vmess
   server: 194.99.79.26
@@ -83,29 +85,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aksai.org
+  servername: ''
   network: ws
   ws-opts:
     path: /linkvws
     headers:
-      Host: aksai.org
+      Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - Dyt
-  type: vmess
-  server: 47.243.65.243
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lcv8v9l7OyamxxfZ.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: lcv8v9l7OyamxxfZ.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - Dyt
   type: vmess
   server: 194.99.79.26
   port: 443
@@ -115,12 +101,24 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aksai.org
+  servername: ''
   network: ws
   ws-opts:
     path: /linkvws
     headers:
-      Host: aksai.org
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - Dyt
+  type: vless
+  server: 47.238.210.5
+  port: 13779
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+  servername: tesla.com
+  client-fingerprint: qq
 - name: 🇭🇰 中国香港 (Hong Kong) 09 - Dyt
   type: vmess
   server: 194.99.79.26
@@ -131,28 +129,19 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: aksai.org
   network: ws
   ws-opts:
     path: /linkvws
     headers:
-      Host: ''
+      Host: aksai.org
 - name: 🇭🇰 中国香港 (Hong Kong) 10 - Dyt
-  type: vmess
-  server: ex1ogt73nzpqkac2.v.3dns.vip
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 181.215.18.196
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: pno0e2keji2gsfea
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 11 - Dyt
   type: ss
   server: 181.215.18.110
@@ -162,7 +151,7 @@ proxies:
   udp: true
 - name: 🇭🇰 中国香港 (Hong Kong) 12 - Dyt
   type: vmess
-  server: i2psm3knof5qjjix.v.3dns.vip
+  server: 8.217.13.103
   port: 443
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
@@ -170,18 +159,18 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: i2psm3knof5qjjix.v.3dns.vip
+  servername: qtkdr8jxe3wefxjm.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: i2psm3knof5qjjix.v.3dns.vip
+      Host: qtkdr8jxe3wefxjm.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 13 - Dyt
   type: ss
-  server: telegramx.khp25.com
+  server: telegram.khp25.com
   port: 1080
   cipher: chacha20-ietf-poly1305
-  password: m5nsedvdczx6x06e
+  password: pno0e2keji2gsfea
   udp: true
 - name: 🇭🇰 中国香港 (Hong Kong) 14 - Dyt
   type: vless
@@ -197,27 +186,20 @@ proxies:
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 15 - Dyt
   type: vmess
-  server: i2psm3knof5qjjix.v.3dns.vip
+  server: 194.99.79.26
   port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: i2psm3knof5qjjix.v.3dns.vip
+  servername: aksai.org
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /linkvws
     headers:
-      Host: i2psm3knof5qjjix.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 16 - Dyt
-  type: ss
-  server: telegram.khp25.com
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: pno0e2keji2gsfea
-  udp: true
+      Host: aksai.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -238,7 +220,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 13 - Dyt
   - 🇭🇰 中国香港 (Hong Kong) 14 - Dyt
   - 🇭🇰 中国香港 (Hong Kong) 15 - Dyt
-  - 🇭🇰 中国香港 (Hong Kong) 16 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -259,6 +240,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 13 - Dyt
   - 🇭🇰 中国香港 (Hong Kong) 14 - Dyt
   - 🇭🇰 中国香港 (Hong Kong) 15 - Dyt
-  - 🇭🇰 中国香港 (Hong Kong) 16 - Dyt
 rules:
 - MATCH,PROXIES
