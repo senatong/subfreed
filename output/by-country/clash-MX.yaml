@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇳🇴 NO 01 - Dyt
+- name: 🇲🇽 MX 01 - Dyt
   type: ss
-  server: 185.213.23.63
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  server: 147.78.1.234
+  port: 16673
+  cipher: aes-128-gcm
+  password: 67c57ae584eecd70396fcd7ca7521130
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇳🇴 NO 01 - Dyt
+  - 🇲🇽 MX 01 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇴 NO 01 - Dyt
+  - 🇲🇽 MX 01 - Dyt
 rules:
 - MATCH,PROXIES
