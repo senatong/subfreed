@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇨🇾 CY 03 - Dyt
   type: vless
   server: 194.76.154.31
@@ -54,16 +54,18 @@ proxies:
   client-fingerprint: chrome
 - name: 🇨🇾 CY 05 - Dyt
   type: vless
-  server: 194.76.154.31
-  port: 40443
-  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  server: 194.55.166.65
+  port: 2087
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
-  servername: deepl.com
-  client-fingerprint: qq
+  servername: free.cndyw.ggff.net
+  network: ws
+  ws-opts:
+    path: pyip=bpb.yousef.isegaro.comfp=random
+    headers:
+      Host: free.cndyw.ggff.net
 - name: 🇨🇾 CY 06 - Dyt
   type: vless
   server: 194.76.154.31
@@ -75,7 +77,19 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
+- name: 🇨🇾 CY 07 - Dyt
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,6 +101,7 @@ proxy-groups:
   - 🇨🇾 CY 04 - Dyt
   - 🇨🇾 CY 05 - Dyt
   - 🇨🇾 CY 06 - Dyt
+  - 🇨🇾 CY 07 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -98,5 +113,6 @@ proxy-groups:
   - 🇨🇾 CY 04 - Dyt
   - 🇨🇾 CY 05 - Dyt
   - 🇨🇾 CY 06 - Dyt
+  - 🇨🇾 CY 07 - Dyt
 rules:
 - MATCH,PROXIES
