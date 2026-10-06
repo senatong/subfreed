@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - Dyt"
+        "🇦🇺 澳大利亚 (Australia) 01 - Dyt",
+        "🇦🇺 澳大利亚 (Australia) 02 - Dyt",
+        "🇦🇺 澳大利亚 (Australia) 03 - Dyt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - Dyt"
+        "🇦🇺 澳大利亚 (Australia) 01 - Dyt",
+        "🇦🇺 澳大利亚 (Australia) 02 - Dyt",
+        "🇦🇺 澳大利亚 (Australia) 03 - Dyt"
       ],
       "url": "https://www.google.com/generate_204"
     },
