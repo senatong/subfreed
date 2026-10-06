@@ -5,27 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - Dyt
-  type: vless
-  server: 104.21.35.244
-  port: 2083
-  uuid: ca608afb-55ff-4f36-9d00-606fedbb30e1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: Site.check-looks.space
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Site.check-looks.space
-- name: 🇩🇪 德国 (Germany) 02 - Dyt
   type: ss
   server: 2.58.81.221
   port: 443
   cipher: aes-256-gcm
   password: kKEd0rBrd56Furjz
   udp: true
-- name: 🇩🇪 德国 (Germany) 03 - Dyt
+- name: 🇩🇪 德国 (Germany) 02 - Dyt
   type: vmess
   server: 185.177.229.129
   port: 22324
@@ -35,21 +21,45 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 03 - Dyt
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
 - name: 🇩🇪 德国 (Germany) 04 - Dyt
+  type: vmess
+  server: 185.177.229.129
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 05 - Dyt
   type: vless
-  server: 80.96.113.48
+  server: rubifen.adaspoloandco.com
   port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
+  servername: rubifen.adaspoloandco.com
   network: ws
   ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
+    path: /GOrbEh
     headers:
-      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
-- name: 🇩🇪 德国 (Germany) 05 - Dyt
+      Host: rubifen.adaspoloandco.com
+- name: 🇩🇪 德国 (Germany) 06 - Dyt
+  type: ss
+  server: 2.58.81.221
+  port: 443
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 🇩🇪 德国 (Germany) 07 - Dyt
   type: vless
   server: 212.87.220.98
   port: 443
@@ -63,28 +73,21 @@ proxies:
     path: /glasspanel/guest000_0_5de14443985f/
     headers:
       Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
-- name: 🇩🇪 德国 (Germany) 06 - Dyt
+- name: 🇩🇪 德国 (Germany) 08 - Dyt
   type: vless
-  server: 188.114.97.1
-  port: 2053
-  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
+  server: 159.195.5.79
+  port: 2083
+  uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bold-term-4edd.mbigspot.workers.dev
+  servername: s4ws.ragingbull.de5.net
   network: ws
   ws-opts:
-    path: /
+    path: /wsrb7k2m
     headers:
-      Host: bold-term-4edd.mbigspot.workers.dev
-- name: 🇩🇪 德国 (Germany) 07 - Dyt
-  type: ss
-  server: 2.58.81.221
-  port: 80
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 🇩🇪 德国 (Germany) 08 - Dyt
+      Host: s4ws.ragingbull.de5.net
+- name: 🇩🇪 德国 (Germany) 09 - Dyt
   type: vless
   server: 45.12.28.108
   port: 443
@@ -98,51 +101,9 @@ proxies:
     path: /glasspanel/guest000_0_5de14443985f/
     headers:
       Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
-- name: 🇩🇪 德国 (Germany) 09 - Dyt
-  type: ss
-  server: 2.58.81.221
-  port: 443
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
 - name: 🇩🇪 德国 (Germany) 10 - Dyt
   type: vless
-  server: 172.67.181.125
-  port: 2083
-  uuid: ca608afb-55ff-4f36-9d00-606fedbb30e1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: site.check-looks.space
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: site.check-looks.space
-- name: 🇩🇪 德国 (Germany) 11 - Dyt
-  type: vless
-  server: 172.67.181.125
-  port: 2083
-  uuid: ca608afb-55ff-4f36-9d00-606fedbb30e1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: Site.check-looks.space
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Site.check-looks.space
-- name: 🇩🇪 德国 (Germany) 12 - Dyt
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 13 - Dyt
-  type: vless
-  server: 85.90.196.11
+  server: 212.87.220.98
   port: 443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
@@ -154,43 +115,7 @@ proxies:
     path: /glasspanel/guest000_0_5de14443985f/
     headers:
       Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
-- name: 🇩🇪 德国 (Germany) 14 - Dyt
-  type: vmess
-  server: 31.77.8.97
-  port: 110
-  uuid: d2d8601b-c14b-42c6-b8ea-33889bce152a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 15 - Dyt
-  type: vmess
-  server: 216.106.187.60
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 16 - Dyt
-  type: vmess
-  server: 193.108.117.54
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aidrivercat.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aidrivercat.org
-- name: 🇩🇪 德国 (Germany) 17 - Dyt
+- name: 🇩🇪 德国 (Germany) 11 - Dyt
   type: vless
   server: 2.56.172.107
   port: 443
@@ -204,56 +129,114 @@ proxies:
     path: /glasspanel/guest000_0_5de14443985f/
     headers:
       Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
-- name: 🇩🇪 德国 (Germany) 18 - Dyt
+- name: 🇩🇪 德国 (Germany) 12 - Dyt
   type: vless
-  server: 188.114.96.2
-  port: 8443
-  uuid: 8bb52771-052e-40b5-ab53-c6e151ad2290
+  server: 80.211.27.249
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shop.neexbyte.ir
+  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
   network: ws
   ws-opts:
-    path: /
+    path: /glasspanel/guest000_0_5de14443985f/
     headers:
-      Host: shop.neexbyte.ir
-- name: 🇩🇪 德国 (Germany) 19 - Dyt
-  type: ss
-  server: 2.58.81.221
-  port: 80
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 🇩🇪 德国 (Germany) 20 - Dyt
-  type: vless
-  server: 172.67.189.227
-  port: 8443
-  uuid: 806fa224-44f7-4c1b-b7a3-05bfdfdfbf87
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: iiproxy88.iiproxy.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: iiproxy88.iiproxy.com
-- name: 🇩🇪 德国 (Germany) 21 - Dyt
-  type: ss
-  server: 51.195.126.38
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
-  udp: true
-- name: 🇩🇪 德国 (Germany) 22 - Dyt
+      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
+- name: 🇩🇪 德国 (Germany) 13 - Dyt
   type: ss
   server: 185.226.172.8
   port: 8008
   cipher: aes-256-gcm
   password: XKFKl2rULjIp74
   udp: true
-- name: 🇩🇪 德国 (Germany) 23 - Dyt
+- name: 🇩🇪 德国 (Germany) 14 - Dyt
+  type: vless
+  server: 117.55.233.87
+  port: 443
+  uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: s3ws.ragingbull.de5.net
+  network: ws
+  ws-opts:
+    path: /wsrb7k2m
+    headers:
+      Host: s3ws.ragingbull.de5.net
+- name: 🇩🇪 德国 (Germany) 15 - Dyt
+  type: vless
+  server: 138.124.58.39
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
+  network: ws
+  ws-opts:
+    path: /glasspanel/guest000_0_5de14443985f/
+    headers:
+      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
+- name: 🇩🇪 德国 (Germany) 16 - Dyt
+  type: vless
+  server: 45.12.28.108
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
+  network: ws
+  ws-opts:
+    path: /glasspanel/guest000_0_5de14443985f/
+    headers:
+      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
+- name: 🇩🇪 德国 (Germany) 17 - Dyt
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 18 - Dyt
+  type: vmess
+  server: 185.177.229.129
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 19 - Dyt
+  type: vless
+  server: 199.68.196.67
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
+  network: ws
+  ws-opts:
+    path: /glasspanel/guest000_0_5de14443985f/
+    headers:
+      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
+- name: 🇩🇪 德国 (Germany) 20 - Dyt
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+  udp: true
+- name: 🇩🇪 德国 (Germany) 21 - Dyt
   type: vmess
   server: aidrivercat.org
   port: 443
@@ -269,21 +252,7 @@ proxies:
     path: /linkvws
     headers:
       Host: aidrivercat.org
-- name: 🇩🇪 德国 (Germany) 24 - Dyt
-  type: vless
-  server: 199.68.196.67
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
-  network: ws
-  ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
-    headers:
-      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
-- name: 🇩🇪 德国 (Germany) 25 - Dyt
+- name: 🇩🇪 德国 (Germany) 22 - Dyt
   type: vless
   server: 80.211.27.249
   port: 443
@@ -297,70 +266,9 @@ proxies:
     path: /glasspanel/guest000_0_5de14443985f/
     headers:
       Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
-- name: 🇩🇪 德国 (Germany) 26 - Dyt
+- name: 🇩🇪 德国 (Germany) 23 - Dyt
   type: vless
-  server: rubifen.adaspoloandco.com
-  port: 443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rubifen.adaspoloandco.com
-  network: ws
-  ws-opts:
-    path: /GOrbEh
-    headers:
-      Host: rubifen.adaspoloandco.com
-- name: 🇩🇪 德国 (Germany) 27 - Dyt
-  type: vless
-  server: 104.21.10.34
-  port: 8443
-  uuid: 806fa224-44f7-4c1b-b7a3-05bfdfdfbf87
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: iiproxy88.iiproxy.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: iiproxy88.iiproxy.com
-- name: 🇩🇪 德国 (Germany) 28 - Dyt
-  type: vmess
-  server: 216.106.187.60
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 29 - Dyt
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 30 - Dyt
-  type: vmess
-  server: 185.177.229.129
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 31 - Dyt
-  type: vless
-  server: 144.31.192.167
+  server: 46.101.110.88
   port: 443
   uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
   udp: true
@@ -372,31 +280,35 @@ proxies:
     path: /wsrb7k2m
     headers:
       Host: s4ws.ragingbull.de5.net
-- name: 🇩🇪 德国 (Germany) 32 - Dyt
-  type: vmess
-  server: 31.76.11.83
-  port: 50551
-  uuid: 57160c16-b7db-40d8-bd06-ced30edd4df6
-  alterId: 0
-  cipher: auto
+- name: 🇩🇪 德国 (Germany) 24 - Dyt
+  type: ss
+  server: 51.195.126.38
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
   udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 33 - Dyt
+- name: 🇩🇪 德国 (Germany) 25 - Dyt
   type: vless
-  server: 45.131.213.33
-  port: 443
-  uuid: 91344c03-b37f-42c5-90f1-cbb95c5cf256
+  server: 104.21.91.234
+  port: 2053
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: de-1.srv.dvzh.net
+  servername: uwu.blueknightnet.qzz.io
   network: ws
   ws-opts:
-    path: /upload/session
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
     headers:
-      Host: de-1.srv.dvzh.net
-- name: 🇩🇪 德国 (Germany) 34 - Dyt
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 26 - Dyt
+  type: ss
+  server: 2.58.81.221
+  port: 80
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 🇩🇪 德国 (Germany) 27 - Dyt
   type: vmess
   server: 185.177.229.129
   port: 22324
@@ -406,35 +318,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 35 - Dyt
-  type: vless
-  server: 104.21.35.244
-  port: 2083
-  uuid: ca608afb-55ff-4f36-9d00-606fedbb30e1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: site.check-looks.space
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: site.check-looks.space
-- name: 🇩🇪 德国 (Germany) 36 - Dyt
-  type: vless
-  server: 31.57.109.102
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
-  network: ws
-  ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
-    headers:
-      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
-- name: 🇩🇪 德国 (Germany) 37 - Dyt
+- name: 🇩🇪 德国 (Germany) 28 - Dyt
   type: vless
   server: 138.124.58.39
   port: 443
@@ -448,20 +332,64 @@ proxies:
     path: /glasspanel/guest000_0_5de14443985f/
     headers:
       Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
-- name: 🇩🇪 德国 (Germany) 38 - Dyt
+- name: 🇩🇪 德国 (Germany) 29 - Dyt
+  type: vmess
+  server: 185.177.229.129
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 30 - Dyt
   type: vless
-  server: rubifen.adaspoloandco.com
+  server: 2.56.172.107
   port: 443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rubifen.adaspoloandco.com
+  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
   network: ws
   ws-opts:
-    path: /GOrbEh
+    path: /glasspanel/guest000_0_5de14443985f/
     headers:
-      Host: rubifen.adaspoloandco.com
+      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
+- name: 🇩🇪 德国 (Germany) 31 - Dyt
+  type: vmess
+  server: 185.177.229.129
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 32 - Dyt
+  type: vless
+  server: 117.55.233.87
+  port: 443
+  uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: s3ws.ragingbull.de5.net
+  network: ws
+  ws-opts:
+    path: /wsrb7k2m
+    headers:
+      Host: s3ws.ragingbull.de5.net
+- name: 🇩🇪 德国 (Germany) 33 - Dyt
+  type: vmess
+  server: 31.77.8.97
+  port: 110
+  uuid: d2d8601b-c14b-42c6-b8ea-33889bce152a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -500,11 +428,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 31 - Dyt
   - 🇩🇪 德国 (Germany) 32 - Dyt
   - 🇩🇪 德国 (Germany) 33 - Dyt
-  - 🇩🇪 德国 (Germany) 34 - Dyt
-  - 🇩🇪 德国 (Germany) 35 - Dyt
-  - 🇩🇪 德国 (Germany) 36 - Dyt
-  - 🇩🇪 德国 (Germany) 37 - Dyt
-  - 🇩🇪 德国 (Germany) 38 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -543,10 +466,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 31 - Dyt
   - 🇩🇪 德国 (Germany) 32 - Dyt
   - 🇩🇪 德国 (Germany) 33 - Dyt
-  - 🇩🇪 德国 (Germany) 34 - Dyt
-  - 🇩🇪 德国 (Germany) 35 - Dyt
-  - 🇩🇪 德国 (Germany) 36 - Dyt
-  - 🇩🇪 德国 (Germany) 37 - Dyt
-  - 🇩🇪 德国 (Germany) 38 - Dyt
 rules:
 - MATCH,PROXIES
