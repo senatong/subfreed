@@ -4,10 +4,10 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01 - Dyt
+- name: 🇨🇿 CZ 01 - Dyt
   type: vless
-  server: 146.56.221.148
-  port: 8443
+  server: 95.182.95.178
+  port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
@@ -15,7 +15,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp
     headers:
       Host: ccc.010304.xyz
 proxy-groups:
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01 - Dyt
+  - 🇨🇿 CZ 01 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01 - Dyt
+  - 🇨🇿 CZ 01 - Dyt
 rules:
 - MATCH,PROXIES
