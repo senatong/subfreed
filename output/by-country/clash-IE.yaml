@@ -32,20 +32,6 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇮🇪 IE 03 - Dyt
-  type: ss
-  server: 20.223.236.165
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: CNL3mxdfZKiPKizL
-  udp: true
-- name: 🇮🇪 IE 04 - Dyt
-  type: ss
-  server: 20.223.236.165
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: CNL3mxdfZKiPKizL
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,8 +39,6 @@ proxy-groups:
   - AUTO
   - 🇮🇪 IE 01 - Dyt
   - 🇮🇪 IE 02 - Dyt
-  - 🇮🇪 IE 03 - Dyt
-  - 🇮🇪 IE 04 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,7 +46,5 @@ proxy-groups:
   proxies:
   - 🇮🇪 IE 01 - Dyt
   - 🇮🇪 IE 02 - Dyt
-  - 🇮🇪 IE 03 - Dyt
-  - 🇮🇪 IE 04 - Dyt
 rules:
 - MATCH,PROXIES

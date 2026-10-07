@@ -5,15 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - Dyt
-  type: vmess
-  server: 47.250.135.244
-  port: 10000
-  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 45.195.69.230
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
 - name: 🇲🇾 MY 02 - Dyt
   type: vmess
   server: 47.250.135.244
@@ -24,6 +27,29 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇲🇾 MY 03 - Dyt
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇾 MY 04 - Dyt
+  type: vless
+  server: 166.88.35.245
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +57,8 @@ proxy-groups:
   - AUTO
   - 🇲🇾 MY 01 - Dyt
   - 🇲🇾 MY 02 - Dyt
+  - 🇲🇾 MY 03 - Dyt
+  - 🇲🇾 MY 04 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -38,5 +66,7 @@ proxy-groups:
   proxies:
   - 🇲🇾 MY 01 - Dyt
   - 🇲🇾 MY 02 - Dyt
+  - 🇲🇾 MY 03 - Dyt
+  - 🇲🇾 MY 04 - Dyt
 rules:
 - MATCH,PROXIES
