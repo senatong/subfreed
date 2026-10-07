@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - Dyt
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 162.159.153.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: rayan-007.maxima.dpdns.org
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: uae.unixzone.us
+      Host: rayan-007.maxima.dpdns.org
 - name: 🇦🇪 阿联酋 (UAE) 02 - Dyt
   type: vless
   server: uae.unixzone.us
@@ -45,31 +46,19 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - Dyt
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 147.78.0.186
+  port: 2053
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: free.cndyw.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: pyip=bpb.yousef.isegaro.comfp=random
     headers:
-      Host: uae.unixzone.us
+      Host: free.cndyw.ggff.net
 - name: 🇦🇪 阿联酋 (UAE) 05 - Dyt
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - Dyt
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -92,7 +81,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - Dyt
   - 🇦🇪 阿联酋 (UAE) 04 - Dyt
   - 🇦🇪 阿联酋 (UAE) 05 - Dyt
-  - 🇦🇪 阿联酋 (UAE) 06 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -103,6 +91,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - Dyt
   - 🇦🇪 阿联酋 (UAE) 04 - Dyt
   - 🇦🇪 阿联酋 (UAE) 05 - Dyt
-  - 🇦🇪 阿联酋 (UAE) 06 - Dyt
 rules:
 - MATCH,PROXIES

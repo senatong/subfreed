@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Dyt
   type: vless
-  server: 60.248.219.78
-  port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: 60.248.219.78
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Dyt
-  type: vless
   server: argo6.5671234.xyz
   port: 443
   uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
@@ -32,7 +18,34 @@ proxies:
     path: /e8e2cecb6188f7fb
     headers:
       Host: argo6.5671234.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Dyt
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Dyt
+  type: vless
+  server: 60.248.219.53
+  port: 443
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: 60.248.219.53
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - Dyt
+  type: vless
+  server: 172.64.88.251
+  port: 8880
+  uuid: 7e3cd2f1-0de5-4717-9002-64d8597bc577
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: dry-credit-fc26.203-d8c.workers.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Dyt
   type: vless
   server: 103.180.20.108
   port: 8443
@@ -53,7 +66,8 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Dyt
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Dyt
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Dyt
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - Dyt
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +75,7 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Dyt
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Dyt
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Dyt
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - Dyt
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Dyt
 rules:
 - MATCH,PROXIES
