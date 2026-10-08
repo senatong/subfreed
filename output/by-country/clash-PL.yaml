@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - Dyt
   type: vless
-  server: 70.34.252.154
+  server: 70.34.255.101
   port: 80
-  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,12 +16,12 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 70.34.252.154
+      Host: 70.34.255.101
 - name: 🇵🇱 PL 02 - Dyt
   type: vless
-  server: 70.34.255.101
+  server: 70.34.252.154
   port: 80
-  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
+  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
   udp: true
   tls: false
   skip-cert-verify: true
@@ -29,12 +29,12 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 70.34.255.101
+      Host: 70.34.252.154
 - name: 🇵🇱 PL 03 - Dyt
   type: vless
-  server: 70.34.252.154
+  server: 70.34.255.101
   port: 80
-  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
   udp: true
   tls: false
   skip-cert-verify: true
@@ -42,22 +42,9 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 70.34.252.154
+      Host: 70.34.255.101
 - name: 🇵🇱 PL 04 - Dyt
   type: vless
-  server: 70.34.252.154
-  port: 80
-  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 70.34.252.154
-- name: 🇵🇱 PL 05 - Dyt
-  type: vless
   server: 70.34.255.101
   port: 80
   uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
@@ -69,33 +56,6 @@ proxies:
     path: /
     headers:
       Host: 70.34.255.101
-- name: 🇵🇱 PL 06 - Dyt
-  type: vless
-  server: 70.34.255.101
-  port: 80
-  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 70.34.255.101
-- name: 🇵🇱 PL 07 - Dyt
-  type: vless
-  server: 149.50.105.60
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -105,9 +65,6 @@ proxy-groups:
   - 🇵🇱 PL 02 - Dyt
   - 🇵🇱 PL 03 - Dyt
   - 🇵🇱 PL 04 - Dyt
-  - 🇵🇱 PL 05 - Dyt
-  - 🇵🇱 PL 06 - Dyt
-  - 🇵🇱 PL 07 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -117,8 +74,5 @@ proxy-groups:
   - 🇵🇱 PL 02 - Dyt
   - 🇵🇱 PL 03 - Dyt
   - 🇵🇱 PL 04 - Dyt
-  - 🇵🇱 PL 05 - Dyt
-  - 🇵🇱 PL 06 - Dyt
-  - 🇵🇱 PL 07 - Dyt
 rules:
 - MATCH,PROXIES
