@@ -5,12 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - Dyt
-  type: ss
-  server: 211.174.113.172
-  port: 49642
-  cipher: aes-256-gcm
-  password: ac9c0a7b
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 02 - Dyt
   type: vmess
   server: 140.238.2.250
@@ -22,19 +25,30 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 03 - Dyt
-  type: ss
-  server: 141.164.45.187
-  port: 9090
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: ''
 - name: 🇰🇷 韩国 (South Korea) 04 - Dyt
-  type: ss
-  server: 141.164.45.187
-  port: 6679
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 05 - Dyt
   type: vmess
   server: 140.238.2.250
@@ -58,68 +72,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 07 - Dyt
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇰🇷 韩国 (South Korea) 08 - Dyt
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇰🇷 韩国 (South Korea) 09 - Dyt
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: kr02.a0a.xyz
-- name: 🇰🇷 韩国 (South Korea) 10 - Dyt
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 11 - Dyt
-  type: ss
-  server: 141.164.45.187
-  port: 5498
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 12 - Dyt
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -131,6 +83,13 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 08 - Dyt
+  type: ss
+  server: 141.164.45.187
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -144,10 +103,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 06 - Dyt
   - 🇰🇷 韩国 (South Korea) 07 - Dyt
   - 🇰🇷 韩国 (South Korea) 08 - Dyt
-  - 🇰🇷 韩国 (South Korea) 09 - Dyt
-  - 🇰🇷 韩国 (South Korea) 10 - Dyt
-  - 🇰🇷 韩国 (South Korea) 11 - Dyt
-  - 🇰🇷 韩国 (South Korea) 12 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -161,9 +116,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 06 - Dyt
   - 🇰🇷 韩国 (South Korea) 07 - Dyt
   - 🇰🇷 韩国 (South Korea) 08 - Dyt
-  - 🇰🇷 韩国 (South Korea) 09 - Dyt
-  - 🇰🇷 韩国 (South Korea) 10 - Dyt
-  - 🇰🇷 韩国 (South Korea) 11 - Dyt
-  - 🇰🇷 韩国 (South Korea) 12 - Dyt
 rules:
 - MATCH,PROXIES

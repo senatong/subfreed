@@ -5,12 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - Dyt
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇨🇭 CH 02 - Dyt
   type: vless
   server: 208.69.78.217
@@ -34,7 +39,7 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 04 - Dyt
   type: vless
   server: 208.69.78.217
@@ -46,8 +51,22 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇨🇭 CH 05 - Dyt
+  type: vless
+  server: 146.70.233.51
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: x.m-90.xyz
+  network: ws
+  ws-opts:
+    path: /t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+- name: 🇨🇭 CH 06 - Dyt
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -69,6 +88,7 @@ proxy-groups:
   - 🇨🇭 CH 03 - Dyt
   - 🇨🇭 CH 04 - Dyt
   - 🇨🇭 CH 05 - Dyt
+  - 🇨🇭 CH 06 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -79,5 +99,6 @@ proxy-groups:
   - 🇨🇭 CH 03 - Dyt
   - 🇨🇭 CH 04 - Dyt
   - 🇨🇭 CH 05 - Dyt
+  - 🇨🇭 CH 06 - Dyt
 rules:
 - MATCH,PROXIES
