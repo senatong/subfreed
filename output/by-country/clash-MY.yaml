@@ -5,6 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - Dyt
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇾 MY 02 - Dyt
   type: vless
   server: 216.173.67.59
   port: 443
@@ -18,7 +28,7 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🇲🇾 MY 02 - Dyt
+- name: 🇲🇾 MY 03 - Dyt
   type: vless
   server: 216.173.67.59
   port: 443
@@ -39,6 +49,7 @@ proxy-groups:
   - AUTO
   - 🇲🇾 MY 01 - Dyt
   - 🇲🇾 MY 02 - Dyt
+  - 🇲🇾 MY 03 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +57,6 @@ proxy-groups:
   proxies:
   - 🇲🇾 MY 01 - Dyt
   - 🇲🇾 MY 02 - Dyt
+  - 🇲🇾 MY 03 - Dyt
 rules:
 - MATCH,PROXIES
