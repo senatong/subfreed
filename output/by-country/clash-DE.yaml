@@ -6,72 +6,6 @@ log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - Dyt
   type: vless
-  server: 5.78.83.177
-  port: 443
-  uuid: a95c18d0-1b39-4bc7-8521-b62b5ab3f3f7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: marz.zovip2.ir
-  network: ws
-  ws-opts:
-    path: /gropcdn
-    headers:
-      Host: marz.zovip2.ir
-- name: 🇩🇪 德国 (Germany) 02 - Dyt
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 03 - Dyt
-  type: vless
-  server: 141.98.7.193
-  port: 2087
-  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 141.98.7.193
-- name: 🇩🇪 德国 (Germany) 04 - Dyt
-  type: ss
-  server: 57.129.113.16
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: NcAXc0UZI6yQJE1p8QmOv8
-  udp: true
-- name: 🇩🇪 德国 (Germany) 05 - Dyt
-  type: vless
-  server: 141.98.7.193
-  port: 2087
-  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 141.98.7.193
-- name: 🇩🇪 德国 (Germany) 06 - Dyt
-  type: ss
-  server: 209.46.102.22
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-  udp: true
-- name: 🇩🇪 德国 (Germany) 07 - Dyt
-  type: ss
-  server: 8.209.74.72
-  port: 20001
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
-  udp: true
-- name: 🇩🇪 德国 (Germany) 08 - Dyt
-  type: vless
   server: 91.107.180.141
   port: 443
   uuid: a95c18d0-1b39-4bc7-8521-b62b5ab3f3f7
@@ -84,7 +18,83 @@ proxies:
     path: /gropcdn
     headers:
       Host: marz.zovip2.ir
+- name: 🇩🇪 德国 (Germany) 02 - Dyt
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+  udp: true
+- name: 🇩🇪 德国 (Germany) 03 - Dyt
+  type: vless
+  server: 141.98.7.193
+  port: 2053
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+- name: 🇩🇪 德国 (Germany) 04 - Dyt
+  type: vless
+  server: 141.98.7.193
+  port: 8443
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+  network: ws
+  ws-opts:
+    path: /ws-cdn1-vless
+    headers:
+      Host: de.fastmirror-labs.xyz
+- name: 🇩🇪 德国 (Germany) 05 - Dyt
+  type: vless
+  server: 141.98.7.193
+  port: 2087
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+- name: 🇩🇪 德国 (Germany) 06 - Dyt
+  type: vless
+  server: 141.98.7.193
+  port: 2053
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+- name: 🇩🇪 德国 (Germany) 07 - Dyt
+  type: vless
+  server: 5.78.83.177
+  port: 443
+  uuid: a95c18d0-1b39-4bc7-8521-b62b5ab3f3f7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: marz.zovip2.ir
+  network: ws
+  ws-opts:
+    path: /gropcdn
+    headers:
+      Host: marz.zovip2.ir
+- name: 🇩🇪 德国 (Germany) 08 - Dyt
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+  udp: true
 - name: 🇩🇪 德国 (Germany) 09 - Dyt
+  type: ss
+  server: 51.195.126.38
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
+  udp: true
+- name: 🇩🇪 德国 (Germany) 10 - Dyt
   type: vless
   server: 157.230.101.36
   port: 443
@@ -98,17 +108,10 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🇩🇪 德国 (Germany) 10 - Dyt
-  type: ss
-  server: 51.195.126.38
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
-  udp: true
 - name: 🇩🇪 德国 (Germany) 11 - Dyt
   type: ss
   server: 2.58.81.221
-  port: 443
+  port: 80
   cipher: aes-256-gcm
   password: kKEd0rBrd56Furjz
   udp: true
@@ -121,44 +124,6 @@ proxies:
   udp: true
 - name: 🇩🇪 德国 (Germany) 13 - Dyt
   type: vless
-  server: 31.76.11.83
-  port: 22849
-  uuid: 2e511783-125c-466b-925d-a9cd1c98e30e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 14 - Dyt
-  type: vless
-  server: 65.109.188.155
-  port: 443
-  uuid: a95c18d0-1b39-4bc7-8521-b62b5ab3f3f7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: marz.zovip2.ir
-  network: ws
-  ws-opts:
-    path: /gropcdn
-    headers:
-      Host: marz.zovip2.ir
-- name: 🇩🇪 德国 (Germany) 15 - Dyt
-  type: vless
-  server: 141.98.7.193
-  port: 2087
-  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 141.98.7.193
-- name: 🇩🇪 德国 (Germany) 16 - Dyt
-  type: ss
-  server: 2.58.81.221
-  port: 80
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 🇩🇪 德国 (Germany) 17 - Dyt
-  type: vless
   server: 141.98.7.193
   port: 2083
   uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
@@ -166,7 +131,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 141.98.7.193
-- name: 🇩🇪 德国 (Germany) 18 - Dyt
+- name: 🇩🇪 德国 (Germany) 14 - Dyt
   type: vless
   server: 91.107.247.173
   port: 2083
@@ -180,7 +145,7 @@ proxies:
     path: /
     headers:
       Host: 91.107.247.173
-- name: 🇩🇪 德国 (Germany) 19 - Dyt
+- name: 🇩🇪 德国 (Germany) 15 - Dyt
   type: vless
   server: 141.98.7.193
   port: 2053
@@ -189,47 +154,69 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 141.98.7.193
+- name: 🇩🇪 德国 (Germany) 16 - Dyt
+  type: vless
+  server: 141.98.7.193
+  port: 2083
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+- name: 🇩🇪 德国 (Germany) 17 - Dyt
+  type: ss
+  server: 2.58.81.221
+  port: 443
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 🇩🇪 德国 (Germany) 18 - Dyt
+  type: vless
+  server: 141.98.7.193
+  port: 2087
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+- name: 🇩🇪 德国 (Germany) 19 - Dyt
+  type: vless
+  server: 141.98.7.193
+  port: 8443
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+  network: ws
+  ws-opts:
+    path: /ws-cdn1-vless
+    headers:
+      Host: de.fastmirror-labs.xyz
 - name: 🇩🇪 德国 (Germany) 20 - Dyt
   type: vless
   server: 141.98.7.193
-  port: 2053
+  port: 2083
   uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
   udp: true
   tls: true
   skip-cert-verify: true
   servername: 141.98.7.193
 - name: 🇩🇪 德国 (Germany) 21 - Dyt
-  type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  type: ss
+  server: 31.76.11.83
+  port: 42800
+  cipher: chacha20-ietf-poly1305
+  password: adzpq0ltVHdCxO2lsW5N9C8H5B9hXnD7YyXZfP5aulw=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
 - name: 🇩🇪 德国 (Germany) 22 - Dyt
   type: vless
-  server: 141.98.7.193
-  port: 2083
-  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  server: 31.76.11.83
+  port: 22849
+  uuid: 2e511783-125c-466b-925d-a9cd1c98e30e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 141.98.7.193
-- name: 🇩🇪 德国 (Germany) 23 - Dyt
-  type: vless
-  server: 141.98.7.193
-  port: 2083
-  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 141.98.7.193
 proxy-groups:
 - name: PROXIES
   type: select
@@ -257,7 +244,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 20 - Dyt
   - 🇩🇪 德国 (Germany) 21 - Dyt
   - 🇩🇪 德国 (Germany) 22 - Dyt
-  - 🇩🇪 德国 (Germany) 23 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -285,6 +271,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 20 - Dyt
   - 🇩🇪 德国 (Germany) 21 - Dyt
   - 🇩🇪 德国 (Germany) 22 - Dyt
-  - 🇩🇪 德国 (Germany) 23 - Dyt
 rules:
 - MATCH,PROXIES
