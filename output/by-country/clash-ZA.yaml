@@ -25,17 +25,24 @@ proxies:
   client-fingerprint: chrome
 - name: 🇿🇦 ZA 03 - Dyt
   type: ss
+  server: 102.133.165.160
+  port: 16233
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  udp: true
+- name: 🇿🇦 ZA 04 - Dyt
+  type: ss
   server: 102.37.156.224
   port: 443
   cipher: chacha20-ietf-poly1305
   password: aduB9HGxQHjA2SBMRjkHX6
   udp: true
-- name: 🇿🇦 ZA 04 - Dyt
+- name: 🇿🇦 ZA 05 - Dyt
   type: ss
-  server: 102.133.165.160
-  port: 16233
+  server: 20.87.212.24
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  password: zlHMpI7N5dkZOHdH
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -46,6 +53,7 @@ proxy-groups:
   - 🇿🇦 ZA 02 - Dyt
   - 🇿🇦 ZA 03 - Dyt
   - 🇿🇦 ZA 04 - Dyt
+  - 🇿🇦 ZA 05 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -55,5 +63,6 @@ proxy-groups:
   - 🇿🇦 ZA 02 - Dyt
   - 🇿🇦 ZA 03 - Dyt
   - 🇿🇦 ZA 04 - Dyt
+  - 🇿🇦 ZA 05 - Dyt
 rules:
 - MATCH,PROXIES

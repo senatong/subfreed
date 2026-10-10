@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇲🇩 MD 01 - Dyt",
+        "🇲🇩 MD 02 - Dyt",
+        "🇲🇩 MD 03 - Dyt",
+        "🇲🇩 MD 04 - Dyt",
+        "🇲🇩 MD 05 - Dyt",
+        "🇲🇩 MD 06 - Dyt",
+        "🇲🇩 MD 07 - Dyt",
+        "🇲🇩 MD 08 - Dyt",
+        "🇲🇩 MD 09 - Dyt",
+        "🇲🇩 MD 10 - Dyt",
+        "🇲🇩 MD 11 - Dyt",
+        "🇲🇩 MD 12 - Dyt",
+        "🇲🇩 MD 13 - Dyt",
+        "🇲🇩 MD 14 - Dyt",
+        "🇲🇩 MD 15 - Dyt",
+        "🇲🇩 MD 16 - Dyt",
+        "🇲🇩 MD 17 - Dyt"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇲🇩 MD 01 - Dyt",
+        "🇲🇩 MD 02 - Dyt",
+        "🇲🇩 MD 03 - Dyt",
+        "🇲🇩 MD 04 - Dyt",
+        "🇲🇩 MD 05 - Dyt",
+        "🇲🇩 MD 06 - Dyt",
+        "🇲🇩 MD 07 - Dyt",
+        "🇲🇩 MD 08 - Dyt",
+        "🇲🇩 MD 09 - Dyt",
+        "🇲🇩 MD 10 - Dyt",
+        "🇲🇩 MD 11 - Dyt",
+        "🇲🇩 MD 12 - Dyt",
+        "🇲🇩 MD 13 - Dyt",
+        "🇲🇩 MD 14 - Dyt",
+        "🇲🇩 MD 15 - Dyt",
+        "🇲🇩 MD 16 - Dyt",
+        "🇲🇩 MD 17 - Dyt"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
