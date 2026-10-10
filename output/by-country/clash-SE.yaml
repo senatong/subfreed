@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - Dyt
   type: vless
-  server: 89.127.201.202
+  server: 94.143.231.146
   port: 443
-  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: x.m-90.xyz
+  servername: sub.merky.top
   network: ws
   ws-opts:
-    path: t.me/TEAMNETGRATISCOL
+    path: /merky-connect/de6/
     headers:
-      Host: x.m-90.xyz
+      Host: sub.merky.top
 proxy-groups:
 - name: PROXIES
   type: select
