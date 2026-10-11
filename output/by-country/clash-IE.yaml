@@ -12,20 +12,6 @@ proxies:
   password: GayYa2V7pUbJBfKu
   udp: true
 - name: 🇮🇪 IE 02 - Dyt
-  type: ss
-  server: 20.123.1.55
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: YF329KNGVTUZ1qrH
-  udp: true
-- name: 🇮🇪 IE 03 - Dyt
-  type: ss
-  server: 20.123.1.55
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: YF329KNGVTUZ1qrH
-  udp: true
-- name: 🇮🇪 IE 04 - Dyt
   type: vless
   server: 23.95.225.10
   port: 8443
@@ -39,6 +25,13 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🇮🇪 IE 03 - Dyt
+  type: ss
+  server: 20.123.1.55
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: YF329KNGVTUZ1qrH
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,7 +40,6 @@ proxy-groups:
   - 🇮🇪 IE 01 - Dyt
   - 🇮🇪 IE 02 - Dyt
   - 🇮🇪 IE 03 - Dyt
-  - 🇮🇪 IE 04 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -56,6 +48,5 @@ proxy-groups:
   - 🇮🇪 IE 01 - Dyt
   - 🇮🇪 IE 02 - Dyt
   - 🇮🇪 IE 03 - Dyt
-  - 🇮🇪 IE 04 - Dyt
 rules:
 - MATCH,PROXIES
