@@ -5,26 +5,45 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - Dyt
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: eicdhshSrFLCx/sZ1PSpuKyoVWGZpU95tFS4iGC1c04=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - Dyt
   type: vless
-  server: 91.215.43.248
+  server: spb.ai-boost.tech
   port: 443
-  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
+  uuid: e2599b64-2eaa-4b81-b2bc-738605ecfeec
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: my.kempekl.online
+  servername: spb.ai-boost.tech
   network: ws
   ws-opts:
-    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+    path: /bKGK1ZI0PzpQz3OeEeq1
     headers:
-      Host: my.kempekl.online
+      Host: spb.ai-boost.tech
+- name: 🇷🇺 俄罗斯 (Russia) 02 - Dyt
+  type: vless
+  server: cloud.korroh.com
+  port: 443
+  uuid: ec6f8131-7a5d-4117-9627-6fb2b39ae0da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cloud.korroh.com
+  network: ws
+  ws-opts:
+    path: /remote.php/dav/89f7661a0011ce46
+    headers:
+      Host: cloud.korroh.com
+- name: 🇷🇺 俄罗斯 (Russia) 03 - Dyt
+  type: vless
+  server: 79.174.92.222
+  port: 443
+  uuid: 03ca8c3f-e777-45b5-a1b1-592094ca99ee
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: _PYBo3dyZRpGC44vADqcmlBCSeAVh1X8l3mulghVsTI
+  servername: m.vk.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +51,7 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 02 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 03 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +59,6 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 02 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 03 - Dyt
 rules:
 - MATCH,PROXIES
