@@ -6,45 +6,25 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - Dyt
   type: vless
-  server: 172.67.147.209
+  server: 91.215.43.248
   port: 443
-  uuid: 38d6b629-64c2-4c31-a10d-26eb3a2a053d
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lHNs3ww2-CXQ-Gj1vvOBkEPIg4noPkc.hqu4v38Hi9iFtcp6mZfMX-3bmx.WoRKeRS.dEV
+  servername: my.kempekl.online
   network: ws
   ws-opts:
-    path: /vl/cxl8Wn1ylnsk63nJ0
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
     headers:
-      Host: lhns3ww2-cxq-gj1vvobkepig4nopkc.hqu4v38hi9iftcp6mzfmx-3bmx.workers.dev
+      Host: my.kempekl.online
 - name: 🇷🇺 俄罗斯 (Russia) 02 - Dyt
-  type: vless
-  server: 172.64.145.202
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  type: ss
+  server: ruot.ayucloudservices.nl
+  port: 22037
+  cipher: aes-256-gcm
+  password: c2fe9024-d253-401a-b868-97421f6eb9e0
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: newwk1.f1w.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: newwk1.f1w.de5.net
-- name: 🇷🇺 俄罗斯 (Russia) 03 - Dyt
-  type: vless
-  server: 172.65.90.52
-  port: 8880
-  uuid: 30e4c878-15ca-4f53-ab32-04c60ecd3f31
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: blue-rice-7142.30-346.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 02 - Dyt
-  - 🇷🇺 俄罗斯 (Russia) 03 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 02 - Dyt
-  - 🇷🇺 俄罗斯 (Russia) 03 - Dyt
 rules:
 - MATCH,PROXIES

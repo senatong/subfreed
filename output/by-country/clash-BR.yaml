@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇿 UZ 01 - Dyt
+- name: 🇧🇷 BR 01 - Dyt
   type: vless
-  server: 157.22.128.7
+  server: 35.199.90.53
   port: 443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: free.cndyw.ggff.net
-  network: ws
-  ws-opts:
-    path: pyip=bpb.yousef.isegaro.comfp=random
-    headers:
-      Host: free.cndyw.ggff.net
+  reality-opts:
+    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇿 UZ 01 - Dyt
+  - 🇧🇷 BR 01 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇿 UZ 01 - Dyt
+  - 🇧🇷 BR 01 - Dyt
 rules:
 - MATCH,PROXIES

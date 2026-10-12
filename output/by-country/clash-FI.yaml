@@ -6,14 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - Dyt
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 02 - Dyt
-  type: vless
   server: 95.216.27.15
   port: 2053
   uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
@@ -24,7 +16,7 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 03 - Dyt
+- name: 🇫🇮 FI 02 - Dyt
   type: vless
   server: 199.232.239.239
   port: 443
@@ -35,9 +27,17 @@ proxies:
   servername: speedtest.net
   network: ws
   ws-opts:
-    path: /?ed=2056/؟/@v2ray_configs_pools
+    path: /?ed
     headers:
       Host: mr_anonoijji.global.ssl.fastly.net
+- name: 🇫🇮 FI 03 - Dyt
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇫🇮 FI 04 - Dyt
   type: vless
   server: ansooyefilter-telegram.arshia-nova.ir
@@ -49,17 +49,29 @@ proxies:
   servername: speedtest.net
   network: ws
   ws-opts:
-    path: /?ed=2056
+    path: /?ed=2056fp=chrome
     headers:
       Host: mr_anonoijji.global.ssl.fastly.net
 - name: 🇫🇮 FI 05 - Dyt
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 06 - Dyt
   type: ss
   server: 185.103.110.66
   port: 18280
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
-- name: 🇫🇮 FI 06 - Dyt
+- name: 🇫🇮 FI 07 - Dyt
   type: ss
   server: 185.103.110.68
   port: 18283
@@ -77,6 +89,7 @@ proxy-groups:
   - 🇫🇮 FI 04 - Dyt
   - 🇫🇮 FI 05 - Dyt
   - 🇫🇮 FI 06 - Dyt
+  - 🇫🇮 FI 07 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -88,5 +101,6 @@ proxy-groups:
   - 🇫🇮 FI 04 - Dyt
   - 🇫🇮 FI 05 - Dyt
   - 🇫🇮 FI 06 - Dyt
+  - 🇫🇮 FI 07 - Dyt
 rules:
 - MATCH,PROXIES
