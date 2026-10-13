@@ -5,124 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - Dyt
-  type: ss
-  server: 2.58.81.221
-  port: 80
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 🇩🇪 德国 (Germany) 02 - Dyt
   type: vless
   server: 199.232.78.159
   port: 443
-  uuid: e0ef0fb4-f18a-4284-bcf3-f5b3e738c594
+  uuid: eea97160-a606-4552-97ad-8acc1ce863e1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: google.com
-  network: ws
-  ws-opts:
-    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: pan2e.global.ssl.fastly.net
-- name: 🇩🇪 德国 (Germany) 03 - Dyt
-  type: vless
-  server: 157.230.101.36
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: speedtest.net
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ccc.010304.xyz
-- name: 🇩🇪 德国 (Germany) 04 - Dyt
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 05 - Dyt
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 06 - Dyt
-  type: vless
-  server: 178.104.248.34
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tuyiuoyuthgfdbf.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: tuyiuoyuthgfdbf.localip.ir
-- name: 🇩🇪 德国 (Germany) 07 - Dyt
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: a10c9da4-4dde-402f-a9d4-d539272493da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: google.com
-  network: ws
-  ws-opts:
-    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: pannn1.global.ssl.fastly.net
-- name: 🇩🇪 德国 (Germany) 08 - Dyt
-  type: ss
-  server: 8.209.74.72
-  port: 20001
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
-  udp: true
-- name: 🇩🇪 德国 (Germany) 09 - Dyt
-  type: vless
-  server: ops5788tugfuy.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ops5788tugfuy.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: ops5788tugfuy.localip.ir
-- name: 🇩🇪 德国 (Germany) 10 - Dyt
-  type: ss
-  server: 51.195.126.38
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
-  udp: true
-- name: 🇩🇪 德国 (Germany) 11 - Dyt
-  type: ss
-  server: 57.129.113.16
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: NcAXc0UZI6yQJE1p8QmOv8
-  udp: true
-- name: 🇩🇪 德国 (Germany) 12 - Dyt
+      Host: azdddaiji5.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 02 - Dyt
   type: vless
   server: tuyiuoyuthgfdbf.localip.ir
   port: 2087
@@ -136,14 +32,14 @@ proxies:
     path: /hokm
     headers:
       Host: tuyiuoyuthgfdbf.localip.ir
-- name: 🇩🇪 德国 (Germany) 13 - Dyt
+- name: 🇩🇪 德国 (Germany) 03 - Dyt
   type: ss
-  server: 2.58.81.221
-  port: 443
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
   udp: true
-- name: 🇩🇪 德国 (Germany) 14 - Dyt
+- name: 🇩🇪 德国 (Germany) 04 - Dyt
   type: vless
   server: 178.104.248.34
   port: 2087
@@ -157,63 +53,265 @@ proxies:
     path: /hokm
     headers:
       Host: tuyiuoyuthgfdbf.localip.ir
-- name: 🇩🇪 德国 (Germany) 15 - Dyt
+- name: 🇩🇪 德国 (Germany) 05 - Dyt
   type: vless
-  server: 104.21.31.137
+  server: 199.232.78.159
   port: 443
-  uuid: 59c70620-d2f3-4255-9d6f-f4c5103d64ce
+  uuid: eea97160-a606-4552-97ad-8acc1ce863e1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 59fssIBE-SDDrRs3qW83QQZz0H1NT-o.q7qwsxItB6BYi5nMTa4naAlz.woRkErs.deV
+  servername: speedtest.net
   network: ws
   ws-opts:
-    path: /vl/FpYFoMlg8sRpgV7SSaOaRYa3fagqGu?ed
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
-      Host: 59fssibe-sddrrs3qw83qqzz0h1nt-o.q7qwsxitb6byi5nmta4naalz.workers.dev
+      Host: azdddaiji5.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 06 - Dyt
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: e0ef0fb4-f18a-4284-bcf3-f5b3e738c594
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: google.com
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2048
+    headers:
+      Host: pan2e.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 07 - Dyt
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 08 - Dyt
+  type: ss
+  server: 57.129.113.16
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: NcAXc0UZI6yQJE1p8QmOv8
+  udp: true
+- name: 🇩🇪 德国 (Germany) 09 - Dyt
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+  udp: true
+- name: 🇩🇪 德国 (Germany) 10 - Dyt
+  type: vless
+  server: 178.104.248.34
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tuyiuoyuthgfdbf.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: tuyiuoyuthgfdbf.localip.ir
+- name: 🇩🇪 德国 (Germany) 11 - Dyt
+  type: vless
+  server: cd.zovip2.ir
+  port: 443
+  uuid: f8efa59f-005f-4af4-b683-5df293fc982b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: gadfather.zovip2.ir
+  network: ws
+  ws-opts:
+    path: /gropcdn
+    headers:
+      Host: gadfather.zovip2.ir
+- name: 🇩🇪 德国 (Germany) 12 - Dyt
+  type: ss
+  server: 51.195.126.38
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
+  udp: true
+- name: 🇩🇪 德国 (Germany) 13 - Dyt
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: e0ef0fb4-f18a-4284-bcf3-f5b3e738c594
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: google.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pan2e.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 14 - Dyt
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 15 - Dyt
+  type: ss
+  server: 51.195.126.38
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
+  udp: true
 - name: 🇩🇪 德国 (Germany) 16 - Dyt
   type: vless
-  server: 94.103.168.219
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  server: sino.bestsellers1.site
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ops5788tugfuy.localip.ir
+  servername: sino.bestsellers1.site
   network: ws
   ws-opts:
-    path: /hokm
+    path: /
     headers:
-      Host: ops5788tugfuy.localip.ir
+      Host: sino.bestsellers1.site
 - name: 🇩🇪 德国 (Germany) 17 - Dyt
   type: vless
-  server: 94.103.168.133
+  server: hoert1rert.localip.ir
   port: 2087
   uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fert6.localip.ir
+  servername: hoert1rert.localip.ir
   network: ws
   ws-opts:
     path: /hokm
     headers:
-      Host: fert6.localip.ir
+      Host: hoert1rert.localip.ir
 - name: 🇩🇪 德国 (Germany) 18 - Dyt
+  type: ss
+  server: 213.202.208.199
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇩🇪 德国 (Germany) 19 - Dyt
   type: vless
-  server: fert6.localip.ir
+  server: 157.230.101.36
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇩🇪 德国 (Germany) 20 - Dyt
+  type: vless
+  server: 140.225.208.50
+  port: 2083
+  uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: speedtestmark.com
+  network: ws
+  ws-opts:
+    path: /vless-ws
+    headers:
+      Host: 140.225.208.50
+- name: 🇩🇪 德国 (Germany) 21 - Dyt
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+  udp: true
+- name: 🇩🇪 德国 (Germany) 22 - Dyt
+  type: ss
+  server: 2.58.81.221
+  port: 80
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 🇩🇪 德国 (Germany) 23 - Dyt
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: e0ef0fb4-f18a-4284-bcf3-f5b3e738c594
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: google.com
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI
+    headers:
+      Host: pan2e.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 24 - Dyt
+  type: vless
+  server: 140.225.208.50
+  port: 2083
+  uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: speedtestmark.com
+  network: ws
+  ws-opts:
+    path: /vless-ws#TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: 140.225.208.50
+- name: 🇩🇪 德国 (Germany) 25 - Dyt
+  type: ss
+  server: 2.58.81.221
+  port: 443
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 🇩🇪 德国 (Germany) 26 - Dyt
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: eea97160-a606-4552-97ad-8acc1ce863e1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: speedtest.net
+  network: ws
+  ws-opts:
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: azdddaiji5.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 27 - Dyt
+  type: vless
+  server: fert3retujnbc.localip.ir
   port: 2087
   uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fert6.localip.ir
+  servername: fert3retujnbc.localip.ir
   network: ws
   ws-opts:
     path: /hokm
     headers:
-      Host: fert6.localip.ir
-- name: 🇩🇪 德国 (Germany) 19 - Dyt
+      Host: fert3retujnbc.localip.ir
+- name: 🇩🇪 德国 (Germany) 28 - Dyt
   type: vless
   server: ops4asfseretuiyk.localip.ir
   port: 2087
@@ -227,7 +325,7 @@ proxies:
     path: /hokm
     headers:
       Host: ops4asfseretuiyk.localip.ir
-- name: 🇩🇪 德国 (Germany) 20 - Dyt
+- name: 🇩🇪 德国 (Germany) 29 - Dyt
   type: vless
   server: 94.103.168.48
   port: 2087
@@ -241,7 +339,7 @@ proxies:
     path: /hokm
     headers:
       Host: ops4asfseretuiyk.localip.ir
-- name: 🇩🇪 德国 (Germany) 21 - Dyt
+- name: 🇩🇪 德国 (Germany) 30 - Dyt
   type: vless
   server: 94.103.168.48
   port: 2087
@@ -255,21 +353,77 @@ proxies:
     path: /hokm
     headers:
       Host: ops4asfseretuiyk.localip.ir
-- name: 🇩🇪 德国 (Germany) 22 - Dyt
+- name: 🇩🇪 德国 (Germany) 31 - Dyt
   type: vless
-  server: fert1qswdfegrthy.localip.ir
+  server: 94.103.168.219
   port: 2087
   uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fert1qswdfegrthy.localip.ir
+  servername: ops5788tugfuy.localip.ir
   network: ws
   ws-opts:
     path: /hokm
     headers:
-      Host: fert1qswdfegrthy.localip.ir
-- name: 🇩🇪 德国 (Germany) 23 - Dyt
+      Host: ops5788tugfuy.localip.ir
+- name: 🇩🇪 德国 (Germany) 32 - Dyt
+  type: vless
+  server: 94.103.168.219
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ops5788tugfuy.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: ops5788tugfuy.localip.ir
+- name: 🇩🇪 德国 (Germany) 33 - Dyt
+  type: vless
+  server: ops5788tugfuy.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ops5788tugfuy.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: ops5788tugfuy.localip.ir
+- name: 🇩🇪 德国 (Germany) 34 - Dyt
+  type: vless
+  server: fert6.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fert6.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: fert6.localip.ir
+- name: 🇩🇪 德国 (Germany) 35 - Dyt
+  type: vless
+  server: 94.103.168.133
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fert6.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: fert6.localip.ir
+- name: 🇩🇪 德国 (Germany) 36 - Dyt
   type: vless
   server: 94.103.168.52
   port: 2087
@@ -283,7 +437,7 @@ proxies:
     path: /hokm
     headers:
       Host: fert1qswdfegrthy.localip.ir
-- name: 🇩🇪 德国 (Germany) 24 - Dyt
+- name: 🇩🇪 德国 (Germany) 37 - Dyt
   type: vmess
   server: 31.76.11.83
   port: 22266
@@ -293,6 +447,30 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 38 - Dyt
+  type: vmess
+  server: 31.76.11.83
+  port: 22266
+  uuid: 2d8f57bd-12b5-41ad-a806-6501753c264c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 39 - Dyt
+  type: vless
+  server: stop.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: stop.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: stop.localip.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -322,6 +500,21 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 22 - Dyt
   - 🇩🇪 德国 (Germany) 23 - Dyt
   - 🇩🇪 德国 (Germany) 24 - Dyt
+  - 🇩🇪 德国 (Germany) 25 - Dyt
+  - 🇩🇪 德国 (Germany) 26 - Dyt
+  - 🇩🇪 德国 (Germany) 27 - Dyt
+  - 🇩🇪 德国 (Germany) 28 - Dyt
+  - 🇩🇪 德国 (Germany) 29 - Dyt
+  - 🇩🇪 德国 (Germany) 30 - Dyt
+  - 🇩🇪 德国 (Germany) 31 - Dyt
+  - 🇩🇪 德国 (Germany) 32 - Dyt
+  - 🇩🇪 德国 (Germany) 33 - Dyt
+  - 🇩🇪 德国 (Germany) 34 - Dyt
+  - 🇩🇪 德国 (Germany) 35 - Dyt
+  - 🇩🇪 德国 (Germany) 36 - Dyt
+  - 🇩🇪 德国 (Germany) 37 - Dyt
+  - 🇩🇪 德国 (Germany) 38 - Dyt
+  - 🇩🇪 德国 (Germany) 39 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -351,5 +544,20 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 22 - Dyt
   - 🇩🇪 德国 (Germany) 23 - Dyt
   - 🇩🇪 德国 (Germany) 24 - Dyt
+  - 🇩🇪 德国 (Germany) 25 - Dyt
+  - 🇩🇪 德国 (Germany) 26 - Dyt
+  - 🇩🇪 德国 (Germany) 27 - Dyt
+  - 🇩🇪 德国 (Germany) 28 - Dyt
+  - 🇩🇪 德国 (Germany) 29 - Dyt
+  - 🇩🇪 德国 (Germany) 30 - Dyt
+  - 🇩🇪 德国 (Germany) 31 - Dyt
+  - 🇩🇪 德国 (Germany) 32 - Dyt
+  - 🇩🇪 德国 (Germany) 33 - Dyt
+  - 🇩🇪 德国 (Germany) 34 - Dyt
+  - 🇩🇪 德国 (Germany) 35 - Dyt
+  - 🇩🇪 德国 (Germany) 36 - Dyt
+  - 🇩🇪 德国 (Germany) 37 - Dyt
+  - 🇩🇪 德国 (Germany) 38 - Dyt
+  - 🇩🇪 德国 (Germany) 39 - Dyt
 rules:
 - MATCH,PROXIES
