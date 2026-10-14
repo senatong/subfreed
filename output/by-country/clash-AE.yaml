@@ -6,16 +6,17 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - Dyt
   type: vless
-  server: zordbx861.233874.xyz
-  port: 8888
-  uuid: 46509b23-fe97-45b3-9c89-bd1b2a93bd4e
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: vBSBoPYKiB5RZ9_jNPEdLnroJ2M7MKw0c1Rvh6-QmV4
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - Dyt
   type: vless
   server: uae.unixzone.us
@@ -31,32 +32,30 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - Dyt
   type: vless
-  server: 80.240.18.227
-  port: 10051
-  uuid: d161dcf1-fde2-44cc-b08d-d8944895e842
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - Dyt
   type: vless
-  server: 31.57.190.17
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
+    path: /
     headers:
-      Host: lucasjow.us.ci
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 05 - Dyt
   type: vless
   server: uae.unixzone.us
@@ -72,7 +71,7 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 06 - Dyt
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -83,46 +82,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - Dyt
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 08 - Dyt
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 09 - Dyt
-  type: vless
-  server: 31.57.190.49
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
-    headers:
-      Host: lucasjow.us.ci
 proxy-groups:
 - name: PROXIES
   type: select
@@ -134,9 +93,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - Dyt
   - 🇦🇪 阿联酋 (UAE) 05 - Dyt
   - 🇦🇪 阿联酋 (UAE) 06 - Dyt
-  - 🇦🇪 阿联酋 (UAE) 07 - Dyt
-  - 🇦🇪 阿联酋 (UAE) 08 - Dyt
-  - 🇦🇪 阿联酋 (UAE) 09 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -148,8 +104,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - Dyt
   - 🇦🇪 阿联酋 (UAE) 05 - Dyt
   - 🇦🇪 阿联酋 (UAE) 06 - Dyt
-  - 🇦🇪 阿联酋 (UAE) 07 - Dyt
-  - 🇦🇪 阿联酋 (UAE) 08 - Dyt
-  - 🇦🇪 阿联酋 (UAE) 09 - Dyt
 rules:
 - MATCH,PROXIES

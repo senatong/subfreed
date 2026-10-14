@@ -4,27 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 BG 01 - Dyt
-  type: vmess
-  server: 188.121.120.86
-  port: 42143
-  uuid: 874a6b6d-d569-4b64-b9a6-32d594e61325
-  alterId: 0
-  cipher: auto
+- name: 🇷🇴 RO 01 - Dyt
+  type: ss
+  server: 154.46.31.106
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 BG 01 - Dyt
+  - 🇷🇴 RO 01 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 BG 01 - Dyt
+  - 🇷🇴 RO 01 - Dyt
 rules:
 - MATCH,PROXIES

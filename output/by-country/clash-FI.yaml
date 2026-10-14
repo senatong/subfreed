@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - Dyt
+  type: ss
+  server: 185.103.110.66
+  port: 18280
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 02 - Dyt
   type: vless
   server: 199.232.239.239
   port: 443
@@ -18,7 +25,7 @@ proxies:
     path: /?
     headers:
       Host: mr_anonoijji.global.ssl.fastly.net
-- name: 🇫🇮 FI 02 - Dyt
+- name: 🇫🇮 FI 03 - Dyt
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -33,6 +40,7 @@ proxy-groups:
   - AUTO
   - 🇫🇮 FI 01 - Dyt
   - 🇫🇮 FI 02 - Dyt
+  - 🇫🇮 FI 03 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -40,5 +48,6 @@ proxy-groups:
   proxies:
   - 🇫🇮 FI 01 - Dyt
   - 🇫🇮 FI 02 - Dyt
+  - 🇫🇮 FI 03 - Dyt
 rules:
 - MATCH,PROXIES
