@@ -6,41 +6,25 @@ log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - Dyt
   type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  server: 57.131.38.163
+  port: 2053
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 02 - Dyt
   type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI
-    headers:
-      Host: lucasjow.us.ci
 - name: 🇮🇹 意大利 (Italy) 03 - Dyt
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?Telegram---Vpney
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇮🇹 意大利 (Italy) 04 - Dyt
   type: vless
   server: 204.216.216.23
   port: 10086
@@ -48,7 +32,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 05 - Dyt
+- name: 🇮🇹 意大利 (Italy) 04 - Dyt
   type: vless
   server: 57.131.38.163
   port: 2053
@@ -60,6 +44,18 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 05 - Dyt
+  type: vless
+  server: 57.131.38.163
+  port: 2053
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+  servername: www.apple.com
+  client-fingerprint: edge
 - name: 🇮🇹 意大利 (Italy) 06 - Dyt
   type: vless
   server: 204.216.216.23
@@ -77,12 +73,17 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 08 - Dyt
-  type: ss
-  server: 185.164.175.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: 57.131.38.163
+  port: 2053
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 09 - Dyt
   type: vless
   server: 204.216.216.23
@@ -92,83 +93,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 10 - Dyt
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 11 - Dyt
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 12 - Dyt
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 13 - Dyt
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇮🇹 意大利 (Italy) 14 - Dyt
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 15 - Dyt
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 16 - Dyt
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 17 - Dyt
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 18 - Dyt
-  type: ss
-  server: 57.131.48.45
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 19 - Dyt
   type: vless
   server: 204.216.216.23
   port: 10086
@@ -191,15 +115,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 08 - Dyt
   - 🇮🇹 意大利 (Italy) 09 - Dyt
   - 🇮🇹 意大利 (Italy) 10 - Dyt
-  - 🇮🇹 意大利 (Italy) 11 - Dyt
-  - 🇮🇹 意大利 (Italy) 12 - Dyt
-  - 🇮🇹 意大利 (Italy) 13 - Dyt
-  - 🇮🇹 意大利 (Italy) 14 - Dyt
-  - 🇮🇹 意大利 (Italy) 15 - Dyt
-  - 🇮🇹 意大利 (Italy) 16 - Dyt
-  - 🇮🇹 意大利 (Italy) 17 - Dyt
-  - 🇮🇹 意大利 (Italy) 18 - Dyt
-  - 🇮🇹 意大利 (Italy) 19 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -215,14 +130,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 08 - Dyt
   - 🇮🇹 意大利 (Italy) 09 - Dyt
   - 🇮🇹 意大利 (Italy) 10 - Dyt
-  - 🇮🇹 意大利 (Italy) 11 - Dyt
-  - 🇮🇹 意大利 (Italy) 12 - Dyt
-  - 🇮🇹 意大利 (Italy) 13 - Dyt
-  - 🇮🇹 意大利 (Italy) 14 - Dyt
-  - 🇮🇹 意大利 (Italy) 15 - Dyt
-  - 🇮🇹 意大利 (Italy) 16 - Dyt
-  - 🇮🇹 意大利 (Italy) 17 - Dyt
-  - 🇮🇹 意大利 (Italy) 18 - Dyt
-  - 🇮🇹 意大利 (Italy) 19 - Dyt
 rules:
 - MATCH,PROXIES
