@@ -5,17 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - Dyt
-  type: vless
-  server: 34.22.111.30
+  type: vmess
+  server: 140.238.2.250
   port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 02 - Dyt
   type: vless
   server: 34.22.111.30
@@ -39,7 +37,7 @@ proxies:
   reality-opts:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
-  client-fingerprint: edge
+  client-fingerprint: ios
 - name: 🇰🇷 韩国 (South Korea) 04 - Dyt
   type: vless
   server: 34.22.111.30
@@ -51,19 +49,17 @@ proxies:
   reality-opts:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 05 - Dyt
-  type: vless
-  server: 34.22.111.30
+  type: vmess
+  server: 140.238.2.250
   port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-  servername: www.cloudflare.com
-  client-fingerprint: edge
 - name: 🇰🇷 韩国 (South Korea) 06 - Dyt
   type: vless
   server: 34.22.111.30
@@ -89,17 +85,15 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: qq
 - name: 🇰🇷 韩国 (South Korea) 08 - Dyt
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 09 - Dyt
   type: vless
   server: 34.22.111.30
@@ -123,7 +117,7 @@ proxies:
   reality-opts:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 11 - Dyt
   type: vless
   server: 34.22.111.30
@@ -135,43 +129,33 @@ proxies:
   reality-opts:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: edge
 - name: 🇰🇷 韩国 (South Korea) 12 - Dyt
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 13 - Dyt
   type: vless
-  server: 34.22.111.30
-  port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 13 - Dyt
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 14 - Dyt
   type: vless
-  server: 34.22.111.30
-  port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇰🇷 韩国 (South Korea) 15 - Dyt
-  type: vless
   server: 151.245.106.49
   port: 2053
   uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
@@ -182,18 +166,30 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 16 - Dyt
+- name: 🇰🇷 韩国 (South Korea) 15 - Dyt
   type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 16 - Dyt
+  type: vless
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: ios
 - name: 🇰🇷 韩国 (South Korea) 17 - Dyt
   type: vless
   server: 34.22.111.30
@@ -207,6 +203,28 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 18 - Dyt
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 19 - Dyt
+  type: vless
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇰🇷 韩国 (South Korea) 20 - Dyt
   type: vless
   server: 34.22.111.30
   port: 443
@@ -218,7 +236,62 @@ proxies:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 19 - Dyt
+- name: 🇰🇷 韩国 (South Korea) 21 - Dyt
+  type: vless
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: edge
+- name: 🇰🇷 韩国 (South Korea) 22 - Dyt
+  type: vless
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 🇰🇷 韩国 (South Korea) 23 - Dyt
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: kr02.a0a.xyz
+- name: 🇰🇷 韩国 (South Korea) 24 - Dyt
+  type: vmess
+  server: 4knprw5h74w4avns.v.3dns.vip
+  port: 443
+  uuid: 10d6665f-10c9-4f03-9b83-ba45968f748d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ''
+- name: 🇰🇷 韩国 (South Korea) 25 - Dyt
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -229,7 +302,7 @@ proxies:
   reality-opts:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -254,6 +327,12 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 17 - Dyt
   - 🇰🇷 韩国 (South Korea) 18 - Dyt
   - 🇰🇷 韩国 (South Korea) 19 - Dyt
+  - 🇰🇷 韩国 (South Korea) 20 - Dyt
+  - 🇰🇷 韩国 (South Korea) 21 - Dyt
+  - 🇰🇷 韩国 (South Korea) 22 - Dyt
+  - 🇰🇷 韩国 (South Korea) 23 - Dyt
+  - 🇰🇷 韩国 (South Korea) 24 - Dyt
+  - 🇰🇷 韩国 (South Korea) 25 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -278,5 +357,11 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 17 - Dyt
   - 🇰🇷 韩国 (South Korea) 18 - Dyt
   - 🇰🇷 韩国 (South Korea) 19 - Dyt
+  - 🇰🇷 韩国 (South Korea) 20 - Dyt
+  - 🇰🇷 韩国 (South Korea) 21 - Dyt
+  - 🇰🇷 韩国 (South Korea) 22 - Dyt
+  - 🇰🇷 韩国 (South Korea) 23 - Dyt
+  - 🇰🇷 韩国 (South Korea) 24 - Dyt
+  - 🇰🇷 韩国 (South Korea) 25 - Dyt
 rules:
 - MATCH,PROXIES
