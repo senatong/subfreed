@@ -15,16 +15,11 @@ proxies:
 - name: 🇸🇨 SC 02 - Dyt
   type: vless
   server: 45.137.43.168
-  port: 14430
+  port: 10443
   uuid: b4cc503a-c352-4775-85ad-fc982086884a
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.137.43.168
 - name: 🇸🇨 SC 03 - Dyt
   type: vless
   server: 45.137.43.168
@@ -46,6 +41,19 @@ proxies:
     path: /vless
     headers:
       Host: 45.137.43.168
+- name: 🇸🇨 SC 05 - Dyt
+  type: vless
+  server: 45.137.43.168
+  port: 14430
+  uuid: b4cc503a-c352-4775-85ad-fc982086884a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.137.43.168
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,6 +63,7 @@ proxy-groups:
   - 🇸🇨 SC 02 - Dyt
   - 🇸🇨 SC 03 - Dyt
   - 🇸🇨 SC 04 - Dyt
+  - 🇸🇨 SC 05 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -64,5 +73,6 @@ proxy-groups:
   - 🇸🇨 SC 02 - Dyt
   - 🇸🇨 SC 03 - Dyt
   - 🇸🇨 SC 04 - Dyt
+  - 🇸🇨 SC 05 - Dyt
 rules:
 - MATCH,PROXIES

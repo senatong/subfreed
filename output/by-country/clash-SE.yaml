@@ -6,44 +6,7 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - Dyt
   type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 02 - Dyt
-  type: vless
-  server: 88.216.223.66
-  port: 443
-  uuid: 244d9eab-3311-40c7-b47f-4968dc3088a6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: tcpswed1.figurapn.ru
-  client-fingerprint: firefox
-- name: 🇸🇪 SE 03 - Dyt
-  type: vless
-  server: se1.h1cloud.net
-  port: 26100
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
-  servername: www.icloud.com
-  client-fingerprint: qq
-- name: 🇸🇪 SE 04 - Dyt
-  type: vless
-  server: 94.143.231.146
+  server: sub.merky.top
   port: 443
   uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
@@ -55,18 +18,43 @@ proxies:
     path: /merky-connect/de6/
     headers:
       Host: sub.merky.top
-- name: 🇸🇪 SE 05 - Dyt
+- name: 🇸🇪 SE 02 - Dyt
   type: vless
-  server: se1.h1cloud.net
-  port: 26100
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 03 - Dyt
+  type: vless
+  server: 88.216.223.66
+  port: 443
+  uuid: 244d9eab-3311-40c7-b47f-4968dc3088a6
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
-  servername: www.icloud.com
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+  servername: tcpswed1.figurapn.ru
   client-fingerprint: chrome
+- name: 🇸🇪 SE 04 - Dyt
+  type: vless
+  server: 88.216.223.66
+  port: 443
+  uuid: 244d9eab-3311-40c7-b47f-4968dc3088a6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+  servername: tcpswed1.figurapn.ru
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -76,7 +64,6 @@ proxy-groups:
   - 🇸🇪 SE 02 - Dyt
   - 🇸🇪 SE 03 - Dyt
   - 🇸🇪 SE 04 - Dyt
-  - 🇸🇪 SE 05 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -86,6 +73,5 @@ proxy-groups:
   - 🇸🇪 SE 02 - Dyt
   - 🇸🇪 SE 03 - Dyt
   - 🇸🇪 SE 04 - Dyt
-  - 🇸🇪 SE 05 - Dyt
 rules:
 - MATCH,PROXIES
