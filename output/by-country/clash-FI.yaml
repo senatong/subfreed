@@ -6,61 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - Dyt
   type: vless
-  server: 3f8efdt.fi1.h1clayd.click
-  port: 443
-  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY
-  servername: 3f8efdt.fi1.h1clayd.click
-  client-fingerprint: edge
-- name: 🇫🇮 FI 02 - Dyt
-  type: vless
-  server: fi-p1.h1cloud.net
-  port: 25633
-  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: YLIRYJ8UkT0nSSgxJr7YckNuXnokVyEs2G6thNyx1GE
-  servername: www.icloud.com
-  client-fingerprint: random
-- name: 🇫🇮 FI 03 - Dyt
-  type: vless
-  server: 79.175.136.238
-  port: 7879
-  uuid: bd5ea9bc-16ec-408e-b933-4219ed022de1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 0PVs0FZprxXi0bV-YX-SkyAx6a_9GHjSZ6hpCpa1lnE
-  servername: account.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 04 - Dyt
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 05 - Dyt
-  type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 06 - Dyt
-  type: vless
   server: 95.216.27.15
   port: 2053
   uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
@@ -71,36 +16,32 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇫🇮 FI 07 - Dyt
-  type: ss
-  server: 185.103.110.66
-  port: 18280
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 08 - Dyt
+- name: 🇫🇮 FI 02 - Dyt
   type: vless
-  server: 199.232.239.239
-  port: 443
-  uuid: b3f3f34c-cbcd-427d-9894-5330738ac0da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: speedtest.net
-  network: ws
-  ws-opts:
-    path: /?ed=2056?/TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPNfp=firefox
-    headers:
-      Host: mr_anonoijji.global.ssl.fastly.net
-- name: 🇫🇮 FI 09 - Dyt
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇫🇮 FI 10 - Dyt
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 03 - Dyt
+  type: vless
+  server: 3f8efdt.fi1.h1clayd.click
+  port: 443
+  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY
+  servername: 3f8efdt.fi1.h1clayd.click
+  client-fingerprint: edge
+- name: 🇫🇮 FI 04 - Dyt
   type: vless
   server: 199.232.239.239
   port: 443
@@ -114,7 +55,43 @@ proxies:
     path: /?ed=2056?/TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
     headers:
       Host: mr_anonoijji.global.ssl.fastly.net
-- name: 🇫🇮 FI 11 - Dyt
+- name: 🇫🇮 FI 05 - Dyt
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 06 - Dyt
+  type: ss
+  server: 185.103.110.68
+  port: 18283
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 07 - Dyt
+  type: vless
+  server: 199.232.239.239
+  port: 443
+  uuid: b3f3f34c-cbcd-427d-9894-5330738ac0da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: speedtest.net
+  network: ws
+  ws-opts:
+    path: /?ed=2056?/TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPNfp=firefox
+    headers:
+      Host: mr_anonoijji.global.ssl.fastly.net
+- name: 🇫🇮 FI 08 - Dyt
+  type: ss
+  server: 185.103.110.66
+  port: 18280
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 09 - Dyt
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -127,14 +104,7 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 12 - Dyt
-  type: ss
-  server: b2a2.velqixa.ir
-  port: 39221
-  cipher: chacha20-ietf-poly1305
-  password: Pzlcb_PeV3uRgiC2NNoNKw
-  udp: true
-- name: 🇫🇮 FI 13 - Dyt
+- name: 🇫🇮 FI 10 - Dyt
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -146,38 +116,25 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 14 - Dyt
+- name: 🇫🇮 FI 11 - Dyt
   type: ss
   server: 185.103.110.66
   port: 18280
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
-- name: 🇫🇮 FI 15 - Dyt
+- name: 🇫🇮 FI 12 - Dyt
   type: vless
-  server: 79.175.136.238
-  port: 7879
-  uuid: bd5ea9bc-16ec-408e-b933-4219ed022de1
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 0PVs0FZprxXi0bV-YX-SkyAx6a_9GHjSZ6hpCpa1lnE
-  servername: account.samsung.com
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 16 - Dyt
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select
@@ -195,10 +152,6 @@ proxy-groups:
   - 🇫🇮 FI 10 - Dyt
   - 🇫🇮 FI 11 - Dyt
   - 🇫🇮 FI 12 - Dyt
-  - 🇫🇮 FI 13 - Dyt
-  - 🇫🇮 FI 14 - Dyt
-  - 🇫🇮 FI 15 - Dyt
-  - 🇫🇮 FI 16 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -216,9 +169,5 @@ proxy-groups:
   - 🇫🇮 FI 10 - Dyt
   - 🇫🇮 FI 11 - Dyt
   - 🇫🇮 FI 12 - Dyt
-  - 🇫🇮 FI 13 - Dyt
-  - 🇫🇮 FI 14 - Dyt
-  - 🇫🇮 FI 15 - Dyt
-  - 🇫🇮 FI 16 - Dyt
 rules:
 - MATCH,PROXIES
