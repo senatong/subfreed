@@ -30,6 +30,19 @@ proxies:
   client-fingerprint: chrome
 - name: 🇧🇷 BR 03 - Dyt
   type: vless
+  server: platform102.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
+- name: 🇧🇷 BR 04 - Dyt
+  type: vless
   server: platform101.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
@@ -49,6 +62,7 @@ proxy-groups:
   - 🇧🇷 BR 01 - Dyt
   - 🇧🇷 BR 02 - Dyt
   - 🇧🇷 BR 03 - Dyt
+  - 🇧🇷 BR 04 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -57,5 +71,6 @@ proxy-groups:
   - 🇧🇷 BR 01 - Dyt
   - 🇧🇷 BR 02 - Dyt
   - 🇧🇷 BR 03 - Dyt
+  - 🇧🇷 BR 04 - Dyt
 rules:
 - MATCH,PROXIES

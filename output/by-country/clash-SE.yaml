@@ -6,6 +6,18 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - Dyt
   type: vless
+  server: 88.216.223.66
+  port: 443
+  uuid: 244d9eab-3311-40c7-b47f-4968dc3088a6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+  servername: tcpswed1.figurapn.ru
+  client-fingerprint: firefox
+- name: 🇸🇪 SE 02 - Dyt
+  type: vless
   server: 5.178.109.174
   port: 14430
   uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
@@ -17,51 +29,36 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 02 - Dyt
-  type: vless
-  server: sub.merky.top
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
 - name: 🇸🇪 SE 03 - Dyt
   type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: sub.merky.top
   network: ws
   ws-opts:
-    path: /merky-connect/de6/
+    path: /vless
     headers:
-      Host: sub.merky.top
+      Host: 5.178.109.174
 - name: 🇸🇪 SE 04 - Dyt
   type: vless
-  server: sub.merky.top
+  server: 77.110.97.245
   port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sub.merky.top
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /merky-connect/de6/
+    path: /
     headers:
-      Host: sub.merky.top
+      Host: ccc.010304.xyz
 - name: 🇸🇪 SE 05 - Dyt
   type: vless
-  server: sub.merky.top
+  server: 94.143.231.146
   port: 443
   uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
@@ -75,20 +72,6 @@ proxies:
       Host: sub.merky.top
 - name: 🇸🇪 SE 06 - Dyt
   type: vless
-  server: 109.120.134.243
-  port: 443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.cndyw.ggff.net
-  network: ws
-  ws-opts:
-    path: pyip=bpb.yousef.isegaro.comfp=random
-    headers:
-      Host: free.cndyw.ggff.net
-- name: 🇸🇪 SE 07 - Dyt
-  type: vless
   server: 94.143.231.146
   port: 443
   uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
@@ -100,20 +83,7 @@ proxies:
   ws-opts:
     path: /merky-connect/de6/
     headers:
-      Host: sub.merky.top
-- name: 🇸🇪 SE 08 - Dyt
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
+      Host: 94.143.231.146
 proxy-groups:
 - name: PROXIES
   type: select
@@ -125,8 +95,6 @@ proxy-groups:
   - 🇸🇪 SE 04 - Dyt
   - 🇸🇪 SE 05 - Dyt
   - 🇸🇪 SE 06 - Dyt
-  - 🇸🇪 SE 07 - Dyt
-  - 🇸🇪 SE 08 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -138,7 +106,5 @@ proxy-groups:
   - 🇸🇪 SE 04 - Dyt
   - 🇸🇪 SE 05 - Dyt
   - 🇸🇪 SE 06 - Dyt
-  - 🇸🇪 SE 07 - Dyt
-  - 🇸🇪 SE 08 - Dyt
 rules:
 - MATCH,PROXIES
