@@ -28,6 +28,19 @@ proxies:
     public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇧🇷 BR 03 - Dyt
+  type: vless
+  server: platform101.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +48,7 @@ proxy-groups:
   - AUTO
   - 🇧🇷 BR 01 - Dyt
   - 🇧🇷 BR 02 - Dyt
+  - 🇧🇷 BR 03 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +56,6 @@ proxy-groups:
   proxies:
   - 🇧🇷 BR 01 - Dyt
   - 🇧🇷 BR 02 - Dyt
+  - 🇧🇷 BR 03 - Dyt
 rules:
 - MATCH,PROXIES
