@@ -40,6 +40,14 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 05 - Dyt
+  type: vless
+  server: milo.rubinaz.xyz
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,6 +57,7 @@ proxy-groups:
   - 🇵🇱 PL 02 - Dyt
   - 🇵🇱 PL 03 - Dyt
   - 🇵🇱 PL 04 - Dyt
+  - 🇵🇱 PL 05 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,5 +67,6 @@ proxy-groups:
   - 🇵🇱 PL 02 - Dyt
   - 🇵🇱 PL 03 - Dyt
   - 🇵🇱 PL 04 - Dyt
+  - 🇵🇱 PL 05 - Dyt
 rules:
 - MATCH,PROXIES
