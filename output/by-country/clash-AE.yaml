@@ -6,32 +6,6 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - Dyt
   type: vless
-  server: 45.59.120.217
-  port: 443
-  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
-  servername: strm.yandex.net
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 02 - Dyt
-  type: vless
-  server: 31.57.190.49
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇦🇪 阿联酋 (UAE) 03 - Dyt
-  type: vless
   server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -43,9 +17,37 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 02 - Dyt
+  type: vless
+  server: 31.57.190.50
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇦🇪 阿联酋 (UAE) 03 - Dyt
+  type: vless
+  server: 31.57.190.50
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
 - name: 🇦🇪 阿联酋 (UAE) 04 - Dyt
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -58,56 +60,43 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 05 - Dyt
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 45.59.120.217
+  port: 443
+  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
+  reality-opts:
+    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
+  servername: strm.yandex.net
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 06 - Dyt
   type: vless
-  server: 45.59.120.217
+  server: 31.57.190.89
   port: 443
-  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
-  servername: strm.yandex.net
-  client-fingerprint: chrome
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
 - name: 🇦🇪 阿联酋 (UAE) 07 - Dyt
   type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  server: 45.59.120.217
+  port: 443
+  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
+  reality-opts:
+    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
+  servername: strm.yandex.net
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 08 - Dyt
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 09 - Dyt
   type: vless
   server: 45.59.120.217
   port: 443
@@ -119,7 +108,7 @@ proxies:
     public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
   servername: strm.yandex.net
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 10 - Dyt
+- name: 🇦🇪 阿联酋 (UAE) 09 - Dyt
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -132,9 +121,21 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 10 - Dyt
+  type: vless
+  server: 45.59.120.217
+  port: 443
+  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
+  servername: strm.yandex.net
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 11 - Dyt
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -161,21 +162,21 @@ proxies:
       Host: lucasjow.us.ci
 - name: 🇦🇪 阿联酋 (UAE) 13 - Dyt
   type: vless
-  server: 31.57.190.17
+  server: 31.57.190.15
   port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lucasjow.us.ci
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
+    path: /
     headers:
-      Host: lucasjow.us.ci
+      Host: ccc.010304.xyz
 - name: 🇦🇪 阿联酋 (UAE) 14 - Dyt
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -201,7 +202,7 @@ proxies:
       Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 16 - Dyt
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -214,32 +215,6 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 17 - Dyt
   type: vless
-  server: 45.59.120.217
-  port: 443
-  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
-  servername: strm.yandex.net
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 18 - Dyt
-  type: vless
-  server: 31.57.190.17
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇦🇪 阿联酋 (UAE) 19 - Dyt
-  type: vless
   server: 95.174.68.188
   port: 14430
   uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
@@ -251,6 +226,32 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 18 - Dyt
+  type: vless
+  server: zordbx861.233874.xyz
+  port: 8888
+  uuid: 46509b23-fe97-45b3-9c89-bd1b2a93bd4e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: vBSBoPYKiB5RZ9_jNPEdLnroJ2M7MKw0c1Rvh6-QmV4
+  servername: addons.mozilla.org
+  client-fingerprint: random
+- name: 🇦🇪 阿联酋 (UAE) 19 - Dyt
+  type: vless
+  server: 31.57.190.89
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
