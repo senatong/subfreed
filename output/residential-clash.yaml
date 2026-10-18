@@ -4,7 +4,22 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Dyt
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - Dyt
+  type: vmess
+  server: 183.109.131.75
+  port: 20086
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Dyt
   type: vless
   server: hinet1.2yly.com
   port: 24215
@@ -15,8 +30,22 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: qq
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Dyt
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 03 (家宽) - Dyt
+  type: vless
+  server: 172.64.145.202
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: newwk1.f1w.de5.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: newwk1.f1w.de5.net
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Dyt
   type: vless
   server: 60.248.219.78
   port: 443
@@ -35,14 +64,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Dyt
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - Dyt
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Dyt
+  - 🇺🇸 美国 (United States) 03 (家宽) - Dyt
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Dyt
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - Dyt
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Dyt
+  - 🇺🇸 美国 (United States) 03 (家宽) - Dyt
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Dyt
 rules:
 - MATCH,PROXIES
