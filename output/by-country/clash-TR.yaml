@@ -6,45 +6,19 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - Dyt
   type: vless
-  server: 136.148.64.229
-  port: 2083
-  uuid: 0f32f9e7-d83c-4052-9a5e-103ed967b11c
+  server: 155.103.71.142
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chromefp=chrome
+    headers:
+      Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 02 - Dyt
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 03 - Dyt
-  type: vless
-  server: vpn.networkforexir.site
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 04 - Dyt
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 05 - Dyt
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 06 - Dyt
   type: vless
   server: 155.103.71.142
   port: 443
@@ -58,28 +32,6 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 07 - Dyt
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 08 - Dyt
-  type: vless
-  server: 155.103.71.142
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chromefp=chrome
-    headers:
-      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,12 +39,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - Dyt
   - 🇹🇷 土耳其 (Turkey) 02 - Dyt
-  - 🇹🇷 土耳其 (Turkey) 03 - Dyt
-  - 🇹🇷 土耳其 (Turkey) 04 - Dyt
-  - 🇹🇷 土耳其 (Turkey) 05 - Dyt
-  - 🇹🇷 土耳其 (Turkey) 06 - Dyt
-  - 🇹🇷 土耳其 (Turkey) 07 - Dyt
-  - 🇹🇷 土耳其 (Turkey) 08 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -100,11 +46,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - Dyt
   - 🇹🇷 土耳其 (Turkey) 02 - Dyt
-  - 🇹🇷 土耳其 (Turkey) 03 - Dyt
-  - 🇹🇷 土耳其 (Turkey) 04 - Dyt
-  - 🇹🇷 土耳其 (Turkey) 05 - Dyt
-  - 🇹🇷 土耳其 (Turkey) 06 - Dyt
-  - 🇹🇷 土耳其 (Turkey) 07 - Dyt
-  - 🇹🇷 土耳其 (Turkey) 08 - Dyt
 rules:
 - MATCH,PROXIES
