@@ -20,6 +20,20 @@ proxies:
   udp: true
 - name: 🇨🇿 CZ 03 - Dyt
   type: vless
+  server: cl-glb6e059ee.gcdn.co
+  port: 443
+  uuid: 6206cb76-491d-4237-baf1-8c29eea4eafb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: node-3.wt419.site
+  network: ws
+  ws-opts:
+    path: /qVnRkTxmLwBzHjYpFaDgUcSeNrKxMtVbWqZhPcLsJfGy
+    headers:
+      Host: node-3.wt419.site
+- name: 🇨🇿 CZ 04 - Dyt
+  type: vless
   server: 81.28.12.12
   port: 443
   uuid: 6206cb76-491d-4237-baf1-8c29eea4eafb
@@ -40,6 +54,7 @@ proxy-groups:
   - 🇨🇿 CZ 01 - Dyt
   - 🇨🇿 CZ 02 - Dyt
   - 🇨🇿 CZ 03 - Dyt
+  - 🇨🇿 CZ 04 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,5 +63,6 @@ proxy-groups:
   - 🇨🇿 CZ 01 - Dyt
   - 🇨🇿 CZ 02 - Dyt
   - 🇨🇿 CZ 03 - Dyt
+  - 🇨🇿 CZ 04 - Dyt
 rules:
 - MATCH,PROXIES

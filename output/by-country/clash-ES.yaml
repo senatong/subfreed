@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇪🇸 西班牙 (Spain) 02 - Dyt
   type: vless
   server: 212.227.235.66
@@ -27,16 +27,32 @@ proxies:
   reality-opts:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 03 - Dyt
   type: vless
-  server: 85.90.217.42
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  server: spain.unixzone.us
+  port: 36326
+  uuid: 63ff4bfa-0f1d-48e4-8314-e882b14e602c
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /jdiedjiedjijd
+    headers:
+      Host: spain.unixzone.us
+- name: 🇪🇸 西班牙 (Spain) 04 - Dyt
+  type: vless
+  server: 212.227.235.66
+  port: 2053
+  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 85.90.217.42
+  reality-opts:
+    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,6 +61,7 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01 - Dyt
   - 🇪🇸 西班牙 (Spain) 02 - Dyt
   - 🇪🇸 西班牙 (Spain) 03 - Dyt
+  - 🇪🇸 西班牙 (Spain) 04 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -53,5 +70,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01 - Dyt
   - 🇪🇸 西班牙 (Spain) 02 - Dyt
   - 🇪🇸 西班牙 (Spain) 03 - Dyt
+  - 🇪🇸 西班牙 (Spain) 04 - Dyt
 rules:
 - MATCH,PROXIES
