@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - Dyt
-  type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
-- name: 🇷🇴 RO 02 - Dyt
-  type: ss
-  server: 194.68.44.42
-  port: 64546
-  cipher: chacha20-ietf-poly1305
-  password: U83u9OGpvSatIUW7LsWffr
-  udp: true
-- name: 🇷🇴 RO 03 - Dyt
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -26,7 +12,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇷🇴 RO 04 - Dyt
+- name: 🇷🇴 RO 02 - Dyt
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -41,8 +27,6 @@ proxy-groups:
   - AUTO
   - 🇷🇴 RO 01 - Dyt
   - 🇷🇴 RO 02 - Dyt
-  - 🇷🇴 RO 03 - Dyt
-  - 🇷🇴 RO 04 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,7 +34,5 @@ proxy-groups:
   proxies:
   - 🇷🇴 RO 01 - Dyt
   - 🇷🇴 RO 02 - Dyt
-  - 🇷🇴 RO 03 - Dyt
-  - 🇷🇴 RO 04 - Dyt
 rules:
 - MATCH,PROXIES

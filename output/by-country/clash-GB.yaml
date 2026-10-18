@@ -6,86 +6,52 @@ log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - Dyt
   type: vless
-  server: 159.65.51.189
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 3.11.104.202
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
 - name: 🇬🇧 英国 (United Kingdom) 02 - Dyt
-  type: ss
-  server: 82.38.31.190
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 03 - Dyt
-  type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 04 - Dyt
   type: vless
-  server: 186.190.211.188
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 186.190.211.188
-- name: 🇬🇧 英国 (United Kingdom) 05 - Dyt
-  type: vless
-  server: 186.190.211.188
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 186.190.211.188
-- name: 🇬🇧 英国 (United Kingdom) 06 - Dyt
-  type: vless
-  server: 51.38.71.147
-  port: 8443
-  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: node-uk.connectsuite.org
-- name: 🇬🇧 英国 (United Kingdom) 07 - Dyt
-  type: vless
-  server: 23.81.36.148
-  port: 1222
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  server: 51.89.194.151
+  port: 2053
+  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
-  servername: play.google.com
+    public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 03 - Dyt
+  type: vless
+  server: 13.135.33.165
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 04 - Dyt
+  type: vless
+  server: 151.243.101.126
+  port: 51105
+  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: _DxG0K_Hvw7qfGTtfeYm95vCBS_3E2x1gzVzfJqQGjE
+  servername: apple.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 08 - Dyt
+- name: 🇬🇧 英国 (United Kingdom) 05 - Dyt
   type: ss
   server: 149.102.132.184
-  port: 443
+  port: 80
   cipher: aes-256-gcm
   password: g5h5jleTRSyO3Rk4
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 09 - Dyt
-  type: ss
-  server: 94.156.250.148
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 10 - Dyt
+- name: 🇬🇧 英国 (United Kingdom) 06 - Dyt
   type: vless
   server: 188.114.96.25
   port: 443
@@ -99,52 +65,49 @@ proxies:
     path: /9d9fdbc18c834cffab4276811501fbae
     headers:
       Host: gbi.els1v0u3t31v.info
-- name: 🇬🇧 英国 (United Kingdom) 11 - Dyt
-  type: vless
-  server: 57.129.132.223
-  port: 80
-  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 12 - Dyt
-  type: vless
-  server: 186.190.211.188
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 186.190.211.188
-- name: 🇬🇧 英国 (United Kingdom) 13 - Dyt
-  type: vmess
-  server: 172.67.137.209
-  port: 443
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ukl.lovehk.xyz
-  network: ws
-  ws-opts:
-    path: /London31
-    headers:
-      Host: ukl.lovehk.xyz
-- name: 🇬🇧 英国 (United Kingdom) 14 - Dyt
+- name: 🇬🇧 英国 (United Kingdom) 07 - Dyt
   type: ss
-  server: 149.102.132.184
-  port: 80
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
+  server: 82.38.31.175
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 15 - Dyt
+- name: 🇬🇧 英国 (United Kingdom) 08 - Dyt
+  type: ss
+  server: 94.156.250.148
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 09 - Dyt
+  type: ss
+  server: 82.38.31.208
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 10 - Dyt
+  type: ss
+  server: 82.38.31.62
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 11 - Dyt
+  type: ss
+  server: 82.38.31.201
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 12 - Dyt
+  type: ss
+  server: 82.38.31.185
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 13 - Dyt
   type: vless
   server: 46.250.250.149
   port: 2053
@@ -156,16 +119,26 @@ proxies:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 16 - Dyt
+- name: 🇬🇧 英国 (United Kingdom) 14 - Dyt
   type: vless
-  server: node-uk.connectsuite.org
-  port: 8443
-  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
+  server: 51.89.194.151
+  port: 2053
+  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: node-uk.connectsuite.org
-- name: 🇬🇧 英国 (United Kingdom) 17 - Dyt
+  reality-opts:
+    public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 15 - Dyt
+  type: ss
+  server: 82.38.31.182
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 16 - Dyt
   type: vless
   server: 46.250.250.149
   port: 2053
@@ -176,22 +149,66 @@ proxies:
   reality-opts:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 18 - Dyt
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 17 - Dyt
   type: vless
-  server: 188.114.96.25
+  server: britaniapnl.mamadhpbot.ir
+  port: 8080
+  uuid: 732ec777-bf4a-4fee-835a-25d6a8b58563
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /real
+    headers:
+      Host: britaniapnl.mamadhpbot.ir
+- name: 🇬🇧 英国 (United Kingdom) 18 - Dyt
+  type: ss
+  server: 82.38.31.205
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 19 - Dyt
+  type: ss
+  server: 82.38.31.190
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 20 - Dyt
+  type: ss
+  server: 82.38.31.42
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 21 - Dyt
+  type: ss
+  server: 82.38.31.69
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 22 - Dyt
+  type: vless
+  server: 3.11.104.202
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 23 - Dyt
+  type: vless
+  server: 186.190.211.188
   port: 443
-  uuid: ed6c724c-435f-4f83-a781-f57579af320b
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: gbi.els1v0u3t31v.info
-  network: ws
-  ws-opts:
-    path: /9d9fdbc18c834cffab4276811501fbae
-    headers:
-      Host: gbi.els1v0u3t31v.info
-- name: 🇬🇧 英国 (United Kingdom) 19 - Dyt
+  servername: 186.190.211.188
+- name: 🇬🇧 英国 (United Kingdom) 24 - Dyt
   type: vmess
   server: 57.129.132.223
   port: 80
@@ -206,15 +223,171 @@ proxies:
     path: /vmess/
     headers:
       Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 20 - Dyt
+- name: 🇬🇧 英国 (United Kingdom) 25 - Dyt
   type: vless
-  server: 3.11.104.202
+  server: 13.135.33.165
   port: 22224
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 21 - Dyt
+- name: 🇬🇧 英国 (United Kingdom) 26 - Dyt
+  type: vless
+  server: 3.11.104.202
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 27 - Dyt
+  type: vless
+  server: 186.190.211.188
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 186.190.211.188
+- name: 🇬🇧 英国 (United Kingdom) 28 - Dyt
+  type: ss
+  server: 149.102.132.184
+  port: 443
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 29 - Dyt
+  type: vless
+  server: 186.190.211.188
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 186.190.211.188
+- name: 🇬🇧 英国 (United Kingdom) 30 - Dyt
+  type: ss
+  server: 158.173.24.73
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 31 - Dyt
+  type: ss
+  server: 82.38.31.202
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 32 - Dyt
+  type: ss
+  server: 82.38.31.179
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 33 - Dyt
+  type: ss
+  server: 82.38.31.214
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 34 - Dyt
+  type: ss
+  server: 82.38.31.28
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 35 - Dyt
+  type: vless
+  server: 159.65.51.189
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇬🇧 英国 (United Kingdom) 36 - Dyt
+  type: ss
+  server: 82.38.31.175
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 37 - Dyt
+  type: ss
+  server: 82.38.31.155
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 38 - Dyt
+  type: vless
+  server: 13.135.33.165
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 39 - Dyt
+  type: vless
+  server: 3.11.104.202
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 40 - Dyt
+  type: ss
+  server: 82.38.31.17
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 41 - Dyt
+  type: vless
+  server: 3.11.104.202
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 42 - Dyt
+  type: vless
+  server: 13.135.33.165
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 43 - Dyt
+  type: ss
+  server: 82.38.31.13
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 44 - Dyt
+  type: ss
+  server: 82.38.31.218
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 45 - Dyt
+  type: ss
+  server: 82.38.31.204
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 46 - Dyt
   type: vless
   server: node-uk.connectsuite.org
   port: 8443
@@ -223,23 +396,9 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: node-uk.connectsuite.org
-- name: 🇬🇧 英国 (United Kingdom) 22 - Dyt
-  type: ss
-  server: 149.102.132.184
-  port: 80
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 23 - Dyt
-  type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 24 - Dyt
+- name: 🇬🇧 英国 (United Kingdom) 47 - Dyt
   type: vless
-  server: reaza.localip.ir
+  server: 188.114.96.25
   port: 443
   uuid: ed6c724c-435f-4f83-a781-f57579af320b
   udp: true
@@ -280,6 +439,29 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 22 - Dyt
   - 🇬🇧 英国 (United Kingdom) 23 - Dyt
   - 🇬🇧 英国 (United Kingdom) 24 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 25 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 26 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 27 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 28 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 29 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 30 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 31 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 32 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 33 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 34 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 35 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 36 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 37 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 38 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 39 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 40 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 41 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 42 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 43 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 44 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 45 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 46 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 47 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -309,5 +491,28 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 22 - Dyt
   - 🇬🇧 英国 (United Kingdom) 23 - Dyt
   - 🇬🇧 英国 (United Kingdom) 24 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 25 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 26 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 27 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 28 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 29 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 30 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 31 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 32 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 33 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 34 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 35 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 36 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 37 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 38 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 39 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 40 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 41 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 42 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 43 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 44 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 45 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 46 - Dyt
+  - 🇬🇧 英国 (United Kingdom) 47 - Dyt
 rules:
 - MATCH,PROXIES
