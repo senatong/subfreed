@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇱🇰 LK 01 - Dyt
   type: vless
-  server: 104.17.74.206
+  server: 104.17.73.206
   port: 8443
   uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   udp: true
@@ -33,13 +33,12 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 03 - Dyt
   type: vless
-  server: 104.17.70.206
-  port: 8443
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  server: free.sahanwickramasinghe.me
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: free.sahanwickramasinghe.me
   network: ws
   ws-opts:
     path: /
@@ -47,7 +46,7 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 04 - Dyt
   type: vless
-  server: 104.17.72.206
+  server: 104.17.70.206
   port: 8443
   uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   udp: true
@@ -61,6 +60,19 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 05 - Dyt
   type: vless
+  server: support.zoom.us
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 06 - Dyt
+  type: vless
   server: 104.17.71.206
   port: 8443
   uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
@@ -73,9 +85,23 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 06 - Dyt
+- name: 🇱🇰 LK 07 - Dyt
   type: vless
-  server: 104.17.73.206
+  server: 104.17.74.206
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.sahanwickramasinghe.me
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 08 - Dyt
+  type: vless
+  server: 104.17.72.206
   port: 8443
   uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   udp: true
@@ -98,6 +124,8 @@ proxy-groups:
   - 🇱🇰 LK 04 - Dyt
   - 🇱🇰 LK 05 - Dyt
   - 🇱🇰 LK 06 - Dyt
+  - 🇱🇰 LK 07 - Dyt
+  - 🇱🇰 LK 08 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -109,5 +137,7 @@ proxy-groups:
   - 🇱🇰 LK 04 - Dyt
   - 🇱🇰 LK 05 - Dyt
   - 🇱🇰 LK 06 - Dyt
+  - 🇱🇰 LK 07 - Dyt
+  - 🇱🇰 LK 08 - Dyt
 rules:
 - MATCH,PROXIES
