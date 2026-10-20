@@ -32,19 +32,6 @@ proxies:
     path: /merky-connect/de6/
     headers:
       Host: sub.merky.top
-- name: 🇸🇪 SE 03 - Dyt
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 SE 01 - Dyt
   - 🇸🇪 SE 02 - Dyt
-  - 🇸🇪 SE 03 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 SE 01 - Dyt
   - 🇸🇪 SE 02 - Dyt
-  - 🇸🇪 SE 03 - Dyt
 rules:
 - MATCH,PROXIES
