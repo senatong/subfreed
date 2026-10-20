@@ -6,57 +6,6 @@ log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - Dyt
   type: vless
-  server: 46.225.46.136
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hoert1rert.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: hoert1rert.localip.ir
-- name: 🇩🇪 德国 (Germany) 02 - Dyt
-  type: vless
-  server: 206.1.103.26
-  port: 443
-  uuid: 0ad58d97-922c-4e85-b820-9d04dab5b8ec
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 03 - Dyt
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 04 - Dyt
-  type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 05 - Dyt
-  type: vless
-  server: 206.1.103.26
-  port: 443
-  uuid: 0ad58d97-922c-4e85-b820-9d04dab5b8ec
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 06 - Dyt
-  type: vless
   server: 91.107.247.173
   port: 2083
   uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
@@ -69,20 +18,68 @@ proxies:
     path: /
     headers:
       Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 07 - Dyt
+- name: 🇩🇪 德国 (Germany) 02 - Dyt
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 03 - Dyt
   type: vless
-  server: 162.159.152.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  server: p2real33.greewebservices.ir
+  port: 1330
+  uuid: 45da91b7-14f7-46e0-a4a2-a66c1dbd7543
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rayan-007.maxima.dpdns.org
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+  servername: play.googleapis.com
+  client-fingerprint: ios
+- name: 🇩🇪 德国 (Germany) 04 - Dyt
+  type: ss
+  server: 213.202.208.199
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇩🇪 德国 (Germany) 05 - Dyt
+  type: vmess
+  server: 172.67.213.218
+  port: 2095
+  uuid: a55cdc40-5af5-4f02-9a46-41685120fe6f
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: rayan-007.maxima.dpdns.org
+      Host: www.asamping.ir
+- name: 🇩🇪 德国 (Germany) 06 - Dyt
+  type: vless
+  server: 46.225.46.136
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hoert1rert.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: hoert1rert.localip.ir
+- name: 🇩🇪 德国 (Germany) 07 - Dyt
+  type: ss
+  server: 57.129.113.16
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: NcAXc0UZI6yQJE1p8QmOv8
+  udp: true
 - name: 🇩🇪 德国 (Germany) 08 - Dyt
   type: vless
   server: 91.107.247.173
@@ -98,98 +95,13 @@ proxies:
     headers:
       Host: 91.107.247.173
 - name: 🇩🇪 德国 (Germany) 09 - Dyt
-  type: vless
-  server: 157.230.101.36
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇩🇪 德国 (Germany) 10 - Dyt
   type: ss
-  server: 209.46.102.22
-  port: 8388
+  server: 31.76.11.83
+  port: 15731
   cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
+  password: xAYXtB+XMdfWWOlmL8PWcOZEPfKHKVv7NcTY6jpcL/A=
   udp: true
-- name: 🇩🇪 德国 (Germany) 11 - Dyt
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 12 - Dyt
-  type: vless
-  server: test.wecantos.site
-  port: 20000
-  uuid: ca59a503-db23-44af-9879-49747d8da98f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 13 - Dyt
-  type: vless
-  server: 46.101.253.244
-  port: 2083
-  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edge.yzkvm.top
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edge.yzkvm.top
-- name: 🇩🇪 德国 (Germany) 14 - Dyt
-  type: vless
-  server: 162.159.153.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
-- name: 🇩🇪 德国 (Germany) 15 - Dyt
-  type: vless
-  server: connect.wecantos.site
-  port: 10000
-  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 16 - Dyt
-  type: vless
-  server: 46.225.46.136
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hoert1rert.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: hoert1rert.localip.ir
-- name: 🇩🇪 德国 (Germany) 17 - Dyt
+- name: 🇩🇪 德国 (Germany) 10 - Dyt
   type: vmess
   server: de-d21e56c13c.shamanapp.online
   port: 33744
@@ -204,22 +116,29 @@ proxies:
     path: /ShamanVMESS2026
     headers:
       Host: de-d21e56c13c.shamanapp.online:33744
-- name: 🇩🇪 德国 (Germany) 18 - Dyt
-  type: ss
-  server: 57.129.113.16
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: NcAXc0UZI6yQJE1p8QmOv8
-  udp: true
-- name: 🇩🇪 德国 (Germany) 19 - Dyt
+- name: 🇩🇪 德国 (Germany) 11 - Dyt
   type: vless
-  server: 45.135.194.193
-  port: 80
-  uuid: 28b983d7-f532-4eb7-b3e7-75aa60290c76
+  server: sino.bestsellers1.site
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 12 - Dyt
+  type: vless
+  server: 82.47.63.24
+  port: 10000
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 20 - Dyt
+- name: 🇩🇪 德国 (Germany) 13 - Dyt
   type: vless
   server: 46.225.46.136
   port: 2087
@@ -233,34 +152,57 @@ proxies:
     path: /hokm
     headers:
       Host: hoert1rert.localip.ir
-- name: 🇩🇪 德国 (Germany) 21 - Dyt
+- name: 🇩🇪 德国 (Germany) 14 - Dyt
   type: vless
-  server: 172.67.130.187
-  port: 2083
-  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
+  server: 92.119.166.36
+  port: 1080
+  uuid: 80ee276b-1eb4-4570-8757-1d9cd978f6fa
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fans.liverpool.qzz.io
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: fans.liverpool.qzz.io
-- name: 🇩🇪 德国 (Germany) 22 - Dyt
-  type: vless
-  server: 167.172.165.106
-  port: 2083
-  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+- name: 🇩🇪 德国 (Germany) 15 - Dyt
+  type: vmess
+  server: www.asamping.ir
+  port: 2095
+  uuid: a55cdc40-5af5-4f02-9a46-41685120fe6f
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: edge.yzkvm.top
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: edge.yzkvm.top
+      Host: www.asamping.ir
+- name: 🇩🇪 德国 (Germany) 16 - Dyt
+  type: vless
+  server: 94.143.231.146
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
+- name: 🇩🇪 德国 (Germany) 17 - Dyt
+  type: vless
+  server: 46.225.46.136
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hoert1rert.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: hoert1rert.localip.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -283,11 +225,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 15 - Dyt
   - 🇩🇪 德国 (Germany) 16 - Dyt
   - 🇩🇪 德国 (Germany) 17 - Dyt
-  - 🇩🇪 德国 (Germany) 18 - Dyt
-  - 🇩🇪 德国 (Germany) 19 - Dyt
-  - 🇩🇪 德国 (Germany) 20 - Dyt
-  - 🇩🇪 德国 (Germany) 21 - Dyt
-  - 🇩🇪 德国 (Germany) 22 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -310,10 +247,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 15 - Dyt
   - 🇩🇪 德国 (Germany) 16 - Dyt
   - 🇩🇪 德国 (Germany) 17 - Dyt
-  - 🇩🇪 德国 (Germany) 18 - Dyt
-  - 🇩🇪 德国 (Germany) 19 - Dyt
-  - 🇩🇪 德国 (Germany) 20 - Dyt
-  - 🇩🇪 德国 (Germany) 21 - Dyt
-  - 🇩🇪 德国 (Germany) 22 - Dyt
 rules:
 - MATCH,PROXIES
