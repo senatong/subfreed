@@ -7,7 +7,10 @@
       "outbounds": [
         "auto",
         "🇨🇳 CN 01 - Dyt",
-        "🇨🇳 CN 02 - Dyt"
+        "🇨🇳 CN 02 - Dyt",
+        "🇨🇳 CN 03 - Dyt",
+        "🇨🇳 CN 04 - Dyt",
+        "🇨🇳 CN 05 - Dyt"
       ]
     },
     {
@@ -15,7 +18,10 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇳 CN 01 - Dyt",
-        "🇨🇳 CN 02 - Dyt"
+        "🇨🇳 CN 02 - Dyt",
+        "🇨🇳 CN 03 - Dyt",
+        "🇨🇳 CN 04 - Dyt",
+        "🇨🇳 CN 05 - Dyt"
       ],
       "url": "https://www.google.com/generate_204"
     },
