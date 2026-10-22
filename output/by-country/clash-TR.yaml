@@ -44,18 +44,6 @@ proxies:
     public-key: 7OwcalQiQ5RaMsYRjvtwTxZWS3sCpjOefcr3WYKFh04
   servername: storage-p2.googleapis.com
   client-fingerprint: edge
-- name: 🇹🇷 土耳其 (Turkey) 04 - Dyt
-  type: vless
-  server: 45.144.214.144
-  port: 8446
-  uuid: 633c1bb0-60d5-41fb-a9c4-11f408b264ec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7OwcalQiQ5RaMsYRjvtwTxZWS3sCpjOefcr3WYKFh04
-  servername: storage-p2.googleapis.com
-  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,7 +52,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - Dyt
   - 🇹🇷 土耳其 (Turkey) 02 - Dyt
   - 🇹🇷 土耳其 (Turkey) 03 - Dyt
-  - 🇹🇷 土耳其 (Turkey) 04 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -73,6 +60,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - Dyt
   - 🇹🇷 土耳其 (Turkey) 02 - Dyt
   - 🇹🇷 土耳其 (Turkey) 03 - Dyt
-  - 🇹🇷 土耳其 (Turkey) 04 - Dyt
 rules:
 - MATCH,PROXIES
