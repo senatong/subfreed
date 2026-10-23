@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01 - Dyt
+- name: 🇦🇲 AM 01 - Dyt
   type: vless
-  server: vpn.cintaku.qzz.io
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  server: 194.36.37.59
+  port: 10004
+  uuid: f7376394-cd54-11f1-bb6a-bff6d0326f6a
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: vpn.cintaku.qzz.io
   network: ws
   ws-opts:
-    path: /vlessws
+    path: /vpnjantit
     headers:
-      Host: vpn.cintaku.qzz.io
+      Host: 194.36.37.59
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01 - Dyt
+  - 🇦🇲 AM 01 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01 - Dyt
+  - 🇦🇲 AM 01 - Dyt
 rules:
 - MATCH,PROXIES
