@@ -4,29 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - Dyt
+- name: 🇺🇿 UZ 01 - Dyt
   type: vless
-  server: da0bcdc2133654d7.tunvi.w-ert.org
-  port: 32093
-  uuid: 3e16033f-71d8-417b-abea-7756253f3c3d
+  server: 157.22.128.7
+  port: 443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: Jps_lXkq4doz-qvvikPlMevcR1CG3ZFRPHyAadj3Fhc
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
+  servername: free.cndyw.ggff.net
+  network: ws
+  ws-opts:
+    path: pyip=bpb.yousef.isegaro.comfp=random
+    headers:
+      Host: free.cndyw.ggff.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - Dyt
+  - 🇺🇿 UZ 01 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - Dyt
+  - 🇺🇿 UZ 01 - Dyt
 rules:
 - MATCH,PROXIES

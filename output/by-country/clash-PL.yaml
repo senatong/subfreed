@@ -15,13 +15,12 @@ proxies:
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 02 - Dyt
   type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 2.26.225.89
 - name: 🇵🇱 PL 03 - Dyt
   type: vless
   server: site.teslamotor.site
@@ -30,6 +29,15 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇵🇱 PL 04 - Dyt
+  type: vless
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.225.89
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +46,7 @@ proxy-groups:
   - 🇵🇱 PL 01 - Dyt
   - 🇵🇱 PL 02 - Dyt
   - 🇵🇱 PL 03 - Dyt
+  - 🇵🇱 PL 04 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +55,6 @@ proxy-groups:
   - 🇵🇱 PL 01 - Dyt
   - 🇵🇱 PL 02 - Dyt
   - 🇵🇱 PL 03 - Dyt
+  - 🇵🇱 PL 04 - Dyt
 rules:
 - MATCH,PROXIES
