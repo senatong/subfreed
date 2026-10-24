@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 TH 01 - Dyt",
-        "🇹🇭 TH 02 - Dyt",
-        "🇹🇭 TH 03 - Dyt",
-        "🇹🇭 TH 04 - Dyt"
+        "🇹🇭 TH 01 - Dyt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 TH 01 - Dyt",
-        "🇹🇭 TH 02 - Dyt",
-        "🇹🇭 TH 03 - Dyt",
-        "🇹🇭 TH 04 - Dyt"
+        "🇹🇭 TH 01 - Dyt"
       ],
       "url": "https://www.google.com/generate_204"
     },
