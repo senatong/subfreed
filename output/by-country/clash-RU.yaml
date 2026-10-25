@@ -33,9 +33,30 @@ proxies:
   servername: santehdv.site
   network: ws
   ws-opts:
+    path: /media/stream/E2QlYgrvniT_
+    headers:
+      Host: santehdv.site
+- name: 🇷🇺 俄罗斯 (Russia) 04 - Dyt
+  type: vless
+  server: 46.243.142.104
+  port: 443
+  uuid: 9ba53795-4356-40ab-8067-76ec2ae2a3d8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: santehdv.site
+  network: ws
+  ws-opts:
     path: /media/stream/qUWu2oaFgxAw
     headers:
       Host: santehdv.site
+- name: 🇷🇺 俄罗斯 (Russia) 05 - Dyt
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: rWIg16plgZ82V7MTNcw1UTgiYK4ooPUB95qVhKIwIDc=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,6 +65,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 02 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 03 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 04 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 05 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -52,5 +75,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 02 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 03 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 04 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 05 - Dyt
 rules:
 - MATCH,PROXIES
