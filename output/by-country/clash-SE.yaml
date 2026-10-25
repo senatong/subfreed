@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - Dyt
   type: vless
-  server: 191.44.114.179
-  port: 2096
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: st33614.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: st33614.rumedia-cdn.com
-- name: 🇸🇪 SE 02 - Dyt
-  type: vless
   server: se13-node.rumedia-cdn.com
   port: 2096
   uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
@@ -32,7 +18,7 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: st5ff8a.rumedia-cdn.com
-- name: 🇸🇪 SE 03 - Dyt
+- name: 🇸🇪 SE 02 - Dyt
   type: vless
   server: 193.188.21.253
   port: 14430
@@ -45,6 +31,34 @@ proxies:
     path: /vless
     headers:
       Host: 193.188.21.253
+- name: 🇸🇪 SE 03 - Dyt
+  type: vless
+  server: 77.110.97.245
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chromefp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇸🇪 SE 04 - Dyt
+  type: vless
+  server: 191.44.114.179
+  port: 2096
+  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: st33614.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: st33614.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,6 +67,7 @@ proxy-groups:
   - 🇸🇪 SE 01 - Dyt
   - 🇸🇪 SE 02 - Dyt
   - 🇸🇪 SE 03 - Dyt
+  - 🇸🇪 SE 04 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,5 +76,6 @@ proxy-groups:
   - 🇸🇪 SE 01 - Dyt
   - 🇸🇪 SE 02 - Dyt
   - 🇸🇪 SE 03 - Dyt
+  - 🇸🇪 SE 04 - Dyt
 rules:
 - MATCH,PROXIES
