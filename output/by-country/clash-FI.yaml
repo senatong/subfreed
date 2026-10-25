@@ -6,6 +6,19 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - Dyt
   type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 02 - Dyt
+  type: vless
   server: 65.109.212.121
   port: 465
   uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
@@ -18,7 +31,7 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 02 - Dyt
+- name: 🇫🇮 FI 03 - Dyt
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -29,22 +42,21 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 03 - Dyt
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 04 - Dyt
   type: vless
-  server: 2.27.207.208
-  port: 8081
-  uuid: 9db9a16c-0cce-4b67-a7cc-7bc2cbd5c7dd
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ang-el.ir
   network: ws
   ws-opts:
-    path: /
+    path: /vless
     headers:
-      Host: ang-el.ir
-- name: 🇫🇮 FI 04 - Dyt
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 05 - Dyt
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -56,34 +68,18 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: random
-- name: 🇫🇮 FI 05 - Dyt
-  type: vless
-  server: hw3.divarkhaghazi.com.
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 FI 06 - Dyt
   type: vless
-  server: hw3.divarkhaghazi.com
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 07 - Dyt
   type: vless
   server: 95.216.27.15
@@ -98,30 +94,30 @@ proxies:
   client-fingerprint: chrome
 - name: 🇫🇮 FI 08 - Dyt
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 09 - Dyt
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  server: 2.27.207.208
+  port: 8081
+  uuid: 9db9a16c-0cce-4b67-a7cc-7bc2cbd5c7dd
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ang-el.ir
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 45.144.234.157
+      Host: ang-el.ir
 proxy-groups:
 - name: PROXIES
   type: select
