@@ -4,30 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇲 AM 01 - Dyt
+- name: 🇱🇺 LU 01 - Dyt
   type: vless
-  server: 194.36.37.59
-  port: 10004
-  uuid: f7376394-cd54-11f1-bb6a-bff6d0326f6a
+  server: 107.189.7.176
+  port: 32752
+  uuid: 4970c1cd-13e1-498a-920a-61d07be2fa65
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vpnjantit
-    headers:
-      Host: 194.36.37.59
+  reality-opts:
+    public-key: pfFcQxKv4EPhCDUoZMCmTjj4FK7HHQg_me-In3bOejA
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇲 AM 01 - Dyt
+  - 🇱🇺 LU 01 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇲 AM 01 - Dyt
+  - 🇱🇺 LU 01 - Dyt
 rules:
 - MATCH,PROXIES
