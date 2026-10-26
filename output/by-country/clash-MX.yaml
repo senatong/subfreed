@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇲🇽 MX 01 - Dyt
   type: vless
-  server: mx001.zestapp778.com
+  server: 149.104.90.21
   port: 19167
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -21,17 +21,8 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mx001.zestapp778.com
+  servername: 149.104.90.21
 - name: 🇲🇽 MX 03 - Dyt
-  type: vless
-  server: 149.104.90.21
-  port: 19167
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mx001.zestapp778.com
-- name: 🇲🇽 MX 04 - Dyt
   type: vless
   server: mx001.zestapp778.com
   port: 19167
@@ -40,9 +31,45 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: mx001.zestapp778.com
-- name: 🇲🇽 MX 05 - Dyt
+- name: 🇲🇽 MX 04 - Dyt
   type: vless
   server: 149.104.90.21
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 05 - Dyt
+  type: vless
+  server: mx001.zestapp778.com
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 06 - Dyt
+  type: vless
+  server: 149.104.90.21
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 07 - Dyt
+  type: vless
+  server: mx001.zestapp778.com
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 08 - Dyt
+  type: vless
+  server: mx001.zestapp778.com
   port: 19167
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -59,6 +86,9 @@ proxy-groups:
   - 🇲🇽 MX 03 - Dyt
   - 🇲🇽 MX 04 - Dyt
   - 🇲🇽 MX 05 - Dyt
+  - 🇲🇽 MX 06 - Dyt
+  - 🇲🇽 MX 07 - Dyt
+  - 🇲🇽 MX 08 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,5 +99,8 @@ proxy-groups:
   - 🇲🇽 MX 03 - Dyt
   - 🇲🇽 MX 04 - Dyt
   - 🇲🇽 MX 05 - Dyt
+  - 🇲🇽 MX 06 - Dyt
+  - 🇲🇽 MX 07 - Dyt
+  - 🇲🇽 MX 08 - Dyt
 rules:
 - MATCH,PROXIES
