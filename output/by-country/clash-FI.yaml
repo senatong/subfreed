@@ -6,6 +6,18 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - Dyt
   type: vless
+  server: 196.196.204.180
+  port: 443
+  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY
+  servername: 3f8efdt.fi1.h1clayd.click
+  client-fingerprint: edge
+- name: 🇫🇮 FI 02 - Dyt
+  type: vless
   server: 95.216.27.15
   port: 2053
   uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
@@ -16,32 +28,19 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 02 - Dyt
-  type: vless
-  server: 65.109.212.193
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 FI 03 - Dyt
   type: vless
-  server: 196.196.204.174
-  port: 443
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: nNe5Y8_G7L0_VO5lqlee3h5UmRH4RXjaRYGCDUkbQz4
-  servername: 263651t.fi3.h1clayd.click
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 04 - Dyt
   type: vless
   server: 45.144.234.157
@@ -57,6 +56,18 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 05 - Dyt
   type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 06 - Dyt
+  type: vless
   server: 65.109.212.193
   port: 465
   uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
@@ -69,7 +80,19 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 06 - Dyt
+- name: 🇫🇮 FI 07 - Dyt
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 08 - Dyt
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -82,7 +105,47 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 07 - Dyt
+- name: 🇫🇮 FI 09 - Dyt
+  type: vless
+  server: 65.109.212.193
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw3.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 FI 10 - Dyt
+  type: vless
+  server: 196.196.204.174
+  port: 443
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: nNe5Y8_G7L0_VO5lqlee3h5UmRH4RXjaRYGCDUkbQz4
+  servername: 263651t.fi3.h1clayd.click
+  client-fingerprint: edge
+- name: 🇫🇮 FI 11 - Dyt
+  type: vless
+  server: 199.232.239.239
+  port: 443
+  uuid: 36805edb-1e85-4199-a59f-117010b70017
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: firefox.com
+  network: ws
+  ws-opts:
+    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
+    headers:
+      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
+- name: 🇫🇮 FI 12 - Dyt
   type: vless
   server: 65.109.212.193
   port: 465
@@ -108,6 +171,11 @@ proxy-groups:
   - 🇫🇮 FI 05 - Dyt
   - 🇫🇮 FI 06 - Dyt
   - 🇫🇮 FI 07 - Dyt
+  - 🇫🇮 FI 08 - Dyt
+  - 🇫🇮 FI 09 - Dyt
+  - 🇫🇮 FI 10 - Dyt
+  - 🇫🇮 FI 11 - Dyt
+  - 🇫🇮 FI 12 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -120,5 +188,10 @@ proxy-groups:
   - 🇫🇮 FI 05 - Dyt
   - 🇫🇮 FI 06 - Dyt
   - 🇫🇮 FI 07 - Dyt
+  - 🇫🇮 FI 08 - Dyt
+  - 🇫🇮 FI 09 - Dyt
+  - 🇫🇮 FI 10 - Dyt
+  - 🇫🇮 FI 11 - Dyt
+  - 🇫🇮 FI 12 - Dyt
 rules:
 - MATCH,PROXIES
