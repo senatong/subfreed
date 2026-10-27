@@ -6,12 +6,13 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - Dyt
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 02 - Dyt
   type: vless
   server: site.teslamotor.site
@@ -30,15 +31,22 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 04 - Dyt
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 2.26.6.1
 - name: 🇵🇱 PL 05 - Dyt
   type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 06 - Dyt
+  type: vless
   server: 2.26.6.1
   port: 2087
   uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
@@ -46,51 +54,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
-- name: 🇵🇱 PL 06 - Dyt
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇵🇱 PL 07 - Dyt
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 08 - Dyt
-  type: vless
-  server: pl5.h1cloud.net
-  port: 25548
-  uuid: 5a519754-a673-4462-83f6-5eb25d2af141
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: lceynvFy326oU4ew9OPR7079m-L5ZcFELgCl0sqxU2M
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 09 - Dyt
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 10 - Dyt
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 11 - Dyt
   type: vless
   server: 168.222.43.53
   port: 2052
@@ -98,23 +62,14 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 12 - Dyt
+- name: 🇵🇱 PL 08 - Dyt
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 13 - Dyt
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
 proxy-groups:
 - name: PROXIES
   type: select
@@ -128,11 +83,6 @@ proxy-groups:
   - 🇵🇱 PL 06 - Dyt
   - 🇵🇱 PL 07 - Dyt
   - 🇵🇱 PL 08 - Dyt
-  - 🇵🇱 PL 09 - Dyt
-  - 🇵🇱 PL 10 - Dyt
-  - 🇵🇱 PL 11 - Dyt
-  - 🇵🇱 PL 12 - Dyt
-  - 🇵🇱 PL 13 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -146,10 +96,5 @@ proxy-groups:
   - 🇵🇱 PL 06 - Dyt
   - 🇵🇱 PL 07 - Dyt
   - 🇵🇱 PL 08 - Dyt
-  - 🇵🇱 PL 09 - Dyt
-  - 🇵🇱 PL 10 - Dyt
-  - 🇵🇱 PL 11 - Dyt
-  - 🇵🇱 PL 12 - Dyt
-  - 🇵🇱 PL 13 - Dyt
 rules:
 - MATCH,PROXIES

@@ -19,12 +19,17 @@ proxies:
       Host: 95.128.71.79
 - name: 🇧🇾 BY 02 - Dyt
   type: vless
-  server: 178.172.227.124
-  port: 10443
-  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  server: 178.172.227.228
+  port: 14430
+  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.228
 - name: 🇧🇾 BY 03 - Dyt
   type: vless
   server: 178.172.227.124
@@ -40,9 +45,17 @@ proxies:
       Host: 178.172.227.124
 - name: 🇧🇾 BY 04 - Dyt
   type: vless
-  server: 178.172.227.228
+  server: 178.172.227.124
+  port: 10443
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇧🇾 BY 05 - Dyt
+  type: vless
+  server: 178.172.227.124
   port: 14430
-  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
   udp: true
   tls: false
   skip-cert-verify: true
@@ -50,8 +63,21 @@ proxies:
   ws-opts:
     path: /vless
     headers:
-      Host: 178.172.227.228
-- name: 🇧🇾 BY 05 - Dyt
+      Host: 178.172.227.124
+- name: 🇧🇾 BY 06 - Dyt
+  type: vless
+  server: 178.172.227.124
+  port: 14430
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.124
+- name: 🇧🇾 BY 07 - Dyt
   type: vless
   server: 178.172.227.228
   port: 14430
@@ -64,7 +90,20 @@ proxies:
     path: /vless
     headers:
       Host: 178.172.227.228
-- name: 🇧🇾 BY 06 - Dyt
+- name: 🇧🇾 BY 08 - Dyt
+  type: vless
+  server: 178.172.227.228
+  port: 14430
+  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.228
+- name: 🇧🇾 BY 09 - Dyt
   type: vless
   server: 178.172.227.124
   port: 14430
@@ -88,6 +127,9 @@ proxy-groups:
   - 🇧🇾 BY 04 - Dyt
   - 🇧🇾 BY 05 - Dyt
   - 🇧🇾 BY 06 - Dyt
+  - 🇧🇾 BY 07 - Dyt
+  - 🇧🇾 BY 08 - Dyt
+  - 🇧🇾 BY 09 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -99,5 +141,8 @@ proxy-groups:
   - 🇧🇾 BY 04 - Dyt
   - 🇧🇾 BY 05 - Dyt
   - 🇧🇾 BY 06 - Dyt
+  - 🇧🇾 BY 07 - Dyt
+  - 🇧🇾 BY 08 - Dyt
+  - 🇧🇾 BY 09 - Dyt
 rules:
 - MATCH,PROXIES
