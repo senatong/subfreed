@@ -6,29 +6,40 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - Dyt
   type: vless
-  server: xsru2.freeddns.org
+  server: 217.19.122.156
   port: 443
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xsru2.freeddns.org
+  servername: z1q3pv4g78.rucdncomp.pro
   network: ws
   ws-opts:
-    path: /wsru
+    path: /useraction/events/b892639b7195/
     headers:
-      Host: xsru2.freeddns.org
+      Host: z1q3pv4g78.rucdncomp.pro
+- name: 🇷🇺 俄罗斯 (Russia) 02 - Dyt
+  type: vless
+  server: swz.proxyplankton.ru
+  port: 443
+  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: swz.proxyplankton.ru
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 02 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 02 - Dyt
 rules:
 - MATCH,PROXIES

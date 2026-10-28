@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - Dyt
   type: vless
+  server: 155.103.71.142
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chromefp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇹🇷 土耳其 (Turkey) 02 - Dyt
+  type: vless
   server: 151.241.226.201
   port: 2053
   uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
@@ -16,7 +30,7 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 02 - Dyt
+- name: 🇹🇷 土耳其 (Turkey) 03 - Dyt
   type: vless
   server: 155.103.71.142
   port: 443
@@ -30,6 +44,20 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🇹🇷 土耳其 (Turkey) 04 - Dyt
+  type: vless
+  server: 206.1.101.85
+  port: 42654
+  uuid: ab9e2cf5-b5f5-45d1-bddf-8ea9b6fcc48f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 206.1.101.85
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 206.1.101.85
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +65,8 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - Dyt
   - 🇹🇷 土耳其 (Turkey) 02 - Dyt
+  - 🇹🇷 土耳其 (Turkey) 03 - Dyt
+  - 🇹🇷 土耳其 (Turkey) 04 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +74,7 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - Dyt
   - 🇹🇷 土耳其 (Turkey) 02 - Dyt
+  - 🇹🇷 土耳其 (Turkey) 03 - Dyt
+  - 🇹🇷 土耳其 (Turkey) 04 - Dyt
 rules:
 - MATCH,PROXIES

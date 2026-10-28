@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - Dyt
   type: vless
+  server: 104.16.10.185
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 02 - Dyt
+  type: vless
   server: 103.86.49.57
   port: 80
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
@@ -17,17 +31,22 @@ proxies:
     path: /ws
     headers:
       Host: ais.speedtest.net
-- name: 🇹🇭 TH 02 - Dyt
-  type: vless
-  server: th001.zestapp778.com
-  port: 22222
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: th001.zestapp778.com
 - name: 🇹🇭 TH 03 - Dyt
   type: vless
+  server: 104.18.26.90
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 04 - Dyt
+  type: vless
   server: th001.zestapp778.com
   port: 22222
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
@@ -35,6 +54,29 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: th001.zestapp778.com
+- name: 🇹🇭 TH 05 - Dyt
+  type: vless
+  server: th001.zestapp778.com
+  port: 22222
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: th001.zestapp778.com
+- name: 🇹🇭 TH 06 - Dyt
+  type: vless
+  server: 104.16.10.9
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,6 +85,9 @@ proxy-groups:
   - 🇹🇭 TH 01 - Dyt
   - 🇹🇭 TH 02 - Dyt
   - 🇹🇭 TH 03 - Dyt
+  - 🇹🇭 TH 04 - Dyt
+  - 🇹🇭 TH 05 - Dyt
+  - 🇹🇭 TH 06 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -51,5 +96,8 @@ proxy-groups:
   - 🇹🇭 TH 01 - Dyt
   - 🇹🇭 TH 02 - Dyt
   - 🇹🇭 TH 03 - Dyt
+  - 🇹🇭 TH 04 - Dyt
+  - 🇹🇭 TH 05 - Dyt
+  - 🇹🇭 TH 06 - Dyt
 rules:
 - MATCH,PROXIES
