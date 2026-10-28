@@ -12,17 +12,27 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇨🇾 CY 02 - Dyt
+  type: vless
+  server: 171.22.119.74
+  port: 8447
+  uuid: 6aed42ba-cd2d-4671-87d9-c949b6876888
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇾 CY 01 - Dyt
+  - 🇨🇾 CY 02 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇾 CY 01 - Dyt
+  - 🇨🇾 CY 02 - Dyt
 rules:
 - MATCH,PROXIES
