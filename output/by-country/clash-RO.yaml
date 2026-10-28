@@ -5,55 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - Dyt
-  type: ss
-  server: 194.68.44.42
-  port: 64546
-  cipher: chacha20-ietf-poly1305
-  password: U83u9OGpvSatIUW7LsWffr
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇷🇴 RO 02 - Dyt
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 03 - Dyt
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 04 - Dyt
-  type: vless
   server: 155.117.5.208
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 05 - Dyt
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 06 - Dyt
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 07 - Dyt
-  type: vless
-  server: 178.83.45.226
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
@@ -66,11 +27,6 @@ proxy-groups:
   - AUTO
   - 🇷🇴 RO 01 - Dyt
   - 🇷🇴 RO 02 - Dyt
-  - 🇷🇴 RO 03 - Dyt
-  - 🇷🇴 RO 04 - Dyt
-  - 🇷🇴 RO 05 - Dyt
-  - 🇷🇴 RO 06 - Dyt
-  - 🇷🇴 RO 07 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,10 +34,5 @@ proxy-groups:
   proxies:
   - 🇷🇴 RO 01 - Dyt
   - 🇷🇴 RO 02 - Dyt
-  - 🇷🇴 RO 03 - Dyt
-  - 🇷🇴 RO 04 - Dyt
-  - 🇷🇴 RO 05 - Dyt
-  - 🇷🇴 RO 06 - Dyt
-  - 🇷🇴 RO 07 - Dyt
 rules:
 - MATCH,PROXIES
