@@ -6,21 +6,7 @@ log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - Dyt
   type: vless
-  server: 104.21.0.87
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 02 - Dyt
-  type: vless
-  server: 172.64.158.170
+  server: 172.64.152.241
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -29,7 +15,21 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 02 - Dyt
+  type: vless
+  server: 172.67.76.40
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🌐 其他地区 (Other) 03 - Dyt
@@ -47,7 +47,7 @@ proxies:
       Host: hhlfy.twiladaphne.ndjp.net
 - name: 🌐 其他地区 (Other) 04 - Dyt
   type: vless
-  server: 104.16.10.2
+  server: 172.67.156.147
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -61,20 +61,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 05 - Dyt
   type: vless
-  server: 172.64.150.43
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 06 - Dyt
-  type: vless
-  server: 8.47.69.60
+  server: 172.64.152.241
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -83,12 +70,26 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 06 - Dyt
+  type: vless
+  server: 104.18.40.100
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🌐 其他地区 (Other) 07 - Dyt
   type: vless
-  server: 104.18.47.73
+  server: 8.47.69.60
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -102,7 +103,7 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🌐 其他地区 (Other) 08 - Dyt
   type: vless
-  server: 172.64.146.66
+  server: 172.64.158.170
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -116,7 +117,7 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🌐 其他地区 (Other) 09 - Dyt
   type: vless
-  server: cf.877774.xyz
+  server: 172.64.158.170
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -125,220 +126,10 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp
+    path: /
     headers:
       Host: ccc.010304.xyz
 - name: 🌐 其他地区 (Other) 10 - Dyt
-  type: vless
-  server: 104.16.10.84
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 11 - Dyt
-  type: vless
-  server: 172.64.152.241
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 12 - Dyt
-  type: vless
-  server: 172.66.154.57
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 13 - Dyt
-  type: vless
-  server: 8.47.69.60
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 14 - Dyt
-  type: vless
-  server: 172.64.153.153
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 15 - Dyt
-  type: vless
-  server: 172.64.152.241
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 16 - Dyt
-  type: vless
-  server: 104.18.45.38
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fpfp=unsafe
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 17 - Dyt
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 18 - Dyt
-  type: vless
-  server: cf.090227.xyz
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chromefp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 19 - Dyt
-  type: vless
-  server: 104.18.40.100
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 20 - Dyt
-  type: vless
-  server: 104.18.45.38
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 21 - Dyt
-  type: vless
-  server: 104.18.41.190
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 22 - Dyt
-  type: vless
-  server: 104.18.35.15
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 23 - Dyt
-  type: vless
-  server: 104.16.10.2
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 24 - Dyt
-  type: vless
-  server: 172.64.152.241
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp#TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=512
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 25 - Dyt
   type: vless
   server: 172.67.76.40
   port: 443
@@ -349,122 +140,10 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 26 - Dyt
-  type: vless
-  server: 104.21.70.228
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 27 - Dyt
-  type: vless
-  server: 104.18.45.38
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 28 - Dyt
-  type: vless
-  server: 104.17.50.227
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 29 - Dyt
-  type: vless
-  server: 104.18.35.15
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 30 - Dyt
-  type: vless
-  server: 172.64.152.241
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 31 - Dyt
-  type: vless
-  server: chatgpt.com
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 32 - Dyt
-  type: vless
-  server: 104.21.6.186
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 33 - Dyt
-  type: vless
-  server: 104.21.221.158
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 34 - Dyt
+- name: 🌐 其他地区 (Other) 11 - Dyt
   type: vless
   server: 104.26.4.2
   port: 443
@@ -478,163 +157,21 @@ proxies:
     path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 35 - Dyt
+- name: 🌐 其他地区 (Other) 12 - Dyt
   type: vless
-  server: 172.67.149.199
+  server: 104.16.0.1
   port: 443
-  uuid: 326227e2-f2d1-4f43-8715-9da854f5f4c0
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: px2.5ibtc.cn
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /326227e2-f2d1-4f43-8715-9da854f5f4c0
+    path: /tyxyws
     headers:
-      Host: px2.5ibtc.cn
-- name: 🌐 其他地区 (Other) 36 - Dyt
-  type: vless
-  server: cf.130519.xyz
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 37 - Dyt
-  type: vless
-  server: cf.877774.xyz
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 38 - Dyt
-  type: vless
-  server: 104.18.35.15
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 39 - Dyt
-  type: vmess
-  server: www.gptcloudai.com
-  port: 443
-  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: www.gptcloudai.com
-  network: ws
-  ws-opts:
-    path: /truth
-    headers:
-      Host: www.gptcloudai.com
-- name: 🌐 其他地区 (Other) 40 - Dyt
-  type: vless
-  server: 104.21.221.158
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chromefp=unsafe
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 41 - Dyt
-  type: vless
-  server: 104.21.221.158
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 42 - Dyt
-  type: vless
-  server: 172.64.158.170
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 43 - Dyt
-  type: vless
-  server: 104.18.47.73
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 44 - Dyt
-  type: vless
-  server: 104.18.40.100
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 45 - Dyt
-  type: vless
-  server: 104.21.221.158
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=unsafe
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 46 - Dyt
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 13 - Dyt
   type: vless
   server: 172.66.154.57
   port: 443
@@ -648,9 +185,470 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 14 - Dyt
+  type: vless
+  server: cf.877774.xyz
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 15 - Dyt
+  type: vless
+  server: 172.66.154.57
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 16 - Dyt
+  type: vless
+  server: 104.21.221.158
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chromefp=unsafe
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 17 - Dyt
+  type: vless
+  server: cf.877774.xyz
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 18 - Dyt
+  type: vless
+  server: 8.47.69.60
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 19 - Dyt
+  type: vless
+  server: 104.18.35.15
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 20 - Dyt
+  type: vless
+  server: 104.18.47.73
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 21 - Dyt
+  type: vless
+  server: 104.16.111.195
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 22 - Dyt
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 23 - Dyt
+  type: vless
+  server: 104.16.10.48
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 24 - Dyt
+  type: vless
+  server: 104.16.10.48
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 25 - Dyt
+  type: vless
+  server: 172.64.152.241
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 26 - Dyt
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 27 - Dyt
+  type: vless
+  server: 172.64.150.43
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🌐 其他地区 (Other) 28 - Dyt
+  type: vless
+  server: 104.21.70.228
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 29 - Dyt
+  type: vless
+  server: 104.16.10.234
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 30 - Dyt
+  type: vless
+  server: 104.18.45.38
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 31 - Dyt
+  type: vless
+  server: 104.17.50.227
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 32 - Dyt
+  type: vless
+  server: 104.21.221.158
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 33 - Dyt
+  type: vless
+  server: 104.18.45.38
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fpfp=unsafe
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 34 - Dyt
+  type: vless
+  server: 172.67.156.147
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 35 - Dyt
+  type: vless
+  server: 104.16.111.202
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 36 - Dyt
+  type: vless
+  server: 172.64.152.241
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp#TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=512
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 37 - Dyt
+  type: vless
+  server: 172.64.153.153
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 38 - Dyt
+  type: vless
+  server: 104.18.41.190
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 39 - Dyt
+  type: vless
+  server: chatgpt.com
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 40 - Dyt
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 41 - Dyt
+  type: vless
+  server: 104.18.40.100
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 42 - Dyt
+  type: vless
+  server: 104.18.153.10
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 43 - Dyt
+  type: vless
+  server: 104.21.0.87
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 44 - Dyt
+  type: vless
+  server: 104.21.221.158
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=unsafe
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 45 - Dyt
+  type: vless
+  server: 104.18.35.15
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 46 - Dyt
+  type: vless
+  server: 104.16.10.2
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 47 - Dyt
   type: vless
-  server: 172.67.76.40
+  server: cf.130519.xyz
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -673,7 +671,119 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
+    path: /fp=chromefp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 49 - Dyt
+  type: vless
+  server: 104.18.35.15
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
     path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 50 - Dyt
+  type: vless
+  server: cf.090227.xyz
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 51 - Dyt
+  type: vless
+  server: 104.21.221.158
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 52 - Dyt
+  type: vless
+  server: 104.18.47.73
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 53 - Dyt
+  type: vless
+  server: 104.17.50.227
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 54 - Dyt
+  type: vless
+  server: 172.64.146.66
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 55 - Dyt
+  type: vless
+  server: 104.21.219.160
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 56 - Dyt
+  type: vless
+  server: 104.18.45.38
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
     headers:
       Host: ccc.010304.xyz
 proxy-groups:
@@ -729,6 +839,14 @@ proxy-groups:
   - 🌐 其他地区 (Other) 46 - Dyt
   - 🌐 其他地区 (Other) 47 - Dyt
   - 🌐 其他地区 (Other) 48 - Dyt
+  - 🌐 其他地区 (Other) 49 - Dyt
+  - 🌐 其他地区 (Other) 50 - Dyt
+  - 🌐 其他地区 (Other) 51 - Dyt
+  - 🌐 其他地区 (Other) 52 - Dyt
+  - 🌐 其他地区 (Other) 53 - Dyt
+  - 🌐 其他地区 (Other) 54 - Dyt
+  - 🌐 其他地区 (Other) 55 - Dyt
+  - 🌐 其他地区 (Other) 56 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -782,5 +900,13 @@ proxy-groups:
   - 🌐 其他地区 (Other) 46 - Dyt
   - 🌐 其他地区 (Other) 47 - Dyt
   - 🌐 其他地区 (Other) 48 - Dyt
+  - 🌐 其他地区 (Other) 49 - Dyt
+  - 🌐 其他地区 (Other) 50 - Dyt
+  - 🌐 其他地区 (Other) 51 - Dyt
+  - 🌐 其他地区 (Other) 52 - Dyt
+  - 🌐 其他地区 (Other) 53 - Dyt
+  - 🌐 其他地区 (Other) 54 - Dyt
+  - 🌐 其他地区 (Other) 55 - Dyt
+  - 🌐 其他地区 (Other) 56 - Dyt
 rules:
 - MATCH,PROXIES
