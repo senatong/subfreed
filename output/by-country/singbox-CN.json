@@ -6,14 +6,26 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 - Dyt"
+        "🇨🇳 CN 01 - Dyt",
+        "🇨🇳 CN 02 - Dyt",
+        "🇨🇳 CN 03 - Dyt",
+        "🇨🇳 CN 04 - Dyt",
+        "🇨🇳 CN 05 - Dyt",
+        "🇨🇳 CN 06 - Dyt",
+        "🇨🇳 CN 07 - Dyt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 - Dyt"
+        "🇨🇳 CN 01 - Dyt",
+        "🇨🇳 CN 02 - Dyt",
+        "🇨🇳 CN 03 - Dyt",
+        "🇨🇳 CN 04 - Dyt",
+        "🇨🇳 CN 05 - Dyt",
+        "🇨🇳 CN 06 - Dyt",
+        "🇨🇳 CN 07 - Dyt"
       ],
       "url": "https://www.google.com/generate_204"
     },
