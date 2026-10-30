@@ -4,7 +4,21 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇳 印度 (India) 01 (家宽) - Dyt
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Dyt
+  type: vless
+  server: 59.125.69.23
+  port: 443
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: 59.125.69.23
+- name: 🇮🇳 印度 (India) 02 (家宽) - Dyt
   type: vless
   server: 122.176.216.52
   port: 443
@@ -18,20 +32,6 @@ proxies:
     path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
     headers:
       Host: app-6ada5023.deploy.meerasolution.com
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Dyt
-  type: vless
-  server: 60.248.219.78
-  port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 60.248.219.78
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: 60.248.219.78
 - name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Dyt
   type: vless
   server: 103.148.73.173
@@ -46,7 +46,21 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 103.148.73.173
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Dyt
+- name: 🇳🇱 荷兰 (Netherlands) 04 (家宽) - Dyt
+  type: vless
+  server: 162.159.153.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rayan-007.maxima.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.maxima.dpdns.org
+- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - Dyt
   type: vless
   server: 103.180.20.108
   port: 8443
@@ -65,18 +79,20 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇮🇳 印度 (India) 01 (家宽) - Dyt
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Dyt
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Dyt
+  - 🇮🇳 印度 (India) 02 (家宽) - Dyt
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Dyt
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Dyt
+  - 🇳🇱 荷兰 (Netherlands) 04 (家宽) - Dyt
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇳 印度 (India) 01 (家宽) - Dyt
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Dyt
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Dyt
+  - 🇮🇳 印度 (India) 02 (家宽) - Dyt
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Dyt
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Dyt
+  - 🇳🇱 荷兰 (Netherlands) 04 (家宽) - Dyt
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - Dyt
 rules:
 - MATCH,PROXIES
