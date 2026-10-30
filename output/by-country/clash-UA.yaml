@@ -6,17 +6,10 @@ log-level: info
 proxies:
 - name: 🇺🇦 UA 01 - Dyt
   type: ss
-  server: staging.lastilhame.monster
+  server: 104.253.216.227
   port: 49917
   cipher: chacha20-ietf-poly1305
   password: G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP
-  udp: true
-- name: 🇺🇦 UA 02 - Dyt
-  type: ss
-  server: 185.164.175.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -24,13 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇺🇦 UA 01 - Dyt
-  - 🇺🇦 UA 02 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇺🇦 UA 01 - Dyt
-  - 🇺🇦 UA 02 - Dyt
 rules:
 - MATCH,PROXIES

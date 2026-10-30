@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇳 CN 01 - Dyt
   type: vless
-  server: 8.35.211.242
+  server: 188.114.98.0
   port: 443
   uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
   udp: true
@@ -32,6 +32,62 @@ proxies:
     path: /vlessws
     headers:
       Host: vpn.cintaku.qzz.io
+- name: 🇨🇳 CN 03 - Dyt
+  type: vless
+  server: 8.35.211.242
+  port: 443
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vpn.cintaku.qzz.io
+  network: ws
+  ws-opts:
+    path: /vlessws
+    headers:
+      Host: vpn.cintaku.qzz.io
+- name: 🇨🇳 CN 04 - Dyt
+  type: vless
+  server: 8.35.211.242
+  port: 443
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vpn.cintaku.qzz.io
+  network: ws
+  ws-opts:
+    path: /vlessws
+    headers:
+      Host: vpn.cintaku.qzz.io
+- name: 🇨🇳 CN 05 - Dyt
+  type: vless
+  server: 104.17.11.191
+  port: 443
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vpn.cintaku.qzz.io
+  network: ws
+  ws-opts:
+    path: /vlessws
+    headers:
+      Host: vpn.cintaku.qzz.io
+- name: 🇨🇳 CN 06 - Dyt
+  type: vless
+  server: vpn.cintaku.qzz.io
+  port: 443
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vpn.cintaku.qzz.io
+  network: ws
+  ws-opts:
+    path: /vlessws
+    headers:
+      Host: vpn.cintaku.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +95,10 @@ proxy-groups:
   - AUTO
   - 🇨🇳 CN 01 - Dyt
   - 🇨🇳 CN 02 - Dyt
+  - 🇨🇳 CN 03 - Dyt
+  - 🇨🇳 CN 04 - Dyt
+  - 🇨🇳 CN 05 - Dyt
+  - 🇨🇳 CN 06 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +106,9 @@ proxy-groups:
   proxies:
   - 🇨🇳 CN 01 - Dyt
   - 🇨🇳 CN 02 - Dyt
+  - 🇨🇳 CN 03 - Dyt
+  - 🇨🇳 CN 04 - Dyt
+  - 🇨🇳 CN 05 - Dyt
+  - 🇨🇳 CN 06 - Dyt
 rules:
 - MATCH,PROXIES
