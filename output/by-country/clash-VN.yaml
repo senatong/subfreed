@@ -4,11 +4,11 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - Dyt
+- name: 🇻🇳 VN 01 - Dyt
   type: vless
-  server: 169.128.83.4
-  port: 57259
-  uuid: a1962f23-f8f8-412d-f2ce-3361e7b72889
+  server: 150.95.109.109
+  port: 2086
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
   udp: true
   tls: false
   skip-cert-verify: true
@@ -17,12 +17,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - Dyt
+  - 🇻🇳 VN 01 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - Dyt
+  - 🇻🇳 VN 01 - Dyt
 rules:
 - MATCH,PROXIES
