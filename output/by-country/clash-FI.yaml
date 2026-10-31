@@ -6,34 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - Dyt
   type: vless
-  server: 199.232.239.239
-  port: 443
-  uuid: 40694ced-9a8c-42fd-f5f8-3ac3c8b27fc2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
-    headers:
-      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
-- name: 🇫🇮 FI 02 - Dyt
-  type: vless
-  server: 65.109.210.221
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 03 - Dyt
-  type: vless
   server: hw3.divarkhaghazi.com
   port: 465
   uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
@@ -46,21 +18,7 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 04 - Dyt
-  type: vless
-  server: hw3.divarkhaghazi.com.
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 05 - Dyt
+- name: 🇫🇮 FI 02 - Dyt
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -73,30 +31,7 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 06 - Dyt
-  type: vless
-  server: hw3.divarkhaghazi.com
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 07 - Dyt
-  type: vless
-  server: 138.68.104.9
-  port: 30161
-  uuid: 9c6bc1b2-910a-4321-9793-c8276e065aa1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: www.bing.com
-- name: 🇫🇮 FI 08 - Dyt
+- name: 🇫🇮 FI 03 - Dyt
   type: vless
   server: 65.109.210.221
   port: 465
@@ -110,32 +45,23 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 09 - Dyt
+- name: 🇫🇮 FI 04 - Dyt
   type: vless
-  server: 138.68.104.9
-  port: 30161
-  uuid: 9c6bc1b2-910a-4321-9793-c8276e065aa1
+  server: 199.232.239.239
+  port: 443
+  uuid: 40694ced-9a8c-42fd-f5f8-3ac3c8b27fc2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: www.bing.com
-- name: 🇫🇮 FI 10 - Dyt
-  type: vless
-  server: 65.109.211.81
-  port: 465
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw6.divarkhaghazi.com
+  servername: firefox.com
   network: ws
   ws-opts:
-    path: /
+    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
     headers:
-      Host: hw6.divarkhaghazi.com.
-- name: 🇫🇮 FI 11 - Dyt
+      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
+- name: 🇫🇮 FI 05 - Dyt
   type: vless
-  server: 65.109.210.221
+  server: hw3.divarkhaghazi.com.
   port: 465
   uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   udp: true
@@ -147,34 +73,7 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 12 - Dyt
-  type: vless
-  server: 65.109.210.221
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 13 - Dyt
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 14 - Dyt
+- name: 🇫🇮 FI 06 - Dyt
   type: vless
   server: 65.109.211.81
   port: 465
@@ -188,6 +87,47 @@ proxies:
     path: /
     headers:
       Host: hw6.divarkhaghazi.com.
+- name: 🇫🇮 FI 07 - Dyt
+  type: vless
+  server: 65.109.211.81
+  port: 465
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw6.divarkhaghazi.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw6.divarkhaghazi.com.
+- name: 🇫🇮 FI 08 - Dyt
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 09 - Dyt
+  type: vless
+  server: 65.109.210.221
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw3.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
 proxy-groups:
 - name: PROXIES
   type: select
@@ -202,11 +142,6 @@ proxy-groups:
   - 🇫🇮 FI 07 - Dyt
   - 🇫🇮 FI 08 - Dyt
   - 🇫🇮 FI 09 - Dyt
-  - 🇫🇮 FI 10 - Dyt
-  - 🇫🇮 FI 11 - Dyt
-  - 🇫🇮 FI 12 - Dyt
-  - 🇫🇮 FI 13 - Dyt
-  - 🇫🇮 FI 14 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -221,10 +156,5 @@ proxy-groups:
   - 🇫🇮 FI 07 - Dyt
   - 🇫🇮 FI 08 - Dyt
   - 🇫🇮 FI 09 - Dyt
-  - 🇫🇮 FI 10 - Dyt
-  - 🇫🇮 FI 11 - Dyt
-  - 🇫🇮 FI 12 - Dyt
-  - 🇫🇮 FI 13 - Dyt
-  - 🇫🇮 FI 14 - Dyt
 rules:
 - MATCH,PROXIES

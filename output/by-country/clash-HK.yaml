@@ -6,86 +6,6 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - Dyt
   type: vmess
-  server: 8.217.13.103
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: qTKDR8jXE3wEFxJM.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: qTKDR8jXE3wEFxJM.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - Dyt
-  type: vmess
-  server: 8.218.195.61
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ex1ogt73nzpqkac2.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: ex1ogt73nzpqkac2.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - Dyt
-  type: vmess
-  server: 47.243.194.125
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: NYcQg19zkwaCPM1B.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - Dyt
-  type: vmess
-  server: 8.218.195.61
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: EX1oGt73NzPQKAc2.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: EX1oGt73NzPQKAc2.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - Dyt
-  type: vmess
-  server: 47.243.194.125
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nycqg19zkwacpm1b.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: nycqg19zkwacpm1b.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - Dyt
-  type: vmess
   server: euu1yalfmcqvljex.v.3dns.vip
   port: 443
   uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
@@ -100,23 +20,21 @@ proxies:
     path: /ws-vmess
     headers:
       Host: euu1yalfmcqvljex.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - Dyt
-  type: vmess
-  server: i2psm3knof5qjjix.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - Dyt
+  type: vless
+  server: 104.21.29.202
   port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  uuid: 326227e2-f2d1-4f43-8715-9da854f5f4c0
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: i2psm3knof5qjjix.v.3dns.vip
+  servername: px2.5ibtc.cn
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /326227e2-f2d1-4f43-8715-9da854f5f4c0
     headers:
-      Host: i2psm3knof5qjjix.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - Dyt
+      Host: px2.5ibtc.cn
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - Dyt
   type: vmess
   server: 47.244.120.197
   port: 23026
@@ -131,6 +49,21 @@ proxies:
     path: /arki
     headers:
       Host: 47.244.120.197
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - Dyt
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -140,10 +73,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - Dyt
   - 🇭🇰 中国香港 (Hong Kong) 03 - Dyt
   - 🇭🇰 中国香港 (Hong Kong) 04 - Dyt
-  - 🇭🇰 中国香港 (Hong Kong) 05 - Dyt
-  - 🇭🇰 中国香港 (Hong Kong) 06 - Dyt
-  - 🇭🇰 中国香港 (Hong Kong) 07 - Dyt
-  - 🇭🇰 中国香港 (Hong Kong) 08 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -153,9 +82,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - Dyt
   - 🇭🇰 中国香港 (Hong Kong) 03 - Dyt
   - 🇭🇰 中国香港 (Hong Kong) 04 - Dyt
-  - 🇭🇰 中国香港 (Hong Kong) 05 - Dyt
-  - 🇭🇰 中国香港 (Hong Kong) 06 - Dyt
-  - 🇭🇰 中国香港 (Hong Kong) 07 - Dyt
-  - 🇭🇰 中国香港 (Hong Kong) 08 - Dyt
 rules:
 - MATCH,PROXIES

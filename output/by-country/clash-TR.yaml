@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - Dyt
   type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-tr
+    headers:
+      Host: 177.3.208.65
+- name: 🇹🇷 土耳其 (Turkey) 02 - Dyt
+  type: vless
   server: 155.103.71.142
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -18,20 +32,6 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 02 - Dyt
-  type: vless
-  server: 146.75.59.186
-  port: 443
-  uuid: e3425eb4-e9be-4568-8740-529a031c9315
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: looabturkeyeoijji.global.ssl.fastly.net.
 - name: 🇹🇷 土耳其 (Turkey) 03 - Dyt
   type: vless
   server: 151.241.226.201
@@ -46,18 +46,18 @@ proxies:
   client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 04 - Dyt
   type: vless
-  server: 177.3.208.65
+  server: 146.75.59.186
   port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  uuid: e3425eb4-e9be-4568-8740-529a031c9315
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: tgmansion.site
+  servername: firefox.com
   network: ws
   ws-opts:
-    path: /vless-tr
+    path: /
     headers:
-      Host: 177.3.208.65
+      Host: looabturkeyeoijji.global.ssl.fastly.net.
 - name: 🇹🇷 土耳其 (Turkey) 05 - Dyt
   type: vless
   server: 151.241.226.201
