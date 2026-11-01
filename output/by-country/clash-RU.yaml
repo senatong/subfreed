@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - Dyt
+  type: ss
+  server: 185.22.155.121
+  port: 18443
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - Dyt
   type: vless
   server: lvi.su
   port: 443
@@ -18,19 +25,19 @@ proxies:
     path: /vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2
     headers:
       Host: lvi.su
-- name: 🇷🇺 俄罗斯 (Russia) 02 - Dyt
+- name: 🇷🇺 俄罗斯 (Russia) 03 - Dyt
   type: vless
-  server: 5.129.249.65
+  server: 135.106.153.131
   port: 443
   uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: iT-HgkPRUHl7Tm-LUWAGD-zoNoZSkVc-M9sscIIomHY
-  servername: rue.tems.bet
+    public-key: OIWmjOL9lOxVRm-ejEvQf_G-Km-5Rw3L-w5d8rhVzQw
+  servername: rug.tems.bet
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 03 - Dyt
+- name: 🇷🇺 俄罗斯 (Russia) 04 - Dyt
   type: vless
   server: lvi.su
   port: 443
@@ -44,7 +51,7 @@ proxies:
     path: /vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2
     headers:
       Host: lvi.su
-- name: 🇷🇺 俄罗斯 (Russia) 04 - Dyt
+- name: 🇷🇺 俄罗斯 (Russia) 05 - Dyt
   type: vless
   server: 87.120.166.160
   port: 443
@@ -58,6 +65,15 @@ proxies:
     path: /vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2
     headers:
       Host: lvi.su
+- name: 🇷🇺 俄罗斯 (Russia) 06 - Dyt
+  type: vless
+  server: 87.242.119.253
+  port: 443
+  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hvtlr-ru-47sb.fade.mom
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,6 +83,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 03 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 04 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 05 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 06 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,5 +94,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 03 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 04 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 05 - Dyt
+  - 🇷🇺 俄罗斯 (Russia) 06 - Dyt
 rules:
 - MATCH,PROXIES
