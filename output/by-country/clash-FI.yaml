@@ -12,7 +12,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw6.divarkhaghazi.com.
+  servername: hw6.divarkhaghazi.com
   network: ws
   ws-opts:
     path: /
@@ -26,26 +26,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw6.divarkhaghazi.com
+  servername: hw6.divarkhaghazi.com.
   network: ws
   ws-opts:
     path: /
     headers:
       Host: hw6.divarkhaghazi.com.
 - name: 🇫🇮 FI 03 - Dyt
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 04 - Dyt
   type: vless
   server: hw6.divarkhaghazi.com
   port: 465
@@ -59,6 +46,19 @@ proxies:
     path: /
     headers:
       Host: hw6.divarkhaghazi.com.
+- name: 🇫🇮 FI 04 - Dyt
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 05 - Dyt
   type: vless
   server: 45.144.234.157
