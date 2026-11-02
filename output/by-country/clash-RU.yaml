@@ -6,31 +6,17 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - Dyt
   type: vless
-  server: 186.246.9.29
-  port: 443
-  uuid: b2847c3b-5278-4b06-9c66-bc919d2dfec7
+  server: 83.171.241.141
+  port: 25879
+  uuid: 241306b3-9f27-4ed3-9524-6c0792c55856
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: MPNMomAMn_lu9YMYjD2jAQWrI-rTM4hj9Jgg9d6qzTA
-  servername: wordpress.com
-  client-fingerprint: firefox
+    public-key: XuI492LMe1OPIwQH5TQlIo33JRqMM3kfnto62tbx5FU
+  servername: www.bing.com
+  client-fingerprint: qq
 - name: 🇷🇺 俄罗斯 (Russia) 02 - Dyt
-  type: vless
-  server: lvi.su
-  port: 443
-  uuid: 7b91b2c3-8af3-449b-a555-00c9460989f4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lvi.su
-  network: ws
-  ws-opts:
-    path: /vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2
-    headers:
-      Host: lvi.su
-- name: 🇷🇺 俄罗斯 (Russia) 03 - Dyt
   type: vless
   server: 87.120.166.160
   port: 443
@@ -44,26 +30,20 @@ proxies:
     path: /vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2
     headers:
       Host: lvi.su
-- name: 🇷🇺 俄罗斯 (Russia) 04 - Dyt
-  type: ss
-  server: 46.17.46.27
-  port: 18443
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - Dyt
+- name: 🇷🇺 俄罗斯 (Russia) 03 - Dyt
   type: vless
-  server: 185.148.107.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: lvi.su
+  port: 443
+  uuid: 7b91b2c3-8af3-449b-a555-00c9460989f4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: lvi.su
   network: ws
   ws-opts:
-    path: /
+    path: /vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2
     headers:
-      Host: vms.lifetime55.workers.dev
+      Host: lvi.su
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,8 +52,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 02 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 03 - Dyt
-  - 🇷🇺 俄罗斯 (Russia) 04 - Dyt
-  - 🇷🇺 俄罗斯 (Russia) 05 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -82,7 +60,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 02 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 03 - Dyt
-  - 🇷🇺 俄罗斯 (Russia) 04 - Dyt
-  - 🇷🇺 俄罗斯 (Russia) 05 - Dyt
 rules:
 - MATCH,PROXIES
