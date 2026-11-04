@@ -4,20 +4,20 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇳 印度 (India) 01 (家宽) - Dyt
+- name: 🇺🇸 美国 (United States) 01 (家宽) - Dyt
   type: vless
-  server: 122.176.216.52
-  port: 443
-  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+  server: 188.114.97.3
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: app-6ada5023.deploy.meerasolution.com
+  servername: newwk1.f1w.de5.net
   network: ws
   ws-opts:
-    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+    path: /
     headers:
-      Host: app-6ada5023.deploy.meerasolution.com
+      Host: newwk1.f1w.de5.net
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Dyt
   type: vless
   server: 60.248.219.78
@@ -32,19 +32,35 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
+- name: 🇮🇳 印度 (India) 03 (家宽) - Dyt
+  type: vless
+  server: 122.176.216.52
+  port: 443
+  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: app-6ada5023.deploy.meerasolution.com
+  network: ws
+  ws-opts:
+    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+    headers:
+      Host: app-6ada5023.deploy.meerasolution.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇳 印度 (India) 01 (家宽) - Dyt
+  - 🇺🇸 美国 (United States) 01 (家宽) - Dyt
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Dyt
+  - 🇮🇳 印度 (India) 03 (家宽) - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇳 印度 (India) 01 (家宽) - Dyt
+  - 🇺🇸 美国 (United States) 01 (家宽) - Dyt
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Dyt
+  - 🇮🇳 印度 (India) 03 (家宽) - Dyt
 rules:
 - MATCH,PROXIES
