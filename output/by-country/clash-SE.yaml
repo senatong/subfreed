@@ -6,17 +6,13 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - Dyt
   type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  server: 194.104.94.141
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
+  servername: se3.shtil.io
 - name: 🇸🇪 SE 02 - Dyt
   type: vless
   server: se3.shtil.io
@@ -28,13 +24,54 @@ proxies:
   servername: se3.shtil.io
 - name: 🇸🇪 SE 03 - Dyt
   type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 04 - Dyt
+  type: vless
+  server: se-sto.862400.xyz
+  port: 443
+  uuid: ea81763f-e534-4700-aa28-9ac98156771b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se-sto.862400.xyz
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048fp=random
+    headers:
+      Host: se-sto.862400.xyz
+- name: 🇸🇪 SE 05 - Dyt
+  type: vless
+  server: se-sto.862400.xyz
+  port: 443
+  uuid: ea81763f-e534-4700-aa28-9ac98156771b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se-sto.862400.xyz
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: se-sto.862400.xyz
+- name: 🇸🇪 SE 06 - Dyt
+  type: vless
   server: 194.104.94.141
   port: 443
   uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 194.104.94.141
+  servername: se3.shtil.io
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,6 +80,9 @@ proxy-groups:
   - 🇸🇪 SE 01 - Dyt
   - 🇸🇪 SE 02 - Dyt
   - 🇸🇪 SE 03 - Dyt
+  - 🇸🇪 SE 04 - Dyt
+  - 🇸🇪 SE 05 - Dyt
+  - 🇸🇪 SE 06 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -51,5 +91,8 @@ proxy-groups:
   - 🇸🇪 SE 01 - Dyt
   - 🇸🇪 SE 02 - Dyt
   - 🇸🇪 SE 03 - Dyt
+  - 🇸🇪 SE 04 - Dyt
+  - 🇸🇪 SE 05 - Dyt
+  - 🇸🇪 SE 06 - Dyt
 rules:
 - MATCH,PROXIES
