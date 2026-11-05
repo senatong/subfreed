@@ -4,24 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇪 IE 01 - Dyt
-  type: ss
-  server: 20.107.206.186
+- name: 🇱🇰 LK 01 - Dyt
+  type: vless
+  server: free.vkehi.store
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 45dM0ZrNdAk4OHiM
+  uuid: e4d1298a-1f21-42e2-a53e-1b22c0645c48
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: zoom.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇪 IE 01 - Dyt
+  - 🇱🇰 LK 01 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 IE 01 - Dyt
+  - 🇱🇰 LK 01 - Dyt
 rules:
 - MATCH,PROXIES
