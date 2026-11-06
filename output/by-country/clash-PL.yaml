@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - Dyt
   type: vless
-  server: 129.101.100.126
+  server: lte-v2-ws.gacvpn.site
   port: 8443
   uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
   udp: true
@@ -17,7 +17,7 @@ proxies:
   ws-opts:
     path: /static/js/runtime.9d03c7.js
     headers:
-      Host: 129.101.100.126
+      Host: lte-v2-ws.gacvpn.site
 - name: 🇵🇱 PL 02 - Dyt
   type: vless
   server: 129.101.100.126
@@ -31,22 +31,8 @@ proxies:
   ws-opts:
     path: /static/js/runtime.9d03c7.js
     headers:
-      Host: lte-v2-ws.gacvpn.site
+      Host: 129.101.100.126
 - name: 🇵🇱 PL 03 - Dyt
-  type: vless
-  server: 145.63.143.205
-  port: 8444
-  uuid: 35c9f200-7520-4005-b78e-f8a2fb9f68f7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl1.meshbeat.online
-  network: ws
-  ws-opts:
-    path: /api/v1/devices/10be32b380/telemetry
-    headers:
-      Host: pl1.meshbeat.online
-- name: 🇵🇱 PL 04 - Dyt
   type: vless
   server: 129.101.100.126
   port: 8443
@@ -60,9 +46,18 @@ proxies:
     path: /static/js/runtime.9d03c7.js
     headers:
       Host: 129.101.100.126
+- name: 🇵🇱 PL 04 - Dyt
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 05 - Dyt
   type: vless
-  server: lte-v2-ws.gacvpn.site
+  server: 129.101.100.126
   port: 8443
   uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
   udp: true
@@ -83,24 +78,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
-- name: 🇵🇱 PL 07 - Dyt
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 08 - Dyt
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
 proxy-groups:
 - name: PROXIES
   type: select
@@ -112,8 +89,6 @@ proxy-groups:
   - 🇵🇱 PL 04 - Dyt
   - 🇵🇱 PL 05 - Dyt
   - 🇵🇱 PL 06 - Dyt
-  - 🇵🇱 PL 07 - Dyt
-  - 🇵🇱 PL 08 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -125,7 +100,5 @@ proxy-groups:
   - 🇵🇱 PL 04 - Dyt
   - 🇵🇱 PL 05 - Dyt
   - 🇵🇱 PL 06 - Dyt
-  - 🇵🇱 PL 07 - Dyt
-  - 🇵🇱 PL 08 - Dyt
 rules:
 - MATCH,PROXIES
