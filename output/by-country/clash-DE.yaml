@@ -6,40 +6,14 @@ log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - Dyt
   type: vless
-  server: 177.202.73.151
+  server: base.hosamobenl.co.uk
   port: 443
-  uuid: 7b91b2c3-8af3-449b-a555-00c9460989f4
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lvi.su
-  network: ws
-  ws-opts:
-    path: /vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2
-    headers:
-      Host: lvi.su
+  servername: base.hosamobenl.co.uk
 - name: 🇩🇪 德国 (Germany) 02 - Dyt
-  type: ss
-  server: 193.108.119.2
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 03 - Dyt
-  type: vless
-  server: 31.57.29.218
-  port: 443
-  uuid: 3694cbd9-986b-4bf3-95df-3649b37ccb47
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sync.zovip2.ir
-  network: ws
-  ws-opts:
-    path: /api/v3/pulse
-    headers:
-      Host: sync.zovip2.ir
-- name: 🇩🇪 德国 (Germany) 04 - Dyt
   type: vless
   server: 57.129.41.216
   port: 80
@@ -52,83 +26,49 @@ proxies:
     path: /vless/
     headers:
       Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 05 - Dyt
-  type: ss
-  server: 193.108.119.3
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 06 - Dyt
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 07 - Dyt
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 08 - Dyt
+- name: 🇩🇪 德国 (Germany) 03 - Dyt
   type: ss
   server: 57.129.83.85
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 (Germany) 09 - Dyt
+- name: 🇩🇪 德国 (Germany) 04 - Dyt
   type: ss
-  server: 23.157.88.43
+  server: 193.108.119.3
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 (Germany) 10 - Dyt
-  type: vless
-  server: 31.57.28.209
-  port: 443
-  uuid: 3694cbd9-986b-4bf3-95df-3649b37ccb47
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sync.zovip2.ir
-  network: ws
-  ws-opts:
-    path: /api/v3/pulse
-    headers:
-      Host: sync.zovip2.ir
-- name: 🇩🇪 德国 (Germany) 11 - Dyt
+- name: 🇩🇪 德国 (Germany) 05 - Dyt
   type: ss
   server: 185.176.204.18
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 (Germany) 12 - Dyt
+- name: 🇩🇪 德国 (Germany) 06 - Dyt
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 07 - Dyt
   type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 0386df1b-7abd-4676-f3c6-d65d691023b9
+  server: 199.232.78.159
+  port: 443
+  uuid: fe0fa565-3ac5-451d-b14c-8e07ad0ec19b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sino.bestsellers1.site
+  servername: cdn.akamai.steamstatic.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 13 - Dyt
+      Host: pumkin.global.ssl.fastly.net.
+- name: 🇩🇪 德国 (Germany) 08 - Dyt
   type: vless
   server: 91.107.188.129
   port: 2083
@@ -142,6 +82,68 @@ proxies:
     path: /
     headers:
       Host: 91.107.188.129
+- name: 🇩🇪 德国 (Germany) 09 - Dyt
+  type: ss
+  server: 57.129.113.16
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: NcAXc0UZI6yQJE1p8QmOv8
+  udp: true
+- name: 🇩🇪 德国 (Germany) 10 - Dyt
+  type: ss
+  server: 193.108.119.2
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 11 - Dyt
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 12 - Dyt
+  type: vless
+  server: cdn.kavosiprotocol.shop
+  port: 443
+  uuid: 5bb1fda3-0b8a-41d5-a803-b48e180ad718
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn.kavosiprotocol.shop
+  network: ws
+  ws-opts:
+    path: /@KVPROTOCOlVPN--@KVPROTOCOlVPN--@KVPROTOCOlVPN--@KVPROTOCOlVPN--ws/s_48738e13cc
+    headers:
+      Host: cdn.kavosiprotocol.shop
+- name: 🇩🇪 德国 (Germany) 13 - Dyt
+  type: ss
+  server: 23.157.88.43
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 14 - Dyt
+  type: vless
+  server: 199.232.78.120
+  port: 443
+  uuid: fe0fa565-3ac5-451d-b14c-8e07ad0ec19b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn.akamai.steamstatic.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: finalnsdger.global.ssl.fastly.net.
 proxy-groups:
 - name: PROXIES
   type: select
@@ -160,6 +162,7 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 11 - Dyt
   - 🇩🇪 德国 (Germany) 12 - Dyt
   - 🇩🇪 德国 (Germany) 13 - Dyt
+  - 🇩🇪 德国 (Germany) 14 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -178,5 +181,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 11 - Dyt
   - 🇩🇪 德国 (Germany) 12 - Dyt
   - 🇩🇪 德国 (Germany) 13 - Dyt
+  - 🇩🇪 德国 (Germany) 14 - Dyt
 rules:
 - MATCH,PROXIES
