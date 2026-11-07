@@ -6,19 +6,115 @@ log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - Dyt
   type: vless
-  server: 167.172.165.106
-  port: 2083
-  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+  server: 177.202.73.151
+  port: 443
+  uuid: 7b91b2c3-8af3-449b-a555-00c9460989f4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: edge.yzkvm.top
+  servername: lvi.su
   network: ws
   ws-opts:
-    path: /
+    path: /vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2
     headers:
-      Host: edge.yzkvm.top
+      Host: lvi.su
 - name: 🇩🇪 德国 (Germany) 02 - Dyt
+  type: ss
+  server: 193.108.119.2
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 03 - Dyt
+  type: vless
+  server: 31.57.29.218
+  port: 443
+  uuid: 3694cbd9-986b-4bf3-95df-3649b37ccb47
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sync.zovip2.ir
+  network: ws
+  ws-opts:
+    path: /api/v3/pulse
+    headers:
+      Host: sync.zovip2.ir
+- name: 🇩🇪 德国 (Germany) 04 - Dyt
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 05 - Dyt
+  type: ss
+  server: 193.108.119.3
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 06 - Dyt
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 07 - Dyt
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 08 - Dyt
+  type: ss
+  server: 57.129.83.85
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 09 - Dyt
+  type: ss
+  server: 23.157.88.43
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 10 - Dyt
+  type: vless
+  server: 31.57.28.209
+  port: 443
+  uuid: 3694cbd9-986b-4bf3-95df-3649b37ccb47
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sync.zovip2.ir
+  network: ws
+  ws-opts:
+    path: /api/v3/pulse
+    headers:
+      Host: sync.zovip2.ir
+- name: 🇩🇪 德国 (Germany) 11 - Dyt
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 12 - Dyt
   type: vless
   server: sino.bestsellers1.site
   port: 2083
@@ -32,48 +128,7 @@ proxies:
     path: /
     headers:
       Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 03 - Dyt
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 04 - Dyt
-  type: ss
-  server: 193.108.119.2
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 05 - Dyt
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 93fa8bdb-9cca-4a3e-8355-b7c12e4f595e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vl/yLWNcuUuw1jlJpkDhGy?ed=2560
-    headers:
-      Host: fornewiran.ade-1000.workers.dev
-- name: 🇩🇪 德国 (Germany) 06 - Dyt
-  type: vless
-  server: 46.101.253.244
-  port: 2083
-  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edge.yzkvm.top
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edge.yzkvm.top
-- name: 🇩🇪 德国 (Germany) 07 - Dyt
+- name: 🇩🇪 德国 (Germany) 13 - Dyt
   type: vless
   server: 91.107.188.129
   port: 2083
@@ -87,226 +142,6 @@ proxies:
     path: /
     headers:
       Host: 91.107.188.129
-- name: 🇩🇪 德国 (Germany) 08 - Dyt
-  type: ss
-  server: 193.108.119.3
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 09 - Dyt
-  type: vless
-  server: 104.25.51.43
-  port: 443
-  uuid: 0192e468-ddb2-48f5-9450-e33608d299c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
-  network: ws
-  ws-opts:
-    path: /dbb0764aca00c946?ed=2560
-    headers:
-      Host: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
-- name: 🇩🇪 德国 (Germany) 10 - Dyt
-  type: vless
-  server: 94.247.142.1
-  port: 443
-  uuid: fd62968a-2e97-41ea-9aa0-aa61aed78955
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: simIlarcaTerpillarPvet-j5H6x4-1.simIlar-caterPillar-pVet.worKers.deV
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: simIlarcaTerpillarPvet-j5H6x4-1.simIlar-caterPillar-pVet.worKers.deV
-- name: 🇩🇪 德国 (Germany) 11 - Dyt
-  type: vless
-  server: 201.8.71.38
-  port: 443
-  uuid: b7b8ee80-db83-4276-8c68-87dc88b0b0b5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
-  servername: 71b840t.de7.h1clayd.click
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 12 - Dyt
-  type: vless
-  server: 104.18.133.94
-  port: 443
-  uuid: 0192e468-ddb2-48f5-9450-e33608d299c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
-  network: ws
-  ws-opts:
-    path: /dbb0764aca00c946?ed=2560
-    headers:
-      Host: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
-- name: 🇩🇪 德国 (Germany) 13 - Dyt
-  type: ss
-  server: 185.176.204.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 14 - Dyt
-  type: vless
-  server: 141.101.121.61
-  port: 443
-  uuid: 0192e468-ddb2-48f5-9450-e33608d299c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
-  network: ws
-  ws-opts:
-    path: /dbb0764aca00c946?ed=2560
-    headers:
-      Host: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
-- name: 🇩🇪 德国 (Germany) 15 - Dyt
-  type: vless
-  server: 104.27.197.129
-  port: 443
-  uuid: 0192e468-ddb2-48f5-9450-e33608d299c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
-  network: ws
-  ws-opts:
-    path: /dbb0764aca00c946?ed=2560
-    headers:
-      Host: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
-- name: 🇩🇪 德国 (Germany) 16 - Dyt
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 17 - Dyt
-  type: vless
-  server: 190.93.245.239
-  port: 443
-  uuid: 0192e468-ddb2-48f5-9450-e33608d299c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
-  network: ws
-  ws-opts:
-    path: /dbb0764aca00c946?ed=2560
-    headers:
-      Host: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
-- name: 🇩🇪 德国 (Germany) 18 - Dyt
-  type: vless
-  server: 162.159.153.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rayan-007.maxima.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.maxima.dpdns.org
-- name: 🇩🇪 德国 (Germany) 19 - Dyt
-  type: ss
-  server: 57.129.83.85
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 20 - Dyt
-  type: ss
-  server: 23.157.88.43
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 21 - Dyt
-  type: vless
-  server: 104.24.0.193
-  port: 443
-  uuid: 0192e468-ddb2-48f5-9450-e33608d299c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
-  network: ws
-  ws-opts:
-    path: /dbb0764aca00c946?ed=2560
-    headers:
-      Host: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
-- name: 🇩🇪 德国 (Germany) 22 - Dyt
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 23 - Dyt
-  type: vless
-  server: 172.67.170.148
-  port: 443
-  uuid: 0192e468-ddb2-48f5-9450-e33608d299c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
-  network: ws
-  ws-opts:
-    path: /dbb0764aca00c946?ed=2560
-    headers:
-      Host: net-bridge-4126e7-gw.wallweb3obtar.workers.dev
-- name: 🇩🇪 德国 (Germany) 24 - Dyt
-  type: vless
-  server: 162.159.152.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rayan-007.maxima.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.maxima.dpdns.org
-- name: 🇩🇪 德国 (Germany) 25 - Dyt
-  type: vless
-  server: 172.66.44.124
-  port: 8443
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -325,18 +160,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 11 - Dyt
   - 🇩🇪 德国 (Germany) 12 - Dyt
   - 🇩🇪 德国 (Germany) 13 - Dyt
-  - 🇩🇪 德国 (Germany) 14 - Dyt
-  - 🇩🇪 德国 (Germany) 15 - Dyt
-  - 🇩🇪 德国 (Germany) 16 - Dyt
-  - 🇩🇪 德国 (Germany) 17 - Dyt
-  - 🇩🇪 德国 (Germany) 18 - Dyt
-  - 🇩🇪 德国 (Germany) 19 - Dyt
-  - 🇩🇪 德国 (Germany) 20 - Dyt
-  - 🇩🇪 德国 (Germany) 21 - Dyt
-  - 🇩🇪 德国 (Germany) 22 - Dyt
-  - 🇩🇪 德国 (Germany) 23 - Dyt
-  - 🇩🇪 德国 (Germany) 24 - Dyt
-  - 🇩🇪 德国 (Germany) 25 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -355,17 +178,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 11 - Dyt
   - 🇩🇪 德国 (Germany) 12 - Dyt
   - 🇩🇪 德国 (Germany) 13 - Dyt
-  - 🇩🇪 德国 (Germany) 14 - Dyt
-  - 🇩🇪 德国 (Germany) 15 - Dyt
-  - 🇩🇪 德国 (Germany) 16 - Dyt
-  - 🇩🇪 德国 (Germany) 17 - Dyt
-  - 🇩🇪 德国 (Germany) 18 - Dyt
-  - 🇩🇪 德国 (Germany) 19 - Dyt
-  - 🇩🇪 德国 (Germany) 20 - Dyt
-  - 🇩🇪 德国 (Germany) 21 - Dyt
-  - 🇩🇪 德国 (Germany) 22 - Dyt
-  - 🇩🇪 德国 (Germany) 23 - Dyt
-  - 🇩🇪 德国 (Germany) 24 - Dyt
-  - 🇩🇪 德国 (Germany) 25 - Dyt
 rules:
 - MATCH,PROXIES
