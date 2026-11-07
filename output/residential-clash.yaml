@@ -4,7 +4,21 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇳 印度 (India) 01 (家宽) - Dyt
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Dyt
+  type: vless
+  server: 59.125.69.22
+  port: 443
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tse1.mm.bing.net
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: tse1.mm.bing.net
+- name: 🇮🇳 印度 (India) 02 (家宽) - Dyt
   type: vless
   server: 122.176.216.52
   port: 443
@@ -23,12 +37,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇮🇳 印度 (India) 01 (家宽) - Dyt
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Dyt
+  - 🇮🇳 印度 (India) 02 (家宽) - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇳 印度 (India) 01 (家宽) - Dyt
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Dyt
+  - 🇮🇳 印度 (India) 02 (家宽) - Dyt
 rules:
 - MATCH,PROXIES
