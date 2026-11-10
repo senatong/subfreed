@@ -7,8 +7,8 @@ proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - Dyt
   type: vmess
   server: 47.244.120.197
-  port: 23026
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  port: 44867
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
   alterId: 0
   cipher: auto
   udp: true
@@ -35,6 +35,49 @@ proxies:
     headers:
       Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - Dyt
+  type: vless
+  server: 104.18.14.19
+  port: 8443
+  uuid: 226279dd-28b2-4b61-96be-a2a0b1afd522
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hk.zhaoqing.city
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: hk.zhaoqing.city
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - Dyt
+  type: vmess
+  server: 47.244.120.197
+  port: 23026
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - Dyt
+  type: vless
+  server: 104.18.15.19
+  port: 8443
+  uuid: 226279dd-28b2-4b61-96be-a2a0b1afd522
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hk.zhaoqing.city
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: hk.zhaoqing.city
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - Dyt
   type: vmess
   server: 47.244.120.197
   port: 23026
@@ -57,6 +100,9 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - Dyt
   - 🇭🇰 中国香港 (Hong Kong) 02 - Dyt
   - 🇭🇰 中国香港 (Hong Kong) 03 - Dyt
+  - 🇭🇰 中国香港 (Hong Kong) 04 - Dyt
+  - 🇭🇰 中国香港 (Hong Kong) 05 - Dyt
+  - 🇭🇰 中国香港 (Hong Kong) 06 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -65,5 +111,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - Dyt
   - 🇭🇰 中国香港 (Hong Kong) 02 - Dyt
   - 🇭🇰 中国香港 (Hong Kong) 03 - Dyt
+  - 🇭🇰 中国香港 (Hong Kong) 04 - Dyt
+  - 🇭🇰 中国香港 (Hong Kong) 05 - Dyt
+  - 🇭🇰 中国香港 (Hong Kong) 06 - Dyt
 rules:
 - MATCH,PROXIES
