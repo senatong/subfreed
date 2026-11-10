@@ -18,6 +18,13 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 SE 02 - Dyt
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇸🇪 SE 03 - Dyt
   type: vless
   server: 193.188.21.253
   port: 14430
@@ -30,27 +37,6 @@ proxies:
     path: /vless
     headers:
       Host: 193.188.21.253
-- name: 🇸🇪 SE 03 - Dyt
-  type: vless
-  server: 138.124.49.108
-  port: 8443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
-- name: 🇸🇪 SE 04 - Dyt
-  type: ss
-  server: 138.199.55.243
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,7 +45,6 @@ proxy-groups:
   - 🇸🇪 SE 01 - Dyt
   - 🇸🇪 SE 02 - Dyt
   - 🇸🇪 SE 03 - Dyt
-  - 🇸🇪 SE 04 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -68,6 +53,5 @@ proxy-groups:
   - 🇸🇪 SE 01 - Dyt
   - 🇸🇪 SE 02 - Dyt
   - 🇸🇪 SE 03 - Dyt
-  - 🇸🇪 SE 04 - Dyt
 rules:
 - MATCH,PROXIES
