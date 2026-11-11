@@ -55,6 +55,13 @@ proxies:
   cipher: aes-256-gcm
   password: AxIYWtskJWIIaefW
   udp: true
+- name: 🇸🇪 SE 06 - Dyt
+  type: ss
+  server: 62.182.193.228
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2e555e46dbc421452416834962fd014f
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,6 +72,7 @@ proxy-groups:
   - 🇸🇪 SE 03 - Dyt
   - 🇸🇪 SE 04 - Dyt
   - 🇸🇪 SE 05 - Dyt
+  - 🇸🇪 SE 06 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,5 +83,6 @@ proxy-groups:
   - 🇸🇪 SE 03 - Dyt
   - 🇸🇪 SE 04 - Dyt
   - 🇸🇪 SE 05 - Dyt
+  - 🇸🇪 SE 06 - Dyt
 rules:
 - MATCH,PROXIES
