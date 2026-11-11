@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇹 AT 01 - Dyt
+  type: ss
+  server: 82.110.60.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇦🇹 AT 02 - Dyt
   type: vless
   server: 193.219.97.198
   port: 443
@@ -18,13 +25,6 @@ proxies:
     path: /fp=chrome
     headers:
       Host: fs.qicai99.com
-- name: 🇦🇹 AT 02 - Dyt
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: 🇦🇹 AT 03 - Dyt
   type: ss
   server: 82.110.60.9
@@ -39,20 +39,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
   udp: true
-- name: 🇦🇹 AT 05 - Dyt
-  type: vless
-  server: 85.192.27.171
-  port: 2053
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,7 +48,6 @@ proxy-groups:
   - 🇦🇹 AT 02 - Dyt
   - 🇦🇹 AT 03 - Dyt
   - 🇦🇹 AT 04 - Dyt
-  - 🇦🇹 AT 05 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -72,6 +57,5 @@ proxy-groups:
   - 🇦🇹 AT 02 - Dyt
   - 🇦🇹 AT 03 - Dyt
   - 🇦🇹 AT 04 - Dyt
-  - 🇦🇹 AT 05 - Dyt
 rules:
 - MATCH,PROXIES

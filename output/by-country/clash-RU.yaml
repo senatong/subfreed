@@ -5,48 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - Dyt
-  type: ss
-  server: 38.60.223.125
-  port: 13108
-  cipher: aes-128-gcm
-  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - Dyt
-  type: vless
-  server: bhjolq0d0l.flowersgood.top
-  port: 443
-  uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bhjolq0d0l.flowersgood.top
-  network: ws
-  ws-opts:
-    path: /service/telemetry/045d381f1166/
-    headers:
-      Host: bhjolq0d0l.flowersgood.top
-- name: 🇷🇺 俄罗斯 (Russia) 03 - Dyt
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - Dyt
-  type: vless
-  server: 185.86.147.175
-  port: 443
-  uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bhjolq0d0l.flowersgood.top
-  network: ws
-  ws-opts:
-    path: /service/telemetry/045d381f1166/
-    headers:
-      Host: bhjolq0d0l.flowersgood.top
-- name: 🇷🇺 俄罗斯 (Russia) 05 - Dyt
   type: vless
   server: 185.178.208.167
   port: 443
@@ -60,7 +18,35 @@ proxies:
     path: /session
     headers:
       Host: mbr.rkn-pediki.site
-- name: 🇷🇺 俄罗斯 (Russia) 06 - Dyt
+- name: 🇷🇺 俄罗斯 (Russia) 02 - Dyt
+  type: vless
+  server: 188.225.37.175
+  port: 443
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cryptoventura.online
+  network: ws
+  ws-opts:
+    path: /api/de3/live
+    headers:
+      Host: cryptoventura.online
+- name: 🇷🇺 俄罗斯 (Russia) 03 - Dyt
+  type: ss
+  server: 38.60.223.125
+  port: 13108
+  cipher: aes-128-gcm
+  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - Dyt
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - Dyt
   type: vless
   server: 176.108.245.237
   port: 443
@@ -69,7 +55,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: tfusq-ru-40sb.fade.mom
-- name: 🇷🇺 俄罗斯 (Russia) 07 - Dyt
+- name: 🇷🇺 俄罗斯 (Russia) 06 - Dyt
   type: ss
   server: 46.17.47.58
   port: 18443
@@ -87,7 +73,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 05 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 06 - Dyt
-  - 🇷🇺 俄罗斯 (Russia) 07 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -99,6 +84,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 05 - Dyt
   - 🇷🇺 俄罗斯 (Russia) 06 - Dyt
-  - 🇷🇺 俄罗斯 (Russia) 07 - Dyt
 rules:
 - MATCH,PROXIES
