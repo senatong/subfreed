@@ -1,0 +1,50 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇿 CZ 01 - Dyt
+  type: vless
+  server: 188.137.178.174
+  port: 8443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
+- name: 🇨🇿 CZ 02 - Dyt
+  type: vless
+  server: 172.67.148.84
+  port: 443
+  uuid: 51c5a070-39ff-43fd-ac53-597bb7e7ff3d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fast-route-4aa49d-gw.staging-api-05a87c.workers.dev
+  network: ws
+  ws-opts:
+    path: /9dffa10cc2d3b317?ed=2560
+    headers:
+      Host: fast-route-4aa49d-gw.staging-api-05a87c.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇿 CZ 01 - Dyt
+  - 🇨🇿 CZ 02 - Dyt
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇿 CZ 01 - Dyt
+  - 🇨🇿 CZ 02 - Dyt
+rules:
+- MATCH,PROXIES
