@@ -18,22 +18,25 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 SE 02 - Dyt
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇸🇪 SE 03 - Dyt
   type: ss
   server: 138.199.55.243
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇸🇪 SE 03 - Dyt
+  type: ss
+  server: 62.182.193.228
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2e555e46dbc421452416834962fd014f
+  udp: true
+- name: 🇸🇪 SE 04 - Dyt
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -43,6 +46,7 @@ proxy-groups:
   - 🇸🇪 SE 01 - Dyt
   - 🇸🇪 SE 02 - Dyt
   - 🇸🇪 SE 03 - Dyt
+  - 🇸🇪 SE 04 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -51,5 +55,6 @@ proxy-groups:
   - 🇸🇪 SE 01 - Dyt
   - 🇸🇪 SE 02 - Dyt
   - 🇸🇪 SE 03 - Dyt
+  - 🇸🇪 SE 04 - Dyt
 rules:
 - MATCH,PROXIES
