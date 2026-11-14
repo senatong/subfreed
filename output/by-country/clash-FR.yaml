@@ -5,8 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - Dyt
+  type: vmess
+  server: 79.137.99.183
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: None
+- name: 🇫🇷 法国 (France) 02 - Dyt
+  type: ss
+  server: 54.36.174.140
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: eetk7pw
+  udp: true
+- name: 🇫🇷 法国 (France) 03 - Dyt
   type: vless
-  server: 3.168.218.9
+  server: 3.168.217.190
   port: 443
   uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
   udp: true
@@ -18,7 +36,21 @@ proxies:
     path: /
     headers:
       Host: d2ex4nxd2e01ub.cloudfront.net
-- name: 🇫🇷 法国 (France) 02 - Dyt
+- name: 🇫🇷 法国 (France) 04 - Dyt
+  type: vless
+  server: 3.169.9.125
+  port: 443
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: d2ex4nxd2e01ub.cloudfront.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d2ex4nxd2e01ub.cloudfront.net
+- name: 🇫🇷 法国 (France) 05 - Dyt
   type: vless
   server: 51.77.217.70
   port: 2053
@@ -29,35 +61,10 @@ proxies:
   reality-opts:
     public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 03 - Dyt
-  type: ss
-  server: 167.17.64.175
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 04 - Dyt
-  type: ss
-  server: dns24.m3hrzd.ir
-  port: 1352
-  cipher: chacha20-ietf-poly1305
-  password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
-  udp: true
-- name: 🇫🇷 法国 (France) 05 - Dyt
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
+  client-fingerprint: firefox
 - name: 🇫🇷 法国 (France) 06 - Dyt
   type: vless
-  server: 3.168.217.190
+  server: 3.168.218.9
   port: 443
   uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
   udp: true
@@ -81,17 +88,26 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇫🇷 法国 (France) 08 - Dyt
-  type: vmess
-  server: 46.105.222.155
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 172.99.189.142
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 - name: 🇫🇷 法国 (France) 09 - Dyt
+  type: vless
+  server: 152.228.162.19
+  port: 80
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 152.228.162.19
+- name: 🇫🇷 法国 (France) 10 - Dyt
   type: vmess
   server: 162.19.204.71
   port: 1234
@@ -102,19 +118,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 10 - Dyt
-  type: vless
-  server: 138.124.70.41
-  port: 14430
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 138.124.70.41
 - name: 🇫🇷 法国 (France) 11 - Dyt
   type: vless
   server: 51.77.217.70
@@ -128,6 +131,13 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 12 - Dyt
+  type: ss
+  server: dns24.m3hrzd.ir
+  port: 1352
+  cipher: chacha20-ietf-poly1305
+  password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
+  udp: true
+- name: 🇫🇷 法国 (France) 13 - Dyt
   type: vless
   server: 199.232.78.120
   port: 443
@@ -141,14 +151,25 @@ proxies:
     path: /
     headers:
       Host: fraboijji.global.ssl.fastly.net.
-- name: 🇫🇷 法国 (France) 13 - Dyt
+- name: 🇫🇷 法国 (France) 14 - Dyt
+  type: vmess
+  server: 46.105.222.155
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: None
+- name: 🇫🇷 法国 (France) 15 - Dyt
   type: ss
-  server: 172.99.189.142
+  server: 38.109.228.110
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇫🇷 法国 (France) 14 - Dyt
+- name: 🇫🇷 法国 (France) 16 - Dyt
   type: vless
   server: 51.77.217.70
   port: 2053
@@ -160,27 +181,29 @@ proxies:
     public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇫🇷 法国 (France) 15 - Dyt
-  type: ss
-  server: 23.162.152.22
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 16 - Dyt
-  type: vless
-  server: 138.124.70.41
-  port: 14430
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 138.124.70.41
 - name: 🇫🇷 法国 (France) 17 - Dyt
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 18 - Dyt
+  type: vmess
+  server: 46.105.222.155
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 19 - Dyt
   type: vless
   server: 199.232.78.120
   port: 443
@@ -194,33 +217,21 @@ proxies:
     path: /
     headers:
       Host: fraboijji.global.ssl.fastly.net.
-- name: 🇫🇷 法国 (France) 18 - Dyt
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 19 - Dyt
-  type: ss
-  server: 51.83.61.102
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 29irqk0paakcx19v
-  udp: true
 - name: 🇫🇷 法国 (France) 20 - Dyt
   type: ss
-  server: 54.36.174.140
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: eetk7pw
+  server: 167.17.64.22
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇫🇷 法国 (France) 21 - Dyt
+  type: ss
+  server: 23.162.152.22
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 22 - Dyt
   type: vmess
   server: 141.95.65.9
   port: 1234
@@ -231,7 +242,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 22 - Dyt
+- name: 🇫🇷 法国 (France) 23 - Dyt
   type: vmess
   server: 162.19.204.71
   port: 1234
@@ -242,40 +253,24 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 23 - Dyt
-  type: vless
-  server: 84.46.251.105
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fs.qicai99.com
 - name: 🇫🇷 法国 (France) 24 - Dyt
   type: ss
-  server: 167.17.64.27
+  server: 167.17.64.175
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇫🇷 法国 (France) 25 - Dyt
-  type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  type: vmess
+  server: 46.105.222.157
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 152.228.162.19
+  servername: None
 - name: 🇫🇷 法国 (France) 26 - Dyt
   type: vmess
   server: 162.19.204.71
@@ -288,19 +283,37 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇫🇷 法国 (France) 27 - Dyt
-  type: ss
-  server: 167.17.64.22
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 28 - Dyt
   type: ss
-  server: 38.109.228.110
+  server: 167.17.64.27
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇫🇷 法国 (France) 29 - Dyt
+  type: vless
+  server: 138.124.70.41
+  port: 14430
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 138.124.70.41
 proxy-groups:
 - name: PROXIES
   type: select
@@ -334,6 +347,7 @@ proxy-groups:
   - 🇫🇷 法国 (France) 26 - Dyt
   - 🇫🇷 法国 (France) 27 - Dyt
   - 🇫🇷 法国 (France) 28 - Dyt
+  - 🇫🇷 法国 (France) 29 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -367,5 +381,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 26 - Dyt
   - 🇫🇷 法国 (France) 27 - Dyt
   - 🇫🇷 法国 (France) 28 - Dyt
+  - 🇫🇷 法国 (France) 29 - Dyt
 rules:
 - MATCH,PROXIES

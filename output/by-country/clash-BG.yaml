@@ -6,16 +6,18 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - Dyt
   type: vless
-  server: p1real5.greewebservices.ir
-  port: 1270
-  uuid: b0511969-f769-460b-963b-70c6b84b6967
+  server: 104.21.29.38
+  port: 443
+  uuid: ac532d5e-2b9c-45a2-85df-37b3b74cffde
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-  servername: play.googleapis.com
-  client-fingerprint: chrome
+  servername: fast-route-4aa49d-gw.staging-api-05a87c.workers.dev
+  network: ws
+  ws-opts:
+    path: /9dffa10cc2d3b317?ed=2560
+    headers:
+      Host: fast-route-4aa49d-gw.staging-api-05a87c.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
