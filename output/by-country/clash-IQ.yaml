@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇮🇶 IQ 01 - Dyt
+  type: vless
+  server: 172.67.235.78
+  port: 443
+  uuid: 775c9d67-2ef3-47e8-8e23-656b68333da8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: web-flow-263808-gw.poryya22o.workers.dev
+  network: ws
+  ws-opts:
+    path: /1e0b190b5bbf9d36?ed=2560
+    headers:
+      Host: web-flow-263808-gw.poryya22o.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇮🇶 IQ 01 - Dyt
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇶 IQ 01 - Dyt
+rules:
+- MATCH,PROXIES
