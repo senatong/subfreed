@@ -6,48 +6,6 @@ log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - Dyt
   type: vless
-  server: 104.16.111.102
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 02 - Dyt
-  type: vless
-  server: 152.69.200.216
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 03 - Dyt
-  type: vless
-  server: 152.69.200.216
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 04 - Dyt
-  type: vless
   server: 154.31.114.162
   port: 8443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
@@ -60,14 +18,35 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 05 - Dyt
+- name: 🇯🇵 日本 (Japan) 02 - Dyt
+  type: vless
+  server: 43.170.8.95
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 03 - Dyt
   type: ss
   server: 168.138.205.100
   port: 53758
   cipher: aes-128-gcm
   password: Bwlqh7GcFB
   udp: true
-- name: 🇯🇵 日本 (Japan) 06 - Dyt
+- name: 🇯🇵 日本 (Japan) 04 - Dyt
+  type: ss
+  server: 154.36.158.197
+  port: 8388
+  cipher: aes-256-gcm
+  password: BeaUf9c0AEWH40Pu
+  udp: true
+- name: 🇯🇵 日本 (Japan) 05 - Dyt
   type: vless
   server: 104.16.10.22
   port: 443
@@ -81,196 +60,7 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 07 - Dyt
-  type: vless
-  server: 154.31.114.162
-  port: 8443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 08 - Dyt
-  type: vless
-  server: 104.19.48.107
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 09 - Dyt
-  type: vless
-  server: 104.21.70.228
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 10 - Dyt
-  type: vless
-  server: 45.142.126.184
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 11 - Dyt
-  type: vless
-  server: 104.16.10.185
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 12 - Dyt
-  type: vless
-  server: 104.16.10.135
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 13 - Dyt
-  type: vless
-  server: 104.16.10.56
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 14 - Dyt
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 15 - Dyt
-  type: vless
-  server: 104.16.10.104
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 16 - Dyt
-  type: vless
-  server: 104.16.10.234
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 17 - Dyt
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 18 - Dyt
-  type: vless
-  server: 104.21.6.186
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 19 - Dyt
-  type: vless
-  server: 80.240.18.227
-  port: 10051
-  uuid: f4d859eb-abc6-4c57-9eee-8fe9e2ef0f94
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 日本 (Japan) 20 - Dyt
-  type: vless
-  server: 162.159.254.3
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 21 - Dyt
+- name: 🇯🇵 日本 (Japan) 06 - Dyt
   type: vless
   server: 104.24.31.89
   port: 443
@@ -284,37 +74,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 22 - Dyt
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 23 - Dyt
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 24 - Dyt
+- name: 🇯🇵 日本 (Japan) 07 - Dyt
   type: vless
-  server: 38.47.96.220
-  port: 11424
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: notls.lukongtou.eu.org
-- name: 🇯🇵 日本 (Japan) 25 - Dyt
-  type: vless
-  server: 154.40.36.220
+  server: 45.153.245.181
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -326,23 +88,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 26 - Dyt
+- name: 🇯🇵 日本 (Japan) 08 - Dyt
   type: vless
-  server: 79.137.199.52
-  port: 21
-  uuid: 763e2ddd-c830-4f4f-801c-f6f2c3418d4f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇯🇵 日本 (Japan) 27 - Dyt
-  type: vless
-  server: 104.19.48.107
+  server: 104.19.12.94
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -354,9 +102,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 28 - Dyt
+- name: 🇯🇵 日本 (Japan) 09 - Dyt
   type: vless
-  server: 43.170.8.95
+  server: 104.16.10.135
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -368,105 +116,7 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 29 - Dyt
-  type: vless
-  server: 104.16.10.22
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 30 - Dyt
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 31 - Dyt
-  type: vless
-  server: 43.170.8.95
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 32 - Dyt
-  type: vless
-  server: 147.45.42.73
-  port: 20443
-  uuid: fcbb9617-7b3c-4b21-8a91-a57350a75222
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇯🇵 日本 (Japan) 33 - Dyt
-  type: vless
-  server: 62.106.75.37
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 34 - Dyt
-  type: vless
-  server: 104.16.111.102
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 35 - Dyt
-  type: vless
-  server: 104.16.10.2
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 36 - Dyt
+- name: 🇯🇵 日本 (Japan) 10 - Dyt
   type: vless
   server: 104.19.33.25
   port: 443
@@ -480,9 +130,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 37 - Dyt
+- name: 🇯🇵 日本 (Japan) 11 - Dyt
   type: vless
-  server: 104.21.33.59
+  server: 188.114.98.0
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -494,9 +144,23 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 38 - Dyt
+- name: 🇯🇵 日本 (Japan) 12 - Dyt
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 13 - Dyt
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 14 - Dyt
   type: vless
-  server: 43.156.62.218
+  server: 154.40.36.220
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -508,9 +172,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 39 - Dyt
+- name: 🇯🇵 日本 (Japan) 15 - Dyt
   type: vless
-  server: 104.18.42.98
+  server: 104.19.164.155
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -522,9 +186,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 40 - Dyt
+- name: 🇯🇵 日本 (Japan) 16 - Dyt
   type: vless
-  server: 104.24.0.1
+  server: 104.21.70.21
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -536,7 +200,14 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 41 - Dyt
+- name: 🇯🇵 日本 (Japan) 17 - Dyt
+  type: ss
+  server: 149.22.87.241
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 18 - Dyt
   type: vless
   server: 104.21.0.87
   port: 443
@@ -550,7 +221,35 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 42 - Dyt
+- name: 🇯🇵 日本 (Japan) 19 - Dyt
+  type: vless
+  server: 104.16.10.72
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 20 - Dyt
+  type: vless
+  server: 43.156.62.218
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 21 - Dyt
   type: vless
   server: 172.67.217.240
   port: 443
@@ -564,16 +263,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 43 - Dyt
-  type: ss
-  server: 154.36.158.197
-  port: 8388
-  cipher: aes-256-gcm
-  password: BeaUf9c0AEWH40Pu
-  udp: true
-- name: 🇯🇵 日本 (Japan) 44 - Dyt
+- name: 🇯🇵 日本 (Japan) 22 - Dyt
   type: vless
-  server: 62.106.70.68
+  server: 172.67.217.240
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -585,21 +277,7 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 45 - Dyt
-  type: vless
-  server: 104.17.50.53
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 46 - Dyt
+- name: 🇯🇵 日本 (Japan) 23 - Dyt
   type: vless
   server: 104.21.219.160
   port: 443
@@ -613,23 +291,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 47 - Dyt
+- name: 🇯🇵 日本 (Japan) 24 - Dyt
   type: vless
-  server: 57.129.130.57
-  port: 52014
-  uuid: 47ba5dc6-8961-48a0-8b54-f57ec524627a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-- name: 🇯🇵 日本 (Japan) 48 - Dyt
-  type: vless
-  server: 104.16.111.195
+  server: 62.106.75.37
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -641,9 +305,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 49 - Dyt
+- name: 🇯🇵 日本 (Japan) 25 - Dyt
   type: vless
-  server: 104.21.34.106
+  server: 104.16.10.56
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -655,9 +319,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 50 - Dyt
+- name: 🇯🇵 日本 (Japan) 26 - Dyt
   type: vless
-  server: 172.67.156.147
+  server: 104.16.10.2
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -669,21 +333,14 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 51 - Dyt
-  type: vless
-  server: 172.64.190.13
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+- name: 🇯🇵 日本 (Japan) 27 - Dyt
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 52 - Dyt
+- name: 🇯🇵 日本 (Japan) 28 - Dyt
   type: vless
   server: 172.67.217.240
   port: 443
@@ -697,9 +354,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 53 - Dyt
+- name: 🇯🇵 日本 (Japan) 29 - Dyt
   type: vless
-  server: 104.17.210.74
+  server: 104.16.10.104
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -711,7 +368,21 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 54 - Dyt
+- name: 🇯🇵 日本 (Japan) 30 - Dyt
+  type: vless
+  server: 104.27.46.35
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 31 - Dyt
   type: vless
   server: 162.159.254.3
   port: 443
@@ -725,27 +396,6 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 55 - Dyt
-  type: vless
-  server: 45.77.241.190
-  port: 8441
-  uuid: 3011e40c-228f-4f2e-9dbf-5b256887e071
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-- name: 🇯🇵 日本 (Japan) 56 - Dyt
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -782,31 +432,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 29 - Dyt
   - 🇯🇵 日本 (Japan) 30 - Dyt
   - 🇯🇵 日本 (Japan) 31 - Dyt
-  - 🇯🇵 日本 (Japan) 32 - Dyt
-  - 🇯🇵 日本 (Japan) 33 - Dyt
-  - 🇯🇵 日本 (Japan) 34 - Dyt
-  - 🇯🇵 日本 (Japan) 35 - Dyt
-  - 🇯🇵 日本 (Japan) 36 - Dyt
-  - 🇯🇵 日本 (Japan) 37 - Dyt
-  - 🇯🇵 日本 (Japan) 38 - Dyt
-  - 🇯🇵 日本 (Japan) 39 - Dyt
-  - 🇯🇵 日本 (Japan) 40 - Dyt
-  - 🇯🇵 日本 (Japan) 41 - Dyt
-  - 🇯🇵 日本 (Japan) 42 - Dyt
-  - 🇯🇵 日本 (Japan) 43 - Dyt
-  - 🇯🇵 日本 (Japan) 44 - Dyt
-  - 🇯🇵 日本 (Japan) 45 - Dyt
-  - 🇯🇵 日本 (Japan) 46 - Dyt
-  - 🇯🇵 日本 (Japan) 47 - Dyt
-  - 🇯🇵 日本 (Japan) 48 - Dyt
-  - 🇯🇵 日本 (Japan) 49 - Dyt
-  - 🇯🇵 日本 (Japan) 50 - Dyt
-  - 🇯🇵 日本 (Japan) 51 - Dyt
-  - 🇯🇵 日本 (Japan) 52 - Dyt
-  - 🇯🇵 日本 (Japan) 53 - Dyt
-  - 🇯🇵 日本 (Japan) 54 - Dyt
-  - 🇯🇵 日本 (Japan) 55 - Dyt
-  - 🇯🇵 日本 (Japan) 56 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -843,30 +468,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 29 - Dyt
   - 🇯🇵 日本 (Japan) 30 - Dyt
   - 🇯🇵 日本 (Japan) 31 - Dyt
-  - 🇯🇵 日本 (Japan) 32 - Dyt
-  - 🇯🇵 日本 (Japan) 33 - Dyt
-  - 🇯🇵 日本 (Japan) 34 - Dyt
-  - 🇯🇵 日本 (Japan) 35 - Dyt
-  - 🇯🇵 日本 (Japan) 36 - Dyt
-  - 🇯🇵 日本 (Japan) 37 - Dyt
-  - 🇯🇵 日本 (Japan) 38 - Dyt
-  - 🇯🇵 日本 (Japan) 39 - Dyt
-  - 🇯🇵 日本 (Japan) 40 - Dyt
-  - 🇯🇵 日本 (Japan) 41 - Dyt
-  - 🇯🇵 日本 (Japan) 42 - Dyt
-  - 🇯🇵 日本 (Japan) 43 - Dyt
-  - 🇯🇵 日本 (Japan) 44 - Dyt
-  - 🇯🇵 日本 (Japan) 45 - Dyt
-  - 🇯🇵 日本 (Japan) 46 - Dyt
-  - 🇯🇵 日本 (Japan) 47 - Dyt
-  - 🇯🇵 日本 (Japan) 48 - Dyt
-  - 🇯🇵 日本 (Japan) 49 - Dyt
-  - 🇯🇵 日本 (Japan) 50 - Dyt
-  - 🇯🇵 日本 (Japan) 51 - Dyt
-  - 🇯🇵 日本 (Japan) 52 - Dyt
-  - 🇯🇵 日本 (Japan) 53 - Dyt
-  - 🇯🇵 日本 (Japan) 54 - Dyt
-  - 🇯🇵 日本 (Japan) 55 - Dyt
-  - 🇯🇵 日本 (Japan) 56 - Dyt
 rules:
 - MATCH,PROXIES
