@@ -13,24 +13,17 @@ proxies:
   udp: true
 - name: 🇿🇦 ZA 02 - Dyt
   type: ss
-  server: 102.37.156.224
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
-  udp: true
-- name: 🇿🇦 ZA 03 - Dyt
-  type: ss
   server: 40.123.240.235
   port: 443
   cipher: chacha20-ietf-poly1305
   password: WTQlw0DYHp6QQjow
   udp: true
-- name: 🇿🇦 ZA 04 - Dyt
+- name: 🇿🇦 ZA 03 - Dyt
   type: ss
-  server: 40.123.254.236
+  server: 102.37.156.224
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: M8Z2I7nGjhmwhy2m
+  password: aduB9HGxQHjA2SBMRjkHX6
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -40,7 +33,6 @@ proxy-groups:
   - 🇿🇦 ZA 01 - Dyt
   - 🇿🇦 ZA 02 - Dyt
   - 🇿🇦 ZA 03 - Dyt
-  - 🇿🇦 ZA 04 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -49,6 +41,5 @@ proxy-groups:
   - 🇿🇦 ZA 01 - Dyt
   - 🇿🇦 ZA 02 - Dyt
   - 🇿🇦 ZA 03 - Dyt
-  - 🇿🇦 ZA 04 - Dyt
 rules:
 - MATCH,PROXIES
