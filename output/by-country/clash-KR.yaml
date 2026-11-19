@@ -57,6 +57,16 @@ proxies:
     headers:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 05 - Dyt
+  type: vmess
+  server: 129.154.61.196
+  port: 800
+  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 06 - Dyt
   type: vless
   server: 152.69.226.63
   port: 25555
@@ -69,7 +79,7 @@ proxies:
     path: /
     headers:
       Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 06 - Dyt
+- name: 🇰🇷 韩国 (South Korea) 07 - Dyt
   type: vless
   server: 152.69.226.63
   port: 25555
@@ -93,6 +103,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 04 - Dyt
   - 🇰🇷 韩国 (South Korea) 05 - Dyt
   - 🇰🇷 韩国 (South Korea) 06 - Dyt
+  - 🇰🇷 韩国 (South Korea) 07 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -104,5 +115,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 04 - Dyt
   - 🇰🇷 韩国 (South Korea) 05 - Dyt
   - 🇰🇷 韩国 (South Korea) 06 - Dyt
+  - 🇰🇷 韩国 (South Korea) 07 - Dyt
 rules:
 - MATCH,PROXIES

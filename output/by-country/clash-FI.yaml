@@ -6,19 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - Dyt
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 02 - Dyt
-  type: vless
   server: 198.202.24.142
   port: 2083
   uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
@@ -31,7 +18,7 @@ proxies:
     path: /
     headers:
       Host: vipfree.dr-ping.ir
-- name: 🇫🇮 FI 03 - Dyt
+- name: 🇫🇮 FI 02 - Dyt
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -44,9 +31,23 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 FI 03 - Dyt
+  type: vless
+  server: 172.64.79.163
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vipfree.dr-ping.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vipfree.dr-ping.ir
 - name: 🇫🇮 FI 04 - Dyt
   type: vless
-  server: 198.202.24.142
+  server: 104.17.145.145
   port: 2083
   uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
   udp: true
@@ -59,6 +60,33 @@ proxies:
     headers:
       Host: vipfree.dr-ping.ir
 - name: 🇫🇮 FI 05 - Dyt
+  type: vless
+  server: 198.202.24.142
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vipfree.dr-ping.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vipfree.dr-ping.ir
+- name: 🇫🇮 FI 06 - Dyt
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 07 - Dyt
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -81,6 +109,8 @@ proxy-groups:
   - 🇫🇮 FI 03 - Dyt
   - 🇫🇮 FI 04 - Dyt
   - 🇫🇮 FI 05 - Dyt
+  - 🇫🇮 FI 06 - Dyt
+  - 🇫🇮 FI 07 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -91,5 +121,7 @@ proxy-groups:
   - 🇫🇮 FI 03 - Dyt
   - 🇫🇮 FI 04 - Dyt
   - 🇫🇮 FI 05 - Dyt
+  - 🇫🇮 FI 06 - Dyt
+  - 🇫🇮 FI 07 - Dyt
 rules:
 - MATCH,PROXIES
