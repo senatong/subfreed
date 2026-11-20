@@ -4,29 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇱 PL 01 - Dyt
+- name: 🇱🇺 LU 01 - Dyt
   type: vless
-  server: 143.246.41.214
+  server: 92.223.84.254
   port: 443
-  uuid: be146d46-ae50-4691-838c-b6c87dbaec8f
+  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 8OI8rEgAiWxH-cG03xgzuz7XTFHrbA1MY9HnPHcgSUA
-  servername: 702e56t.pl5.h1clayd.click
-  client-fingerprint: edge
+  servername: subgift.gcorecdn.com
+  network: ws
+  ws-opts:
+    path: /t.me-SubGift
+    headers:
+      Host: subgift.gcorecdn.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇱 PL 01 - Dyt
+  - 🇱🇺 LU 01 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇱 PL 01 - Dyt
+  - 🇱🇺 LU 01 - Dyt
 rules:
 - MATCH,PROXIES
