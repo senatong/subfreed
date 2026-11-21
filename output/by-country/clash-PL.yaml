@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 BG 01 - Dyt
+- name: 🇵🇱 PL 01 - Dyt
   type: vless
-  server: 104.18.79.242
+  server: 144.31.3.89
   port: 443
-  uuid: bb2a729c-6185-4170-8769-6f5b9f64d5b8
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cloud-sync-3d1512-gw.maziarkish.workers.dev
+  servername: clearingmatch.melodramaonline.net
   network: ws
   ws-opts:
-    path: /11290579a72cdb4e?ed=2560
+    path: /media/ws/
     headers:
-      Host: cloud-sync-3d1512-gw.maziarkish.workers.dev
+      Host: 144.31.3.89
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 BG 01 - Dyt
+  - 🇵🇱 PL 01 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 BG 01 - Dyt
+  - 🇵🇱 PL 01 - Dyt
 rules:
 - MATCH,PROXIES
