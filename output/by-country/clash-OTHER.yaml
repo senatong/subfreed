@@ -6,21 +6,21 @@ log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - Dyt
   type: vless
-  server: 104.21.6.60
-  port: 8443
-  uuid: 53035563-df32-463c-b23a-5e14535793b2
+  server: 104.16.10.2
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: dimu-vz7e.ezaccess1717bbf.workers.dev
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /stream/DEVCOP/5e14535793b2?ed=2048
+    path: /tyxyws
     headers:
-      Host: dimu-vz7e.ezaccess1717bbf.workers.dev
+      Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 02 - Dyt
   type: vless
-  server: 104.16.10.22
+  server: 104.16.0.1
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -34,7 +34,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 03 - Dyt
   type: vless
-  server: 172.67.217.240
+  server: 104.21.70.21
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -47,22 +47,24 @@ proxies:
     headers:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 04 - Dyt
-  type: vless
-  server: 104.16.10.234
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  type: vmess
+  server: 104.18.0.1
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: v2ray1.dozapp.xyz
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /lMnsZUN4/
     headers:
-      Host: jp3.yohototo.top
+      Host: v2ray1.dozapp.xyz
 - name: 🌐 其他地区 (Other) 05 - Dyt
   type: vless
-  server: 104.19.164.155
+  server: 188.114.98.0
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -76,21 +78,21 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 06 - Dyt
   type: vless
-  server: 172.66.44.171
-  port: 2087
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+  server: 172.67.217.240
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: proxy-34l.pages.dev
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /
+    path: /tyxyws
     headers:
-      Host: proxy-34l.pages.dev
+      Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 07 - Dyt
   type: vless
-  server: 104.24.0.1
+  server: 104.21.0.87
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -104,7 +106,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 08 - Dyt
   type: vless
-  server: 104.16.10.185
+  server: 188.114.97.6
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -118,7 +120,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 09 - Dyt
   type: vless
-  server: 188.114.97.6
+  server: 104.24.0.1
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -132,35 +134,35 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 10 - Dyt
   type: vless
-  server: 172.67.134.139
+  server: 104.27.97.42
   port: 8443
-  uuid: 53035563-df32-463c-b23a-5e14535793b2
+  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: dimu-vz7e.ezaccess1717bbf.workers.dev
+  servername: free.sahanwickramasinghe.com
   network: ws
   ws-opts:
-    path: /stream/DEVCOP/5e14535793b2?ed=2048
+    path: /
     headers:
-      Host: dimu-vz7e.ezaccess1717bbf.workers.dev
+      Host: free.sahanwickramasinghe.com
 - name: 🌐 其他地区 (Other) 11 - Dyt
   type: vless
-  server: 172.67.141.182
+  server: 104.16.111.102
   port: 443
-  uuid: ce440dcf-e570-4a50-af37-bf588ee8a988
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 6qwoom7kdrcoan3ui4ra5dy.pages.dev
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /vl/KSPdmco70dfoXFS292o2Nv6yPt?ed=2560
+    path: /tyxyws
     headers:
-      Host: 6qwoom7kdrcoan3ui4ra5dy.pages.dev
+      Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 12 - Dyt
   type: vless
-  server: 104.21.219.160
+  server: 172.67.217.240
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -173,34 +175,6 @@ proxies:
     headers:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 13 - Dyt
-  type: vless
-  server: 172.64.154.113
-  port: 8443
-  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: freeceshi6.frii.site
-  network: ws
-  ws-opts:
-    path: /proxyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: freeceshi6.frii.site
-- name: 🌐 其他地区 (Other) 14 - Dyt
-  type: vless
-  server: 104.17.50.227
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 15 - Dyt
   type: vmess
   server: 104.21.91.53
   port: 8443
@@ -216,107 +190,7 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: 🌐 其他地区 (Other) 16 - Dyt
-  type: vless
-  server: 172.67.75.172
-  port: 443
-  uuid: 386d67dc-bf88-49fd-a570-301cbb013a33
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 9t94rOaC1ew8n93SdrQ.pAgeS.DEV
-  network: ws
-  ws-opts:
-    path: /vl/x1qQUZWxHs5IRVeRUjz7AteYS?ed=2560
-    headers:
-      Host: 9t94roac1ew8n93sdrq.pages.dev
-- name: 🌐 其他地区 (Other) 17 - Dyt
-  type: vless
-  server: 104.19.164.155
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 18 - Dyt
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 19 - Dyt
-  type: vless
-  server: 104.27.204.44
-  port: 443
-  uuid: 386d67dc-bf88-49fd-a570-301cbb013a33
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 9t94roac1ew8n93sdrq.pages.dev
-  network: ws
-  ws-opts:
-    path: /vl/x1qQUZWxHs5IRVeRUjz7AteYS?ed=2560
-    headers:
-      Host: 9t94roac1ew8n93sdrq.pages.dev
-- name: 🌐 其他地区 (Other) 20 - Dyt
-  type: vless
-  server: 172.66.47.85
-  port: 2087
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: proxy-34l.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: proxy-34l.pages.dev
-- name: 🌐 其他地区 (Other) 21 - Dyt
-  type: vless
-  server: 172.64.147.154
-  port: 443
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
-- name: 🌐 其他地区 (Other) 22 - Dyt
-  type: vmess
-  server: chatgpt.com
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray1.dozapp.xyz
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: 🌐 其他地区 (Other) 23 - Dyt
+- name: 🌐 其他地区 (Other) 14 - Dyt
   type: vless
   server: 104.16.10.56
   port: 443
@@ -330,7 +204,119 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 24 - Dyt
+- name: 🌐 其他地区 (Other) 15 - Dyt
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 16 - Dyt
+  type: vless
+  server: 104.21.94.203
+  port: 443
+  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fr-free.fastestrelay.com
+  network: ws
+  ws-opts:
+    path: /700gvl
+    headers:
+      Host: fr-free.fastestrelay.com
+- name: 🌐 其他地区 (Other) 17 - Dyt
+  type: vless
+  server: 104.19.48.107
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 18 - Dyt
+  type: vless
+  server: 104.16.10.135
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 19 - Dyt
+  type: vless
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 20 - Dyt
+  type: vless
+  server: 104.21.94.203
+  port: 443
+  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fr-free.fastestrelay.com
+  network: ws
+  ws-opts:
+    path: /700gvl?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: fr-free.fastestrelay.com
+- name: 🌐 其他地区 (Other) 21 - Dyt
+  type: vless
+  server: 104.16.10.234
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 22 - Dyt
+  type: vless
+  server: 172.64.190.13
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 23 - Dyt
   type: vless
   server: 104.16.10.2
   port: 443
@@ -344,25 +330,39 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 25 - Dyt
+- name: 🌐 其他地区 (Other) 24 - Dyt
   type: vmess
-  server: 104.21.0.1
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: or3.sfacg.uk
+  servername: v2ray1.dozapp.xyz
   network: ws
   ws-opts:
-    path: /or3
+    path: /lMnsZUN4/
     headers:
-      Host: or3.sfacg.uk
+      Host: v2ray1.dozapp.xyz
+- name: 🌐 其他地区 (Other) 25 - Dyt
+  type: vless
+  server: 104.16.10.63
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 26 - Dyt
   type: vless
-  server: 172.67.217.240
+  server: 104.19.33.25
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -376,21 +376,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 27 - Dyt
   type: vless
-  server: 104.21.6.60
-  port: 8443
-  uuid: 53035563-df32-463c-b23a-5e14535793b2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: dimu-vz7e.ezaccess1717bbf.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/DEVCOP/5e14535793b2?ed=2048
-    headers:
-      Host: dimu-vz7e.ezaccess1717bbf.workers.dev
-- name: 🌐 其他地区 (Other) 28 - Dyt
-  type: vless
-  server: 172.67.217.240
+  server: 162.159.254.3
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -402,146 +388,6 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 29 - Dyt
-  type: vless
-  server: 104.21.6.186
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 30 - Dyt
-  type: vless
-  server: 104.16.10.104
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 31 - Dyt
-  type: vless
-  server: 172.64.149.65
-  port: 443
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
-- name: 🌐 其他地区 (Other) 32 - Dyt
-  type: vless
-  server: 104.21.0.87
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 33 - Dyt
-  type: vless
-  server: 190.93.245.187
-  port: 8443
-  uuid: b2853d19-fada-44dc-8d44-967d1af122e0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wqa3miojjr8fyozhiui--su3-ucg1gdx.pages.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiZTA0TGg3eENkIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19
-    headers:
-      Host: wqa3miojjr8fyozhiui--su3-ucg1gdx.pages.dev
-- name: 🌐 其他地区 (Other) 34 - Dyt
-  type: vless
-  server: 190.93.244.166
-  port: 2096
-  uuid: b2853d19-fada-44dc-8d44-967d1af122e0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wqa3miojjr8fyozhiui--su3-ucg1gdx.pages.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiWmFzVk5rd2siLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iXX0=
-    headers:
-      Host: wqa3miojjr8fyozhiui--su3-ucg1gdx.pages.dev
-- name: 🌐 其他地区 (Other) 35 - Dyt
-  type: vless
-  server: 104.21.34.106
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 36 - Dyt
-  type: vless
-  server: 104.24.225.89
-  port: 443
-  uuid: dbbed131-4ae8-4297-a102-438a2e19b0d9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: GhzO7q51sn2b5e2I1670V7dmx.paGES.DEv
-  network: ws
-  ws-opts:
-    path: /vl/c5R0DRvdSoEZO90UjW3StIJxLpFWZod?ed=2560
-    headers:
-      Host: ghzo7q51sn2b5e2i1670v7dmx.pages.dev
-- name: 🌐 其他地区 (Other) 37 - Dyt
-  type: vless
-  server: 172.67.134.139
-  port: 8443
-  uuid: 53035563-df32-463c-b23a-5e14535793b2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: dimu-vz7e.ezaccess1717bbf.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/DEVCOP/5e14535793b2?ed=2048
-    headers:
-      Host: dimu-vz7e.ezaccess1717bbf.workers.dev
-- name: 🌐 其他地区 (Other) 38 - Dyt
-  type: vless
-  server: 172.66.45.42
-  port: 2096
-  uuid: b2853d19-fada-44dc-8d44-967d1af122e0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wqa3miojjr8fyozhiui--su3-ucg1gdx.pages.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiek9GRkhzRHROb3o1IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19
-    headers:
-      Host: wqa3miojjr8fyozhiui--su3-ucg1gdx.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -574,17 +420,6 @@ proxy-groups:
   - 🌐 其他地区 (Other) 25 - Dyt
   - 🌐 其他地区 (Other) 26 - Dyt
   - 🌐 其他地区 (Other) 27 - Dyt
-  - 🌐 其他地区 (Other) 28 - Dyt
-  - 🌐 其他地区 (Other) 29 - Dyt
-  - 🌐 其他地区 (Other) 30 - Dyt
-  - 🌐 其他地区 (Other) 31 - Dyt
-  - 🌐 其他地区 (Other) 32 - Dyt
-  - 🌐 其他地区 (Other) 33 - Dyt
-  - 🌐 其他地区 (Other) 34 - Dyt
-  - 🌐 其他地区 (Other) 35 - Dyt
-  - 🌐 其他地区 (Other) 36 - Dyt
-  - 🌐 其他地区 (Other) 37 - Dyt
-  - 🌐 其他地区 (Other) 38 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -617,16 +452,5 @@ proxy-groups:
   - 🌐 其他地区 (Other) 25 - Dyt
   - 🌐 其他地区 (Other) 26 - Dyt
   - 🌐 其他地区 (Other) 27 - Dyt
-  - 🌐 其他地区 (Other) 28 - Dyt
-  - 🌐 其他地区 (Other) 29 - Dyt
-  - 🌐 其他地区 (Other) 30 - Dyt
-  - 🌐 其他地区 (Other) 31 - Dyt
-  - 🌐 其他地区 (Other) 32 - Dyt
-  - 🌐 其他地区 (Other) 33 - Dyt
-  - 🌐 其他地区 (Other) 34 - Dyt
-  - 🌐 其他地区 (Other) 35 - Dyt
-  - 🌐 其他地区 (Other) 36 - Dyt
-  - 🌐 其他地区 (Other) 37 - Dyt
-  - 🌐 其他地区 (Other) 38 - Dyt
 rules:
 - MATCH,PROXIES
