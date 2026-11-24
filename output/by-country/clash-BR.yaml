@@ -26,6 +26,28 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
+- name: 🇧🇷 BR 03 - Dyt
+  type: vmess
+  server: 103.88.232.55
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: None
+- name: 🇧🇷 BR 04 - Dyt
+  type: vmess
+  server: 103.14.27.207
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +55,8 @@ proxy-groups:
   - AUTO
   - 🇧🇷 BR 01 - Dyt
   - 🇧🇷 BR 02 - Dyt
+  - 🇧🇷 BR 03 - Dyt
+  - 🇧🇷 BR 04 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -40,5 +64,7 @@ proxy-groups:
   proxies:
   - 🇧🇷 BR 01 - Dyt
   - 🇧🇷 BR 02 - Dyt
+  - 🇧🇷 BR 03 - Dyt
+  - 🇧🇷 BR 04 - Dyt
 rules:
 - MATCH,PROXIES
