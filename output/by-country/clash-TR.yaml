@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - Dyt
   type: vless
-  server: 194.135.34.118
-  port: 8443
-  uuid: 020f7f86-a559-4366-8d2d-c6f81d6bbe5f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: web.hosttcp.fun
-  network: ws
-  ws-opts:
-    path: /api/v4/media/session
-    headers:
-      Host: 194.135.34.118
-- name: 🇹🇷 土耳其 (Turkey) 02 - Dyt
-  type: vless
   server: 143.246.136.128
   port: 50738
   uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
@@ -27,34 +13,15 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: turkey-ip1.mmdaqaorg.xyz
-- name: 🇹🇷 土耳其 (Turkey) 03 - Dyt
+- name: 🇹🇷 土耳其 (Turkey) 02 - Dyt
   type: vless
-  server: 45.74.158.105
-  port: 443
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  server: turkey-ip1.mmdaqaorg.xyz
+  port: 50738
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: accessfooter.cleanfoodshop.org
-  network: ws
-  ws-opts:
-    path: /media/ws/
-    headers:
-      Host: accessfooter.cleanfoodshop.org
-- name: 🇹🇷 土耳其 (Turkey) 04 - Dyt
-  type: vless
-  server: 172.64.155.209
-  port: 443
-  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sinavm3.soft10.ir
-  network: ws
-  ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
-    headers:
-      Host: sinavm3.soft10.ir
+  servername: turkey-ip1.mmdaqaorg.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,8 +29,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - Dyt
   - 🇹🇷 土耳其 (Turkey) 02 - Dyt
-  - 🇹🇷 土耳其 (Turkey) 03 - Dyt
-  - 🇹🇷 土耳其 (Turkey) 04 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,7 +36,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - Dyt
   - 🇹🇷 土耳其 (Turkey) 02 - Dyt
-  - 🇹🇷 土耳其 (Turkey) 03 - Dyt
-  - 🇹🇷 土耳其 (Turkey) 04 - Dyt
 rules:
 - MATCH,PROXIES
