@@ -6,28 +6,19 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - Dyt
   type: vless
-  server: 143.246.136.128
-  port: 50738
-  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: turkey-ip1.mmdaqaorg.xyz
-- name: 🇹🇷 土耳其 (Turkey) 02 - Dyt
-  type: vless
-  server: 172.64.155.209
+  server: 172.67.199.12
   port: 443
-  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sinavm3.soft10.ir
+  servername: still-bar-5702.vpnetwork3567.workers.dev
   network: ws
   ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    path: /
     headers:
-      Host: sinavm3.soft10.ir
-- name: 🇹🇷 土耳其 (Turkey) 03 - Dyt
+      Host: still-bar-5702.vpnetwork3567.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 02 - Dyt
   type: vless
   server: turkey-ip1.mmdaqaorg.xyz
   port: 50738
@@ -43,7 +34,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - Dyt
   - 🇹🇷 土耳其 (Turkey) 02 - Dyt
-  - 🇹🇷 土耳其 (Turkey) 03 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -51,6 +41,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - Dyt
   - 🇹🇷 土耳其 (Turkey) 02 - Dyt
-  - 🇹🇷 土耳其 (Turkey) 03 - Dyt
 rules:
 - MATCH,PROXIES
