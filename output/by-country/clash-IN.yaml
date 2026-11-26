@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 03 - Dyt
   type: vless
   server: 13.140.56.100
@@ -43,6 +43,20 @@ proxies:
       Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 04 - Dyt
   type: vless
+  server: 13.140.253.35
+  port: 443
+  uuid: 213224a4-6cd1-b7f4-8bbc-4f50e5ed847b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xray-ikmqcro3-rapid-river-6.cloady.io
+  network: ws
+  ws-opts:
+    path: /c54a815e676d9acc
+    headers:
+      Host: xray-ikmqcro3-rapid-river-6.cloady.io
+- name: 🇮🇳 印度 (India) 05 - Dyt
+  type: vless
   server: 13.140.56.100
   port: 14430
   uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
@@ -54,7 +68,20 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 05 - Dyt
+- name: 🇮🇳 印度 (India) 06 - Dyt
+  type: vless
+  server: 13.140.56.100
+  port: 14430
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 07 - Dyt
   type: vless
   server: in.smrtai.top
   port: 443
@@ -65,7 +92,7 @@ proxies:
   reality-opts:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -76,6 +103,8 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - Dyt
   - 🇮🇳 印度 (India) 04 - Dyt
   - 🇮🇳 印度 (India) 05 - Dyt
+  - 🇮🇳 印度 (India) 06 - Dyt
+  - 🇮🇳 印度 (India) 07 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -86,5 +115,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - Dyt
   - 🇮🇳 印度 (India) 04 - Dyt
   - 🇮🇳 印度 (India) 05 - Dyt
+  - 🇮🇳 印度 (India) 06 - Dyt
+  - 🇮🇳 印度 (India) 07 - Dyt
 rules:
 - MATCH,PROXIES
