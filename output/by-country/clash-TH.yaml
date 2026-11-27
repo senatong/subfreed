@@ -4,31 +4,27 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇻 LV 01 - Dyt
-  type: vless
-  server: 213.183.45.23
-  port: 8450
-  uuid: eb62cabf-5901-403a-aa0c-b1d9ed1b346d
+- name: 🇹🇭 TH 01 - Dyt
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fonts.plumstatic.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 213.183.45.23
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇻 LV 01 - Dyt
+  - 🇹🇭 TH 01 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 LV 01 - Dyt
+  - 🇹🇭 TH 01 - Dyt
 rules:
 - MATCH,PROXIES
