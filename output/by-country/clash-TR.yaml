@@ -6,6 +6,15 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - Dyt
   type: vless
+  server: turkey-ip1.mmdaqaorg.xyz
+  port: 50738
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: turkey-ip1.mmdaqaorg.xyz
+- name: 🇹🇷 土耳其 (Turkey) 02 - Dyt
+  type: vless
   server: 172.67.199.12
   port: 443
   uuid: 963A4918-A630-29DA-A873-093CDF8AD784
@@ -18,15 +27,6 @@ proxies:
     path: /
     headers:
       Host: still-bar-5702.vpnetwork3567.workers.dev
-- name: 🇹🇷 土耳其 (Turkey) 02 - Dyt
-  type: vless
-  server: turkey-ip1.mmdaqaorg.xyz
-  port: 50738
-  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: turkey-ip1.mmdaqaorg.xyz
 proxy-groups:
 - name: PROXIES
   type: select

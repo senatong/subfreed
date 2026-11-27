@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇮 FI 01 - Dyt
+- name: 🇮🇱 IL 01 - Dyt
   type: vless
-  server: mail3.besttotaldns.com
+  server: 195.206.235.72
   port: 443
-  uuid: 18fe142e-1522-47ae-af55-bd8daf6273df
+  uuid: 26843758-24de-4f76-b5d0-624038e353c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mail3.besttotaldns.com
-  network: ws
-  ws-opts:
-    path: /wo9a5v3jcz
-    headers:
-      Host: mail3.besttotaldns.com
+  reality-opts:
+    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
+  servername: 71b840t.de7.h1clayd.click
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇫🇮 FI 01 - Dyt
+  - 🇮🇱 IL 01 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇮 FI 01 - Dyt
+  - 🇮🇱 IL 01 - Dyt
 rules:
 - MATCH,PROXIES
