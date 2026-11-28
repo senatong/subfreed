@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇱🇹 LT 01 - Dyt
+  type: vless
+  server: 5.199.173.195
+  port: 443
+  uuid: bf14dc50-e9f2-49fd-8642-620446edeafb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v4-77j.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v4-77j.pages.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇱🇹 LT 01 - Dyt
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇱🇹 LT 01 - Dyt
+rules:
+- MATCH,PROXIES
