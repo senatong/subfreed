@@ -4,31 +4,27 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇹 LT 01 - Dyt
-  type: vless
-  server: 5.199.173.195
-  port: 443
-  uuid: bf14dc50-e9f2-49fd-8642-620446edeafb
+- name: 🇮🇷 IR 01 - Dyt
+  type: vmess
+  server: Ir.wbzo.ir
+  port: 2080
+  uuid: b7e3e8af-d1ca-45da-a95f-8b9ad77398b1
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: v4-77j.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: v4-77j.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇹 LT 01 - Dyt
+  - 🇮🇷 IR 01 - Dyt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇹 LT 01 - Dyt
+  - 🇮🇷 IR 01 - Dyt
 rules:
 - MATCH,PROXIES
